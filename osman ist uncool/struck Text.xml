@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" 
+"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<?xml-stylesheet type="text/css" href="s1.css"?>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <h1>Einführung</h1>
+    <h2>E-Book Lesegerät</h2>
+    <h3>PC, Notebook und Tablet</h3>
+    <p class="einleitungstext">zunächst betrachten wir die Geräte, die die meisten von uns
+    täglich nutzen</p>
+    <h3>Smartphones und Pocket-PCs</h3>
+    <p class="normaltext">Bei den Smartphones gibt es unterschiedliche Betriebssysteme</p>    
+    <ul>
+        <li>iPhone OS</li>   
+        <li>Android</li>
+        <li>Windows</li>
+    </ul>
+</html>
