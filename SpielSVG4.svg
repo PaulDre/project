@@ -55,12 +55,24 @@
         </svg>
     </symbol>
     
+    
+    <symbol id="karteOffen">
+        <svg height="13%" width="7%" >
+            <pattern id="image3" patternUnits="userSpaceOnUse" height="100" width="100">
+                <image preserveAspectRatio="none" width= "15" height = "15"
+                    xlink:href="shiba.jpg"
+                />
+            </pattern>
+            <rect  height="100%" width="100%"  fill="url(#image3)" stroke="white" stroke-width="1"/> 
+        </svg>
+    </symbol>
+    
     <!-- Erste Reihe -->
     <use x="20" y="20"  xlink:href="#karteVerdeckt"/>
     <use x="40" y="20"  xlink:href="#karteVerdeckt"/>
     <use x="60" y="20"  xlink:href="#karteVerdeckt"/>
     <use x="80" y="20"  xlink:href="#karteVerdeckt"/>
-    <use x="100" y="20"  xlink:href="#karteVerdeckt"/>
+    <use x="100" y="20"  xlink:href="#karteOffen"/>
     <use x="120" y="20"  xlink:href="#karteVerdeckt"/>
     <use x="140" y="20"  xlink:href="#karteVerdeckt"/>
     <use x="160" y="20"  xlink:href="#karteVerdeckt"/>
@@ -72,7 +84,7 @@
     <use x="60" y="40"  xlink:href="#karteVerdeckt"/>
     <use x="80" y="40"  xlink:href="#karteVerdeckt"/>
     <use x="100" y="40"  xlink:href="#karteVerdeckt"/>
-    <use x="120" y="40"  xlink:href="#karteVerdeckt"/>
+    <use x="120" y="40"  xlink:href="#karteOffen"/>
     <use x="140" y="40"  xlink:href="#karteVerdeckt"/>
     <use x="160" y="40"  xlink:href="#karteVerdeckt"/>
     
