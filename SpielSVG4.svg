@@ -17,7 +17,7 @@
         </pattern>
     </defs>
     <rect id="background" width="100%" height="100%" fill="url(#image2)"/>
-    
+
     <!-- logo -->
     <rect id="logosymbol" x="0" y="5" width="10" height="10" fill="" filter="url(#f1)"
         style="fill-opacity:0.6"/>
@@ -27,7 +27,7 @@
     <use x="30" xlink:href="#logosymbol" fill="green"/>
     <use x="40" xlink:href="#logosymbol" fill="orange"/>
     <use x="50" xlink:href="#logosymbol" fill="pink"/>
-    
+
     <text id="logoschrift" x="1" y="14" font-size="10" fill="darkgrey" font-style="normal"
         style="fill-opacity:0.6">M</text>
     <text x="11" y="14" font-size="10" fill="darkgrey" font-style="normal" style="fill-opacity:0.6">
@@ -40,4 +40,73 @@
         R </text>
     <text x="51" y="14" font-size="10" fill="darkgrey" font-style="normal" style="fill-opacity:0.6">
         Y </text>
+
+
+    <!-- Karten -->
+
+    <symbol id="karteVerdeckt">
+        <svg height="13%" width="7%">
+            <pattern id="image" patternUnits="userSpaceOnUse" height="100" width="100">
+                <image preserveAspectRatio="none" width="25" height="25"
+                    xlink:href="karteVerdeckt.jpg"/>
+            </pattern>
+            <rect height="100%" width="100%" fill="url(#image)" stroke="white" stroke-width="1"/>
+        </svg>
+    </symbol>
+
+
+    <symbol id="karteOffen">
+        <svg height="13%" width="7%">
+            <pattern id="image3" patternUnits="userSpaceOnUse" height="100" width="100">
+                <image preserveAspectRatio="none" width="15" height="15" xlink:href="shiba.jpg"/>
+            </pattern>
+            <rect height="100%" width="100%" fill="url(#image3)" stroke="white" stroke-width="1"/>
+        </svg>
+    </symbol>
+
+    <!-- Erste Reihe -->
+    <use x="20" y="20" xlink:href="#karteVerdeckt"/>
+    <use x="40" y="20" xlink:href="#karteVerdeckt"/>
+    <use x="60" y="20" xlink:href="#karteVerdeckt"/>
+    <use x="80" y="20" xlink:href="#karteVerdeckt"/>
+    <use x="100" y="20" xlink:href="#karteOffen"/>
+    <use x="120" y="20" xlink:href="#karteVerdeckt"/>
+    <use x="140" y="20" xlink:href="#karteVerdeckt"/>
+    <use x="160" y="20" xlink:href="#karteVerdeckt"/>
+
+
+    <!-- Zweite Reihe -->
+    <use x="20" y="40" xlink:href="#karteVerdeckt"/>
+    <use x="40" y="40" xlink:href="#karteVerdeckt"/>
+    <use x="60" y="40" xlink:href="#karteVerdeckt"/>
+    <use x="80" y="40" xlink:href="#karteVerdeckt"/>
+    <use x="100" y="40" xlink:href="#karteVerdeckt"/>
+    <use x="120" y="40" xlink:href="#karteOffen"/>
+    <use x="140" y="40" xlink:href="#karteVerdeckt"/>
+    <use x="160" y="40" xlink:href="#karteVerdeckt"/>
+
+
+    <!-- Dritte Reihe -->
+    <use x="20" y="60" xlink:href="#karteVerdeckt"/>
+    <use x="40" y="60" xlink:href="#karteVerdeckt"/>
+    <use x="60" y="60" xlink:href="#karteVerdeckt"/>
+    <use x="80" y="60" xlink:href="#karteVerdeckt"/>
+    <use x="100" y="60" xlink:href="#karteVerdeckt"/>
+    <use x="120" y="60" xlink:href="#karteVerdeckt"/>
+    <use x="140" y="60" xlink:href="#karteVerdeckt"/>
+    <use x="160" y="60" xlink:href="#karteVerdeckt"/>
+
+
+    <!-- Spielernamen -->
+
+    <text x="10" y="80" fill="white" font-size="5" font-style="italic" alignment-baseline="middle"
+        text-anchor="middle"> Spieler1 </text>
+    <text x="10" y="90" fill="white" font-size="5" font-style="italic" alignment-baseline="middle"
+        text-anchor="middle"> Spieler2 </text>
+
+    <!-- Menue -->
+    <text x="190" y="10" fill="white" font-size="7" font-style="italic" alignment-baseline="middle"
+        text-anchor="middle"> Menü </text>
+
+
 </svg>
