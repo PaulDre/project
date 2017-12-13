@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT Memory (Spieler*,Spielbrett,Spiel,Karte*) >
+<!ELEMENT Spieler (#PCDATA)>
+<!ATTLIST Spieler punkte CDATA #REQUIRED>
+<!ATTLIST Spieler istAnDerReihe CDATA #REQUIRED>
+<!ATTLIST Spieler weiterZiehen CDATA #REQUIRED>
+<!ELEMENT Spielbrett (#PCDATA) >
+<!ATTLIST Spielbrett AnzahlKarten CDATA #REQUIRED>
+<!ELEMENT Spiel (#PCDATA) >
+<!ATTLIST Spiel SpielerAnzahl CDATA #REQUIRED>
+<!ATTLIST Spiel Spielrunde CDATA #REQUIRED>
+<!ATTLIST Spiel Spielstand CDATA #REQUIRED>
+<!ELEMENT Karte (#PCDATA)>
+<!ATTLIST Karte verdeckt CDATA #REQUIRED>
+<!ATTLIST Karte paar CDATA #REQUIRED>
+<!ATTLIST Karte picture CDATA #REQUIRED>
+<!ATTLIST Karte id CDATA #REQUIRED>
+
+

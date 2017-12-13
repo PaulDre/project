@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Memory>
+    
+    <Spieler id ="1" punkte = "0"  istAnDerReihe = "true" weiterZiehen = "true" />
+    <Spieler id ="2" punkte = "0"  istAnDerReihe = "false" weiterZiehen = "false" />
+    <Spielbrett AnzahlKarten = "20" />
+    <Spiel SpielerAnzahl = "2" Spielrunde = "1" Spielstand = "0-0" />
+    <Karte verdeckt ="true" paar = "true" picture = "true" id="1" />
+    <Karte verdeckt ="true" paar = "true" picture = "true" id="2" />
+    <Karte verdeckt ="true" paar = "true" picture = "true" id="3" />
+    <Karte verdeckt ="true" paar = "true" picture = "true" id="4" />
+    <Karte verdeckt ="true" paar = "true" picture = "true" id="5" />
+    <Karte verdeckt ="true" paar = "true" picture = "true" id="6" />
+    <Karte verdeckt ="true" paar = "true" picture = "true" id="7" />
+    <Karte verdeckt ="true" paar = "true" picture = "true" id="8" />
+    <Karte verdeckt ="true" paar = "true" picture = "true" id="9" />
+    <Karte verdeckt ="true" paar = "true" picture = "true" id="10" />
+    <Karte verdeckt ="true" paar = "true" picture = "true" id="11" />
+    <Karte verdeckt ="true" paar = "true" picture = "true" id="12" />
+    <Karte verdeckt ="true" paar = "true" picture = "true" id="13" />
+    <Karte verdeckt ="true" paar = "true" picture = "true" id="14" />
+    <Karte verdeckt ="true" paar = "true" picture = "true" id="15" />
+    <Karte verdeckt ="true" paar = "true" picture = "true" id="16" />
+    <Karte verdeckt ="true" paar = "true" picture = "true" id="17" />
+    <Karte verdeckt ="true" paar = "true" picture = "true" id="18" />
+    <Karte verdeckt ="true" paar = "true" picture = "true" id="19" />
+    <Karte verdeckt ="true" paar = "true" picture = "true" id="20" />
+    
+      
+</Memory>
