@@ -1,19 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!ELEMENT Memory (Spieler*,Spielbrett,Spiel,Karte*) >
+<!-- Spieler-->
 <!ELEMENT Spieler (#PCDATA)>
-<!ATTLIST Spieler punkte CDATA #REQUIRED>
-<!ATTLIST Spieler istAnDerReihe CDATA #REQUIRED>
-<!ATTLIST Spieler weiterZiehen CDATA #REQUIRED>
+<!ATTLIST Spieler id ID #REQUIRED>
+<!ATTLIST Spieler SpielerName CDATA #REQUIRED>
+<!ATTLIST Spieler SpielerPunkte CDATA "0">
+<!ATTLIST Spieler istAnDerReihe CDATA "false">
+<!ATTLIST Spieler weiterZiehen CDATA "false">
+<!-- Spielbrett-->
 <!ELEMENT Spielbrett (#PCDATA) >
-<!ATTLIST Spielbrett AnzahlKarten CDATA #REQUIRED>
-<!ELEMENT Spiel (#PCDATA) >
-<!ATTLIST Spiel SpielerAnzahl CDATA #REQUIRED>
-<!ATTLIST Spiel Spielrunde CDATA #REQUIRED>
-<!ATTLIST Spiel Spielstand CDATA #REQUIRED>
+<!ATTLIST Spielbrett AnzahlKartenAufBrett CDATA #REQUIRED>
+<!-- Spiel -->
+<!ELEMENT Spiel (Spieler+,Spielbrett) >
+<!ATTLIST Spiel AnzahlSpieler CDATA "0">
+<!ATTLIST Spiel Spielrunde CDATA "0">
+<!ATTLIST Spiel AnzahlKartenGesamt CDATA "0">
+<!ATTLIST Spiel AnzahlKartenAufgedecktVomSpieler CDATA "0" >
+<!ATTLIST Spiel AnzahlZeilen CDATA "0" >
+<!ATTLIST Spiel AnzahlSpalten CDATA "0">
+<!--  Karte -->
 <!ELEMENT Karte (#PCDATA)>
-<!ATTLIST Karte verdeckt CDATA #REQUIRED>
-<!ATTLIST Karte paar CDATA #REQUIRED>
-<!ATTLIST Karte picture CDATA #REQUIRED>
-<!ATTLIST Karte id CDATA #REQUIRED>
-
+<!ATTLIST Karte verdeckt CDATA "false">
+<!ATTLIST Karte posX CDATA #REQUIRED >
+<!ATTLIST Karte posY CDATA #REQUIRED >
+<!ATTLIST Karte id ID #REQUIRED>
 
