@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="Blatt2A1.xsl?>
+<?xml-stylesheet type="text/xsl" href="SpielXSLT.xsl?>
 <!DOCTYPE Spiel SYSTEM "Blatt2A1.dtd"> 
 <Spiel Spielrunde="0" AnzahlKartenGesamt="16" AnzahlSpieler="2" AnzahlKartenAufgedecktVomSpieler="0"
     AnzahlZeilen="0" AnzahlSpalten="0">
-    <Spieler SpielerID="Tien" SpielerPunkte="2" istAnDerReihe="true" weiterZiehen="false">
+    <Spieler SpielerID="Tien" SpielerPunkte="2" istAnDerReihe="true" weiterZiehen="false" SpielerNum='1'>
         <Karte posX="4" posY="1">redcircle.svg</Karte>
         <Karte posX="4" posY="3">redcircle.svg</Karte>
         <Karte posX="2" posY="2">blueSqr.svg</Karte>
         <Karte posX="3" posY="4">blueSqr.svg</Karte>
     </Spieler>
-    <Spieler SpielerID="Osman" SpielerPunkte="1" istAnDerReihe="false" weiterZiehen="false">
+    <Spieler SpielerID="Osman" SpielerPunkte="1" istAnDerReihe="false" weiterZiehen="false" SpielerNum='2'>
         <Karte posX="1" posY="1">bluecircle.svg</Karte>
         <Karte posX="1" posY="3">bluecircle.svg</Karte>
     </Spieler>
