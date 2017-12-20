@@ -12,6 +12,7 @@
 <!-- Spieler-->
 <!ELEMENT Spieler (Karte*)>
 <!ATTLIST Spieler SpielerID ID #REQUIRED>
+<!ATTLIST Spieler SpielerNum CDATA #REQUIRED>
 <!ATTLIST Spieler SpielerPunkte CDATA "0">
 <!ATTLIST Spieler istAnDerReihe CDATA "false">
 <!ATTLIST Spieler weiterZiehen CDATA "false">
