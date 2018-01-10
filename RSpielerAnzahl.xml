@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Menu2>
+    <Logo>
+        <id>1</id>
+        <Menutext>
+            Wie viele Spieler seid ihr?
+        </Menutext>
+    </Logo>
+    <pButton>
+        <id>1</id>
+        <id>2</id>
+        <id>3</id>
+        <id>4</id>
+        <id>5</id>
+    </pButton>
+    <backButton>
+        <id>1</id>
+    </backButton>
+   
+</Menu2>
