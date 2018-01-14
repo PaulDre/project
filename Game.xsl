@@ -8,17 +8,18 @@
     <xsl:variable name="button_height" select="100 * $scale"/>
     <xsl:variable name="button_width" select="300 * $scale"/>
     <xsl:variable name="button_y" select="40 * $scale"/>
+   
 
 
 
-
+    <xsl:output method="xml" indent="yes"/>
 
 
 
     <xsl:template match="Menu">
         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
             height="100%" width="100%" viewBox="0 0 200 100">
-            
+
             <!-- Logo -->
             <xsl:if test=".//id = 1">
                 <defs>
@@ -85,13 +86,13 @@
                         text-anchor="middle">High Scores</text>
                 </svg>
             </xsl:if>
-            
+
             <xsl:if test="backButton//id = 1">
                 <svg>
-                    <text x="20" y="90" fill="lightgray" alignment-baseline="middle" text-anchor="middle"
-                        font-size="5" font-style="italic">Quit</text>
-                </svg>  
-            </xsl:if>           
+                    <text x="20" y="90" fill="lightgray" alignment-baseline="middle"
+                        text-anchor="middle" font-size="5" font-style="italic">Quit</text>
+                </svg>
+            </xsl:if>
         </svg>
     </xsl:template>
 
@@ -104,7 +105,7 @@
     <xsl:template match="Menu2">
         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
             height="100%" width="100%" viewBox="0 0 200 100">
-            
+
             <!-- Logo -->
             <xsl:if test=".//id = 1">
                 <defs>
@@ -164,7 +165,7 @@
 
             <xsl:if test="pButton//id = 3">
                 <svg>
-                    <circle  r="8" fill="black" cx="100" cy="55" style="fill-opacity:0.8"/>
+                    <circle r="8" fill="black" cx="100" cy="55" style="fill-opacity:0.8"/>
                     <text x="97" y="58" fill="white" font-size="10" font-style="italic"
                         font-weight="bold"> 4 </text>
                 </svg>
@@ -172,7 +173,7 @@
 
             <xsl:if test="pButton//id = 4">
                 <svg>
-                    <circle  r="8" fill="black" cx="135" cy="55" style="fill-opacity:0.8"/>
+                    <circle r="8" fill="black" cx="135" cy="55" style="fill-opacity:0.8"/>
                     <text x="133" y="58" fill="white" font-size="10" font-style="italic"
                         font-weight="bold"> 5 </text>
                 </svg>
@@ -188,26 +189,26 @@
 
 
             <xsl:if test="backButton//id = 1">
-            
+
                 <svg>
-                    <text x="20" y="90" fill="lightgray" alignment-baseline="middle" text-anchor="middle"
-                        font-size="5" font-style="italic">Back</text>
+                    <text x="20" y="90" fill="lightgray" alignment-baseline="middle"
+                        text-anchor="middle" font-size="5" font-style="italic">Back</text>
                 </svg>
-                
-                </xsl:if>
-          </svg>   
+
+            </xsl:if>
+        </svg>
     </xsl:template>
-    
-    
-    
-    
-    
-    
-    
-    <xsl:template match = "Menu3">
+
+
+
+
+
+
+
+    <xsl:template match="Menu3">
         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
             height="100%" width="100%" viewBox="0 0 200 100">
-            
+
             <!-- Logo -->
             <xsl:if test=".//id = 1">
                 <defs>
@@ -240,14 +241,15 @@
                         style="fill-opacity:0.6"> R </text>
                     <text x="51" y="14" font-size="10" fill="darkgrey" font-style="normal"
                         style="fill-opacity:0.6"> Y </text>
-                    
+
                     <!-- Überschrift -->
                     <text x="100" y="28" font-size="8" fill="black" alignment-baseline="middle"
-                        text-anchor="middle" font-weight="bold" letter-spacing="2.5">Bitte Anzahl Karten auswählen! </text>
+                        text-anchor="middle" font-weight="bold" letter-spacing="2.5">Bitte Anzahl
+                        Karten auswählen! </text>
                 </svg>
             </xsl:if>
 
-            <!-- Buttons --> 
+            <!-- Buttons -->
             <xsl:if test="kButton//id = 1">
                 <svg>
                     <circle r="8" fill="black" cx="65" cy="55" style="fill-opacity:0.8"/>
@@ -255,39 +257,39 @@
                         font-weight="bold"> 16 </text>
                 </svg>
             </xsl:if>
-            
+
             <xsl:if test="kButton//id = 2">
                 <svg>
-                    <circle  r="8" fill="black" cx="100" cy="55" style="fill-opacity:0.8"/>
+                    <circle r="8" fill="black" cx="100" cy="55" style="fill-opacity:0.8"/>
                     <text x="95" y="58" fill="white" font-size="10" font-style="italic"
                         font-weight="bold"> 24 </text>
                 </svg>
             </xsl:if>
-            
+
             <xsl:if test="kButton//id = 3">
                 <svg>
-                    <circle  r="8" fill="black" cx="135" cy="55" style="fill-opacity:0.8"/>
+                    <circle r="8" fill="black" cx="135" cy="55" style="fill-opacity:0.8"/>
                     <text x="130" y="58" fill="white" font-size="10" font-style="italic"
                         font-weight="bold"> 32 </text>
                 </svg>
             </xsl:if>
-            
-            <xsl:if test="backButton//id = 1">               
+
+            <xsl:if test="backButton//id = 1">
                 <svg>
-                    <text x="20" y="90" fill="lightgray" alignment-baseline="middle" text-anchor="middle"
-                        font-size="5" font-style="italic">Back</text>
-                </svg>   
+                    <text x="20" y="90" fill="lightgray" alignment-baseline="middle"
+                        text-anchor="middle" font-size="5" font-style="italic">Back</text>
+                </svg>
             </xsl:if>
-        </svg>       
+        </svg>
     </xsl:template>
-    
-    
-    
-    
-    
-    
-    
-    <xsl:template match = "Gamescreen">
+
+
+
+
+
+
+
+    <xsl:template match="Gamescreen">
         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
             height="100%" width="100%" viewBox="0 0 200 100">
             <!-- Logo -->
@@ -324,80 +326,43 @@
                         style="fill-opacity:0.6"> Y </text>
                 </svg>
             </xsl:if>
+
+
+
+            <!-- Spieler -->
+
+        
             
-            <xsl:if test="Card//id=1">
-                <!-- Karten -->
+            <xsl:for-each select="Players/Player">
                 
-                <symbol id="karteVerdeckt">
-                    <svg height="13%" width="7%">
-                        <pattern id="image" patternUnits="userSpaceOnUse" height="100" width="100">
-                            <image preserveAspectRatio="none" width="25" height="25"
-                                xlink:href="karteVerdeckt.jpg"/>
-                        </pattern>
-                        <rect height="100%" width="100%" fill="url(#image)" stroke="white" stroke-width="1"/>
+                <xsl:if test="Active = 1">
+                    <xsl:variable select="XCoordinate" name="x" />
+                    <xsl:variable select="YCoordinate" name="y" />
+                  
+                    <svg>
+                      
+                        <rect x="{$x}" y="{$y}" width="16" height="10" fill="gray"/>
+                        <text x="{$x+3}" y="{$y+3}" font-size="3"> <xsl:value-of select="Nickname/text()"/></text>
+                        <text x="{$x+3}" y="{$y+8}" font-size="3">Score:</text>
+                        <text x="{$x+12}" y="{$y+8}" font-size="3"><xsl:value-of select="Points/text()"/></text>
                     </svg>
-                </symbol>
-                
-                
-                <symbol id="karteOffen">
-                    <svg height="13%" width="7%">
-                        <pattern id="image3" patternUnits="userSpaceOnUse" height="100" width="100">
-                            <image preserveAspectRatio="none" width="15" height="15" xlink:href="shiba.jpg"/>
-                        </pattern>
-                        <rect height="100%" width="100%" fill="url(#image3)" stroke="white" stroke-width="1"/>
-                    </svg>
-                </symbol>
-                
-                <!-- Erste Reihe -->
-                <use x="20" y="20" xlink:href="#karteVerdeckt"/>
-                <use x="40" y="20" xlink:href="#karteVerdeckt"/>
-                <use x="60" y="20" xlink:href="#karteVerdeckt"/>
-                <use x="80" y="20" xlink:href="#karteVerdeckt"/>
-                <use x="100" y="20" xlink:href="#karteOffen"/>
-                <use x="120" y="20" xlink:href="#karteVerdeckt"/>
-                <use x="140" y="20" xlink:href="#karteVerdeckt"/>
-                <use x="160" y="20" xlink:href="#karteVerdeckt"/>
-                
-                
-                <!-- Zweite Reihe -->
-                <use x="20" y="40" xlink:href="#karteVerdeckt"/>
-                <use x="40" y="40" xlink:href="#karteVerdeckt"/>
-                <use x="60" y="40" xlink:href="#karteVerdeckt"/>
-                <use x="80" y="40" xlink:href="#karteVerdeckt"/>
-                <use x="100" y="40" xlink:href="#karteVerdeckt"/>
-                <use x="120" y="40" xlink:href="#karteOffen"/>
-                <use x="140" y="40" xlink:href="#karteVerdeckt"/>
-                <use x="160" y="40" xlink:href="#karteVerdeckt"/>
-                
-                
-                <!-- Dritte Reihe -->
-                <use x="20" y="60" xlink:href="#karteVerdeckt"/>
-                <use x="40" y="60" xlink:href="#karteVerdeckt"/>
-                <use x="60" y="60" xlink:href="#karteVerdeckt"/>
-                <use x="80" y="60" xlink:href="#karteVerdeckt"/>
-                <use x="100" y="60" xlink:href="#karteVerdeckt"/>
-                <use x="120" y="60" xlink:href="#karteVerdeckt"/>
-                <use x="140" y="60" xlink:href="#karteVerdeckt"/>
-                <use x="160" y="60" xlink:href="#karteVerdeckt"/>
-     
-            </xsl:if>
-            
-            
-            
-            
-            
-            
-            
-            <xsl:if test="backButton//id = 1">               
+                </xsl:if>
+            </xsl:for-each>
+
+
+
+            <!-- Button -->
+
+            <xsl:if test="backButton//id = 1">
                 <svg>
-                    <text x="20" y="90" fill="lightgray" alignment-baseline="middle" text-anchor="middle"
-                        font-size="5" font-style="italic">Back</text>
-                </svg>   
+                    <text x="20" y="90" fill="lightgray" alignment-baseline="middle"
+                        text-anchor="middle" font-size="5" font-style="italic">Back</text>
+                </svg>
             </xsl:if>
-                 
-        </svg>  
+
+        </svg>
     </xsl:template>
-    
+
 
 
 
