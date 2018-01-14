@@ -232,38 +232,57 @@
         <Player>
             <id>Player1</id>
             <Nickname>Paul</Nickname>
-            <Turn>true</Turn>
+            <Turn>1</Turn>
             <Points>6</Points>   
-            <Active>true</Active>
+            <Active>1</Active>
+            <XCoordinate>70</XCoordinate>
+            <YCoordinate>5</YCoordinate>
         </Player>
         <Player>
             <id>Player2</id>
             <Nickname>TienW</Nickname>
-            <Turn>false</Turn>
+            <Turn>0</Turn>
             <Points>6</Points>  
-            <Active>true</Active>
+            <Active>1</Active>
+            <XCoordinate>90</XCoordinate>
+            <YCoordinate>5</YCoordinate>
         </Player>
         <Player>
             <id>Player3</id>
             <Nickname>Osman</Nickname>
-            <Turn>false</Turn>
+            <Turn>0</Turn>
             <Points>6</Points>
-            <Active>true</Active>
+            <Active>1</Active>
+            <XCoordinate>110</XCoordinate>
+            <YCoordinate>5</YCoordinate>
         </Player>
         <Player>
             <id>Player4</id>
             <Nickname>TienM</Nickname>
-            <Turn>false</Turn>
+            <Turn>0</Turn>
             <Points>6</Points> 
-            <Active>true</Active>
+            <Active>1</Active>
+            <XCoordinate>130</XCoordinate>
+            <YCoordinate>5</YCoordinate>
         </Player>
         <Player>
             <id>Player5</id>
             <Nickname>Paul2</Nickname>
-            <Turn>false</Turn>
+            <Turn>0</Turn>
             <Points>6</Points> 
-            <Active>false</Active>
-        </Player>       
+            <Active>1</Active>
+            <XCoordinate>150</XCoordinate>
+            <YCoordinate>5</YCoordinate>
+        </Player>
+        <Player>
+            <id>Player6</id>
+            <Nickname>ABCD</Nickname>
+            <Turn>0</Turn>
+            <Points>10</Points> 
+            <Active>1</Active>
+            <XCoordinate>170</XCoordinate>
+            <YCoordinate>5</YCoordinate>
+        </Player> 
     </Players>
 
 
