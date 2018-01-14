@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Menu3>
+    <Logo>
+        <id>1</id>
+        <Menutext> Bitte Anzahl Karten auswählen! </Menutext>
+    </Logo>
+    <kButton>
+        <id>1</id>
+        <id>2</id>
+        <id>3</id>
+    </kButton>
+    <backButton>
+        <id>1</id>
+    </backButton>
+
+
+</Menu3>
