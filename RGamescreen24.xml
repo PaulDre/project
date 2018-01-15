@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Gamescreen>
+    
+    <Cards>
+        <Card> 
+            <id>1</id>
+            <StatusOpen> 0 </StatusOpen>
+            <Visibility> 1 </Visibility>
+            <XCoordinate>20</XCoordinate>
+            <YCoordinate>20</YCoordinate>
+        </Card>
+        <Card>
+            <id>2</id>
+            <StatusOpen> 1 </StatusOpen>
+            <Visibility> 1 </Visibility>
+            <XCoordinate>40</XCoordinate>
+            <YCoordinate>20</YCoordinate>
+        </Card>
+        <Card>
+            <id>3</id>
+            <StatusOpen> 1 </StatusOpen>
+            <Visibility> 1 </Visibility>
+            <XCoordinate>60</XCoordinate>
+            <YCoordinate>20</YCoordinate>
+        </Card>
+        <Card>
+            <id>4</id>
+            <StatusOpen> 1 </StatusOpen>
+            <Visibility> 1 </Visibility>
+            <XCoordinate>80</XCoordinate>
+            <YCoordinate>20</YCoordinate>
+        </Card>
+        <Card>
+            <id>5</id>
+            <StatusOpen> 0 </StatusOpen>
+            <Visibility> 1 </Visibility>
+            <XCoordinate>100</XCoordinate>
+            <YCoordinate>20</YCoordinate>
+        </Card>
+        <Card>
+            <id>6</id>
+            <StatusOpen> 0 </StatusOpen>
+            <Visibility> 1 </Visibility>
+            <XCoordinate>120</XCoordinate>
+            <YCoordinate>20</YCoordinate>
+        </Card>
+        <Card>
+            <id>7</id>
+            <StatusOpen> 0 </StatusOpen>
+            <Visibility> 1 </Visibility>
+            <XCoordinate>140</XCoordinate>
+            <YCoordinate>20</YCoordinate>
+        </Card>
+        <Card>
+            <id>8</id>
+            <StatusOpen> 0 </StatusOpen>
+            <Visibility> 1 </Visibility>
+            <XCoordinate>160</XCoordinate>
+            <YCoordinate>20</YCoordinate>
+        </Card>
+        <Card>
+            <id>9</id>
+            <StatusOpen> 0 </StatusOpen>
+            <Visibility> 1 </Visibility>
+            <XCoordinate>20</XCoordinate>
+            <YCoordinate>35</YCoordinate>
+        </Card>
+        <Card>
+            <id>10</id>
+            <StatusOpen> 0 </StatusOpen>
+            <Visibility> 1 </Visibility>
+            <XCoordinate>40</XCoordinate>
+            <YCoordinate>35</YCoordinate>
+        </Card>
+        <Card>
+            <id>11</id>
+            <StatusOpen> 0 </StatusOpen>
+            <Visibility> 1 </Visibility>
+            <XCoordinate>60</XCoordinate>
+            <YCoordinate>35</YCoordinate>
+        </Card>
+        <Card>
+            <id>12</id>
+            <StatusOpen> 0 </StatusOpen>
+            <Visibility> 1 </Visibility>
+            <XCoordinate>80</XCoordinate>
+            <YCoordinate>35</YCoordinate>
+        </Card>
+        <Card>
+            <id>13</id>
+            <StatusOpen> 0 </StatusOpen>
+            <Visibility> 1 </Visibility>
+            <XCoordinate>100</XCoordinate>
+            <YCoordinate>35</YCoordinate>
+        </Card>
+        <Card>
+            <id>14</id>
+            <StatusOpen> 0 </StatusOpen>
+            <Visibility> 1 </Visibility>
+            <XCoordinate>120</XCoordinate>
+            <YCoordinate>35</YCoordinate>
+        </Card>
+        <Card>
+            <id>15</id>
+            <StatusOpen> 0 </StatusOpen>
+            <Visibility> 1 </Visibility>
+            <XCoordinate>140</XCoordinate>
+            <YCoordinate>35</YCoordinate>
+        </Card>
+        <Card>
+            <id>16</id>
+            <StatusOpen> 0 </StatusOpen>
+            <Visibility> 1 </Visibility>
+            <XCoordinate>160</XCoordinate>
+            <YCoordinate>35</YCoordinate>
+        </Card>
+        <Card>
+            <id>17</id>
+            <StatusOpen> 0 </StatusOpen>
+            <Visibility> 1 </Visibility>
+            <XCoordinate>20</XCoordinate>
+            <YCoordinate>50</YCoordinate>
+        </Card>
+        <Card>
+            <id>18</id>
+            <StatusOpen> 0 </StatusOpen>
+            <Visibility> 1 </Visibility>
+            <XCoordinate>40</XCoordinate>
+            <YCoordinate>50</YCoordinate>
+        </Card>
+        <Card>
+            <id>19</id>
+            <StatusOpen> 0 </StatusOpen>
+            <Visibility> 1 </Visibility>
+            <XCoordinate>60</XCoordinate>
+            <YCoordinate>50</YCoordinate>
+        </Card>
+        <Card>
+            <id>20</id>
+            <StatusOpen> 0 </StatusOpen>
+            <Visibility> 1 </Visibility>
+            <XCoordinate>80</XCoordinate>
+            <YCoordinate>50</YCoordinate>
+        </Card>
+        <Card>
+            <id>21</id>
+            <StatusOpen> 0 </StatusOpen>
+            <Visibility> 1 </Visibility>
+            <XCoordinate>100</XCoordinate>
+            <YCoordinate>50</YCoordinate>
+        </Card>
+        <Card>
+            <id>22</id>
+            <StatusOpen> 0 </StatusOpen>
+            <Visibility> 1 </Visibility>
+            <XCoordinate>120</XCoordinate>
+            <YCoordinate>50</YCoordinate>
+        </Card>
+        <Card>
+            <id>23</id>
+            <StatusOpen> 0 </StatusOpen>
+            <Visibility> 1 </Visibility>
+            <XCoordinate>140</XCoordinate>
+            <YCoordinate>50</YCoordinate>
+        </Card>
+        <Card>
+            <id>24</id>
+            <StatusOpen> 0 </StatusOpen>
+            <Visibility> 1 </Visibility>
+            <XCoordinate>160</XCoordinate>
+            <YCoordinate>50</YCoordinate>
+        </Card>
+        
+    </Cards>
+    
+    
+    <Players>
+        <Player>
+            <id>Player1</id>
+            <Nickname>Paul</Nickname>
+            <Turn>1</Turn>
+            <Points>6</Points>   
+            <Active>1</Active>
+            <XCoordinate>70</XCoordinate>
+            <YCoordinate>5</YCoordinate>
+        </Player>
+        <Player>
+            <id>Player2</id>
+            <Nickname>TienW</Nickname>
+            <Turn>0</Turn>
+            <Points>6</Points>  
+            <Active>1</Active>
+            <XCoordinate>90</XCoordinate>
+            <YCoordinate>5</YCoordinate>
+        </Player>
+        <Player>
+            <id>Player3</id>
+            <Nickname>Osman</Nickname>
+            <Turn>0</Turn>
+            <Points>6</Points>
+            <Active>1</Active>
+            <XCoordinate>110</XCoordinate>
+            <YCoordinate>5</YCoordinate>
+        </Player>
+        <Player>
+            <id>Player4</id>
+            <Nickname>TienM</Nickname>
+            <Turn>0</Turn>
+            <Points>6</Points> 
+            <Active>1</Active>
+            <XCoordinate>130</XCoordinate>
+            <YCoordinate>5</YCoordinate>
+        </Player>
+        <Player>
+            <id>Player5</id>
+            <Nickname>Paul2</Nickname>
+            <Turn>0</Turn>
+            <Points>6</Points> 
+            <Active>1</Active>
+            <XCoordinate>150</XCoordinate>
+            <YCoordinate>5</YCoordinate>
+        </Player>
+        <Player>
+            <id>Player6</id>
+            <Nickname>ABCD</Nickname>
+            <Turn>0</Turn>
+            <Points>10</Points> 
+            <Active>1</Active>
+            <XCoordinate>170</XCoordinate>
+            <YCoordinate>5</YCoordinate>
+        </Player> 
+    </Players>
+    
+    
+    <backButton>
+        <id>1</id>
+    </backButton>
+    
+    
+</Gamescreen>
