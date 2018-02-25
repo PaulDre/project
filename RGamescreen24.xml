@@ -1,185 +1,329 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Gamescreen>
-    
-    <Cards>
-        <Card> 
+
+<!-- 16 -->
+<Gamescreen2>
+    <Cards24>
+        <Card>
             <id>1</id>
-            <StatusOpen> 0 </StatusOpen>
+            <StatusOpen> 1 </StatusOpen>
             <Visibility> 1 </Visibility>
-            <XCoordinate>20</XCoordinate>
-            <YCoordinate>20</YCoordinate>
+            <XCoordinate>40</XCoordinate>
+            <YCoordinate>25</YCoordinate>
+            <fill>firebrick </fill>
+            <fill1> indianred </fill1>
+            <fill2> darkred </fill2>
+            <fill3> salmon </fill3>
+            <fill4> maroon </fill4>
+            <fill5> orange </fill5>
         </Card>
         <Card>
             <id>2</id>
             <StatusOpen> 1 </StatusOpen>
             <Visibility> 1 </Visibility>
-            <XCoordinate>40</XCoordinate>
-            <YCoordinate>20</YCoordinate>
+            <XCoordinate>60</XCoordinate>
+            <YCoordinate>25</YCoordinate>
+            <fill> firebrick</fill>
+            <fill1> indianred </fill1>
+            <fill2> darkred </fill2>
+            <fill3> salmon </fill3>
+            <fill4> maroon </fill4>
+            <fill5> orange </fill5>
         </Card>
         <Card>
             <id>3</id>
             <StatusOpen> 1 </StatusOpen>
             <Visibility> 1 </Visibility>
-            <XCoordinate>60</XCoordinate>
-            <YCoordinate>20</YCoordinate>
+            <XCoordinate>80</XCoordinate>
+            <YCoordinate>25</YCoordinate>
+            <fill> darkviolet</fill>
+            <fill1> mediumvioletred </fill1>
+            <fill2> plum </fill2>
+            <fill3> hotpink </fill3>
+            <fill4> lightcoral </fill4>
+            <fill5> mediumorchid </fill5>
         </Card>
         <Card>
             <id>4</id>
             <StatusOpen> 1 </StatusOpen>
             <Visibility> 1 </Visibility>
-            <XCoordinate>80</XCoordinate>
-            <YCoordinate>20</YCoordinate>
+            <XCoordinate>100</XCoordinate>
+            <YCoordinate>25</YCoordinate>
+            <fill> darkviolet </fill>
+            <fill1> mediumvioletred </fill1>
+            <fill2> plum </fill2>
+            <fill3> hotpink </fill3>
+            <fill4> lightcoral </fill4>
+            <fill5> mediumorchid </fill5>
         </Card>
         <Card>
             <id>5</id>
-            <StatusOpen> 0 </StatusOpen>
+            <StatusOpen> 1 </StatusOpen>
             <Visibility> 1 </Visibility>
-            <XCoordinate>100</XCoordinate>
-            <YCoordinate>20</YCoordinate>
+            <XCoordinate>120</XCoordinate>
+            <YCoordinate>25</YCoordinate>
+            <fill> fuchsia</fill>
+            <fill1> green </fill1>
+            <fill2> mediumspringgreen </fill2>
+            <fill3> palegreen </fill3>
+            <fill4> yellowgreen </fill4>
+            <fill5> olivedrab </fill5>
         </Card>
         <Card>
             <id>6</id>
-            <StatusOpen> 0 </StatusOpen>
+            <StatusOpen> 1 </StatusOpen>
             <Visibility> 1 </Visibility>
-            <XCoordinate>120</XCoordinate>
-            <YCoordinate>20</YCoordinate>
+            <XCoordinate>140</XCoordinate>
+            <YCoordinate>25</YCoordinate>
+            <fill>fuchsia </fill>
+            <fill1> green </fill1>
+            <fill2> mediumspringgreen </fill2>
+            <fill3> palegreen </fill3>
+            <fill4> yellowgreen </fill4>
+            <fill5> olivedrab </fill5>
         </Card>
         <Card>
             <id>7</id>
-            <StatusOpen> 0 </StatusOpen>
+            <StatusOpen> 1 </StatusOpen>
             <Visibility> 1 </Visibility>
-            <XCoordinate>140</XCoordinate>
-            <YCoordinate>20</YCoordinate>
+            <XCoordinate>40</XCoordinate>
+            <YCoordinate>40</YCoordinate>
+            <fill> forestgreen</fill>
+            <fill1> saddlebrown </fill1>
+            <fill2> peru </fill2>
+            <fill3> maroon </fill3>
+            <fill4> sandybrown </fill4>
+            <fill5> tan </fill5>
         </Card>
         <Card>
             <id>8</id>
-            <StatusOpen> 0 </StatusOpen>
+            <StatusOpen> 1 </StatusOpen>
             <Visibility> 1 </Visibility>
-            <XCoordinate>160</XCoordinate>
-            <YCoordinate>20</YCoordinate>
+            <XCoordinate>60</XCoordinate>
+            <YCoordinate>40</YCoordinate>
+            <fill> forestgreen</fill>
+            <fill1> saddlebrown </fill1>
+            <fill2> peru </fill2>
+            <fill3> maroon </fill3>
+            <fill4> sandybrown </fill4>
+            <fill5> tan </fill5>
         </Card>
         <Card>
             <id>9</id>
-            <StatusOpen> 0 </StatusOpen>
+            <StatusOpen> 1 </StatusOpen>
             <Visibility> 1 </Visibility>
-            <XCoordinate>20</XCoordinate>
-            <YCoordinate>35</YCoordinate>
+            <XCoordinate>80</XCoordinate>
+            <YCoordinate>40</YCoordinate>
+            <fill>salmon </fill>
+            <fill1> lightpink </fill1>
+            <fill2> magenta</fill2>
+            <fill3> mediumvioletred  </fill3>
+            <fill4> orchid </fill4>
+            <fill5> violet </fill5>
         </Card>
         <Card>
             <id>10</id>
-            <StatusOpen> 0 </StatusOpen>
+            <StatusOpen> 1 </StatusOpen>
             <Visibility> 1 </Visibility>
-            <XCoordinate>40</XCoordinate>
-            <YCoordinate>35</YCoordinate>
+            <XCoordinate>100</XCoordinate>
+            <YCoordinate>40</YCoordinate>
+            <fill> salmon</fill>
+            <fill1> lightpink </fill1>
+            <fill2> magenta</fill2>
+            <fill3> mediumvioletred </fill3>
+            <fill4> orchid </fill4>
+            <fill5> violet </fill5>
         </Card>
         <Card>
             <id>11</id>
-            <StatusOpen> 0 </StatusOpen>
+            <StatusOpen> 1 </StatusOpen>
             <Visibility> 1 </Visibility>
-            <XCoordinate>60</XCoordinate>
-            <YCoordinate>35</YCoordinate>
+            <XCoordinate>120</XCoordinate>
+            <YCoordinate>40</YCoordinate>
+            <fill>lightgreen </fill>
+            <fill1> lightblue </fill1>
+            <fill2> purple</fill2>
+            <fill3> lightpink  </fill3>
+            <fill4> thistle </fill4>
+            <fill5> mediumorchid </fill5>
         </Card>
         <Card>
             <id>12</id>
-            <StatusOpen> 0 </StatusOpen>
+            <StatusOpen> 1 </StatusOpen>
             <Visibility> 1 </Visibility>
-            <XCoordinate>80</XCoordinate>
-            <YCoordinate>35</YCoordinate>
+            <XCoordinate>140</XCoordinate>
+            <YCoordinate>40</YCoordinate>
+            <fill> lightgreen</fill>
+            <fill1> lightblue </fill1>
+            <fill2> purple</fill2>
+            <fill3> lightpink  </fill3>
+            <fill4> thistle </fill4>
+            <fill5> mediumorchid </fill5>
         </Card>
         <Card>
             <id>13</id>
-            <StatusOpen> 0 </StatusOpen>
+            <StatusOpen> 1 </StatusOpen>
             <Visibility> 1 </Visibility>
-            <XCoordinate>100</XCoordinate>
-            <YCoordinate>35</YCoordinate>
+            <XCoordinate>40</XCoordinate>
+            <YCoordinate>55</YCoordinate>
+            <fill> royalblue</fill>
+            <fill1> mediumslateblue </fill1>
+            <fill2> lightsteelblue	</fill2>
+            <fill3> steelblue  </fill3>
+            <fill4> powderblue</fill4>
+            <fill5> mediumaquamarine </fill5>
         </Card>
         <Card>
             <id>14</id>
-            <StatusOpen> 0 </StatusOpen>
+            <StatusOpen> 1 </StatusOpen>
             <Visibility> 1 </Visibility>
-            <XCoordinate>120</XCoordinate>
-            <YCoordinate>35</YCoordinate>
+            <XCoordinate>60</XCoordinate>
+            <YCoordinate>55</YCoordinate>
+            <fill>royalblue </fill>
+            <fill1> mediumslateblue </fill1>
+            <fill2> lightsteelblue	</fill2>
+            <fill3> steelblue  </fill3>
+            <fill4> powderblue</fill4>
+            <fill5> mediumaquamarine </fill5>
         </Card>
         <Card>
             <id>15</id>
-            <StatusOpen> 0 </StatusOpen>
+            <StatusOpen> 1 </StatusOpen>
             <Visibility> 1 </Visibility>
-            <XCoordinate>140</XCoordinate>
-            <YCoordinate>35</YCoordinate>
+            <XCoordinate>80</XCoordinate>
+            <YCoordinate>55</YCoordinate>
+            <fill> tomato</fill>
+            <fill1> dodgerblue </fill1>
+            <fill2> slateblue	</fill2>
+            <fill3> lightcyan </fill3>
+            <fill4> darkturquoise</fill4>
+            <fill5> aqua </fill5>
         </Card>
         <Card>
             <id>16</id>
-            <StatusOpen> 0 </StatusOpen>
+            <StatusOpen> 1 </StatusOpen>
             <Visibility> 1 </Visibility>
-            <XCoordinate>160</XCoordinate>
-            <YCoordinate>35</YCoordinate>
+            <XCoordinate>100</XCoordinate>
+            <YCoordinate>55</YCoordinate>
+            <fill>tomato </fill>
+            <fill1> dodgerblue </fill1>
+            <fill2> slateblue	</fill2>
+            <fill3> lightcyan </fill3>
+            <fill4> darkturquoise</fill4>
+            <fill5> aqua </fill5>
         </Card>
         <Card>
             <id>17</id>
-            <StatusOpen> 0 </StatusOpen>
+            <StatusOpen> 1 </StatusOpen>
             <Visibility> 1 </Visibility>
-            <XCoordinate>20</XCoordinate>
-            <YCoordinate>50</YCoordinate>
+            <XCoordinate>120</XCoordinate>
+            <YCoordinate>55</YCoordinate>
+            <fill>steelblue </fill>
+            <fill1> red </fill1>
+            <fill2>lightpink	</fill2>
+            <fill3> plum</fill3>
+            <fill4> indigo</fill4>
+            <fill5> aqua </fill5>
         </Card>
         <Card>
             <id>18</id>
-            <StatusOpen> 0 </StatusOpen>
+            <StatusOpen> 1 </StatusOpen>
+            <Visibility> 1 </Visibility>
+            <XCoordinate>140</XCoordinate>
+            <YCoordinate>55</YCoordinate>
+            <fill>steelblue </fill>
+            <fill1> red </fill1>
+            <fill2>lightpink	</fill2>
+            <fill3> plum</fill3>
+            <fill4> indigo</fill4>
+            <fill5> aqua </fill5>
+        </Card>
+        <Card>        
+           <id>19</id>
+            <StatusOpen> 1 </StatusOpen>
             <Visibility> 1 </Visibility>
             <XCoordinate>40</XCoordinate>
-            <YCoordinate>50</YCoordinate>
-        </Card>
-        <Card>
-            <id>19</id>
-            <StatusOpen> 0 </StatusOpen>
-            <Visibility> 1 </Visibility>
-            <XCoordinate>60</XCoordinate>
-            <YCoordinate>50</YCoordinate>
+            <YCoordinate>70</YCoordinate>
+            <fill>deepskyblue </fill>
+            <fill1> purple </fill1>
+            <fill2>lightpink	</fill2>
+            <fill3> lightgreen</fill3>
+            <fill4>yellow</fill4>
+            <fill5> orange</fill5>
         </Card>
         <Card>
             <id>20</id>
-            <StatusOpen> 0 </StatusOpen>
+            <StatusOpen> 1 </StatusOpen>
             <Visibility> 1 </Visibility>
-            <XCoordinate>80</XCoordinate>
-            <YCoordinate>50</YCoordinate>
+            <XCoordinate>60</XCoordinate>
+            <YCoordinate>70</YCoordinate>
+            <fill> deepskyblue </fill>
+            <fill1> purple </fill1>
+            <fill2>lightpink	</fill2>
+            <fill3> lightgreen</fill3>
+            <fill4>yellow</fill4>
+            <fill5> orange</fill5>
         </Card>
         <Card>
             <id>21</id>
-            <StatusOpen> 0 </StatusOpen>
+            <StatusOpen> 1 </StatusOpen>
             <Visibility> 1 </Visibility>
-            <XCoordinate>100</XCoordinate>
-            <YCoordinate>50</YCoordinate>
+            <XCoordinate>80</XCoordinate>
+            <YCoordinate>70</YCoordinate>
+            <fill>darkorange </fill>
+            <fill1> darkred</fill1>
+            <fill2>orchid	</fill2>
+            <fill3> blue</fill3>
+            <fill4>gray</fill4>
+            <fill5> yellow</fill5>
         </Card>
         <Card>
             <id>22</id>
-            <StatusOpen> 0 </StatusOpen>
+            <StatusOpen> 1 </StatusOpen>
             <Visibility> 1 </Visibility>
-            <XCoordinate>120</XCoordinate>
-            <YCoordinate>50</YCoordinate>
+            <XCoordinate>100</XCoordinate>
+            <YCoordinate>70</YCoordinate>
+            <fill> darkorange </fill> 
+            <fill1> darkred</fill1>
+            <fill2>orchid	</fill2>
+            <fill3> blue</fill3>
+            <fill4>gray</fill4>
+            <fill5> yellow</fill5>
         </Card>
         <Card>
             <id>23</id>
-            <StatusOpen> 0 </StatusOpen>
+            <StatusOpen> 1 </StatusOpen>
             <Visibility> 1 </Visibility>
-            <XCoordinate>140</XCoordinate>
-            <YCoordinate>50</YCoordinate>
+            <XCoordinate>120</XCoordinate>
+            <YCoordinate>70</YCoordinate>
+            <fill> yellow </fill> 
+            <fill1> green</fill1>
+            <fill2>blue	</fill2>
+            <fill3> red</fill3>
+            <fill4>orange</fill4>
+            <fill5> green</fill5>
         </Card>
         <Card>
             <id>24</id>
-            <StatusOpen> 0 </StatusOpen>
+            <StatusOpen> 1 </StatusOpen>
             <Visibility> 1 </Visibility>
-            <XCoordinate>160</XCoordinate>
-            <YCoordinate>50</YCoordinate>
+            <XCoordinate>140</XCoordinate>
+            <YCoordinate>70</YCoordinate>
+            <fill> yellow </fill>
+            <fill1> green</fill1>
+            <fill2>blue	</fill2>
+            <fill3> red</fill3>
+            <fill4>orange</fill4>
+            <fill5> green</fill5>
         </Card>
-        
-    </Cards>
-    
-    
+    </Cards24>
+
+
     <Players>
         <Player>
             <id>Player1</id>
             <Nickname>Paul</Nickname>
             <Turn>1</Turn>
-            <Points>6</Points>   
+            <Points>6</Points>
             <Active>1</Active>
             <XCoordinate>70</XCoordinate>
             <YCoordinate>5</YCoordinate>
@@ -188,7 +332,7 @@
             <id>Player2</id>
             <Nickname>TienW</Nickname>
             <Turn>0</Turn>
-            <Points>6</Points>  
+            <Points>6</Points>
             <Active>1</Active>
             <XCoordinate>90</XCoordinate>
             <YCoordinate>5</YCoordinate>
@@ -206,7 +350,7 @@
             <id>Player4</id>
             <Nickname>TienM</Nickname>
             <Turn>0</Turn>
-            <Points>6</Points> 
+            <Points>6</Points>
             <Active>1</Active>
             <XCoordinate>130</XCoordinate>
             <YCoordinate>5</YCoordinate>
@@ -215,7 +359,7 @@
             <id>Player5</id>
             <Nickname>Paul2</Nickname>
             <Turn>0</Turn>
-            <Points>6</Points> 
+            <Points>6</Points>
             <Active>1</Active>
             <XCoordinate>150</XCoordinate>
             <YCoordinate>5</YCoordinate>
@@ -224,17 +368,17 @@
             <id>Player6</id>
             <Nickname>ABCD</Nickname>
             <Turn>0</Turn>
-            <Points>10</Points> 
+            <Points>10</Points>
             <Active>1</Active>
             <XCoordinate>170</XCoordinate>
             <YCoordinate>5</YCoordinate>
-        </Player> 
+        </Player>
     </Players>
-    
-    
+
+
     <backButton>
         <id>1</id>
     </backButton>
-    
-    
-</Gamescreen>
+
+
+</Gamescreen2>
