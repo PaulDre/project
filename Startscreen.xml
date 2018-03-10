@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="Game.xsl"?>
-<NumberOfPlayerMenu>
+<StartscreenMenu>
     <Logo>
         <id>1</id>
         <Menutext>
-            Wie viele Spieler seid ihr?
+            Willkommen im Spiel !
         </Menutext>
     </Logo>
-    <pButton>
+    <Button>
         <id>1</id>
         <id>2</id>
         <id>3</id>
-        <id>4</id>
-        <id>5</id>
-    </pButton>
+    </Button>
+    
     <backButton>
         <id>1</id>
     </backButton>
     
-</NumberOfPlayerMenu>
+    
+</StartscreenMenu>
