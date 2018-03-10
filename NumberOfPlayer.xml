@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Menu2>
+<?xml-stylesheet type="text/xsl" href="Game.xsl"?>
+<NumberOfPlayerMenu>
     <Logo>
         <id>1</id>
         <Menutext>
@@ -16,5 +17,5 @@
     <backButton>
         <id>1</id>
     </backButton>
-   
-</Menu2>
+    
+</NumberOfPlayerMenu>

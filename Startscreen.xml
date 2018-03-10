@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="RSpiel.xsl"?>
-<Menu>
+<?xml-stylesheet type="text/xsl" href="Game.xsl"?>
+<StartscreenMenu>
     <Logo>
         <id>1</id>
         <Menutext>
@@ -18,4 +18,4 @@
     </backButton>
     
     
-</Menu>
+</StartscreenMenu>

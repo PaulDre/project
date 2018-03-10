@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="Game.xsl"?>
 
-<!-- 16 -->
-<Gamescreen2>
+<Gamescreen24>
     <Cards24>
         <Card>
             <id>1</id>
@@ -381,4 +381,4 @@
     </backButton>
 
 
-</Gamescreen2>
+</Gamescreen24>
