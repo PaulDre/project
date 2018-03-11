@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="RSpiel.xsl"?>
-<Gamescreen3>
+<?xml-stylesheet type="text/xsl" href="Game.xsl"?>
+
+<Gamescreen16>
     <Cards16>
         <Card>
             <id>1</id>
-            <StatusOpen> 1 </StatusOpen>
-            <Visibility> 1 </Visibility>
+            <StatusOpen> true </StatusOpen>
+            <Visibility> true </Visibility>
             <XCoordinate>60</XCoordinate>
             <YCoordinate>25</YCoordinate>
             <fill> red </fill>
@@ -18,8 +19,8 @@
         </Card>
         <Card>
             <id>2</id>
-            <StatusOpen> 1 </StatusOpen>
-            <Visibility> 1 </Visibility>
+            <StatusOpen> true </StatusOpen>
+            <Visibility> true </Visibility>
             <XCoordinate>80</XCoordinate>
             <YCoordinate>25</YCoordinate>
             <fill> red </fill>
@@ -32,8 +33,8 @@
         </Card>
         <Card>
             <id>3</id>
-            <StatusOpen> 1 </StatusOpen>
-            <Visibility> 1 </Visibility>
+            <StatusOpen> true </StatusOpen>
+            <Visibility> true </Visibility>
             <XCoordinate>100</XCoordinate>
             <YCoordinate>25</YCoordinate>
             <fill> pink</fill>
@@ -46,8 +47,8 @@
         </Card>
         <Card>
             <id>4</id>
-            <StatusOpen> 1 </StatusOpen>
-            <Visibility> 1 </Visibility>
+            <StatusOpen> true </StatusOpen>
+            <Visibility> true </Visibility>
             <XCoordinate>120</XCoordinate>
             <YCoordinate>25</YCoordinate>
             <fill> pink </fill>
@@ -292,5 +293,4 @@
     </backButton>
     
     
-</Gamescreen3>
-
+</Gamescreen16>
