@@ -10,10 +10,21 @@ declare variable $c:xslt := doc("Game.xsl");
 
 
 
-
+(:
 declare
 %rest:path("/memory")
 %rest:GET
 function c:start() {
   $c:start
+};
+:)
+
+
+declare
+%rest:path('/memory/transform/{$gameId}')
+%rest:GET
+%output:media-type("text/html")
+function c:transformToHtml($game as xs:string) {
+  let $game := $c:memorydb/Startscreen/
+  return xslt:transform-text($game, $c:xslt)
 };
