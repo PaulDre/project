@@ -20,11 +20,19 @@ function c:start() {
 :)
 
 
+
+(: redirects to the Transformator-URL :)
+declare function c:redirectToTransformator($gameId as xs:string) {
+  let $url := fn:concat("/blackjack/transform/", $gameId)
+  return web:redirect($url)
+};
+
+
 declare
 %rest:path('/memory/transform/{$gameId}')
 %rest:GET
 %output:media-type("text/html")
-function c:transformToHtml($game as xs:string) {
-  let $game := $c:memorydb/Startscreen/
-  return xslt:transform-text($game, $c:xslt)
+function c:transformToHtml($gameId as xs:string) {
+  let $gameId := $c:memorydb/NumberOfPlayer
+  return xslt:transform-text($gameId, $c:xslt)
 };

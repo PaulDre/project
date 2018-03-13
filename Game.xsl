@@ -24,7 +24,7 @@
 
 
     <!--Startscreen-->
-    <xsl:template match="StartscreenMenu">
+    <xsl:template match="Startscreen">
         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
             height="100%" width="100%" viewBox="0 0 200 100">
 
@@ -129,7 +129,7 @@
 
 
     <!-- NumberOfPlayer Menu -->
-    <xsl:template match="NumberOfPlayerMenu">
+    <xsl:template match="NumberOfPlayer">
         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
             height="100%" width="100%" viewBox="0 0 200 100">
 
@@ -251,7 +251,7 @@
 
 
     <!-- NumberOfCards Menu -->
-    <xsl:template match="Menu3">
+    <xsl:template match="NumberOfCards">
         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
             height="100%" width="100%" viewBox="0 0 200 100">
 
