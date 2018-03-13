@@ -23,7 +23,7 @@ function c:start() {
 
 (: redirects to the Transformator-URL :)
 declare function c:redirectToTransformator($gameId as xs:string) {
-  let $url := fn:concat("/blackjack/transform/", $gameId)
+  let $url := fn:concat("/memory/transform/", $gameId)
   return web:redirect($url)
 };
 
@@ -33,6 +33,7 @@ declare
 %rest:GET
 %output:media-type("text/html")
 function c:transformToHtml($gameId as xs:string) {
-  let $gameId := $c:memorydb/NumberOfPlayer
-  return xslt:transform-text($gameId, $c:xslt)
+  let $game2 := fn:concat($gameId, ".xml")
+  let $game := $c:memorydb/doc($game2)
+  return xslt:transform-text($game, $c:xslt)
 };
