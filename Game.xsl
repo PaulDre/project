@@ -70,7 +70,7 @@
 
             <!-- Button "New Game" -->
             <xsl:if test="Button//id = 1">
-                <a xlink:href="NumberOfPlayer.xml">
+                <a xlink:href="/memory/transform/NumberOfPlayer">
                     <svg>
                         <rect x="75" y="{$button_y}" rx="20" ry="20" width="50" height="10"
                             fill="gray"/>
@@ -82,7 +82,7 @@
 
             <!-- Button "Load Game" -->
             <xsl:if test="Button//id = 2">
-                <a xlink:href="Startscreen.xml">
+                <a xlink:href="/memory/transform/Startscreen">
                     <svg>
                         <rect x="75" y="{$button_y+15}" rx="20" ry="20" width="50" height="10"
                             fill="gray"/>
@@ -94,7 +94,7 @@
 
             <!-- Button "High Scores" -->
             <xsl:if test="Button//id = 3">
-                <a xlink:href="Startscreen.xml">
+                <a xlink:href="/memory/transform/Startscreen">
                     <svg>
                         <rect x="75" y="{$button_y+30}" rx="20" ry="20" width="50" height="10"
                             fill="gray"/>
@@ -106,7 +106,7 @@
 
             <!-- Button "Quit" -->
             <xsl:if test="backButton//id = 1">
-                <a xlink:href="Startscreen.xml">
+                <a xlink:href="/memory/transform/Startscreen">
                     <svg>
                         <text x="20" y="90" fill="lightgray" alignment-baseline="middle"
                             text-anchor="middle" font-size="5" font-style="italic">Quit</text>
@@ -175,7 +175,7 @@
 
             <!-- Buttons "1, 2, 3, 4, 5, 6" -->
             <xsl:if test="pButton//id = 1">
-                <a xlink:href="NumberOfCards.xml">
+                <a xlink:href="/memory/transform/NumberOfCards">
                     <svg>
                         <circle r="8" fill="black" cx="30" cy="55" style="fill-opacity:0.8"/>
                         <text x="28" y="58" fill="white" font-size="10" font-style="italic"
@@ -185,7 +185,7 @@
             </xsl:if>
 
             <xsl:if test="pButton//id = 2">
-                <a xlink:href="NumberOfCards.xml">
+                <a xlink:href="/memory/transform/NumberOfCards">
                     <svg>
                         <circle r="8" fill="black" cx="65" cy="55" style="fill-opacity:0.8"/>
                         <text x="63" y="58" fill="white" font-size="10" font-style="italic"
@@ -195,7 +195,7 @@
             </xsl:if>
 
             <xsl:if test="pButton//id = 3">
-                <a xlink:href="NumberOfCards.xml">
+                <a xlink:href="/memory/transform/NumberOfCards">
                     <svg>
                         <circle r="8" fill="black" cx="100" cy="55" style="fill-opacity:0.8"/>
                         <text x="97" y="58" fill="white" font-size="10" font-style="italic"
@@ -205,7 +205,7 @@
             </xsl:if>
 
             <xsl:if test="pButton//id = 4">
-                <a xlink:href="NumberOfCards.xml">
+                <a xlink:href="/memory/transform/NumberOfCards">
                     <svg>
                         <circle r="8" fill="black" cx="135" cy="55" style="fill-opacity:0.8"/>
                         <text x="133" y="58" fill="white" font-size="10" font-style="italic"
@@ -215,7 +215,7 @@
             </xsl:if>
 
             <xsl:if test="pButton//id = 5">
-                <a xlink:href="NumberOfCards.xml">
+                <a xlink:href="/memory/transform/NumberOfCards">
                     <svg>
                         <circle r="8" fill="black" cx="170" cy="55" style="fill-opacity:0.8"/>
                         <text x="167" y="58" fill="white" font-size="10" font-style="italic"
@@ -226,7 +226,7 @@
 
             <!-- Button "back" -->
             <xsl:if test="backButton//id = 1">
-                <a xlink:href="Startscreen.xml">
+                <a xlink:href="/memory/transform/Startscreen">
                     <svg>
                         <text x="20" y="90" fill="lightgray" alignment-baseline="middle"
                             text-anchor="middle" font-size="5" font-style="italic">Back</text>
@@ -297,7 +297,7 @@
 
             <!-- Buttons "16, 24, 32" -->
             <xsl:if test="kButton//id = 1">
-                <a xlink:href="Gamescreen16.xml">
+                <a xlink:href="/memory/transform/Gamescreen16">
                     <svg>
                         <circle r="8" fill="black" cx="65" cy="55" style="fill-opacity:0.8"/>
                         <text x="60" y="58" fill="white" font-size="10" font-style="italic"
@@ -307,7 +307,7 @@
             </xsl:if>
 
             <xsl:if test="kButton//id = 2">
-                <a xlink:href="Gamescreen24.xml">
+                <a xlink:href="/memory/transform/Gamescreen24">
                     <svg>
                         <circle r="8" fill="black" cx="100" cy="55" style="fill-opacity:0.8"/>
                         <text x="95" y="58" fill="white" font-size="10" font-style="italic"
@@ -317,7 +317,7 @@
             </xsl:if>
 
             <xsl:if test="kButton//id = 3">
-                <a xlink:href="Gamescreen32.xml">
+                <a xlink:href="/memory/transform/Gamescreen32">
                     <svg>
                         <circle r="8" fill="black" cx="135" cy="55" style="fill-opacity:0.8"/>
                         <text x="130" y="58" fill="white" font-size="10" font-style="italic"
@@ -328,7 +328,7 @@
 
             <!-- Button "back" -->
             <xsl:if test="backButton//id = 1">
-                <a xlink:href="NumberOfPlayer.xml">
+                <a xlink:href="/memory/transform/NumberOfPlayer">
                     <svg>
                         <text x="20" y="90" fill="lightgray" alignment-baseline="middle"
                             text-anchor="middle" font-size="5" font-style="italic">Back</text>
@@ -402,7 +402,7 @@
                             <xsl:variable select="fillinnerinner" name="fillcard3"/>
                             <xsl:variable select="fillinner2" name="fillcard4"/>
                             <xsl:variable select="fillcorner" name="fillcard5"/>
-                            <a xlink:href="Gamescreen32.xml">
+                            <a xlink:href="/memory/transform/Gamescreen32">
                                 <svg>
                                     <rect x="{$x}" y="{$y}" width="12" height="12"
                                         fill="{$fillcard}" stroke="black" stroke-width="0.5"/>
@@ -459,7 +459,7 @@
             </xsl:for-each>
             <!-- Button "Back" -->
             <xsl:if test="backButton//id = 1">
-                <a href="NumberOfCards.xml">
+                <a href="/memory/transform/NumberOfCards">
                     <svg>
                         <text x="20" y="90" fill="lightgray" alignment-baseline="middle"
                             text-anchor="middle" font-size="5" font-style="italic">Back</text>
@@ -534,7 +534,7 @@
                             <xsl:variable select="fill3" name="fillcard3"/>
                             <xsl:variable select="fill4" name="fillcard4"/>
                             <xsl:variable select="fill5" name="fillcard5"/>
-                            <a xlink:href="Gamescreen24.xml">
+                            <a xlink:href="/memory/transform/Gamescreen24">
                                 <svg>
                                     <rect x="{$x}" y="{$y}" width="12" height="12"
                                         fill="{$fillcard}" stroke="black" stroke-width="0.5"/>
@@ -599,7 +599,7 @@
             </xsl:for-each>
             <!-- Button "Back" -->
             <xsl:if test="backButton//id = 1">
-                <a xlink:href="NumberOfCards.xml">
+                <a xlink:href="/memory/transform/NumberOfCards">
                     <svg>
                         <text x="20" y="90" fill="lightgray" alignment-baseline="middle"
                             text-anchor="middle" font-size="5" font-style="italic">Back</text>
@@ -670,6 +670,7 @@
                             <xsl:variable select="YCoordinate" name="y"/>
 
                             <xsl:if test="id = 1">
+                                <a xlink:href="/Card/id1">
                                 <g>
                                     <rect x="{$x}" y="{$y}" width="12" height="12" fill="red"
                                         stroke="black" stroke-width="0.5"/>
@@ -680,6 +681,7 @@
                                     <circle cx="{$x+6}" cy="{$y+6}" r="2" fill="orange"/>
                                     <circle cx="{$x+6}" cy="{$y+6}" r="1" fill="firebrick"/>
                                 </g>
+                                </a>
                             </xsl:if>
                             <xsl:if test="id = 2">
                                 <g>
@@ -906,7 +908,7 @@
             </xsl:for-each>
             <!-- Button "Back" -->
             <xsl:if test="backButton//id = 1">
-                <a xlink:href="NumberOfCards.xml">
+                <a xlink:href="/memory/transform/NumberOfCards">
                     <svg>
                         <text x="20" y="90" fill="lightgray" alignment-baseline="middle"
                             text-anchor="middle" font-size="5" font-style="italic">Back</text>
