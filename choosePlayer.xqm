@@ -1,13 +1,12 @@
 xquery version "3.0"  encoding "UTF-8";
 
-module namespace p = "memory/numberOfPlayer";
+module namespace p = "memory/choosePlayer";
 import module namespace m = "memory/main" at "main.xqm";
 
-(: open database blackjack, locate resource within database and navigate to its top element :)
-declare variable $p:casino := db:open("blackjack")/casino;
+
 
 (: Gamescreen with 2 Player :)
-declare function p:numberOfPlayer2($Nickname as xs:string, $turn as xs:boolean, $points as xs:integer, $active as xs:boolean) as element(player2) {
+declare function p:numberOfPlayer2($Nickname as xs:string, $turn as xs:boolean, $points as xs:integer) as element(player2) {
   
   return
         <Player>
@@ -30,7 +29,7 @@ declare function p:numberOfPlayer2($Nickname as xs:string, $turn as xs:boolean, 
 
 
 (: Gamescreen with 3 Player :)
-declare function p:numberOfPlayer3($Nickname as xs:string, $turn as xs:boolean, $points as xs:integer, $active as xs:boolean) as element(player3) {
+declare function p:numberOfPlayer3($Nickname as xs:string, $turn as xs:boolean, $points as xs:integer) as element(player3) {
   
   return
         <Player>
@@ -46,7 +45,6 @@ declare function p:numberOfPlayer3($Nickname as xs:string, $turn as xs:boolean, 
             <Nickname>{$Nickname}</Nickname>
             <Turn>{$turn}</Turn>
             <Points>{$points}</Points>
-            <Active>{$active}</Active>
             <XCoordinate>90</XCoordinate>
             <YCoordinate>5</YCoordinate>
         </Player>
@@ -62,7 +60,7 @@ declare function p:numberOfPlayer3($Nickname as xs:string, $turn as xs:boolean, 
 
 
 (: Gamescreen with 4 Player :)
-declare function p:numberOfPlayer4($Nickname as xs:string, $turn as xs:boolean, $points as xs:integer, $active as xs:boolean) as element(player4) {
+declare function p:numberOfPlayer4($Nickname as xs:string, $turn as xs:boolean, $points as xs:integer) as element(player4) {
   
   return
         <Player>
@@ -101,7 +99,7 @@ declare function p:numberOfPlayer4($Nickname as xs:string, $turn as xs:boolean, 
 
 
 (: Gamescreen with 5 Player :)
-declare function p:numberOfPlayer5($Nickname as xs:string, $turn as xs:boolean, $points as xs:integer, $active as xs:boolean) as element(player5) {
+declare function p:numberOfPlayer5($Nickname as xs:string, $turn as xs:boolean, $points as xs:integer) as element(player5) {
   
   return
         <Player>
@@ -125,7 +123,6 @@ declare function p:numberOfPlayer5($Nickname as xs:string, $turn as xs:boolean, 
             <Nickname>{$Nickname}</Nickname>
             <Turn>{$turn}</Turn>
             <Points>{$points}</Points>
-            <Active>{$active}</Active>
             <XCoordinate>110</XCoordinate>
             <YCoordinate>5</YCoordinate>
         </Player>
@@ -148,7 +145,7 @@ declare function p:numberOfPlayer5($Nickname as xs:string, $turn as xs:boolean, 
 };
 
 (: Gamescreen with 6 Player :)
-declare function p:numberOfPlayer6($Nickname as xs:string, $turn as xs:boolean, $points as xs:integer, $active as xs:boolean) as element(player6) {
+declare function p:numberOfPlayer6($Nickname as xs:string, $turn as xs:boolean, $points as xs:integer) as element(player6) {
   
   return
         <Player>
