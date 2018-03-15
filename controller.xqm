@@ -4,21 +4,17 @@ module namespace c = "memory/controller";
 declare namespace xslt = "http://basex.org/modules/xslt";
 
 
-declare variable $c:start := doc("../Startscreen.xml");
+declare variable $c:start := doc("../memory/Startscreen.html");
 declare variable $c:memorydb := db:open("memory");
 declare variable $c:xslt := doc("Game.xsl");
 
 
-
-(:
 declare
 %rest:path("/memory")
 %rest:GET
 function c:start() {
-  $c:start
+   $c:start
 };
-:)
-
 
 
 (: redirects to the Transformator-URL :)
