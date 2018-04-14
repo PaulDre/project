@@ -1,5 +1,4 @@
 
-
 xquery version "3.0"  encoding "UTF-8";
 
 module namespace c = "memory/controller";
@@ -28,8 +27,25 @@ function c:openCard($cardid as xs:string)
 {
 replace value of node fn:doc("Gamescreen16.xml")/Gamescreen16/Cards16/Card[@id=$cardid]/StatusOpen
 with fn:doc("Gamescreen16.xml")/Gamescreen16/value1,
+replace value of node fn:doc("Gamescreen16.xml")/Gamescreen16/counterOfTurnedCards
+with fn:doc("Gamescreen16.xml")/Gamescreen16/counterOfTurnedCards + 1,
 db:output(c:redirectToTransformator("Gamescreen16"))
 };
+
+
+
+
+
+declare
+%rest:path('/TheNumberOfPlayerIs/{$numberOfPlayerid}')
+function c:chooseNumberOfPlayer($numberOfPlayerid as xs:string)
+{
+replace value of node fn:doc("Gamescreen16.xml")/Gamescreen16/Players/Placer[@id=$numberOfPlayerid]/Active
+with fn:doc("Gamescreen16.xml")/Gamescreen16/value0,  
+db:output(c:redirectToTransformator("NumberOfCards"))
+};
+
+
 
 
 
@@ -51,5 +67,3 @@ function c:transformToHtml($gameId as xs:string) {
   let $game := $c:memorydb/doc($game2)
   return xslt:transform-text($game, $c:xslt)
 };
-
-

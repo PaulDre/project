@@ -128,6 +128,10 @@
 
 
 
+
+
+
+
     <!-- NumberOfPlayer Menu -->
     <xsl:template match="NumberOfPlayer">
         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -175,7 +179,7 @@
 
             <!-- Buttons "1, 2, 3, 4, 5, 6" -->
             <xsl:if test="pButton//id = 1">
-                <a xlink:href="/memory/transform/NumberOfCards">
+                <a xlink:href="/TheNumberOfPlayerIs/2">
                     <svg>
                         <circle r="8" fill="black" cx="30" cy="55" style="fill-opacity:0.8"/>
                         <text x="28" y="58" fill="white" font-size="10" font-style="italic"
@@ -185,7 +189,7 @@
             </xsl:if>
 
             <xsl:if test="pButton//id = 2">
-                <a xlink:href="/memory/transform/NumberOfCards">
+                <a xlink:href="/TheNumberOfPlayerIs/3">
                     <svg>
                         <circle r="8" fill="black" cx="65" cy="55" style="fill-opacity:0.8"/>
                         <text x="63" y="58" fill="white" font-size="10" font-style="italic"
@@ -195,7 +199,7 @@
             </xsl:if>
 
             <xsl:if test="pButton//id = 3">
-                <a xlink:href="/memory/transform/NumberOfCards">
+                <a xlink:href="/TheNumberOfPlayerIs/4">
                     <svg>
                         <circle r="8" fill="black" cx="100" cy="55" style="fill-opacity:0.8"/>
                         <text x="97" y="58" fill="white" font-size="10" font-style="italic"
@@ -205,7 +209,7 @@
             </xsl:if>
 
             <xsl:if test="pButton//id = 4">
-                <a xlink:href="/memory/transform/NumberOfCards">
+                <a xlink:href="/TheNumberOfPlayerIs/5">
                     <svg>
                         <circle r="8" fill="black" cx="135" cy="55" style="fill-opacity:0.8"/>
                         <text x="133" y="58" fill="white" font-size="10" font-style="italic"
@@ -215,7 +219,7 @@
             </xsl:if>
 
             <xsl:if test="pButton//id = 5">
-                <a xlink:href="/memory/transform/NumberOfCards">
+                <a xlink:href="/TheNumberOfPlayerIs/6">
                     <svg>
                         <circle r="8" fill="black" cx="170" cy="55" style="fill-opacity:0.8"/>
                         <text x="167" y="58" fill="white" font-size="10" font-style="italic"
@@ -235,6 +239,12 @@
             </xsl:if>
         </svg>
     </xsl:template>
+
+
+
+
+
+
 
 
 

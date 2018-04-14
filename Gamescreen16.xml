@@ -2,6 +2,7 @@
 <Gamescreen16>
   <value1>1</value1>
   <value0>0</value0>
+  <counterOfTurnedCards>7</counterOfTurnedCards>
   <Cards16>
     <Card id="11">
       <id>1</id>
@@ -116,8 +117,11 @@
       <YCoordinate>70</YCoordinate>
     </Card>
   </Cards16>
+  
+  
+  
   <Players>
-    <Player>
+    <Player id="1">
       <id>Player1</id>
       <Nickname>Paul</Nickname>
       <Turn>1</Turn>
@@ -126,7 +130,7 @@
       <XCoordinate>70</XCoordinate>
       <YCoordinate>5</YCoordinate>
     </Player>
-    <Player>
+    <Player id="2">
       <id>Player2</id>
       <Nickname>TienW</Nickname>
       <Turn>0</Turn>
@@ -135,7 +139,7 @@
       <XCoordinate>90</XCoordinate>
       <YCoordinate>5</YCoordinate>
     </Player>
-    <Player>
+    <Player id="3">
       <id>Player3</id>
       <Nickname>Osman</Nickname>
       <Turn>0</Turn>
@@ -144,7 +148,7 @@
       <XCoordinate>110</XCoordinate>
       <YCoordinate>5</YCoordinate>
     </Player>
-    <Player>
+    <Player id="4">
       <id>Player4</id>
       <Nickname>TienM</Nickname>
       <Turn>0</Turn>
@@ -153,7 +157,7 @@
       <XCoordinate>130</XCoordinate>
       <YCoordinate>5</YCoordinate>
     </Player>
-    <Player>
+    <Player id="5">
       <id>Player5</id>
       <Nickname>Paul2</Nickname>
       <Turn>0</Turn>
@@ -162,7 +166,7 @@
       <XCoordinate>150</XCoordinate>
       <YCoordinate>5</YCoordinate>
     </Player>
-    <Player>
+    <Player id="6">
       <id>Player6</id>
       <Nickname>ABCD</Nickname>
       <Turn>0</Turn>
