@@ -40,8 +40,7 @@ declare
 %rest:path('/TheNumberOfPlayerIs/{$numberOfPlayerid}')
 function c:chooseNumberOfPlayer($numberOfPlayerid as xs:string)
 {
-replace value of node fn:doc("Gamescreen16.xml")/Gamescreen16/Players/Placer[@id=$numberOfPlayerid]/Active
-with fn:doc("Gamescreen16.xml")/Gamescreen16/value0,  
+
 db:output(c:redirectToTransformator("NumberOfCards"))
 };
 
