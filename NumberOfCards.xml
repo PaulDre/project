@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="Game.xsl"?>
-<Menu3>
+<NumberOfCards>
     <Logo>
         <id>1</id>
         <Menutext> Bitte Anzahl Karten auswählen! </Menutext>
@@ -15,4 +15,4 @@
     </backButton>
     
     
-</Menu3>
+</NumberOfCards>
