@@ -43,9 +43,9 @@ else if ($numberOfPlayerid = "4" ) then (
 replace value of node fn:doc("Gamescreen16.xml")/Gamescreen16/insertNode/Players/Player[@id=1]/Active
 with fn:doc("Gamescreen16.xml")/Gamescreen16/insertNode/value1, 
 replace value of node fn:doc("Gamescreen24.xml")/Gamescreen24/insertNode/Players/Player[@id=1]/Active
-with fn:doc("Gamescreen24.xml")/Gamescreen16/insertNode/value1, 
+with fn:doc("Gamescreen16.xml")/Gamescreen16/insertNode/value1,
 replace value of node fn:doc("Gamescreen32.xml")/Gamescreen32/insertNode/Players/Player[@id=1]/Active
-with fn:doc("Gamescreen32.xml")/Gamescreen16/insertNode/value1, 
+with fn:doc("Gamescreen16.xml")/Gamescreen16/insertNode/value1,
 replace value of node fn:doc("Gamescreen16.xml")/Gamescreen16/insertNode/Players/Player[@id=2]/Active
 with fn:doc("Gamescreen16.xml")/Gamescreen16/insertNode/value1,
 replace value of node fn:doc("Gamescreen24.xml")/Gamescreen24/insertNode/Players/Player[@id=2]/Active
