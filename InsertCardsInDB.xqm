@@ -16,6 +16,7 @@ let $list216 := (60,80,100,120,60,80,100,120,60,80,100,120,60,80,100,120)
 let $list316:= (25,25,25,25,40,40,40,40,55,55,55,55,70,70,70,70)
 let $cards16:=
   <insertNode>
+  <value2>2</value2>
    <value1>1</value1>
   <value0>0</value0>
   <counterOfTurnedCards>7</counterOfTurnedCards>
@@ -100,7 +101,7 @@ let $cards16:=
   </backButton>
   
     <statusFoundPairButton>
-    <Found>1</Found>
+    <Found>2</Found>
   </statusFoundPairButton>
   
  </insertNode>
@@ -121,8 +122,9 @@ let $list2 := (40,60,80,100,120,140,40,60,80,100,120,140,40,60,80,100,120,140,40
 let $list3:= (25,25,25,25,25,25,40,40,40,40,40,40,55,55,55,55,55,55,70,70,70,70,70,70)
 let $cards24:=
   <insertNode>
+   <value2>2</value2>
    <value1>1</value1>
-  <value0>0</value0>
+   <value0>0</value0>
   <counterOfTurnedCards>7</counterOfTurnedCards>
 <Cards24>
 {
@@ -205,7 +207,7 @@ let $cards24:=
   </backButton>
   
     <statusFoundPairButton>
-    <Found>1</Found>
+    <Found>2</Found>
   </statusFoundPairButton>  
  </insertNode>
 
@@ -223,6 +225,7 @@ let $list2 := ( 20,40,60,80,100,120,140,160,20,40,60,80,100,120,140,160,20,40,60
 let $list3:= (25,25,25,25,25,25,25,25,40,40,40,40,40,40,40,40,55,55,55,55,55,55,55,55,70,70,70,70,70,70,70,70 )
 let $cards32 :=  
   <insertNode>
+   <value2>2</value2>
    <value1>1</value1>
   <value0>0</value0>
   <counterOfTurnedCards>7</counterOfTurnedCards>
@@ -315,7 +318,7 @@ let $cards32 :=
   </backButton>
   
     <statusFoundPairButton>
-    <Found>1</Found>
+    <Found>2</Found>
   </statusFoundPairButton> 
   
   </insertNode> 

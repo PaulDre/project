@@ -934,6 +934,35 @@
                     </svg>
                 </xsl:if>
             </xsl:for-each>
+            
+            
+            <!-- Gefunden Status-->
+
+
+            <xsl:if test="insertNode/statusFoundPairButton//Found = 1">
+                <a xlink:href="/statusFoundPairButton/Found/16">
+                <svg>
+                    <rect x="50" y="20" width="90" height="70" fill="white" stroke="green" stroke-width="3" style="fill-opacity:0.6"/>
+                    <text x="94" y="40" fill="green" alignment-baseline="middle" text-anchor="middle" font-size="10" font-style="italic">Juhuuuuu</text>
+                    <text x="94" y="48" fill="green" alignment-baseline="middle" text-anchor="middle" font-size="7" font-style="italic">Paar gefunden!</text>
+                    <text x="94" y="56" fill="green" alignment-baseline="middle" text-anchor="middle" font-size="7" font-style="italic">Nächster Zug </text>
+                    <text x="94" y="65" fill="green" alignment-baseline="middle" text-anchor="middle" font-size="4" font-style="italic">Weiter</text>
+                </svg>
+                </a>
+            </xsl:if>
+            <xsl:if test="insertNode/statusFoundPairButton//Found = 0">
+                <a xlink:href="/statusFoundPairButton/Found/16">
+                <svg>
+                    <rect x="50" y="20" width="90" height="70" fill="white" stroke="red" stroke-width="3" style="fill-opacity:0.6"/>
+                    <text x="94" y="40" fill="red" alignment-baseline="middle" text-anchor="middle" font-size="10" font-style="italic">Buuuuuuh</text>
+                    <text x="94" y="48" fill="red" alignment-baseline="middle" text-anchor="middle" font-size="7" font-style="italic">Paar nicht gefunden!</text>
+                    <text x="94" y="56" fill="red" alignment-baseline="middle" text-anchor="middle" font-size="7" font-style="italic">Nächster Spieler </text>
+                    <text x="94" y="65" fill="red" alignment-baseline="middle" text-anchor="middle" font-size="4" font-style="italic">Weiter</text>
+                </svg>
+                </a>
+            </xsl:if>
+            
+            
             <!-- Button "Back" -->
             <xsl:if test="insertNode/backButton//id = 1">
                 <a xlink:href="/go/back/to/Startscreen">
