@@ -411,7 +411,7 @@
                    
                    
                     <xsl:choose>       
-                        <xsl:when test="id = 1 and StatusOpen = 1">
+                        <xsl:when test="@cardid='11' and StatusOpen = 1">
                             <xsl:variable select="XCoordinate" name="x"/>
                             <xsl:variable select="YCoordinate" name="y"/>                            
                                 <g>
@@ -425,7 +425,7 @@
                                     <circle cx="{$x+6}" cy="{$y+6}" r="1" fill="firebrick"/>
                                 </g>
                             </xsl:when>
-                          <xsl:when test="StatusOpen = 0 and id = 1">
+                          <xsl:when test="@cardid='11' and StatusOpen = 0">
                             <xsl:variable select="XCoordinate" name="x"/>
                             <xsl:variable select="YCoordinate" name="y"/>
                               <a xlink:href="/Card/turn/16/11">
@@ -443,7 +443,7 @@
 
                   
 
-                             <xsl:when test="id = 2 and StatusOpen = 1">
+                             <xsl:when test="@cardid='12' and StatusOpen = 1">
                             <xsl:variable select="XCoordinate" name="x"/>
                             <xsl:variable select="YCoordinate" name="y"/>
                                 <g>
@@ -457,7 +457,7 @@
                                     <circle cx="{$x+6}" cy="{$y+6}" r="1" fill="firebrick"/>
                                 </g>
                             </xsl:when>
-                         <xsl:when test="id = 2 and StatusOpen = 0">
+                         <xsl:when test="@cardid='12' and StatusOpen = 0">
                             <xsl:variable select="XCoordinate" name="x"/>
                             <xsl:variable select="YCoordinate" name="y"/>
                              <a xlink:href="/Card/turn/16/12">
@@ -475,7 +475,7 @@
                             
                             
 
-                            <xsl:when test="id = 3 and StatusOpen = 1">
+                            <xsl:when test="@cardid='13' and StatusOpen = 1">
                             <xsl:variable select="XCoordinate" name="x"/>
                             <xsl:variable select="YCoordinate" name="y"/>
                                 <g>
@@ -489,7 +489,7 @@
                                     <circle cx="{$x+6}" cy="{$y+6}" r="1" fill="lightpink"/>
                                 </g>
                             </xsl:when>
-                        <xsl:when test="id = 3 and StatusOpen = 0">
+                        <xsl:when test="@cardid='13' and StatusOpen = 0">
                             <xsl:variable select="XCoordinate" name="x"/>
                             <xsl:variable select="YCoordinate" name="y"/>
                             <a xlink:href="/Card/turn/16/13">
@@ -506,7 +506,7 @@
                             
                             
 
-                            <xsl:when test="id = 4 and StatusOpen = 1">
+                            <xsl:when test="@cardid='14' and StatusOpen = 1">
                             <xsl:variable select="XCoordinate" name="x"/>
                             <xsl:variable select="YCoordinate" name="y"/>            
                                 <g>
@@ -520,7 +520,7 @@
                                     <circle cx="{$x+6}" cy="{$y+6}" r="1" fill="lightpink"/>
                                 </g>
                             </xsl:when>
-                        <xsl:when test="id = 4 and StatusOpen = 0">
+                        <xsl:when test="@cardid='14' and StatusOpen = 0">
                             <xsl:variable select="XCoordinate" name="x"/>
                             <xsl:variable select="YCoordinate" name="y"/>
                             <a xlink:href="/Card/turn/16/14">
@@ -537,7 +537,7 @@
 
                          
 
-                            <xsl:when test="id = 5 and StatusOpen = 1">
+                            <xsl:when test="@cardid='15' and StatusOpen = 1">
                             <xsl:variable select="XCoordinate" name="x"/>
                             <xsl:variable select="YCoordinate" name="y"/>
                                 <g>
@@ -551,7 +551,7 @@
                                     <circle cx="{$x+6}" cy="{$y+6}" r="1" fill="forestgreen"/>
                                 </g>
                             </xsl:when>
-                        <xsl:when test="id = 5 and StatusOpen = 0">
+                        <xsl:when test="@cardid='15' and StatusOpen = 0">
                             <xsl:variable select="XCoordinate" name="x"/>
                             <xsl:variable select="YCoordinate" name="y"/>
                             <a xlink:href="/Card/turn/16/15">
@@ -567,7 +567,7 @@
 
                             
                             
-                            <xsl:when test="id = 6 and StatusOpen = 1">
+                            <xsl:when test="@cardid='16' and StatusOpen = 1">
                             <xsl:variable select="XCoordinate" name="x"/>
                             <xsl:variable select="YCoordinate" name="y"/>
                                 <g>
@@ -581,7 +581,7 @@
                                     <circle cx="{$x+6}" cy="{$y+6}" r="1" fill="forestgreen"/>
                                 </g>
                             </xsl:when>
-                        <xsl:when test="id = 6 and StatusOpen = 0">
+                        <xsl:when test="@cardid='16' and StatusOpen = 0">
                             <xsl:variable select="XCoordinate" name="x"/>
                             <xsl:variable select="YCoordinate" name="y"/>
                             <a xlink:href="/Card/turn/16/16">
@@ -597,7 +597,7 @@
 
                             
                             
-                            <xsl:when test="id = 7 and StatusOpen = 1">
+                            <xsl:when test="@cardid='17' and StatusOpen = 1">
                             <xsl:variable select="XCoordinate" name="x"/>
                             <xsl:variable select="YCoordinate" name="y"/>
                                 <g>
@@ -611,7 +611,7 @@
                                     <circle cx="{$x+6}" cy="{$y+6}" r="1" fill=" orange "/>
                                 </g>
                             </xsl:when>
-                        <xsl:when test="id = 7 and StatusOpen = 0">
+                        <xsl:when test="@cardid='17' and StatusOpen = 0">
                             <xsl:variable select="XCoordinate" name="x"/>
                             <xsl:variable select="YCoordinate" name="y"/>
                             <a xlink:href="/Card/turn/16/17">
@@ -628,7 +628,7 @@
 
                             
                             
-                            <xsl:when test="id = 8 and StatusOpen = 1">
+                            <xsl:when test="@cardid='18' and StatusOpen = 1">
                             <xsl:variable select="XCoordinate" name="x"/>
                             <xsl:variable select="YCoordinate" name="y"/>
                                 <g>
@@ -642,7 +642,7 @@
                                     <circle cx="{$x+6}" cy="{$y+6}" r="1" fill=" orange "/>
                                 </g>
                             </xsl:when>
-                        <xsl:when test="id = 8 and StatusOpen = 0">>
+                        <xsl:when test="@cardid='18' and StatusOpen = 0">>
                             <xsl:variable select="XCoordinate" name="x"/>
                             <xsl:variable select="YCoordinate" name="y"/>
                             <a xlink:href="/Card/turn/16/18">
@@ -658,7 +658,7 @@
 
                             
                             
-                            <xsl:when test="id = 9 and StatusOpen = 1">
+                            <xsl:when test="@cardid='19' and StatusOpen = 1">
                             <xsl:variable select="XCoordinate" name="x"/>
                             <xsl:variable select="YCoordinate" name="y"/>
                                 <g>
@@ -672,7 +672,7 @@
                                     <circle cx="{$x+6}" cy="{$y+6}" r="1" fill="oldlace"/>
                                 </g>
                             </xsl:when>
-                        <xsl:when test="id = 9 and StatusOpen = 0">
+                        <xsl:when test="@cardid='19' and StatusOpen = 0">
                             <xsl:variable select="XCoordinate" name="x"/>
                             <xsl:variable select="YCoordinate" name="y"/>
                             <a xlink:href="/Card/turn/16/19">
@@ -689,7 +689,7 @@
                             
                             
 
-                            <xsl:when test="id = 10 and StatusOpen = 1">
+                            <xsl:when test="@cardid='20' and StatusOpen = 1">
                             <xsl:variable select="XCoordinate" name="x"/>
                             <xsl:variable select="YCoordinate" name="y"/>
                                 <g>
@@ -703,7 +703,7 @@
                                     <circle cx="{$x+6}" cy="{$y+6}" r="1" fill="oldlace"/>
                                 </g>
                             </xsl:when>
-                         <xsl:when test="id = 10 and StatusOpen = 0">
+                         <xsl:when test="@cardid='20' and StatusOpen = 0">
                             <xsl:variable select="XCoordinate" name="x"/>
                             <xsl:variable select="YCoordinate" name="y"/>
                              <a xlink:href="/Card/turn/16/20">
@@ -720,7 +720,7 @@
                             
                             
 
-                             <xsl:when test="id = 11 and StatusOpen = 1">
+                             <xsl:when test="@cardid='21' and StatusOpen = 1">
                             <xsl:variable select="XCoordinate" name="x"/>
                             <xsl:variable select="YCoordinate" name="y"/>
                                 <g>
@@ -734,7 +734,7 @@
                                     <circle cx="{$x+6}" cy="{$y+6}" r="1" fill="pink"/>
                                 </g>
                             </xsl:when>
-                         <xsl:when test="id = 11 and StatusOpen = 0">
+                         <xsl:when test="@cardid='21' and StatusOpen = 0">
                             <xsl:variable select="XCoordinate" name="x"/>
                             <xsl:variable select="YCoordinate" name="y"/>
                              <a xlink:href="/Card/turn/16/21">
@@ -751,7 +751,7 @@
                             
                             
 
-                             <xsl:when test="id = 12 and StatusOpen = 1">
+                             <xsl:when test="@cardid='22' and StatusOpen = 1">
                             <xsl:variable select="XCoordinate" name="x"/>
                             <xsl:variable select="YCoordinate" name="y"/>
                                 <g>
@@ -765,7 +765,7 @@
                                     <circle cx="{$x+6}" cy="{$y+6}" r="1" fill="pink"/>
                                 </g>
                             </xsl:when>
-                         <xsl:when test="id = 12 and StatusOpen = 0">
+                         <xsl:when test="@cardid='22' and StatusOpen = 0">
                             <xsl:variable select="XCoordinate" name="x"/>
                             <xsl:variable select="YCoordinate" name="y"/>
                              <a xlink:href="/Card/turn/16/22">
@@ -782,7 +782,7 @@
                          
                             
 
-                             <xsl:when test="id = 13 and StatusOpen = 1">
+                             <xsl:when test="@cardid='23' and StatusOpen = 1">
                             <xsl:variable select="XCoordinate" name="x"/>
                             <xsl:variable select="YCoordinate" name="y"/>
                                 <g>
@@ -796,7 +796,7 @@
                                     <circle cx="{$x+6}" cy="{$y+6}" r="1" fill="midnightblue"/>
                                 </g>
                             </xsl:when>
-                         <xsl:when test="id = 13 and StatusOpen = 0">
+                         <xsl:when test="@cardid='23' and StatusOpen = 0">
                             <xsl:variable select="XCoordinate" name="x"/>
                             <xsl:variable select="YCoordinate" name="y"/>
                              <a xlink:href="/Card/turn/16/23">
@@ -812,7 +812,7 @@
 
                             
  
-                            <xsl:when test="id = 14 and StatusOpen = 1">
+                            <xsl:when test="@cardid='24' and StatusOpen = 1">
                             <xsl:variable select="XCoordinate" name="x"/>
                             <xsl:variable select="YCoordinate" name="y"/>
                                 <g>
@@ -826,7 +826,7 @@
                                     <circle cx="{$x+6}" cy="{$y+6}" r="1" fill="midnightblue"/>
                                 </g>
                             </xsl:when>
-                         <xsl:when test="id = 14 and StatusOpen = 0">
+                         <xsl:when test="@cardid='24' and StatusOpen = 0">
                             <xsl:variable select="XCoordinate" name="x"/>
                             <xsl:variable select="YCoordinate" name="y"/>
                              <a xlink:href="/Card/turn/16/24">
@@ -842,7 +842,7 @@
                           
                             
 
-                             <xsl:when test="id = 15 and StatusOpen = 1">
+                             <xsl:when test="@cardid='25' and StatusOpen = 1">
                             <xsl:variable select="XCoordinate" name="x"/>
                             <xsl:variable select="YCoordinate" name="y"/>
                                 <g>
@@ -856,7 +856,7 @@
                                     <circle cx="{$x+6}" cy="{$y+6}" r="1" fill="aquamarine"/>
                                 </g>
                             </xsl:when>
-                         <xsl:when test="id = 15 and StatusOpen = 0">
+                         <xsl:when test="@cardid='25' and StatusOpen = 0">
                             <xsl:variable select="XCoordinate" name="x"/>
                             <xsl:variable select="YCoordinate" name="y"/>
                              <a xlink:href="/Card/turn/16/25">
@@ -873,7 +873,7 @@
 
 
 
-                             <xsl:when test="id = 16 and StatusOpen = 1">
+                             <xsl:when test="@cardid='26' and StatusOpen = 1">
                             <xsl:variable select="XCoordinate" name="x"/>
                             <xsl:variable select="YCoordinate" name="y"/>
                                 <g>
@@ -887,7 +887,7 @@
                                     <circle cx="{$x+6}" cy="{$y+6}" r="1" fill="aquamarine"/>
                                 </g>
                         </xsl:when>
-                         <xsl:when test="id = 16 and StatusOpen = 0">
+                         <xsl:when test="@cardid='26' and StatusOpen = 0">
                             <xsl:variable select="XCoordinate" name="x"/>
                             <xsl:variable select="YCoordinate" name="y"/>
                              <a xlink:href="/Card/turn/16/26">
@@ -940,24 +940,24 @@
 
 
             <xsl:if test="insertNode/statusFoundPairButton//Found = 1">
-                <a xlink:href="/statusFoundPairButton/Found/16">
+                <a xlink:href="/popup/Match/continue/16">
                 <svg>
-                    <rect x="50" y="20" width="90" height="70" fill="white" stroke="green" stroke-width="3" style="fill-opacity:0.6"/>
-                    <text x="94" y="40" fill="green" alignment-baseline="middle" text-anchor="middle" font-size="10" font-style="italic">Juhuuuuu</text>
-                    <text x="94" y="48" fill="green" alignment-baseline="middle" text-anchor="middle" font-size="7" font-style="italic">Paar gefunden!</text>
-                    <text x="94" y="56" fill="green" alignment-baseline="middle" text-anchor="middle" font-size="7" font-style="italic">Nächster Zug </text>
-                    <text x="94" y="65" fill="green" alignment-baseline="middle" text-anchor="middle" font-size="4" font-style="italic">Weiter</text>
+                    <rect x="50" y="20" width="90" height="70" fill="white" stroke="green" stroke-width="1" style="fill-opacity:0.8"/>
+           
+                    <text x="94" y="42" fill="green" alignment-baseline="middle" text-anchor="middle" font-size="10" font-style="italic">Match!</text>
+                    <text x="94" y="56" fill="green" alignment-baseline="middle" text-anchor="middle" font-size="10" font-style="italic">Try again! </text>
+                    <text x="94" y="70" fill="green" alignment-baseline="middle" text-anchor="middle" font-size="7" font-style="italic">Continue</text>
                 </svg>
                 </a>
             </xsl:if>
             <xsl:if test="insertNode/statusFoundPairButton//Found = 0">
-                <a xlink:href="/statusFoundPairButton/Found/16">
+                <a xlink:href="/popup/noMatch/continue/16">
                 <svg>
-                    <rect x="50" y="20" width="90" height="70" fill="white" stroke="red" stroke-width="3" style="fill-opacity:0.6"/>
-                    <text x="94" y="40" fill="red" alignment-baseline="middle" text-anchor="middle" font-size="10" font-style="italic">Buuuuuuh</text>
-                    <text x="94" y="48" fill="red" alignment-baseline="middle" text-anchor="middle" font-size="7" font-style="italic">Paar nicht gefunden!</text>
-                    <text x="94" y="56" fill="red" alignment-baseline="middle" text-anchor="middle" font-size="7" font-style="italic">Nächster Spieler </text>
-                    <text x="94" y="65" fill="red" alignment-baseline="middle" text-anchor="middle" font-size="4" font-style="italic">Weiter</text>
+                    <rect x="50" y="20" width="90" height="70" fill="white" stroke="red" stroke-width="1" style="fill-opacity:0.8"/>
+              
+                    <text x="94" y="42" fill="red" alignment-baseline="middle" text-anchor="middle" font-size="10" font-style="italic">No Match!</text>
+                    <text x="94" y="56" fill="red" alignment-baseline="middle" text-anchor="middle" font-size="10" font-style="italic">Next Player </text>
+                    <text x="94" y="70" fill="red" alignment-baseline="middle" text-anchor="middle" font-size="7" font-style="italic">Continue</text>
                 </svg>
                 </a>
             </xsl:if>
@@ -1040,7 +1040,7 @@
                 <xsl:if test="Visibility = 1">
 
                     <xsl:choose>
-                        <xsl:when test="id = 1 and StatusOpen = 1">
+                        <xsl:when test="@cardid='11' and StatusOpen = 1">
                             <xsl:variable select="XCoordinate" name="x"/>
                             <xsl:variable select="YCoordinate" name="y"/>
                             <g>
@@ -1065,7 +1065,7 @@
                                 </svg>
                             </g>
                         </xsl:when>
-                        <xsl:when test="StatusOpen = 0 and id = 1">
+                        <xsl:when test="StatusOpen = 0 and @cardid='11'">
                             <xsl:variable select="XCoordinate" name="x"/>
                             <xsl:variable select="YCoordinate" name="y"/>
                             <a xlink:href="/Card/turn/24/11">
@@ -1082,7 +1082,7 @@
 
 
 
-                        <xsl:when test="id = 2 and StatusOpen = 1">
+                        <xsl:when test="@cardid='12' and StatusOpen = 1">
                             <xsl:variable select="XCoordinate" name="x"/>
                             <xsl:variable select="YCoordinate" name="y"/>
                             <g>
@@ -1107,7 +1107,7 @@
                                 </svg>
                             </g>
                         </xsl:when>
-                        <xsl:when test="StatusOpen = 0 and id = 2">
+                        <xsl:when test="StatusOpen = 0 and @cardid='12'">
                             <xsl:variable select="XCoordinate" name="x"/>
                             <xsl:variable select="YCoordinate" name="y"/>
                             <a xlink:href="/Card/turn/24/12">
@@ -1124,7 +1124,7 @@
 
 
 
-                        <xsl:when test="id = 3 and StatusOpen = 1">
+                        <xsl:when test="@cardid='13' and StatusOpen = 1">
                             <xsl:variable select="XCoordinate" name="x"/>
                             <xsl:variable select="YCoordinate" name="y"/>
                             <g>
@@ -1149,7 +1149,7 @@
                                 </svg>
                             </g>
                         </xsl:when>
-                        <xsl:when test="StatusOpen = 0 and id = 3">
+                        <xsl:when test="StatusOpen = 0 and @cardid='13'">
                             <xsl:variable select="XCoordinate" name="x"/>
                             <xsl:variable select="YCoordinate" name="y"/>
                             <a xlink:href="/Card/turn/24/13">
@@ -1167,7 +1167,7 @@
 
 
 
-                        <xsl:when test="id = 4 and StatusOpen = 1">
+                        <xsl:when test="@cardid='14' and StatusOpen = 1">
                             <xsl:variable select="XCoordinate" name="x"/>
                             <xsl:variable select="YCoordinate" name="y"/>
                             <g>
@@ -1192,7 +1192,7 @@
                                 </svg>
                             </g>
                         </xsl:when>
-                        <xsl:when test="StatusOpen = 0 and id = 4">
+                        <xsl:when test="StatusOpen = 0 and @cardid='14'">
                             <xsl:variable select="XCoordinate" name="x"/>
                             <xsl:variable select="YCoordinate" name="y"/>
                             <a xlink:href="/Card/turn/24/14">
@@ -1210,7 +1210,7 @@
 
 
 
-                        <xsl:when test="id = 5 and StatusOpen = 1">
+                        <xsl:when test="@cardid='15' and StatusOpen = 1">
                             <xsl:variable select="XCoordinate" name="x"/>
                             <xsl:variable select="YCoordinate" name="y"/>
                             <g>
@@ -1235,7 +1235,7 @@
                                 </svg>
                             </g>
                         </xsl:when>
-                        <xsl:when test="StatusOpen = 0 and id = 5">
+                        <xsl:when test="StatusOpen = 0 and @cardid='15'">
                             <xsl:variable select="XCoordinate" name="x"/>
                             <xsl:variable select="YCoordinate" name="y"/>
                             <a xlink:href="/Card/turn/24/15">
@@ -1253,7 +1253,7 @@
 
 
 
-                        <xsl:when test="id = 6 and StatusOpen = 1">
+                        <xsl:when test="@cardid='16' and StatusOpen = 1">
                             <xsl:variable select="XCoordinate" name="x"/>
                             <xsl:variable select="YCoordinate" name="y"/>
                             <g>
@@ -1278,7 +1278,7 @@
                                 </svg>
                             </g>
                         </xsl:when>
-                        <xsl:when test="StatusOpen = 0 and id = 6">
+                        <xsl:when test="StatusOpen = 0 and @cardid='16'">
                             <xsl:variable select="XCoordinate" name="x"/>
                             <xsl:variable select="YCoordinate" name="y"/>
                             <a xlink:href="/Card/turn/24/16">
@@ -1295,7 +1295,7 @@
 
 
 
-                        <xsl:when test="id = 7 and StatusOpen = 1">
+                        <xsl:when test="@cardid='17' and StatusOpen = 1">
                             <xsl:variable select="XCoordinate" name="x"/>
                             <xsl:variable select="YCoordinate" name="y"/>
                             <g>
@@ -1320,7 +1320,7 @@
                                 </svg>
                             </g>
                         </xsl:when>
-                        <xsl:when test="StatusOpen = 0 and id = 7">
+                        <xsl:when test="StatusOpen = 0 and @cardid='17'">
                             <xsl:variable select="XCoordinate" name="x"/>
                             <xsl:variable select="YCoordinate" name="y"/>
                             <a xlink:href="/Card/turn/24/17">
@@ -1338,7 +1338,7 @@
 
 
 
-                        <xsl:when test="id = 8 and StatusOpen = 1">
+                        <xsl:when test="@cardid='18' and StatusOpen = 1">
                             <xsl:variable select="XCoordinate" name="x"/>
                             <xsl:variable select="YCoordinate" name="y"/>
                             <g>
@@ -1363,7 +1363,7 @@
                                 </svg>
                             </g>
                         </xsl:when>
-                        <xsl:when test="StatusOpen = 0 and id = 8">
+                        <xsl:when test="StatusOpen = 0 and @cardid='18'">
                             <xsl:variable select="XCoordinate" name="x"/>
                             <xsl:variable select="YCoordinate" name="y"/>
                             <a xlink:href="/Card/turn/24/18">
@@ -1380,7 +1380,7 @@
 
 
 
-                        <xsl:when test="id = 9 and StatusOpen = 1">
+                        <xsl:when test="@cardid='19' and StatusOpen = 1">
                             <xsl:variable select="XCoordinate" name="x"/>
                             <xsl:variable select="YCoordinate" name="y"/>
                             <g>
@@ -1405,7 +1405,7 @@
                                 </svg>
                             </g>
                         </xsl:when>
-                        <xsl:when test="StatusOpen = 0 and id = 9">
+                        <xsl:when test="StatusOpen = 0 and @cardid='19'">
                             <xsl:variable select="XCoordinate" name="x"/>
                             <xsl:variable select="YCoordinate" name="y"/>
                             <a xlink:href="/Card/turn/24/19">
@@ -1422,7 +1422,7 @@
 
 
 
-                        <xsl:when test="id = 10 and StatusOpen = 1">
+                        <xsl:when test="@cardid='20' and StatusOpen = 1">
                             <xsl:variable select="XCoordinate" name="x"/>
                             <xsl:variable select="YCoordinate" name="y"/>
                             <g>
@@ -1447,7 +1447,7 @@
                                 </svg>
                             </g>
                         </xsl:when>
-                        <xsl:when test="StatusOpen = 0 and id = 10">
+                        <xsl:when test="StatusOpen = 0 and @cardid='20'">
                             <xsl:variable select="XCoordinate" name="x"/>
                             <xsl:variable select="YCoordinate" name="y"/>
                             <a xlink:href="/Card/turn/24/20">
@@ -1466,7 +1466,7 @@
 
 
 
-                        <xsl:when test="id = 11 and StatusOpen = 1">
+                        <xsl:when test="@cardid='21' and StatusOpen = 1">
                             <xsl:variable select="XCoordinate" name="x"/>
                             <xsl:variable select="YCoordinate" name="y"/>
                             <g>
@@ -1491,7 +1491,7 @@
                                 </svg>
                             </g>
                         </xsl:when>
-                        <xsl:when test="StatusOpen = 0 and id = 11">
+                        <xsl:when test="StatusOpen = 0 and @cardid='21'">
                             <xsl:variable select="XCoordinate" name="x"/>
                             <xsl:variable select="YCoordinate" name="y"/>
                             <a xlink:href="/Card/turn/24/21">
@@ -1509,7 +1509,7 @@
 
 
 
-                        <xsl:when test="id = 12 and StatusOpen = 1">
+                        <xsl:when test="@cardid='22' and StatusOpen = 1">
                             <xsl:variable select="XCoordinate" name="x"/>
                             <xsl:variable select="YCoordinate" name="y"/>
                             <g>
@@ -1534,7 +1534,7 @@
                                 </svg>
                             </g>
                         </xsl:when>
-                        <xsl:when test="StatusOpen = 0 and id = 12">
+                        <xsl:when test="StatusOpen = 0 and @cardid='22'">
                             <xsl:variable select="XCoordinate" name="x"/>
                             <xsl:variable select="YCoordinate" name="y"/>
                             <a xlink:href="/Card/turn/24/22">
@@ -1551,7 +1551,7 @@
 
 
 
-                        <xsl:when test="id = 13 and StatusOpen = 1">
+                        <xsl:when test="@cardid='23' and StatusOpen = 1">
                             <xsl:variable select="XCoordinate" name="x"/>
                             <xsl:variable select="YCoordinate" name="y"/>
                             <g>
@@ -1576,7 +1576,7 @@
                                 </svg>
                             </g>
                         </xsl:when>
-                        <xsl:when test="StatusOpen = 0 and id = 13">
+                        <xsl:when test="StatusOpen = 0 and @cardid='23'">
                             <xsl:variable select="XCoordinate" name="x"/>
                             <xsl:variable select="YCoordinate" name="y"/>
                             <a xlink:href="/Card/turn/24/23">
@@ -1594,7 +1594,7 @@
 
 
 
-                        <xsl:when test="id = 14 and StatusOpen = 1">
+                        <xsl:when test="@cardid='24' and StatusOpen = 1">
                             <xsl:variable select="XCoordinate" name="x"/>
                             <xsl:variable select="YCoordinate" name="y"/>
                             <g>
@@ -1619,7 +1619,7 @@
                                 </svg>
                             </g>
                         </xsl:when>
-                        <xsl:when test="StatusOpen = 0 and id = 14">
+                        <xsl:when test="StatusOpen = 0 and @cardid='24'">
                             <xsl:variable select="XCoordinate" name="x"/>
                             <xsl:variable select="YCoordinate" name="y"/>
                             <a xlink:href="/Card/turn/24/24">
@@ -1636,7 +1636,7 @@
 
 
 
-                        <xsl:when test="id = 15 and StatusOpen = 1">
+                        <xsl:when test="@cardid='25' and StatusOpen = 1">
                             <xsl:variable select="XCoordinate" name="x"/>
                             <xsl:variable select="YCoordinate" name="y"/>
                             <g>
@@ -1661,7 +1661,7 @@
                                 </svg>
                             </g>
                         </xsl:when>
-                        <xsl:when test="StatusOpen = 0 and id = 15">
+                        <xsl:when test="StatusOpen = 0 and @cardid='25'">
                             <xsl:variable select="XCoordinate" name="x"/>
                             <xsl:variable select="YCoordinate" name="y"/>
                             <a xlink:href="/Card/turn/24/25">
@@ -1678,7 +1678,7 @@
 
 
 
-                        <xsl:when test="id = 16 and StatusOpen = 1">
+                        <xsl:when test="@cardid='26' and StatusOpen = 1">
                             <xsl:variable select="XCoordinate" name="x"/>
                             <xsl:variable select="YCoordinate" name="y"/>
                             <g>
@@ -1703,7 +1703,7 @@
                                 </svg>
                             </g>
                         </xsl:when>
-                        <xsl:when test="StatusOpen = 0 and id = 16">
+                        <xsl:when test="StatusOpen = 0 and @cardid='26'">
                             <xsl:variable select="XCoordinate" name="x"/>
                             <xsl:variable select="YCoordinate" name="y"/>
                             <a xlink:href="/Card/turn/24/26">
@@ -1722,7 +1722,7 @@
 
 
 
-                        <xsl:when test="id = 17 and StatusOpen = 1">
+                        <xsl:when test="@cardid='27' and StatusOpen = 1">
                             <xsl:variable select="XCoordinate" name="x"/>
                             <xsl:variable select="YCoordinate" name="y"/>
                             <g>
@@ -1747,7 +1747,7 @@
                                 </svg>
                             </g>
                         </xsl:when>
-                        <xsl:when test="StatusOpen = 0 and id = 17">
+                        <xsl:when test="StatusOpen = 0 and @cardid='27'">
                             <xsl:variable select="XCoordinate" name="x"/>
                             <xsl:variable select="YCoordinate" name="y"/>
                             <a xlink:href="/Card/turn/24/27">
@@ -1765,7 +1765,7 @@
 
 
 
-                        <xsl:when test="id = 18 and StatusOpen = 1">
+                        <xsl:when test="@cardid='28' and StatusOpen = 1">
                             <xsl:variable select="XCoordinate" name="x"/>
                             <xsl:variable select="YCoordinate" name="y"/>
                             <g>
@@ -1790,7 +1790,7 @@
                                 </svg>
                             </g>
                         </xsl:when>
-                        <xsl:when test="StatusOpen = 0 and id = 18">
+                        <xsl:when test="StatusOpen = 0 and @cardid='28'">
                             <xsl:variable select="XCoordinate" name="x"/>
                             <xsl:variable select="YCoordinate" name="y"/>
                             <a xlink:href="/Card/turn/24/28">
@@ -1807,7 +1807,7 @@
 
 
 
-                        <xsl:when test="id = 19 and StatusOpen = 1">
+                        <xsl:when test="@cardid='29' and StatusOpen = 1">
                             <xsl:variable select="XCoordinate" name="x"/>
                             <xsl:variable select="YCoordinate" name="y"/>
                             <g>
@@ -1832,7 +1832,7 @@
                                 </svg>
                             </g>
                         </xsl:when>
-                        <xsl:when test="StatusOpen = 0 and id = 19">
+                        <xsl:when test="StatusOpen = 0 and @cardid='29'">
                             <xsl:variable select="XCoordinate" name="x"/>
                             <xsl:variable select="YCoordinate" name="y"/>
                             <a xlink:href="/Card/turn/24/29">
@@ -1851,7 +1851,7 @@
 
 
 
-                        <xsl:when test="id = 20 and StatusOpen = 1">
+                        <xsl:when test="@cardid='30' and StatusOpen = 1">
                             <xsl:variable select="XCoordinate" name="x"/>
                             <xsl:variable select="YCoordinate" name="y"/>
                             <g>
@@ -1876,7 +1876,7 @@
                                 </svg>
                             </g>
                         </xsl:when>
-                        <xsl:when test="StatusOpen = 0 and id = 20">
+                        <xsl:when test="StatusOpen = 0 and @cardid='30'">
                             <xsl:variable select="XCoordinate" name="x"/>
                             <xsl:variable select="YCoordinate" name="y"/>
                             <a xlink:href="/Card/turn/24/30">
@@ -1897,7 +1897,7 @@
 
 
 
-                        <xsl:when test="id = 21 and StatusOpen = 1">
+                        <xsl:when test="@cardid='31' and StatusOpen = 1">
                             <xsl:variable select="XCoordinate" name="x"/>
                             <xsl:variable select="YCoordinate" name="y"/>
                             <g>
@@ -1922,7 +1922,7 @@
                                 </svg>
                             </g>
                         </xsl:when>
-                        <xsl:when test="StatusOpen = 0 and id = 21">
+                        <xsl:when test="StatusOpen = 0 and @cardid='31'">
                             <xsl:variable select="XCoordinate" name="x"/>
                             <xsl:variable select="YCoordinate" name="y"/>
                             <a xlink:href="/Card/turn/24/31">
@@ -1939,7 +1939,7 @@
 
 
 
-                        <xsl:when test="id = 22 and StatusOpen = 1">
+                        <xsl:when test="@cardid='32' and StatusOpen = 1">
                             <xsl:variable select="XCoordinate" name="x"/>
                             <xsl:variable select="YCoordinate" name="y"/>
                             <g>
@@ -1964,7 +1964,7 @@
                                 </svg>
                             </g>
                         </xsl:when>
-                        <xsl:when test="StatusOpen = 0 and id = 22">
+                        <xsl:when test="StatusOpen = 0 and @cardid='32'">
                             <xsl:variable select="XCoordinate" name="x"/>
                             <xsl:variable select="YCoordinate" name="y"/>
                             <a xlink:href="/Card/turn/24/32">
@@ -1981,7 +1981,7 @@
 
 
 
-                        <xsl:when test="id = 23 and StatusOpen = 1">
+                        <xsl:when test="@cardid='33' and StatusOpen = 1">
                             <xsl:variable select="XCoordinate" name="x"/>
                             <xsl:variable select="YCoordinate" name="y"/>
                             <g>
@@ -2006,7 +2006,7 @@
                                 </svg>
                             </g>
                         </xsl:when>
-                        <xsl:when test="StatusOpen = 0 and id = 23">
+                        <xsl:when test="StatusOpen = 0 and @cardid='33'">
                             <xsl:variable select="XCoordinate" name="x"/>
                             <xsl:variable select="YCoordinate" name="y"/>
                             <a xlink:href="/Card/turn/24/33">
@@ -2023,7 +2023,7 @@
 
 
 
-                        <xsl:when test="id = 24 and StatusOpen = 1">
+                        <xsl:when test="@cardid='34' and StatusOpen = 1">
                             <xsl:variable select="XCoordinate" name="x"/>
                             <xsl:variable select="YCoordinate" name="y"/>
                             <g>
@@ -2048,7 +2048,7 @@
                                 </svg>
                             </g>
                         </xsl:when>
-                        <xsl:when test="StatusOpen = 0 and id = 24">
+                        <xsl:when test="StatusOpen = 0 and @cardid='34'">
                             <xsl:variable select="XCoordinate" name="x"/>
                             <xsl:variable select="YCoordinate" name="y"/>
                             <a xlink:href="/Card/turn/24/34">
@@ -2190,7 +2190,7 @@
 
 
                     <xsl:choose>
-                        <xsl:when test="id = 1 and StatusOpen = 1">
+                        <xsl:when test="@cardid='11' and StatusOpen = 1">
                             <xsl:variable select="XCoordinate" name="x"/>
                             <xsl:variable select="YCoordinate" name="y"/>
                             <g>
@@ -2208,7 +2208,7 @@
                                 </svg>
                             </g>
                         </xsl:when>
-                        <xsl:when test="StatusOpen = 0 and id = 1">
+                        <xsl:when test="StatusOpen = 0 and @cardid='11'">
                             <xsl:variable select="XCoordinate" name="x"/>
                             <xsl:variable select="YCoordinate" name="y"/>
                             <a xlink:href="/Card/turn/32/11">
@@ -2226,7 +2226,7 @@
 
 
 
-                        <xsl:when test="id = 2 and StatusOpen = 1">
+                        <xsl:when test="@cardid='12' and StatusOpen = 1">
                             <xsl:variable select="XCoordinate" name="x"/>
                             <xsl:variable select="YCoordinate" name="y"/>
                             <g>
@@ -2244,7 +2244,7 @@
                                 </svg>
                             </g>
                         </xsl:when>
-                        <xsl:when test="StatusOpen = 0 and id = 2">
+                        <xsl:when test="StatusOpen = 0 and @cardid='12'">
                             <xsl:variable select="XCoordinate" name="x"/>
                             <xsl:variable select="YCoordinate" name="y"/>
                             <a xlink:href="/Card/turn/32/12">
@@ -2260,7 +2260,7 @@
 
 
 
-                        <xsl:when test="id = 3 and StatusOpen = 1">
+                        <xsl:when test="@cardid='13' and StatusOpen = 1">
                             <xsl:variable select="XCoordinate" name="x"/>
                             <xsl:variable select="YCoordinate" name="y"/>
                             <g>
@@ -2278,7 +2278,7 @@
                                 </svg>
                             </g>
                         </xsl:when>
-                        <xsl:when test="StatusOpen = 0 and id = 3">
+                        <xsl:when test="StatusOpen = 0 and @cardid='13'">
                             <xsl:variable select="XCoordinate" name="x"/>
                             <xsl:variable select="YCoordinate" name="y"/>
                             <a xlink:href="/Card/turn/32/13">
@@ -2296,7 +2296,7 @@
 
 
 
-                        <xsl:when test="id = 4 and StatusOpen = 1">
+                        <xsl:when test="@cardid='14' and StatusOpen = 1">
                             <xsl:variable select="XCoordinate" name="x"/>
                             <xsl:variable select="YCoordinate" name="y"/>
                             <g>
@@ -2314,7 +2314,7 @@
                                 </svg>
                             </g>
                         </xsl:when>
-                        <xsl:when test="StatusOpen = 0 and id = 4">
+                        <xsl:when test="StatusOpen = 0 and @cardid='14'">
                             <xsl:variable select="XCoordinate" name="x"/>
                             <xsl:variable select="YCoordinate" name="y"/>
                             <a xlink:href="/Card/turn/32/14">
@@ -2329,7 +2329,7 @@
                         </xsl:when>
 
 
-                        <xsl:when test="id = 5 and StatusOpen = 1">
+                        <xsl:when test="@cardid='15' and StatusOpen = 1">
                             <xsl:variable select="XCoordinate" name="x"/>
                             <xsl:variable select="YCoordinate" name="y"/>
                             <g>
@@ -2347,7 +2347,7 @@
                                 </svg>
                             </g>
                         </xsl:when>
-                        <xsl:when test="StatusOpen = 0 and id = 5">
+                        <xsl:when test="StatusOpen = 0 and @cardid='15'">
                             <xsl:variable select="XCoordinate" name="x"/>
                             <xsl:variable select="YCoordinate" name="y"/>
                             <a xlink:href="/Card/turn/32/15">
@@ -2365,7 +2365,7 @@
 
 
 
-                        <xsl:when test="id = 6 and StatusOpen = 1">
+                        <xsl:when test="@cardid='16' and StatusOpen = 1">
                             <xsl:variable select="XCoordinate" name="x"/>
                             <xsl:variable select="YCoordinate" name="y"/>
                             <g>
@@ -2383,7 +2383,7 @@
                                 </svg>
                             </g>
                         </xsl:when>
-                        <xsl:when test="StatusOpen = 0 and id = 6">
+                        <xsl:when test="StatusOpen = 0 and @cardid='16'">
                             <xsl:variable select="XCoordinate" name="x"/>
                             <xsl:variable select="YCoordinate" name="y"/>
                             <a xlink:href="/Card/turn/32/16">
@@ -2403,7 +2403,7 @@
 
 
 
-                        <xsl:when test="id = 7 and StatusOpen = 1">
+                        <xsl:when test="@cardid='17' and StatusOpen = 1">
                             <xsl:variable select="XCoordinate" name="x"/>
                             <xsl:variable select="YCoordinate" name="y"/>
                             <g>
@@ -2421,7 +2421,7 @@
                                 </svg>
                             </g>
                         </xsl:when>
-                        <xsl:when test="StatusOpen = 0 and id = 7">
+                        <xsl:when test="StatusOpen = 0 and @cardid='17'">
                             <xsl:variable select="XCoordinate" name="x"/>
                             <xsl:variable select="YCoordinate" name="y"/>
                             <a xlink:href="/Card/turn/32/17">
@@ -2439,7 +2439,7 @@
 
 
 
-                        <xsl:when test="id = 8 and StatusOpen = 1">
+                        <xsl:when test="@cardid='18' and StatusOpen = 1">
                             <xsl:variable select="XCoordinate" name="x"/>
                             <xsl:variable select="YCoordinate" name="y"/>
                             <g>
@@ -2457,7 +2457,7 @@
                                 </svg>
                             </g>
                         </xsl:when>
-                        <xsl:when test="StatusOpen = 0 and id = 8">
+                        <xsl:when test="StatusOpen = 0 and @cardid='18'">
                             <xsl:variable select="XCoordinate" name="x"/>
                             <xsl:variable select="YCoordinate" name="y"/>
                             <a xlink:href="/Card/turn/32/18">
@@ -2475,7 +2475,7 @@
 
 
 
-                        <xsl:when test="id = 9 and StatusOpen = 1">
+                        <xsl:when test="@cardid='19' and StatusOpen = 1">
                             <xsl:variable select="XCoordinate" name="x"/>
                             <xsl:variable select="YCoordinate" name="y"/>
                             <g>
@@ -2493,7 +2493,7 @@
                                 </svg>
                             </g>
                         </xsl:when>
-                        <xsl:when test="StatusOpen = 0 and id = 9">
+                        <xsl:when test="StatusOpen = 0 and @cardid='19'">
                             <xsl:variable select="XCoordinate" name="x"/>
                             <xsl:variable select="YCoordinate" name="y"/>
                             <a xlink:href="/Card/turn/32/19">
@@ -2509,7 +2509,7 @@
 
 
 
-                        <xsl:when test="id = 10 and StatusOpen = 1">
+                        <xsl:when test="@cardid='20' and StatusOpen = 1">
                             <xsl:variable select="XCoordinate" name="x"/>
                             <xsl:variable select="YCoordinate" name="y"/>
                             <g>
@@ -2527,7 +2527,7 @@
                                 </svg>
                             </g>
                         </xsl:when>
-                        <xsl:when test="StatusOpen = 0 and id = 10">
+                        <xsl:when test="StatusOpen = 0 and @cardid='20'">
                             <xsl:variable select="XCoordinate" name="x"/>
                             <xsl:variable select="YCoordinate" name="y"/>
                             <a xlink:href="/Card/turn/32/20">
@@ -2543,7 +2543,7 @@
 
 
 
-                        <xsl:when test="id = 11 and StatusOpen = 1">
+                        <xsl:when test="@cardid='21' and StatusOpen = 1">
                             <xsl:variable select="XCoordinate" name="x"/>
                             <xsl:variable select="YCoordinate" name="y"/>
                             <g>
@@ -2561,7 +2561,7 @@
                                 </svg>
                             </g>
                         </xsl:when>
-                        <xsl:when test="StatusOpen = 0 and id = 11">
+                        <xsl:when test="StatusOpen = 0 and @cardid='21'">
                             <xsl:variable select="XCoordinate" name="x"/>
                             <xsl:variable select="YCoordinate" name="y"/>
                             <a xlink:href="/Card/turn/32/21">
@@ -2576,7 +2576,7 @@
                         </xsl:when>
 
 
-                        <xsl:when test="id = 12 and StatusOpen = 1">
+                        <xsl:when test="@cardid='22' and StatusOpen = 1">
                             <xsl:variable select="XCoordinate" name="x"/>
                             <xsl:variable select="YCoordinate" name="y"/>
                             <g>
@@ -2594,7 +2594,7 @@
                                 </svg>
                             </g>
                         </xsl:when>
-                        <xsl:when test="StatusOpen = 0 and id = 12">
+                        <xsl:when test="StatusOpen = 0 and @cardid='22'">
                             <xsl:variable select="XCoordinate" name="x"/>
                             <xsl:variable select="YCoordinate" name="y"/>
                             <a xlink:href="/Card/turn/32/22">
@@ -2611,7 +2611,7 @@
 
 
 
-                        <xsl:when test="id = 13 and StatusOpen = 1">
+                        <xsl:when test="@cardid='23' and StatusOpen = 1">
                             <xsl:variable select="XCoordinate" name="x"/>
                             <xsl:variable select="YCoordinate" name="y"/>
                             <g>
@@ -2629,7 +2629,7 @@
                                 </svg>
                             </g>
                         </xsl:when>
-                        <xsl:when test="StatusOpen = 0 and id = 13">
+                        <xsl:when test="StatusOpen = 0 and @cardid='23'">
                             <xsl:variable select="XCoordinate" name="x"/>
                             <xsl:variable select="YCoordinate" name="y"/>
                             <a xlink:href="/Card/turn/32/23">
@@ -2646,7 +2646,7 @@
 
 
 
-                        <xsl:when test="id = 14 and StatusOpen = 1">
+                        <xsl:when test="@cardid='24' and StatusOpen = 1">
                             <xsl:variable select="XCoordinate" name="x"/>
                             <xsl:variable select="YCoordinate" name="y"/>
                             <g>
@@ -2664,7 +2664,7 @@
                                 </svg>
                             </g>
                         </xsl:when>
-                        <xsl:when test="StatusOpen = 0 and id = 14">
+                        <xsl:when test="StatusOpen = 0 and @cardid='24'">
                             <xsl:variable select="XCoordinate" name="x"/>
                             <xsl:variable select="YCoordinate" name="y"/>
                             <a xlink:href="/Card/turn/32/24">
@@ -2679,7 +2679,7 @@
                         </xsl:when>
 
 
-                        <xsl:when test="id = 15 and StatusOpen = 1">
+                        <xsl:when test="@cardid='25' and StatusOpen = 1">
                             <xsl:variable select="XCoordinate" name="x"/>
                             <xsl:variable select="YCoordinate" name="y"/>
                             <g>
@@ -2697,7 +2697,7 @@
                                 </svg>
                             </g>
                         </xsl:when>
-                        <xsl:when test="StatusOpen = 0 and id = 15">
+                        <xsl:when test="StatusOpen = 0 and @cardid='25'">
                             <xsl:variable select="XCoordinate" name="x"/>
                             <xsl:variable select="YCoordinate" name="y"/>
                             <a xlink:href="/Card/turn/32/25">
@@ -2713,7 +2713,7 @@
 
 
 
-                        <xsl:when test="id = 16 and StatusOpen = 1">
+                        <xsl:when test="@cardid='26' and StatusOpen = 1">
                             <xsl:variable select="XCoordinate" name="x"/>
                             <xsl:variable select="YCoordinate" name="y"/>
                             <g>
@@ -2731,7 +2731,7 @@
                                 </svg>
                             </g>
                         </xsl:when>
-                        <xsl:when test="StatusOpen = 0 and id = 16">
+                        <xsl:when test="StatusOpen = 0 and @cardid='26'">
                             <xsl:variable select="XCoordinate" name="x"/>
                             <xsl:variable select="YCoordinate" name="y"/>
                             <a xlink:href="/Card/turn/32/26">
@@ -2746,7 +2746,7 @@
                         </xsl:when>
 
 
-                        <xsl:when test="id = 17 and StatusOpen = 1">
+                        <xsl:when test="@cardid='27' and StatusOpen = 1">
                             <xsl:variable select="XCoordinate" name="x"/>
                             <xsl:variable select="YCoordinate" name="y"/>
                             <g>
@@ -2764,7 +2764,7 @@
                                 </svg>
                             </g>
                         </xsl:when>
-                        <xsl:when test="StatusOpen = 0 and id = 17">
+                        <xsl:when test="StatusOpen = 0 and @cardid='27'">
                             <xsl:variable select="XCoordinate" name="x"/>
                             <xsl:variable select="YCoordinate" name="y"/>
                             <a xlink:href="/Card/turn/32/27">
@@ -2782,7 +2782,7 @@
 
 
 
-                        <xsl:when test="id = 18 and StatusOpen = 1">
+                        <xsl:when test="@cardid='28' and StatusOpen = 1">
                             <xsl:variable select="XCoordinate" name="x"/>
                             <xsl:variable select="YCoordinate" name="y"/>
                             <g>
@@ -2800,7 +2800,7 @@
                                 </svg>
                             </g>
                         </xsl:when>
-                        <xsl:when test="StatusOpen = 0 and id = 18">
+                        <xsl:when test="StatusOpen = 0 and @cardid='28'">
                             <xsl:variable select="XCoordinate" name="x"/>
                             <xsl:variable select="YCoordinate" name="y"/>
                             <a xlink:href="/Card/turn/32/28">
@@ -2816,7 +2816,7 @@
 
 
 
-                        <xsl:when test="id = 19 and StatusOpen = 1">
+                        <xsl:when test="@cardid='29' and StatusOpen = 1">
                             <xsl:variable select="XCoordinate" name="x"/>
                             <xsl:variable select="YCoordinate" name="y"/>
                             <g>
@@ -2834,7 +2834,7 @@
                                 </svg>
                             </g>
                         </xsl:when>
-                        <xsl:when test="StatusOpen = 0 and id = 19">
+                        <xsl:when test="StatusOpen = 0 and @cardid='29'">
                             <xsl:variable select="XCoordinate" name="x"/>
                             <xsl:variable select="YCoordinate" name="y"/>
                             <a xlink:href="/Card/turn/32/29">
@@ -2852,7 +2852,7 @@
 
 
 
-                        <xsl:when test="id = 20 and StatusOpen = 1">
+                        <xsl:when test="@cardid='30' and StatusOpen = 1">
                             <xsl:variable select="XCoordinate" name="x"/>
                             <xsl:variable select="YCoordinate" name="y"/>
                             <g>
@@ -2870,7 +2870,7 @@
                                 </svg>
                             </g>
                         </xsl:when>
-                        <xsl:when test="StatusOpen = 0 and id = 20">
+                        <xsl:when test="StatusOpen = 0 and @cardid='30'">
                             <xsl:variable select="XCoordinate" name="x"/>
                             <xsl:variable select="YCoordinate" name="y"/>
                             <a xlink:href="/Card/turn/32/30">
@@ -2885,7 +2885,7 @@
                         </xsl:when>
 
 
-                        <xsl:when test="id = 21 and StatusOpen = 1">
+                        <xsl:when test="@cardid='31' and StatusOpen = 1">
                             <xsl:variable select="XCoordinate" name="x"/>
                             <xsl:variable select="YCoordinate" name="y"/>
                             <g>
@@ -2903,7 +2903,7 @@
                                 </svg>
                             </g>
                         </xsl:when>
-                        <xsl:when test="StatusOpen = 0 and id = 21">
+                        <xsl:when test="StatusOpen = 0 and @cardid='31'">
                             <xsl:variable select="XCoordinate" name="x"/>
                             <xsl:variable select="YCoordinate" name="y"/>
                             <a xlink:href="/Card/turn/32/31">
@@ -2921,7 +2921,7 @@
 
 
 
-                        <xsl:when test="id = 22 and StatusOpen = 1">
+                        <xsl:when test="@cardid='32' and StatusOpen = 1">
                             <xsl:variable select="XCoordinate" name="x"/>
                             <xsl:variable select="YCoordinate" name="y"/>
                             <g>
@@ -2939,7 +2939,7 @@
                                 </svg>
                             </g>
                         </xsl:when>
-                        <xsl:when test="StatusOpen = 0 and id = 22">
+                        <xsl:when test="StatusOpen = 0 and @cardid='32'">
                             <xsl:variable select="XCoordinate" name="x"/>
                             <xsl:variable select="YCoordinate" name="y"/>
                             <a xlink:href="/Card/turn/32/32">
@@ -2959,7 +2959,7 @@
 
 
 
-                        <xsl:when test="id = 23 and StatusOpen = 1">
+                        <xsl:when test="@cardid='33' and StatusOpen = 1">
                             <xsl:variable select="XCoordinate" name="x"/>
                             <xsl:variable select="YCoordinate" name="y"/>
                             <g>
@@ -2978,7 +2978,7 @@
                                 </svg>
                             </g>
                         </xsl:when>
-                        <xsl:when test="StatusOpen = 0 and id = 23">
+                        <xsl:when test="StatusOpen = 0 and @cardid='33'">
                             <xsl:variable select="XCoordinate" name="x"/>
                             <xsl:variable select="YCoordinate" name="y"/>
                             <a xlink:href="/Card/turn/32/33">
@@ -2996,7 +2996,7 @@
 
 
 
-                        <xsl:when test="id = 24 and StatusOpen = 1">
+                        <xsl:when test="@cardid='34' and StatusOpen = 1">
                             <xsl:variable select="XCoordinate" name="x"/>
                             <xsl:variable select="YCoordinate" name="y"/>
                             <g>
@@ -3015,7 +3015,7 @@
                                 </svg>
                             </g>
                         </xsl:when>
-                        <xsl:when test="StatusOpen = 0 and id = 24">
+                        <xsl:when test="StatusOpen = 0 and @cardid='34'">
                             <xsl:variable select="XCoordinate" name="x"/>
                             <xsl:variable select="YCoordinate" name="y"/>
                             <a xlink:href="/Card/turn/32/34">
@@ -3033,7 +3033,7 @@
 
 
 
-                        <xsl:when test="id = 25 and StatusOpen = 1">
+                        <xsl:when test="@cardid='35' and StatusOpen = 1">
                             <xsl:variable select="XCoordinate" name="x"/>
                             <xsl:variable select="YCoordinate" name="y"/>
                             <g>
@@ -3051,7 +3051,7 @@
                                 </svg>
                             </g>
                         </xsl:when>
-                        <xsl:when test="StatusOpen = 0 and id = 25">
+                        <xsl:when test="StatusOpen = 0 and @cardid='35'">
                             <xsl:variable select="XCoordinate" name="x"/>
                             <xsl:variable select="YCoordinate" name="y"/>
                             <a xlink:href="/Card/turn/32/35">
@@ -3067,7 +3067,7 @@
 
 
 
-                        <xsl:when test="id = 26 and StatusOpen = 1">
+                        <xsl:when test="@cardid='36' and StatusOpen = 1">
                             <xsl:variable select="XCoordinate" name="x"/>
                             <xsl:variable select="YCoordinate" name="y"/>
                             <g>
@@ -3085,7 +3085,7 @@
                                 </svg>
                             </g>
                         </xsl:when>
-                        <xsl:when test="StatusOpen = 0 and id = 26">
+                        <xsl:when test="StatusOpen = 0 and @cardid='36'">
                             <xsl:variable select="XCoordinate" name="x"/>
                             <xsl:variable select="YCoordinate" name="y"/>
                             <a xlink:href="/Card/turn/32/36">
@@ -3101,7 +3101,7 @@
 
 
 
-                        <xsl:when test="id = 27 and StatusOpen = 1">
+                        <xsl:when test="@cardid='37' and StatusOpen = 1">
                             <xsl:variable select="XCoordinate" name="x"/>
                             <xsl:variable select="YCoordinate" name="y"/>
                             <g>
@@ -3119,7 +3119,7 @@
                                 </svg>
                             </g>
                         </xsl:when>
-                        <xsl:when test="StatusOpen = 0 and id = 27">
+                        <xsl:when test="StatusOpen = 0 and @cardid='37'">
                             <xsl:variable select="XCoordinate" name="x"/>
                             <xsl:variable select="YCoordinate" name="y"/>
                             <a xlink:href="/Card/turn/32/37">
@@ -3134,7 +3134,7 @@
                         </xsl:when>
 
 
-                        <xsl:when test="id = 28 and StatusOpen = 1">
+                        <xsl:when test="@cardid='38' and StatusOpen = 1">
                             <xsl:variable select="XCoordinate" name="x"/>
                             <xsl:variable select="YCoordinate" name="y"/>
                             <g>
@@ -3152,7 +3152,7 @@
                                 </svg>
                             </g>
                         </xsl:when>
-                        <xsl:when test="StatusOpen = 0 and id = 28">
+                        <xsl:when test="StatusOpen = 0 and @cardid='38'">
                             <xsl:variable select="XCoordinate" name="x"/>
                             <xsl:variable select="YCoordinate" name="y"/>
                             <a xlink:href="/Card/turn/32/38">
@@ -3169,7 +3169,7 @@
 
 
 
-                        <xsl:when test="id = 29 and StatusOpen = 1">
+                        <xsl:when test="@cardid='39' and StatusOpen = 1">
                             <xsl:variable select="XCoordinate" name="x"/>
                             <xsl:variable select="YCoordinate" name="y"/>
                             <g>
@@ -3188,7 +3188,7 @@
                                 </svg>
                             </g>
                         </xsl:when>
-                        <xsl:when test="StatusOpen = 0 and id = 29">
+                        <xsl:when test="StatusOpen = 0 and @cardid='39'">
                             <xsl:variable select="XCoordinate" name="x"/>
                             <xsl:variable select="YCoordinate" name="y"/>
                             <a xlink:href="/Card/turn/32/39">
@@ -3205,7 +3205,7 @@
 
 
 
-                        <xsl:when test="id = 30 and StatusOpen = 1">
+                        <xsl:when test="@cardid='40' and StatusOpen = 1">
                             <xsl:variable select="XCoordinate" name="x"/>
                             <xsl:variable select="YCoordinate" name="y"/>
                             <g>
@@ -3224,7 +3224,7 @@
                                 </svg>
                             </g>
                         </xsl:when>
-                        <xsl:when test="StatusOpen = 0 and id = 30">
+                        <xsl:when test="StatusOpen = 0 and @cardid='40'">
                             <xsl:variable select="XCoordinate" name="x"/>
                             <xsl:variable select="YCoordinate" name="y"/>
                             <a xlink:href="/Card/turn/32/40">
@@ -3239,7 +3239,7 @@
                         </xsl:when>
 
 
-                        <xsl:when test="id = 31 and StatusOpen = 1">
+                        <xsl:when test="@cardid='41' and StatusOpen = 1">
                             <xsl:variable select="XCoordinate" name="x"/>
                             <xsl:variable select="YCoordinate" name="y"/>
                             <g>
@@ -3257,7 +3257,7 @@
                                 </svg>
                             </g>
                         </xsl:when>
-                        <xsl:when test="StatusOpen = 0 and id = 31">
+                        <xsl:when test="StatusOpen = 0 and @cardid='41'">
                             <xsl:variable select="XCoordinate" name="x"/>
                             <xsl:variable select="YCoordinate" name="y"/>
                             <a xlink:href="/Card/turn/32/41">
@@ -3271,7 +3271,7 @@
                             </a>
                         </xsl:when>
 
-                        <xsl:when test="id = 32 and StatusOpen = 1">
+                        <xsl:when test="@cardid='42' and StatusOpen = 1">
                             <xsl:variable select="XCoordinate" name="x"/>
                             <xsl:variable select="YCoordinate" name="y"/>
                             <g>
@@ -3289,7 +3289,7 @@
                                 </svg>
                             </g>
                         </xsl:when>
-                        <xsl:when test="StatusOpen = 0 and id = 32">
+                        <xsl:when test="StatusOpen = 0 and @cardid='42'">
                             <xsl:variable select="XCoordinate" name="x"/>
                             <xsl:variable select="YCoordinate" name="y"/>
                             <a xlink:href="/Card/turn/32/42">
