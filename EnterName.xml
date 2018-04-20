@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EnterName>
+    <backButton>
+        <id>1</id>
+    </backButton>
+    <continueButton>
+        <id>1</id>
+    </continueButton>
+</EnterName>

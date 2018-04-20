@@ -151,5 +151,5 @@ replace value of node fn:doc("Gamescreen24.xml")/Gamescreen24/insertNode/numberO
 replace value of node fn:doc("Gamescreen32.xml")/Gamescreen32/insertNode/numberOfPlayer with 6)
 else(),
 
-db:output(c:redirectToTransformator("NumberOfCards"))
+db:output(c:redirectToTransformator("EnterName"))
 };

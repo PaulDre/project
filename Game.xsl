@@ -242,7 +242,108 @@
 
 
 
-
+    <!-- Enter Name  -->
+    
+    
+    <xsl:template match="EnterName">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            height="100%" width="100%" viewBox="0 0 200 100">
+            
+            <!-- "Memory" Logo -->
+            <xsl:if test=".//id = 1">
+                <defs>
+                    <filter id="f1" x="0" y="0">
+                        <feGaussianBlur in="SourceGraphic" stdDeviation="3"/>
+                    </filter>
+                </defs>
+                <svg>
+                    <rect x="0" y="5" width="10" height="10" filter="url(#f1)"
+                        style="fill-opacity:0.6" fill="lightblue"/>
+                    <rect x="10" y="5" width="10" height="10" filter="url(#f1)"
+                        style="fill-opacity:0.6" fill="red"/>
+                    <rect x="20" y="5" width="10" height="10" filter="url(#f1)"
+                        style="fill-opacity:0.6" fill="yellow"/>
+                    <rect x="30" y="5" width="10" height="10" filter="url(#f1)"
+                        style="fill-opacity:0.6" fill="green"/>
+                    <rect x="40" y="5" width="10" height="10" filter="url(#f1)"
+                        style="fill-opacity:0.6" fill="orange"/>
+                    <rect x="50" y="5" width="10" height="10" filter="url(#f1)"
+                        style="fill-opacity:0.6" fill="pink"/>
+                    <text x="1" y="14" font-size="10" fill="darkgrey" font-style="normal"
+                        style="fill-opacity:0.6">M</text>
+                    <text x="11" y="14" font-size="10" fill="darkgrey" font-style="normal"
+                        style="fill-opacity:0.6"> E </text>
+                    <text x="21" y="14" font-size="10" fill="darkgrey" font-style="normal"
+                        style="fill-opacity:0.6"> M </text>
+                    <text x="31" y="14" font-size="10" fill="darkgrey" font-style="normal"
+                        style="fill-opacity:0.6"> O </text>
+                    <text x="41" y="14" font-size="10" fill="darkgrey" font-style="normal"
+                        style="fill-opacity:0.6"> R </text>
+                    <text x="51" y="14" font-size="10" fill="darkgrey" font-style="normal"
+                        style="fill-opacity:0.6"> Y </text>
+                    
+                    
+                    
+                    
+                </svg>
+                
+                
+                <svg>
+                    
+                    <foreignObject x="20" y="20" width="100%" height="50%">
+                        <body xmlns="http://www.w3.org/1999/xhtml">
+                            <form >
+                                
+                                <input style="font-size:2px" type="text" value="Player 1"/>
+                                <input style="font-size:2px" type="text" value="Player 2"/>
+                                <input style="font-size:2px" type="text" value="Player 3"/>
+                                <input style="font-size:2px" type="text" value="Player 4"/>
+                                <input style="font-size:2px" type="text" value="Player 5"/>
+                                <input style="font-size:2px" type="text" value="Player 6"/>
+                                <br></br>
+                                <input style="font-size:3px" type="submit" />
+                            </form>
+                        </body>
+                    </foreignObject>
+                    
+                </svg>
+                
+                
+            </xsl:if>
+            
+            
+            <!-- Button "back" -->
+            <xsl:if test="backButton//id = 1">
+                <a xlink:href="/go/back/to/Startscreen">
+                    <svg>
+                        <text x="20" y="90" fill="lightgray" alignment-baseline="middle"
+                            text-anchor="middle" font-size="5" font-style="italic">Back</text>
+                    </svg>
+                </a>
+            </xsl:if>
+            <!-- Button "continue" -->
+            <xsl:if test="continueButton//id = 1">
+                <a xlink:href="/memory/transform/NumberOfCards">
+                    <svg>
+                        <text x="170" y="90" fill="lightgray" alignment-baseline="middle"
+                            text-anchor="middle" font-size="5" font-style="italic">Continue</text>
+                    </svg>
+                </a>
+            </xsl:if>
+            
+            
+            
+            
+            
+            
+            
+            
+        </svg>
+        
+        
+        
+        
+    </xsl:template> 
 
 
 
