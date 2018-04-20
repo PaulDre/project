@@ -10,23 +10,26 @@ function i:insert16Cards(){
 
 
 
-(:for 16 Cards:)
+(:--------------------Cards16------------------:)
+
 let $list16 := fn:random-number-generator()?permute(11 to 26)
 let $list216 := (60,80,100,120,60,80,100,120,60,80,100,120,60,80,100,120)
 let $list316:= (25,25,25,25,40,40,40,40,55,55,55,55,70,70,70,70)
 
 let $cards16:= 
   <insertNode>
-  <value2>2</value2>
-   <value1>1</value1>
-  <value0>0</value0>
+
   <counterOfTurnedCards>1</counterOfTurnedCards>
-  <idOfCardOne>1</idOfCardOne>
+  <idOfCardOne>0</idOfCardOne>
   <idOfCardTwo>0</idOfCardTwo>
+  <attributeIdOfCardOne>0</attributeIdOfCardOne>
+  <attributeIdOfCardTwo>0</attributeIdOfCardTwo>
+  <compareCards>0</compareCards>
   <statusFoundPairButton>
   <Found>3</Found>
   </statusFoundPairButton>
-  <Playerturn>0</Playerturn>
+  <nextturn>1</nextturn>
+  <numberOfPlayer>0</numberOfPlayer>
 <Cards16>
 {
     for $n16 at $seq16 in $list16
@@ -42,10 +45,13 @@ let $cards16:=
  </Cards16>
   
     <Players> 
+      <Player playerid="0">
+      <Turn>0</Turn>
+      </Player>
    
       <Player playerid="1">
       <id>1</id>
-      <Nickname>Player 1</Nickname>
+      <Nickname>Player1</Nickname>
       <Turn>1</Turn>
       <Points>0</Points>
       <Active>0</Active>
@@ -53,9 +59,9 @@ let $cards16:=
       <YCoordinate>5</YCoordinate>
       </Player>
       
-       <Player playerid="2">
+      <Player playerid="2">
       <id>2</id>
-      <Nickname>Player 2</Nickname>
+      <Nickname>Player2</Nickname>
       <Turn>0</Turn>
       <Points>0</Points>
       <Active>0</Active>
@@ -65,7 +71,7 @@ let $cards16:=
       
        <Player playerid="3">
       <id>3</id>
-      <Nickname>Player 3</Nickname>
+      <Nickname>Player3</Nickname>
       <Turn>0</Turn>
       <Points>0</Points>
       <Active>0</Active>
@@ -75,7 +81,7 @@ let $cards16:=
       
        <Player playerid="4">
       <id>4</id>
-      <Nickname>Player 4</Nickname>
+      <Nickname>Player4</Nickname>
       <Turn>0</Turn>
       <Points>0</Points>
       <Active>0</Active>
@@ -85,7 +91,7 @@ let $cards16:=
       
        <Player playerid="5">
       <id>5</id>
-      <Nickname>Player 5</Nickname>
+      <Nickname>Player5</Nickname>
       <Turn>0</Turn>
       <Points>0</Points>
       <Active>0</Active>
@@ -95,12 +101,16 @@ let $cards16:=
       
        <Player playerid="6">
       <id>6</id>
-      <Nickname>Player 6</Nickname>
+      <Nickname>Player6</Nickname>
       <Turn>0</Turn>
       <Points>0</Points>
       <Active>0</Active>
       <XCoordinate>170</XCoordinate>
       <YCoordinate>5</YCoordinate>
+      </Player>
+      
+      <Player playerid="7">
+      <Turn>0</Turn>
       </Player>
     </Players>
       
@@ -119,20 +129,25 @@ let $cards16:=
 
 
 
-
+(:--------------------Cards24------------------:)
 
 let $list24 := fn:random-number-generator()?permute(11 to 34)
 let $list224 := (40,60,80,100,120,140,40,60,80,100,120,140,40,60,80,100,120,140,40,60,80,100,120,140)
 let $list324:= (25,25,25,25,25,25,40,40,40,40,40,40,55,55,55,55,55,55,70,70,70,70,70,70)
 let $cards24:=
   <insertNode>
-   <value2>2</value2>
-   <value1>1</value1>
-   <value0>0</value0>
-  <counterOfTurnedCards>0</counterOfTurnedCards>
+
+  <counterOfTurnedCards>1</counterOfTurnedCards>
+  <idOfCardOne>0</idOfCardOne>
+  <idOfCardTwo>0</idOfCardTwo>
+  <attributeIdOfCardOne>0</attributeIdOfCardOne>
+  <attributeIdOfCardTwo>0</attributeIdOfCardTwo>
+  <compareCards>0</compareCards>
   <statusFoundPairButton>
-    <Found>2</Found>
-  </statusFoundPairButton>  
+  <Found>3</Found>
+  </statusFoundPairButton>
+  <nextturn>1</nextturn>
+  <numberOfPlayer>0</numberOfPlayer>
   
 <Cards24>
 {
@@ -148,11 +163,14 @@ let $cards24:=
 }
  </Cards24>
   
-    <Players> 
-    <Playerturn>0</Playerturn>
+      <Players> 
+      <Player playerid="0">
+      <Turn>0</Turn>
+      </Player>
+   
       <Player playerid="1">
       <id>1</id>
-      <Nickname>Player 1</Nickname>
+      <Nickname>Player1</Nickname>
       <Turn>1</Turn>
       <Points>0</Points>
       <Active>0</Active>
@@ -160,9 +178,9 @@ let $cards24:=
       <YCoordinate>5</YCoordinate>
       </Player>
       
-       <Player playerid="2">
+      <Player playerid="2">
       <id>2</id>
-      <Nickname>Player 2</Nickname>
+      <Nickname>Player2</Nickname>
       <Turn>0</Turn>
       <Points>0</Points>
       <Active>0</Active>
@@ -172,7 +190,7 @@ let $cards24:=
       
        <Player playerid="3">
       <id>3</id>
-      <Nickname>Player 3</Nickname>
+      <Nickname>Player3</Nickname>
       <Turn>0</Turn>
       <Points>0</Points>
       <Active>0</Active>
@@ -182,7 +200,7 @@ let $cards24:=
       
        <Player playerid="4">
       <id>4</id>
-      <Nickname>Player 4</Nickname>
+      <Nickname>Player4</Nickname>
       <Turn>0</Turn>
       <Points>0</Points>
       <Active>0</Active>
@@ -192,7 +210,7 @@ let $cards24:=
       
        <Player playerid="5">
       <id>5</id>
-      <Nickname>Player 5</Nickname>
+      <Nickname>Player5</Nickname>
       <Turn>0</Turn>
       <Points>0</Points>
       <Active>0</Active>
@@ -202,12 +220,16 @@ let $cards24:=
       
        <Player playerid="6">
       <id>6</id>
-      <Nickname>Player 6</Nickname>
+      <Nickname>Player6</Nickname>
       <Turn>0</Turn>
       <Points>0</Points>
       <Active>0</Active>
       <XCoordinate>170</XCoordinate>
       <YCoordinate>5</YCoordinate>
+      </Player>
+      
+      <Player playerid="7">
+      <Turn>0</Turn>
       </Player>
     </Players>
       
@@ -221,7 +243,7 @@ let $cards24:=
 
 
 
-
+(:--------------------Cards32------------------:)
 
 
 let $list32 := fn:random-number-generator()?permute(11 to 42)
@@ -229,13 +251,18 @@ let $list232 := ( 20,40,60,80,100,120,140,160,20,40,60,80,100,120,140,160,20,40,
 let $list332:= (25,25,25,25,25,25,25,25,40,40,40,40,40,40,40,40,55,55,55,55,55,55,55,55,70,70,70,70,70,70,70,70 )
 let $cards32 :=  
   <insertNode>
-   <value2>2</value2>
-   <value1>1</value1>
-  <value0>0</value0>
-  <counterOfTurnedCards>0</counterOfTurnedCards>
+  
+  <counterOfTurnedCards>1</counterOfTurnedCards>
+  <idOfCardOne>0</idOfCardOne>
+  <idOfCardTwo>0</idOfCardTwo>
+  <attributeIdOfCardOne>0</attributeIdOfCardOne>
+  <attributeIdOfCardTwo>0</attributeIdOfCardTwo>
+  <compareCards>0</compareCards>
   <statusFoundPairButton>
-    <Found>2</Found>
-  </statusFoundPairButton> 
+  <Found>3</Found>
+  </statusFoundPairButton>
+  <nextturn>1</nextturn>
+  <numberOfPlayer>0</numberOfPlayer>
   
 <Cards32>
 {
@@ -251,12 +278,14 @@ let $cards32 :=
 }
  </Cards32>
   
-    <Players>
-    <Playerturn>0</Playerturn>
-    
+       <Players> 
+      <Player playerid="0">
+      <Turn>0</Turn>
+      </Player>
+   
       <Player playerid="1">
       <id>1</id>
-      <Nickname>Player 1</Nickname>
+      <Nickname>Player1</Nickname>
       <Turn>1</Turn>
       <Points>0</Points>
       <Active>0</Active>
@@ -264,9 +293,9 @@ let $cards32 :=
       <YCoordinate>5</YCoordinate>
       </Player>
       
-       <Player playerid="2">
+      <Player playerid="2">
       <id>2</id>
-      <Nickname>Player 2</Nickname>
+      <Nickname>Player2</Nickname>
       <Turn>0</Turn>
       <Points>0</Points>
       <Active>0</Active>
@@ -276,7 +305,7 @@ let $cards32 :=
       
        <Player playerid="3">
       <id>3</id>
-      <Nickname>Player 3</Nickname>
+      <Nickname>Player3</Nickname>
       <Turn>0</Turn>
       <Points>0</Points>
       <Active>0</Active>
@@ -286,7 +315,7 @@ let $cards32 :=
       
        <Player playerid="4">
       <id>4</id>
-      <Nickname>Player 4</Nickname>
+      <Nickname>Player4</Nickname>
       <Turn>0</Turn>
       <Points>0</Points>
       <Active>0</Active>
@@ -296,7 +325,7 @@ let $cards32 :=
       
        <Player playerid="5">
       <id>5</id>
-      <Nickname>Player 5</Nickname>
+      <Nickname>Player5</Nickname>
       <Turn>0</Turn>
       <Points>0</Points>
       <Active>0</Active>
@@ -306,12 +335,16 @@ let $cards32 :=
       
        <Player playerid="6">
       <id>6</id>
-      <Nickname>Player 6</Nickname>
+      <Nickname>Player6</Nickname>
       <Turn>0</Turn>
       <Points>0</Points>
       <Active>0</Active>
       <XCoordinate>170</XCoordinate>
       <YCoordinate>5</YCoordinate>
+      </Player>
+      
+      <Player playerid="7">
+      <Turn>0</Turn>
       </Player>
     </Players>
       
