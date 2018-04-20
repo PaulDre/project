@@ -1,4 +1,207 @@
 <?xml-stylesheet type="text/xsl" href="Game.xsl"?>
 <Gamescreen16>
   <uselessNode/>
+  <insertNode>
+    <counterOfTurnedCards>1</counterOfTurnedCards>
+    <idOfCardOne>0</idOfCardOne>
+    <idOfCardTwo>0</idOfCardTwo>
+    <attributeIdOfCardOne>0</attributeIdOfCardOne>
+    <attributeIdOfCardTwo>0</attributeIdOfCardTwo>
+    <compareCards>0</compareCards>
+    <statusFoundPairButton>
+      <Found>3</Found>
+    </statusFoundPairButton>
+    <nextturn>1</nextturn>
+    <numberOfPlayer>3</numberOfPlayer>
+    <Cards16>
+      <Card cardid="19">
+        <id>20</id>
+        <StatusOpen>0</StatusOpen>
+        <Visibility>1</Visibility>
+        <XCoordinate>60</XCoordinate>
+        <YCoordinate>25</YCoordinate>
+      </Card>
+      <Card cardid="20">
+        <id>20</id>
+        <StatusOpen>0</StatusOpen>
+        <Visibility>1</Visibility>
+        <XCoordinate>80</XCoordinate>
+        <YCoordinate>25</YCoordinate>
+      </Card>
+      <Card cardid="11">
+        <id>12</id>
+        <StatusOpen>0</StatusOpen>
+        <Visibility>1</Visibility>
+        <XCoordinate>100</XCoordinate>
+        <YCoordinate>25</YCoordinate>
+      </Card>
+      <Card cardid="26">
+        <id>26</id>
+        <StatusOpen>0</StatusOpen>
+        <Visibility>1</Visibility>
+        <XCoordinate>120</XCoordinate>
+        <YCoordinate>25</YCoordinate>
+      </Card>
+      <Card cardid="21">
+        <id>22</id>
+        <StatusOpen>0</StatusOpen>
+        <Visibility>1</Visibility>
+        <XCoordinate>60</XCoordinate>
+        <YCoordinate>40</YCoordinate>
+      </Card>
+      <Card cardid="22">
+        <id>22</id>
+        <StatusOpen>0</StatusOpen>
+        <Visibility>1</Visibility>
+        <XCoordinate>80</XCoordinate>
+        <YCoordinate>40</YCoordinate>
+      </Card>
+      <Card cardid="15">
+        <id>16</id>
+        <StatusOpen>0</StatusOpen>
+        <Visibility>1</Visibility>
+        <XCoordinate>100</XCoordinate>
+        <YCoordinate>40</YCoordinate>
+      </Card>
+      <Card cardid="24">
+        <id>24</id>
+        <StatusOpen>0</StatusOpen>
+        <Visibility>1</Visibility>
+        <XCoordinate>120</XCoordinate>
+        <YCoordinate>40</YCoordinate>
+      </Card>
+      <Card cardid="17">
+        <id>18</id>
+        <StatusOpen>0</StatusOpen>
+        <Visibility>1</Visibility>
+        <XCoordinate>60</XCoordinate>
+        <YCoordinate>55</YCoordinate>
+      </Card>
+      <Card cardid="23">
+        <id>24</id>
+        <StatusOpen>0</StatusOpen>
+        <Visibility>1</Visibility>
+        <XCoordinate>80</XCoordinate>
+        <YCoordinate>55</YCoordinate>
+      </Card>
+      <Card cardid="18">
+        <id>18</id>
+        <StatusOpen>0</StatusOpen>
+        <Visibility>1</Visibility>
+        <XCoordinate>100</XCoordinate>
+        <YCoordinate>55</YCoordinate>
+      </Card>
+      <Card cardid="12">
+        <id>12</id>
+        <StatusOpen>0</StatusOpen>
+        <Visibility>1</Visibility>
+        <XCoordinate>120</XCoordinate>
+        <YCoordinate>55</YCoordinate>
+      </Card>
+      <Card cardid="25">
+        <id>26</id>
+        <StatusOpen>0</StatusOpen>
+        <Visibility>1</Visibility>
+        <XCoordinate>60</XCoordinate>
+        <YCoordinate>70</YCoordinate>
+      </Card>
+      <Card cardid="14">
+        <id>14</id>
+        <StatusOpen>0</StatusOpen>
+        <Visibility>1</Visibility>
+        <XCoordinate>80</XCoordinate>
+        <YCoordinate>70</YCoordinate>
+      </Card>
+      <Card cardid="13">
+        <id>14</id>
+        <StatusOpen>0</StatusOpen>
+        <Visibility>1</Visibility>
+        <XCoordinate>100</XCoordinate>
+        <YCoordinate>70</YCoordinate>
+      </Card>
+      <Card cardid="16">
+        <id>16</id>
+        <StatusOpen>0</StatusOpen>
+        <Visibility>1</Visibility>
+        <XCoordinate>120</XCoordinate>
+        <YCoordinate>70</YCoordinate>
+      </Card>
+    </Cards16>
+    <Players>
+      <Player playerid="0">
+        <Turn>0</Turn>
+      </Player>
+      <Player playerid="1">
+        <id>1</id>
+        <Nickname>Player 1</Nickname>
+        <Turn>1</Turn>
+        <Points>0</Points>
+        <Active>1</Active>
+        <XCoordinate>70</XCoordinate>
+        <YCoordinate>5</YCoordinate>
+      </Player>
+      <Player playerid="2">
+        <id>2</id>
+        <Nickname>Player 2</Nickname>
+        <Turn>0</Turn>
+        <Points>0</Points>
+        <Active>1</Active>
+        <XCoordinate>90</XCoordinate>
+        <YCoordinate>5</YCoordinate>
+      </Player>
+      <Player playerid="3">
+        <id>3</id>
+        <Nickname>Player 3</Nickname>
+        <Turn>0</Turn>
+        <Points>0</Points>
+        <Active>1</Active>
+        <XCoordinate>110</XCoordinate>
+        <YCoordinate>5</YCoordinate>
+      </Player>
+      <Player playerid="4">
+        <id>4</id>
+        <Nickname>Player 4</Nickname>
+        <Turn>0</Turn>
+        <Points>0</Points>
+        <Active>0</Active>
+        <XCoordinate>130</XCoordinate>
+        <YCoordinate>5</YCoordinate>
+      </Player>
+      <Player playerid="5">
+        <id>5</id>
+        <Nickname>Player 5</Nickname>
+        <Turn>0</Turn>
+        <Points>0</Points>
+        <Active>0</Active>
+        <XCoordinate>150</XCoordinate>
+        <YCoordinate>5</YCoordinate>
+      </Player>
+      <Player playerid="6">
+        <id>6</id>
+        <Nickname>Player 6</Nickname>
+        <Turn>0</Turn>
+        <Points>0</Points>
+        <Active>0</Active>
+        <XCoordinate>170</XCoordinate>
+        <YCoordinate>5</YCoordinate>
+      </Player>
+      <Player playerid="7">
+        <Turn>0</Turn>
+      </Player>
+      <Winner>test</Winner>
+    </Players>
+    <backButton>
+      <id>1</id>
+    </backButton>
+    <saveButton>
+      <id>1</id>
+      <Popup>0</Popup>
+    </saveButton>
+    <winnerButton>
+      <id>1</id>
+    </winnerButton>
+    <winnerPopup>
+      <Visibility>0</Visibility>
+    </winnerPopup>
+  </insertNode>
 </Gamescreen16>

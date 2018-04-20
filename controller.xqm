@@ -175,6 +175,13 @@ function c:savedGame16() {
     db:output(c:redirectToTransformator("Gamescreen16"))
 };
 
+declare
+%rest:path('/button/winner/16')
+function c:giveWinner16() {
+   t:getWinner(),
+    db:output(c:redirectToTransformator("Gamescreen16"))
+};
+
 
 
 (:--------------------cards 24--------------------:)

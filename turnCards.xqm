@@ -195,10 +195,41 @@ declare function t:MatchPopup16() {
                                 fn:doc("Gamescreen16.xml")/Gamescreen16/insertNode/Players/Player[@playerid = 6]/Points + 1
                         else
                             ()
+                            
+                          
 };
 
 
+(:Winner:)
+declare
+%rest:path('/popup/Winner/to/Startscreen/16')
+function t:getWinner() {
+    if (fn:doc("Gamescreen16.xml")/Gamescreen16/insertNode/Cards16/Card[@cardid = 11]/Visibility = 0 and
+    fn:doc("Gamescreen16.xml")/Gamescreen16/insertNode/Cards16/Card[@cardid = 12]/Visibility = 0 and
+    fn:doc("Gamescreen16.xml")/Gamescreen16/insertNode/Cards16/Card[@cardid = 13]/Visibility = 0 and
+    fn:doc("Gamescreen16.xml")/Gamescreen16/insertNode/Cards16/Card[@cardid = 14]/Visibility = 0 and
+    fn:doc("Gamescreen16.xml")/Gamescreen16/insertNode/Cards16/Card[@cardid = 15]/Visibility = 0 and
+    fn:doc("Gamescreen16.xml")/Gamescreen16/insertNode/Cards16/Card[@cardid = 16]/Visibility = 0 and
+    fn:doc("Gamescreen16.xml")/Gamescreen16/insertNode/Cards16/Card[@cardid = 17]/Visibility = 0 and
+    fn:doc("Gamescreen16.xml")/Gamescreen16/insertNode/Cards16/Card[@cardid = 18]/Visibility = 0 and
+    fn:doc("Gamescreen16.xml")/Gamescreen16/insertNode/Cards16/Card[@cardid = 19]/Visibility = 0 and
+    fn:doc("Gamescreen16.xml")/Gamescreen16/insertNode/Cards16/Card[@cardid = 20]/Visibility = 0 and
+    fn:doc("Gamescreen16.xml")/Gamescreen16/insertNode/Cards16/Card[@cardid = 21]/Visibility = 0 and
+    fn:doc("Gamescreen16.xml")/Gamescreen16/insertNode/Cards16/Card[@cardid = 22]/Visibility = 0 and
+    fn:doc("Gamescreen16.xml")/Gamescreen16/insertNode/Cards16/Card[@cardid = 23]/Visibility = 0 and
+    fn:doc("Gamescreen16.xml")/Gamescreen16/insertNode/Cards16/Card[@cardid = 24]/Visibility = 0 and
+    fn:doc("Gamescreen16.xml")/Gamescreen16/insertNode/Cards16/Card[@cardid = 25]/Visibility = 0 and
+    fn:doc("Gamescreen16.xml")/Gamescreen16/insertNode/Cards16/Card[@cardid = 26]/Visibility = 0) then
+        
+        replace value of node fn:doc("Gamescreen16.xml")/Gamescreen16/insertNode/winnerPopup/Visibility
+            with 1
+    else
+        ( 
+        replace value of node fn:doc("Gamescreen16.xml")/Gamescreen16/insertNode/winnerPopup/Visibility
+            with 0)
 
+
+};
 
 
 (:this function passes on to the next Player:)
@@ -391,9 +422,9 @@ declare function t:MatchPopup24() {
     (:this function deletes all popups:)
     replace value of node fn:doc("Gamescreen24.xml")/Gamescreen24/insertNode/statusFoundPairButton/Found
         with 2,
-        
-        
-          (:Give Points:)
+    
+    
+    (:Give Points:)
     if (fn:doc("Gamescreen24.xml")/Gamescreen24/insertNode/Players/Player[@playerid = 1]/Turn = 1)
     then
         replace value of node fn:doc("Gamescreen24.xml")/Gamescreen24/insertNode/Players/Player[@playerid = 1]/Points
@@ -627,9 +658,9 @@ declare function t:MatchPopup32() {
     (:this function deletes all popups:)
     replace value of node fn:doc("Gamescreen32.xml")/Gamescreen32/insertNode/statusFoundPairButton/Found
         with 2,
-        
-                
-          (:Give Points:)
+    
+    
+    (:Give Points:)
     if (fn:doc("Gamescreen32.xml")/Gamescreen32/insertNode/Players/Player[@playerid = 1]/Turn = 1)
     then
         replace value of node fn:doc("Gamescreen32.xml")/Gamescreen32/insertNode/Players/Player[@playerid = 1]/Points
@@ -666,8 +697,10 @@ declare function t:MatchPopup32() {
                                 with
                                 fn:doc("Gamescreen32.xml")/Gamescreen32/insertNode/Players/Player[@playerid = 6]/Points + 1
                         else
-                            ()
-        
+                            (
+    
+    )
+   
 };
 
 
@@ -698,6 +731,9 @@ declare function t:nextPlayer32() {
 };
 
 
+
+
+
 (:Save Function:)
 declare
 function t:saveGame32() {
@@ -712,7 +748,5 @@ function t:nosavedPopup32() {
     replace value of node fn:doc("Gamescreen32.xml")/Gamescreen32/insertNode/saveButton/Popup
         with 0
 };
-
-
 
 
