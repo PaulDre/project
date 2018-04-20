@@ -118,6 +118,11 @@ let $cards16:=
     <id>1</id>
   </backButton>
   
+   <saveButton>
+  <id>1</id>
+  <Popup>0</Popup>
+  </saveButton>
+  
  </insertNode>
 
 
@@ -237,6 +242,11 @@ let $cards24:=
     <id>1</id>
   </backButton>
   
+   <saveButton>
+  <id>1</id>
+  <Popup>0</Popup>
+  </saveButton>
+  
  </insertNode>
 
 
@@ -351,6 +361,11 @@ let $cards32 :=
   <backButton>
     <id>1</id>
   </backButton>
+  
+   <saveButton>
+  <id>1</id>
+  <Popup>0</Popup>
+  </saveButton>
   
   
   </insertNode> 

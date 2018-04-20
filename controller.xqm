@@ -100,6 +100,22 @@ function c:Match16(){
   db:output(c:redirectToTransformator("Gamescreen16"))  
 };
 
+(:Save Funtion :)
+declare
+%rest:path('/button/save/16')
+function c:saveGame16() {
+    t:saveGame16(),
+    db:output(c:redirectToTransformator("Gamescreen16"))
+};
+
+declare
+%rest:path('/popup/isSaved/continue/16')
+function c:savedGame16() {
+    t:nosavedPopup16(),
+    db:output(c:redirectToTransformator("Gamescreen16"))
+};
+
+
 
 (:--------------------cards 24--------------------:)
 
@@ -145,6 +161,20 @@ function c:Match24(){
   db:output(c:redirectToTransformator("Gamescreen24"))  
 };
 
+(:Save Funcion :)
+declare
+%rest:path('/button/save/24')
+function c:saveGame24() {
+    t:saveGame24(),
+    db:output(c:redirectToTransformator("Gamescreen24"))
+};
+
+declare
+%rest:path('/popup/isSaved/continue/24')
+function c:savedGame24() {
+    t:nosavedPopup24(),
+    db:output(c:redirectToTransformator("Gamescreen24"))
+};
 
 
 (:--------------------cards 32--------------------:)
@@ -192,5 +222,20 @@ function c:Match32(){
 };
 
 
+
+(:Save Funcion :)
+declare
+%rest:path('/button/save/32')
+function c:saveGame32() {
+    t:saveGame32(),
+    db:output(c:redirectToTransformator("Gamescreen32"))
+};
+
+declare
+%rest:path('/popup/isSaved/continue/32')
+function c:savedGame32() {
+    t:nosavedPopup32(),
+    db:output(c:redirectToTransformator("Gamescreen32"))
+};
 
 
