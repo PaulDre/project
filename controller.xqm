@@ -5,6 +5,7 @@ module namespace c = "memory/controller";
 declare namespace xslt = "http://basex.org/modules/xslt";
 import module namespace d = "memory/DeleteDatabases" at "DeleteDatabases.xqm";
 import module namespace t = "memory/turnCards" at "turnCards.xqm";
+import module namespace request = "http://exquery.org/ns/request";
 
 declare variable $c:start := doc("../memory/Startscreen.html");
 declare variable $c:memorydb := db:open("memory");
@@ -21,6 +22,65 @@ declare
 function c:start() {
    $c:start
 };
+
+
+declare 
+%rest:path("/enter/name")
+%rest:GET
+updating function c:entername () {
+
+  let $p1 := request:parameter("Player 1","")
+ let $p2 := request:parameter("Player 2","")
+ let $p3 := request:parameter("Player 3","")
+ let $p4 := request:parameter("Player 4","")
+ let $p5 := request:parameter("Player 5","")
+ let $p6 := request:parameter("Player 6","")
+ 
+ 
+ return(
+ replace value of node fn:doc("Gamescreen16.xml")/Gamescreen16/insertNode/Players/Player[@playerid=1]/Nickname
+with $p1,
+replace value of node fn:doc("Gamescreen16.xml")/Gamescreen16/insertNode/Players/Player[@playerid=2]/Nickname
+with $p2,
+replace value of node fn:doc("Gamescreen16.xml")/Gamescreen16/insertNode/Players/Player[@playerid=3]/Nickname
+with $p3,
+replace value of node fn:doc("Gamescreen16.xml")/Gamescreen16/insertNode/Players/Player[@playerid=4]/Nickname
+with $p4,
+replace value of node fn:doc("Gamescreen16.xml")/Gamescreen16/insertNode/Players/Player[@playerid=5]/Nickname
+with $p5,
+replace value of node fn:doc("Gamescreen16.xml")/Gamescreen16/insertNode/Players/Player[@playerid=6]/Nickname
+with $p6,
+
+ replace value of node fn:doc("Gamescreen24.xml")/Gamescreen24/insertNode/Players/Player[@playerid=1]/Nickname
+with $p1,
+replace value of node fn:doc("Gamescreen24.xml")/Gamescreen24/insertNode/Players/Player[@playerid=2]/Nickname
+with $p2,
+replace value of node fn:doc("Gamescreen24.xml")/Gamescreen24/insertNode/Players/Player[@playerid=3]/Nickname
+with $p3,
+replace value of node fn:doc("Gamescreen24.xml")/Gamescreen24/insertNode/Players/Player[@playerid=4]/Nickname
+with $p4,
+replace value of node fn:doc("Gamescreen24.xml")/Gamescreen24/insertNode/Players/Player[@playerid=5]/Nickname
+with $p5,
+replace value of node fn:doc("Gamescreen24.xml")/Gamescreen24/insertNode/Players/Player[@playerid=6]/Nickname
+with $p6,
+
+replace value of node fn:doc("Gamescreen32.xml")/Gamescreen32/insertNode/Players/Player[@playerid=1]/Nickname
+with $p1,
+replace value of node fn:doc("Gamescreen32.xml")/Gamescreen32/insertNode/Players/Player[@playerid=2]/Nickname
+with $p2,
+replace value of node fn:doc("Gamescreen32.xml")/Gamescreen32/insertNode/Players/Player[@playerid=3]/Nickname
+with $p3,
+replace value of node fn:doc("Gamescreen32.xml")/Gamescreen32/insertNode/Players/Player[@playerid=4]/Nickname
+with $p4,
+replace value of node fn:doc("Gamescreen32.xml")/Gamescreen32/insertNode/Players/Player[@playerid=5]/Nickname
+with $p5,
+replace value of node fn:doc("Gamescreen32.xml")/Gamescreen32/insertNode/Players/Player[@playerid=6]/Nickname
+with $p6,
+ 
+ db:output(c:redirectToTransformator("NumberOfCards")))
+};
+
+
 
 (:this function deletes every Database and directs back to the startscreen:)
 declare

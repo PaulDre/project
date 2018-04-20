@@ -292,14 +292,14 @@
                     
                     <foreignObject x="20" y="20" width="100%" height="50%">
                         <body xmlns="http://www.w3.org/1999/xhtml">
-                            <form >
+                            <form action="/enter/name" method="GET" >
                                 
-                                <input style="font-size:2px" type="text" value="Player 1"/>
-                                <input style="font-size:2px" type="text" value="Player 2"/>
-                                <input style="font-size:2px" type="text" value="Player 3"/>
-                                <input style="font-size:2px" type="text" value="Player 4"/>
-                                <input style="font-size:2px" type="text" value="Player 5"/>
-                                <input style="font-size:2px" type="text" value="Player 6"/>
+                                <input style="font-size:2px" type="text"  name= "Player 1" value="Player 1"/>
+                                <input style="font-size:2px" type="text" name = "Player 2" value="Player 2"/>
+                                <input style="font-size:2px" type="text" name = "Player 3" value="Player 3"/>
+                                <input style="font-size:2px" type="text"  name = "Player 4" value="Player 4"/>
+                                <input style="font-size:2px" type="text" name = "Player 5" value="Player 5"/>
+                                <input style="font-size:2px" type="text"  name =  "Player 6" value="Player 6"/>
                                 <br></br>
                                 <input style="font-size:3px" type="submit" />
                             </form>
@@ -438,7 +438,7 @@
             </xsl:if>
 
             <!-- Button "back" -->
-            <xsl:if test="insertNode/backButton//id = 1">
+            <xsl:if test="backButton//id = 1">
                 <a xlink:href="/go/back/to/Startscreen">
                     <svg>
                         <text x="20" y="90" fill="lightgray" alignment-baseline="middle"
