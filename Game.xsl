@@ -393,7 +393,7 @@
 
                     <!-- Header "please enter the number of cards" -->
                     <text x="100" y="28" font-size="8" fill="black" alignment-baseline="middle"
-                        text-anchor="middle" font-weight="bold" letter-spacing="2.5">please enter
+                        text-anchor="middle" font-weight="bold" letter-spacing="2.5">Please enter
                         the number of cards! </text>
                 </svg>
             </xsl:if>
@@ -1032,7 +1032,7 @@
              <xsl:if test="insertNode/compareCards = 1">
                 <a xlink:href="/popup/compare/16">
                 <svg>
-                    <rect x="50" y="20" width="90" height="70" fill="white" stroke="grey" stroke-width="1" style="fill-opacity:0.8"/>
+                    <rect x="50" y="20" width="90" height="70" fill="white" stroke="grey" stroke-width="1" style="fill-opacity:0.6"/>
                     <text x="94" y="56" fill="grey" alignment-baseline="middle" text-anchor="middle" font-size="9" font-style="italic">compare</text>
                 </svg>
                 </a>
@@ -1044,7 +1044,7 @@
             <xsl:if test="insertNode/statusFoundPairButton//Found = 1">
                 <a xlink:href="/popup/Match/continue/16">
                 <svg>
-                    <rect x="50" y="20" width="90" height="70" fill="white" stroke="green" stroke-width="1" style="fill-opacity:0.8"/>
+                    <rect x="50" y="20" width="90" height="70" fill="white" stroke="green" stroke-width="1" style="fill-opacity:0.6"/>
            
                     <text x="94" y="42" fill="green" alignment-baseline="middle" text-anchor="middle" font-size="10" font-style="italic">Match!</text>
                     <text x="94" y="56" fill="green" alignment-baseline="middle" text-anchor="middle" font-size="10" font-style="italic">Try again! </text>
@@ -1055,7 +1055,7 @@
             <xsl:if test="insertNode/statusFoundPairButton//Found = 0">
                 <a xlink:href="/popup/noMatch/continue/16">
                 <svg>
-                    <rect x="50" y="20" width="90" height="70" fill="white" stroke="red" stroke-width="1" style="fill-opacity:0.8"/>
+                    <rect x="50" y="20" width="90" height="70" fill="white" stroke="red" stroke-width="1" style="fill-opacity:0.6"/>
               
                     <text x="94" y="42" fill="red" alignment-baseline="middle" text-anchor="middle" font-size="10" font-style="italic">No Match!</text>
                     <text x="94" y="56" fill="red" alignment-baseline="middle" text-anchor="middle" font-size="10" font-style="italic">Next Player </text>
@@ -2227,7 +2227,7 @@
              <xsl:if test="insertNode/compareCards = 1">
                 <a xlink:href="/popup/compare/24">
                 <svg>
-                    <rect x="35" y="20" width="123" height="70" fill="white" stroke="grey" stroke-width="1" style="fill-opacity:0.8"/>
+                    <rect x="35" y="20" width="123" height="70" fill="white" stroke="grey" stroke-width="1" style="fill-opacity:0.6"/>
                     <text x="94" y="56" fill="grey" alignment-baseline="middle" text-anchor="middle" font-size="9" font-style="italic">compare</text>
                 </svg>
                 </a>
@@ -2239,7 +2239,7 @@
             <xsl:if test="insertNode/statusFoundPairButton//Found = 1">
                 <a xlink:href="/popup/Match/continue/24">
                 <svg>
-                    <rect x="35" y="20" width="123" height="70" fill="white" stroke="green" stroke-width="1" style="fill-opacity:0.8"/>
+                    <rect x="35" y="20" width="123" height="70" fill="white" stroke="green" stroke-width="1" style="fill-opacity:0.6"/>
            
                     <text x="94" y="42" fill="green" alignment-baseline="middle" text-anchor="middle" font-size="10" font-style="italic">Match!</text>
                     <text x="94" y="56" fill="green" alignment-baseline="middle" text-anchor="middle" font-size="10" font-style="italic">Try again! </text>
@@ -2250,7 +2250,7 @@
             <xsl:if test="insertNode/statusFoundPairButton//Found = 0">
                 <a xlink:href="/popup/noMatch/continue/24">
                 <svg>
-                    <rect x="35" y="20" width="123" height="70" fill="white" stroke="red" stroke-width="1" style="fill-opacity:0.8"/>
+                    <rect x="35" y="20" width="123" height="70" fill="white" stroke="red" stroke-width="1" style="fill-opacity:0.6"/>
               
                     <text x="94" y="42" fill="red" alignment-baseline="middle" text-anchor="middle" font-size="10" font-style="italic">No Match!</text>
                     <text x="94" y="56" fill="red" alignment-baseline="middle" text-anchor="middle" font-size="10" font-style="italic">Next Player </text>
@@ -3532,7 +3532,7 @@
              <xsl:if test="insertNode/compareCards = 1">
                 <a xlink:href="/popup/compare/32">
                 <svg>
-                    <rect x="15" y="20" width="163" height="70" fill="white" stroke="grey" stroke-width="1" style="fill-opacity:0.8"/>
+                    <rect x="15" y="20" width="163" height="70" fill="white" stroke="grey" stroke-width="1" style="fill-opacity:0.6"/>
                     <text x="94" y="56" fill="grey" alignment-baseline="middle" text-anchor="middle" font-size="9" font-style="italic">compare</text>
                 </svg>
                 </a>
@@ -3544,7 +3544,7 @@
             <xsl:if test="insertNode/statusFoundPairButton//Found = 1">
                 <a xlink:href="/popup/Match/continue/32">
                 <svg>
-                    <rect x="15" y="20" width="163" height="70" fill="white" stroke="green" stroke-width="1" style="fill-opacity:0.8"/>
+                    <rect x="15" y="20" width="163" height="70" fill="white" stroke="green" stroke-width="1" style="fill-opacity:0.6"/>
            
                     <text x="94" y="42" fill="green" alignment-baseline="middle" text-anchor="middle" font-size="10" font-style="italic">Match!</text>
                     <text x="94" y="56" fill="green" alignment-baseline="middle" text-anchor="middle" font-size="10" font-style="italic">Try again! </text>
@@ -3555,7 +3555,7 @@
             <xsl:if test="insertNode/statusFoundPairButton//Found = 0">
                 <a xlink:href="/popup/noMatch/continue/32">
                 <svg>
-                    <rect x="15" y="20" width="163" height="70" fill="white" stroke="red" stroke-width="1" style="fill-opacity:0.8"/>
+                    <rect x="15" y="20" width="163" height="70" fill="white" stroke="red" stroke-width="1" style="fill-opacity:0.6"/>
               
                     <text x="94" y="42" fill="red" alignment-baseline="middle" text-anchor="middle" font-size="10" font-style="italic">No Match!</text>
                     <text x="94" y="56" fill="red" alignment-baseline="middle" text-anchor="middle" font-size="10" font-style="italic">Next Player </text>
