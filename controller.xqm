@@ -29,12 +29,12 @@ declare
 %rest:GET
 updating function c:entername () {
 
-  let $p1 := request:parameter("Player 1","")
- let $p2 := request:parameter("Player 2","")
- let $p3 := request:parameter("Player 3","")
- let $p4 := request:parameter("Player 4","")
- let $p5 := request:parameter("Player 5","")
- let $p6 := request:parameter("Player 6","")
+  let $p1 := request:parameter("Player 1","Player 1")
+ let $p2 := request:parameter("Player 2","Player 2")
+ let $p3 := request:parameter("Player 3","Player 3")
+ let $p4 := request:parameter("Player 4","Player 4")
+ let $p5 := request:parameter("Player 5","Player 5")
+ let $p6 := request:parameter("Player 6","Player 6")
  
  
  return(

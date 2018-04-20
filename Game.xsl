@@ -63,8 +63,7 @@
 
                     <!-- Header "Willkommen im Spiel" -->
                     <text x="100" y="28" font-size="10" fill="black" alignment-baseline="middle"
-                        text-anchor="middle" font-weight="bold" letter-spacing="2.5">Willkommen im
-                        Spiel ! </text>
+                        text-anchor="middle" font-weight="bold" letter-spacing="2.5">Welcome to Memory! </text>
                 </svg>
             </xsl:if>
 
@@ -172,7 +171,7 @@
 
                     <!-- Header "please enter the number of player!" -->
                     <text x="100" y="28" font-size="10" fill="black" alignment-baseline="middle"
-                        text-anchor="middle" font-weight="bold" letter-spacing="2.5">please enter
+                        text-anchor="middle" font-weight="bold" letter-spacing="2.5">Please enter
                         the number of player! </text>
                 </svg>
             </xsl:if>
@@ -282,7 +281,9 @@
                     <text x="51" y="14" font-size="10" fill="darkgrey" font-style="normal"
                         style="fill-opacity:0.6"> Y </text>
                     
-                    
+                    <text x="100" y="28" font-size="10" fill="black" alignment-baseline="middle"
+                        text-anchor="middle" font-weight="bold" letter-spacing="2.5">Please enter
+                        the name of players! </text>
                     
                     
                 </svg>
@@ -290,7 +291,7 @@
                 
                 <svg>
                     
-                    <foreignObject x="20" y="20" width="100%" height="50%">
+                    <foreignObject x="20" y="35" width="100%" height="50%">
                         <body xmlns="http://www.w3.org/1999/xhtml">
                             <form action="/enter/name" method="GET" >
                                 
@@ -301,7 +302,7 @@
                                 <input style="font-size:2px" type="text" name = "Player 5" value="Player 5"/>
                                 <input style="font-size:2px" type="text"  name =  "Player 6" value="Player 6"/>
                                 <br></br>
-                                <input style="font-size:3px" type="submit" />
+                                <input style="font-size:3px" type="submit" value="Submit" />
                             </form>
                         </body>
                     </foreignObject>
@@ -321,16 +322,7 @@
                     </svg>
                 </a>
             </xsl:if>
-            <!-- Button "continue" -->
-            <xsl:if test="continueButton//id = 1">
-                <a xlink:href="/memory/transform/NumberOfCards">
-                    <svg>
-                        <text x="170" y="90" fill="lightgray" alignment-baseline="middle"
-                            text-anchor="middle" font-size="5" font-style="italic">Continue</text>
-                    </svg>
-                </a>
-            </xsl:if>
-            
+       
             
             
             
