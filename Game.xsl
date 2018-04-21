@@ -1172,7 +1172,7 @@
             
             <!-- Button "Save" -->
             <xsl:if test="insertNode/saveButton//id = 1">
-                <a xlink:href="/button/save/16">
+                <a xlink:href="/testsave16">
                     <svg>
                         <text x="170" y="90" fill="black" alignment-baseline="middle"
                             text-anchor="middle" font-size="5" font-style="italic">Save</text>
@@ -1180,23 +1180,7 @@
                 </a>
             </xsl:if>
             
-            
-            <!-- Save Popup -->
-            <xsl:if test="insertNode/saveButton//Popup = 1">
-                <a xlink:href="/popup/isSaved/continue/16">
-                    <svg>
-                        <rect x="50" y="20" width="90" height="70" fill="white" stroke="purple"
-                            stroke-width="1" style="fill-opacity:0.8"/>
-                        
-                        <text x="94" y="42" fill="purple" alignment-baseline="middle"
-                            text-anchor="middle" font-size="10" font-style="italic">Your Game</text>
-                        <text x="94" y="56" fill="purple" alignment-baseline="middle"
-                            text-anchor="middle" font-size="10" font-style="italic">is saved ! </text>
-                        <text x="94" y="70" fill="purple" alignment-baseline="middle"
-                            text-anchor="middle" font-size="7" font-style="italic">Continue</text>
-                    </svg>
-                </a>
-            </xsl:if>
+   
             
             <!-- Button "Winner" -->
             <xsl:if test="insertNode/winnerButton//id = 1">
@@ -2406,21 +2390,7 @@
                     </svg>
                 </a>
             </xsl:if>
-            
-            
-            <!-- Save Popup -->
-            <xsl:if test="insertNode/saveButton//Popup = 1">
-                <a xlink:href="/popup/isSaved/continue/24">
-                    <svg>
-                        <rect x="35" y="20" width="123" height="70" fill="white" stroke="purple" stroke-width="1" style="fill-opacity:0.8"/>
-                        
-                        <text x="94" y="42" fill="purple" alignment-baseline="middle" text-anchor="middle" font-size="10" font-style="italic">Your Game</text>
-                        <text x="94" y="56" fill="purple" alignment-baseline="middle" text-anchor="middle" font-size="10" font-style="italic">is saved ! </text>
-                        <text x="94" y="70" fill="purple" alignment-baseline="middle" text-anchor="middle" font-size="7" font-style="italic">Continue</text>
-                    </svg>
-                </a>
-            </xsl:if>
-            
+       
             
             
             <!-- Button "Winner" -->
@@ -3743,20 +3713,7 @@
             </xsl:if>
             
             
-            <!-- Save Popup -->
-            <xsl:if test="insertNode/saveButton//Popup = 1">
-                <a xlink:href="/popup/isSaved/continue/32">
-                    <svg>
-                        <rect x="15" y="20" width="163" height="70" fill="white" stroke="purple" stroke-width="1" style="fill-opacity:0.8"/>
-                        
-                        <text x="94" y="42" fill="purple" alignment-baseline="middle" text-anchor="middle" font-size="10" font-style="italic">Your Game</text>
-                        <text x="94" y="56" fill="purple" alignment-baseline="middle" text-anchor="middle" font-size="10" font-style="italic">is saved ! </text>
-                        <text x="94" y="70" fill="purple" alignment-baseline="middle" text-anchor="middle" font-size="7" font-style="italic">Continue</text>
-                    </svg>
-                </a>
-            </xsl:if>
-            
-            
+       
             
             <!-- Button "Winner" -->
             <xsl:if test="insertNode/winnerButton//id = 1">

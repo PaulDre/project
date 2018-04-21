@@ -1,5 +1,5 @@
 
-xquery version "3.0"  encoding "UTF-8";
+xquery version "3.0" encoding "UTF-8";
 
 module namespace c = "memory/controller";
 declare namespace xslt = "http://basex.org/modules/xslt";
@@ -7,7 +7,6 @@ import module namespace d = "memory/DeleteDatabases" at "DeleteDatabases.xqm";
 import module namespace t = "memory/turnCards" at "turnCards.xqm";
 import module namespace request = "http://exquery.org/ns/request";
 
-declare variable $c:start := doc("../memory/Startscreen.html");
 declare variable $c:memorydb := db:open("memory");
 declare variable $c:xslt := doc("Game.xsl");
 
@@ -20,64 +19,263 @@ declare
 %rest:path("/memory")
 %rest:GET
 function c:start() {
-   $c:start
+    db:output(c:redirectToTransformator("Startscreen"))
+};
+
+declare
+%rest:path('/testsave16')
+function c:saveGame16() {
+    
+    let $g16 := fn:doc("Gamescreen16.xml")
+    
+    return
+        (
+        replace value of node fn:doc("SaveGame16.xml")/SaveGame16/insertNode/Cards16/Card[@cardid = 11]/StatusOpen
+            with
+            $g16/Gamescreen16/insertNode/Cards16/Card[@cardid = 11]/StatusOpen,
+        replace value of node fn:doc("SaveGame16.xml")/SaveGame16/insertNode/Cards16/Card[@cardid = 11]/Visibility
+            with
+            $g16/Gamescreen16/insertNode/Cards16/Card[@cardid = 11]/Visibility,
+        
+        replace value of node fn:doc("SaveGame16.xml")/SaveGame16/insertNode/Cards16/Card[@cardid = 12]/StatusOpen
+            with
+            $g16/Gamescreen16/insertNode/Cards16/Card[@cardid = 12]/StatusOpen,
+        replace value of node fn:doc("SaveGame16.xml")/SaveGame16/insertNode/Cards16/Card[@cardid = 12]/Visibility
+            with
+            $g16/Gamescreen16/insertNode/Cards16/Card[@cardid = 12]/Visibility,
+        
+        
+        replace value of node fn:doc("SaveGame16.xml")/SaveGame16/insertNode/Cards16/Card[@cardid = 13]/StatusOpen
+            with
+            $g16/Gamescreen16/insertNode/Cards16/Card[@cardid = 13]/StatusOpen,
+        replace value of node fn:doc("SaveGame16.xml")/SaveGame16/insertNode/Cards16/Card[@cardid = 13]/Visibility
+            with
+            $g16/Gamescreen16/insertNode/Cards16/Card[@cardid = 13]/Visibility,
+        
+        replace value of node fn:doc("SaveGame16.xml")/SaveGame16/insertNode/Cards16/Card[@cardid = 14]/StatusOpen
+            with
+            $g16/Gamescreen16/insertNode/Cards16/Card[@cardid = 14]/StatusOpen,
+        replace value of node fn:doc("SaveGame16.xml")/SaveGame16/insertNode/Cards16/Card[@cardid = 14]/Visibility
+            with
+            $g16/Gamescreen16/insertNode/Cards16/Card[@cardid = 14]/Visibility,
+        
+        replace value of node fn:doc("SaveGame16.xml")/SaveGame16/insertNode/Cards16/Card[@cardid = 15]/StatusOpen
+            with
+            $g16/Gamescreen16/insertNode/Cards16/Card[@cardid = 15]/StatusOpen,
+        replace value of node fn:doc("SaveGame16.xml")/SaveGame16/insertNode/Cards16/Card[@cardid = 15]/Visibility
+            with
+            $g16/Gamescreen16/insertNode/Cards16/Card[@cardid = 15]/Visibility,
+        
+        
+        replace value of node fn:doc("SaveGame16.xml")/SaveGame16/insertNode/Cards16/Card[@cardid = 16]/StatusOpen
+            with
+            $g16/Gamescreen16/insertNode/Cards16/Card[@cardid = 16]/StatusOpen,
+        replace value of node fn:doc("SaveGame16.xml")/SaveGame16/insertNode/Cards16/Card[@cardid = 16]/Visibility
+            with
+            $g16/Gamescreen16/insertNode/Cards16/Card[@cardid = 16]/Visibility,
+        
+        replace value of node fn:doc("SaveGame16.xml")/SaveGame16/insertNode/Cards16/Card[@cardid = 17]/StatusOpen
+            with
+            $g16/Gamescreen16/insertNode/Cards16/Card[@cardid = 17]/StatusOpen,
+        replace value of node fn:doc("SaveGame16.xml")/SaveGame16/insertNode/Cards16/Card[@cardid = 17]/Visibility
+            with
+            $g16/Gamescreen16/insertNode/Cards16/Card[@cardid = 17]/Visibility,
+        
+        replace value of node fn:doc("SaveGame16.xml")/SaveGame16/insertNode/Cards16/Card[@cardid = 18]/StatusOpen
+            with
+            $g16/Gamescreen16/insertNode/Cards16/Card[@cardid = 18]/StatusOpen,
+        replace value of node fn:doc("SaveGame16.xml")/SaveGame16/insertNode/Cards16/Card[@cardid = 18]/Visibility
+            with
+            $g16/Gamescreen16/insertNode/Cards16/Card[@cardid = 18]/Visibility,
+        
+        
+        replace value of node fn:doc("SaveGame16.xml")/SaveGame16/insertNode/Cards16/Card[@cardid = 19]/StatusOpen
+            with
+            $g16/Gamescreen16/insertNode/Cards16/Card[@cardid = 19]/StatusOpen,
+        replace value of node fn:doc("SaveGame16.xml")/SaveGame16/insertNode/Cards16/Card[@cardid = 19]/Visibility
+            with
+            $g16/Gamescreen16/insertNode/Cards16/Card[@cardid = 19]/Visibility,
+        
+        replace value of node fn:doc("SaveGame16.xml")/SaveGame16/insertNode/Cards16/Card[@cardid = 20]/StatusOpen
+            with
+            $g16/Gamescreen16/insertNode/Cards16/Card[@cardid = 20]/StatusOpen,
+        replace value of node fn:doc("SaveGame16.xml")/SaveGame16/insertNode/Cards16/Card[@cardid = 20]/Visibility
+            with
+            $g16/Gamescreen16/insertNode/Cards16/Card[@cardid = 20]/Visibility,
+        
+        
+        replace value of node fn:doc("SaveGame16.xml")/SaveGame16/insertNode/Cards16/Card[@cardid = 21]/StatusOpen
+            with
+            $g16/Gamescreen16/insertNode/Cards16/Card[@cardid = 21]/StatusOpen,
+        replace value of node fn:doc("SaveGame16.xml")/SaveGame16/insertNode/Cards16/Card[@cardid = 21]/Visibility
+            with
+            $g16/Gamescreen16/insertNode/Cards16/Card[@cardid = 21]/Visibility,
+        
+        replace value of node fn:doc("SaveGame16.xml")/SaveGame16/insertNode/Cards16/Card[@cardid = 22]/StatusOpen
+            with
+            $g16/Gamescreen16/insertNode/Cards16/Card[@cardid = 22]/StatusOpen,
+        replace value of node fn:doc("SaveGame16.xml")/SaveGame16/insertNode/Cards16/Card[@cardid = 22]/Visibility
+            with
+            $g16/Gamescreen16/insertNode/Cards16/Card[@cardid = 22]/Visibility,
+        
+        
+        replace value of node fn:doc("SaveGame16.xml")/SaveGame16/insertNode/Cards16/Card[@cardid = 23]/StatusOpen
+            with
+            $g16/Gamescreen16/insertNode/Cards16/Card[@cardid = 23]/StatusOpen,
+        replace value of node fn:doc("SaveGame16.xml")/SaveGame16/insertNode/Cards16/Card[@cardid = 23]/Visibility
+            with
+            $g16/Gamescreen16/insertNode/Cards16/Card[@cardid = 23]/Visibility,
+        
+        replace value of node fn:doc("SaveGame16.xml")/SaveGame16/insertNode/Cards16/Card[@cardid = 24]/StatusOpen
+            with
+            $g16/Gamescreen16/insertNode/Cards16/Card[@cardid = 24]/StatusOpen,
+        replace value of node fn:doc("SaveGame16.xml")/SaveGame16/insertNode/Cards16/Card[@cardid = 24]/Visibility
+            with
+            $g16/Gamescreen16/insertNode/Cards16/Card[@cardid = 24]/Visibility,
+        
+        
+        replace value of node fn:doc("SaveGame16.xml")/SaveGame16/insertNode/Cards16/Card[@cardid = 25]/StatusOpen
+            with
+            $g16/Gamescreen16/insertNode/Cards16/Card[@cardid = 25]/StatusOpen,
+        replace value of node fn:doc("SaveGame16.xml")/SaveGame16/insertNode/Cards16/Card[@cardid = 25]/Visibility
+            with
+            $g16/Gamescreen16/insertNode/Cards16/Card[@cardid = 25]/Visibility,
+        
+        replace value of node fn:doc("SaveGame16.xml")/SaveGame16/insertNode/Cards16/Card[@cardid = 26]/StatusOpen
+            with
+            $g16/Gamescreen16/insertNode/Cards16/Card[@cardid = 26]/StatusOpen,
+        replace value of node fn:doc("SaveGame16.xml")/SaveGame16/insertNode/Cards16/Card[@cardid = 26]/Visibility
+            with
+            $g16/Gamescreen16/insertNode/Cards16/Card[@cardid = 26]/Visibility,
+        
+        
+        replace value of node fn:doc("SaveGame16.xml")/SaveGame16/insertNode/Players/Player[@playerid = 1]/Turn
+            with
+            $g16/Gamescreen16/insertNode//Players/Player[@playerid = 1]/Turn,
+        replace value of node fn:doc("SaveGame16.xml")/SaveGame16/insertNode/Players/Player[@playerid = 1]/Points
+            with
+            $g16/Gamescreen16/insertNode//Players/Player[@playerid = 1]/Points,
+        
+        replace value of node fn:doc("SaveGame16.xml")/SaveGame16/insertNode/Players/Player[@playerid = 2]/Turn
+            with
+            $g16/Gamescreen16/insertNode//Players/Player[@playerid = 2]/Turn,
+        replace value of node fn:doc("SaveGame16.xml")/SaveGame16/insertNode/Players/Player[@playerid = 2]/Points
+            with
+            $g16/Gamescreen16/insertNode//Players/Player[@playerid = 2]/Points,
+        
+        replace value of node fn:doc("SaveGame16.xml")/SaveGame16/insertNode/Players/Player[@playerid = 3]/Turn
+            with
+            $g16/Gamescreen16/insertNode//Players/Player[@playerid = 3]/Turn,
+        replace value of node fn:doc("SaveGame16.xml")/SaveGame16/insertNode/Players/Player[@playerid = 3]/Points
+            with
+            $g16/Gamescreen16/insertNode//Players/Player[@playerid = 3]/Points,
+        
+        replace value of node fn:doc("SaveGame16.xml")/SaveGame16/insertNode/Players/Player[@playerid = 4]/Turn
+            with
+            $g16/Gamescreen16/insertNode//Players/Player[@playerid = 4]/Turn,
+        replace value of node fn:doc("SaveGame16.xml")/SaveGame16/insertNode/Players/Player[@playerid = 4]/Points
+            with
+            $g16/Gamescreen16/insertNode//Players/Player[@playerid = 4]/Points,
+        
+        replace value of node fn:doc("SaveGame16.xml")/SaveGame16/insertNode/Players/Player[@playerid = 5]/Turn
+            with
+            $g16/Gamescreen16/insertNode//Players/Player[@playerid = 5]/Turn,
+        replace value of node fn:doc("SaveGame16.xml")/SaveGame16/insertNode/Players/Player[@playerid = 5]/Points
+            with
+            $g16/Gamescreen16/insertNode//Players/Player[@playerid = 5]/Points,
+        
+        replace value of node fn:doc("SaveGame16.xml")/SaveGame16/insertNode/Players/Player[@playerid = 6]/Turn
+            with
+            $g16/Gamescreen16/insertNode//Players/Player[@playerid = 6]/Turn,
+        replace value of node fn:doc("SaveGame16.xml")/SaveGame16/insertNode/Players/Player[@playerid = 6]/Points
+            with
+            $g16/Gamescreen16/insertNode//Players/Player[@playerid = 6]/Points,
+        
+        
+        
+        
+        
+        
+        
+        
+        db:output(c:redirectToTransformator("Gamescreen16")))
+
+
+
 };
 
 
-declare 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+declare
 %rest:path("/enter/name")
 %rest:GET
-updating function c:entername () {
-
-  let $p1 := request:parameter("Player 1","Player 1")
- let $p2 := request:parameter("Player 2","Player 2")
- let $p3 := request:parameter("Player 3","Player 3")
- let $p4 := request:parameter("Player 4","Player 4")
- let $p5 := request:parameter("Player 5","Player 5")
- let $p6 := request:parameter("Player 6","Player 6")
- 
- 
- return(
- replace value of node fn:doc("Gamescreen16.xml")/Gamescreen16/insertNode/Players/Player[@playerid=1]/Nickname
-with $p1,
-replace value of node fn:doc("Gamescreen16.xml")/Gamescreen16/insertNode/Players/Player[@playerid=2]/Nickname
-with $p2,
-replace value of node fn:doc("Gamescreen16.xml")/Gamescreen16/insertNode/Players/Player[@playerid=3]/Nickname
-with $p3,
-replace value of node fn:doc("Gamescreen16.xml")/Gamescreen16/insertNode/Players/Player[@playerid=4]/Nickname
-with $p4,
-replace value of node fn:doc("Gamescreen16.xml")/Gamescreen16/insertNode/Players/Player[@playerid=5]/Nickname
-with $p5,
-replace value of node fn:doc("Gamescreen16.xml")/Gamescreen16/insertNode/Players/Player[@playerid=6]/Nickname
-with $p6,
-
- replace value of node fn:doc("Gamescreen24.xml")/Gamescreen24/insertNode/Players/Player[@playerid=1]/Nickname
-with $p1,
-replace value of node fn:doc("Gamescreen24.xml")/Gamescreen24/insertNode/Players/Player[@playerid=2]/Nickname
-with $p2,
-replace value of node fn:doc("Gamescreen24.xml")/Gamescreen24/insertNode/Players/Player[@playerid=3]/Nickname
-with $p3,
-replace value of node fn:doc("Gamescreen24.xml")/Gamescreen24/insertNode/Players/Player[@playerid=4]/Nickname
-with $p4,
-replace value of node fn:doc("Gamescreen24.xml")/Gamescreen24/insertNode/Players/Player[@playerid=5]/Nickname
-with $p5,
-replace value of node fn:doc("Gamescreen24.xml")/Gamescreen24/insertNode/Players/Player[@playerid=6]/Nickname
-with $p6,
-
-replace value of node fn:doc("Gamescreen32.xml")/Gamescreen32/insertNode/Players/Player[@playerid=1]/Nickname
-with $p1,
-replace value of node fn:doc("Gamescreen32.xml")/Gamescreen32/insertNode/Players/Player[@playerid=2]/Nickname
-with $p2,
-replace value of node fn:doc("Gamescreen32.xml")/Gamescreen32/insertNode/Players/Player[@playerid=3]/Nickname
-with $p3,
-replace value of node fn:doc("Gamescreen32.xml")/Gamescreen32/insertNode/Players/Player[@playerid=4]/Nickname
-with $p4,
-replace value of node fn:doc("Gamescreen32.xml")/Gamescreen32/insertNode/Players/Player[@playerid=5]/Nickname
-with $p5,
-replace value of node fn:doc("Gamescreen32.xml")/Gamescreen32/insertNode/Players/Player[@playerid=6]/Nickname
-with $p6,
- 
- db:output(c:redirectToTransformator("NumberOfCards")))
+updating function c:entername() {
+    
+    let $p1 := request:parameter("Player 1", "Player 1")
+    let $p2 := request:parameter("Player 2", "Player 2")
+    let $p3 := request:parameter("Player 3", "Player 3")
+    let $p4 := request:parameter("Player 4", "Player 4")
+    let $p5 := request:parameter("Player 5", "Player 5")
+    let $p6 := request:parameter("Player 6", "Player 6")
+    
+    
+    return
+        (
+        replace value of node fn:doc("Gamescreen16.xml")/Gamescreen16/insertNode/Players/Player[@playerid = 1]/Nickname
+            with $p1,
+        replace value of node fn:doc("Gamescreen16.xml")/Gamescreen16/insertNode/Players/Player[@playerid = 2]/Nickname
+            with $p2,
+        replace value of node fn:doc("Gamescreen16.xml")/Gamescreen16/insertNode/Players/Player[@playerid = 3]/Nickname
+            with $p3,
+        replace value of node fn:doc("Gamescreen16.xml")/Gamescreen16/insertNode/Players/Player[@playerid = 4]/Nickname
+            with $p4,
+        replace value of node fn:doc("Gamescreen16.xml")/Gamescreen16/insertNode/Players/Player[@playerid = 5]/Nickname
+            with $p5,
+        replace value of node fn:doc("Gamescreen16.xml")/Gamescreen16/insertNode/Players/Player[@playerid = 6]/Nickname
+            with $p6,
+        
+        replace value of node fn:doc("Gamescreen24.xml")/Gamescreen24/insertNode/Players/Player[@playerid = 1]/Nickname
+            with $p1,
+        replace value of node fn:doc("Gamescreen24.xml")/Gamescreen24/insertNode/Players/Player[@playerid = 2]/Nickname
+            with $p2,
+        replace value of node fn:doc("Gamescreen24.xml")/Gamescreen24/insertNode/Players/Player[@playerid = 3]/Nickname
+            with $p3,
+        replace value of node fn:doc("Gamescreen24.xml")/Gamescreen24/insertNode/Players/Player[@playerid = 4]/Nickname
+            with $p4,
+        replace value of node fn:doc("Gamescreen24.xml")/Gamescreen24/insertNode/Players/Player[@playerid = 5]/Nickname
+            with $p5,
+        replace value of node fn:doc("Gamescreen24.xml")/Gamescreen24/insertNode/Players/Player[@playerid = 6]/Nickname
+            with $p6,
+        
+        replace value of node fn:doc("Gamescreen32.xml")/Gamescreen32/insertNode/Players/Player[@playerid = 1]/Nickname
+            with $p1,
+        replace value of node fn:doc("Gamescreen32.xml")/Gamescreen32/insertNode/Players/Player[@playerid = 2]/Nickname
+            with $p2,
+        replace value of node fn:doc("Gamescreen32.xml")/Gamescreen32/insertNode/Players/Player[@playerid = 3]/Nickname
+            with $p3,
+        replace value of node fn:doc("Gamescreen32.xml")/Gamescreen32/insertNode/Players/Player[@playerid = 4]/Nickname
+            with $p4,
+        replace value of node fn:doc("Gamescreen32.xml")/Gamescreen32/insertNode/Players/Player[@playerid = 5]/Nickname
+            with $p5,
+        replace value of node fn:doc("Gamescreen32.xml")/Gamescreen32/insertNode/Players/Player[@playerid = 6]/Nickname
+            with $p6,
+        
+        db:output(c:redirectToTransformator("NumberOfCards")))
 };
 
 
@@ -85,11 +283,11 @@ with $p6,
 (:this function deletes every Database and directs back to the startscreen:)
 declare
 %rest:path('/go/back/to/Startscreen')
-function c:goBackToStartscreen(){
-  d:deleteDatabase16(),
-  d:deleteDatabase24(),
-  d:deleteDatabase32(),
-  db:output(c:redirectToTransformator("Startscreen"))  
+function c:goBackToStartscreen() {
+    d:deleteDatabase16(),
+    d:deleteDatabase24(),
+    d:deleteDatabase32(),
+    db:output(c:redirectToTransformator("Startscreen"))
 };
 
 
@@ -97,8 +295,9 @@ function c:goBackToStartscreen(){
 
 (: this function transforms ref links to url's :)
 declare function c:redirectToTransformator($gameId as xs:string) {
-  let $url := fn:concat("/memory/transform/", $gameId)
-  return web:redirect($url)
+    let $url := fn:concat("/memory/transform/", $gameId)
+    return
+        web:redirect($url)
 };
 
 
@@ -108,9 +307,10 @@ declare
 %rest:GET
 %output:media-type("text/html")
 function c:transformToHtml($gameId as xs:string) {
-  let $game2 := fn:concat($gameId, ".xml")
-  let $game := $c:memorydb/doc($game2)
-  return xslt:transform-text($game, $c:xslt)
+    let $game2 := fn:concat($gameId, ".xml")
+    let $game := $c:memorydb/doc($game2)
+    return
+        xslt:transform-text($game, $c:xslt)
 };
 
 
@@ -121,10 +321,12 @@ function c:transformToHtml($gameId as xs:string) {
 (:this function deletes the database 24 and 32:)
 declare
 %rest:path('/show/16Cards/delete/24and32')
-function c:delete24and32(){
-  d:deleteDatabase24(),
-  d:deleteDatabase32(),
-  db:output(c:redirectToTransformator("Gamescreen16"))  
+function c:delete24and32() {
+    d:deleteDatabase24(),
+    d:deleteDatabase32(),
+    d:deleteSavegame24(),
+    d:deleteSaveGame32(),
+    db:output(c:redirectToTransformator("Gamescreen16"))
 };
 
 (:this function flipps a card:)
@@ -132,46 +334,31 @@ declare
 %rest:path('/Card/turn/16/{$cardid}')
 function c:openCard16($cardid as xs:string)
 {
-t:openCard16($cardid),
-db:output(c:redirectToTransformator("Gamescreen16")) 
+    t:openCard16($cardid),
+    db:output(c:redirectToTransformator("Gamescreen16"))
 };
 
 (:this function shows the "compare" popup:)
 declare
 %rest:path('/popup/compare/16')
-function c:compareCards16(){
-  t:compareCards16(),
-  db:output(c:redirectToTransformator("Gamescreen16"))  
+function c:compareCards16() {
+    t:compareCards16(),
+    db:output(c:redirectToTransformator("Gamescreen16"))
 };
 
 (:this function shows the "No Match! popup":)
 declare
 %rest:path('/popup/noMatch/continue/16')
-function c:noMatch16(){
-  t:noMatchPopup16(),
-  db:output(c:redirectToTransformator("Gamescreen16"))  
+function c:noMatch16() {
+    t:noMatchPopup16(),
+    db:output(c:redirectToTransformator("Gamescreen16"))
 };
 
 (:this function shows the "Match!" popup:)
 declare
 %rest:path('/popup/Match/continue/16')
-function c:Match16(){
-  t:MatchPopup16(),
-  db:output(c:redirectToTransformator("Gamescreen16"))  
-};
-
-(:Save Funtion :)
-declare
-%rest:path('/button/save/16')
-function c:saveGame16() {
-    t:saveGame16(),
-    db:output(c:redirectToTransformator("Gamescreen16"))
-};
-
-declare
-%rest:path('/popup/isSaved/continue/16')
-function c:savedGame16() {
-    t:nosavedPopup16(),
+function c:Match16() {
+    t:MatchPopup16(),
     db:output(c:redirectToTransformator("Gamescreen16"))
 };
 
@@ -180,7 +367,7 @@ function c:savedGame16() {
 declare
 %rest:path('/button/winner/16')
 function c:giveWinner16() {
-   t:getWinner16(),
+    t:getWinner16(),
     db:output(c:redirectToTransformator("Gamescreen16"))
 };
 
@@ -191,10 +378,12 @@ function c:giveWinner16() {
 (:this function deletes the database 16 and 32:)
 declare
 %rest:path('/show/24Cards/delete/16and32')
-function c:delete16and32(){
-  d:deleteDatabase16(),
-  d:deleteDatabase32(),
-  db:output(c:redirectToTransformator("Gamescreen24"))  
+function c:delete16and32() {
+    d:deleteDatabase16(),
+    d:deleteDatabase32(),
+    d:deleteSavegame16(),
+    d:deleteSaveGame32(),
+    db:output(c:redirectToTransformator("Gamescreen24"))
 };
 
 (:this function flipps a card:)
@@ -202,46 +391,31 @@ declare
 %rest:path('/Card/turn/24/{$cardid}')
 function c:openCard24($cardid as xs:string)
 {
-t:openCard24($cardid),
-db:output(c:redirectToTransformator("Gamescreen24"))
+    t:openCard24($cardid),
+    db:output(c:redirectToTransformator("Gamescreen24"))
 };
 
 (:this function shows the "compare" popup:)
 declare
 %rest:path('/popup/compare/24')
-function c:compareCards24(){
-  t:compareCards24(),
-  db:output(c:redirectToTransformator("Gamescreen24"))  
+function c:compareCards24() {
+    t:compareCards24(),
+    db:output(c:redirectToTransformator("Gamescreen24"))
 };
 
 (:this function shows the "No Match! popup":)
 declare
 %rest:path('/popup/noMatch/continue/24')
-function c:noMatch24(){
-  t:noMatchPopup24(),
-  db:output(c:redirectToTransformator("Gamescreen24"))  
+function c:noMatch24() {
+    t:noMatchPopup24(),
+    db:output(c:redirectToTransformator("Gamescreen24"))
 };
 
 (:this function shows the "Match!" popup:)
 declare
 %rest:path('/popup/Match/continue/24')
-function c:Match24(){
-  t:MatchPopup24(),
-  db:output(c:redirectToTransformator("Gamescreen24"))  
-};
-
-(:Save Funcion :)
-declare
-%rest:path('/button/save/24')
-function c:saveGame24() {
-    t:saveGame24(),
-    db:output(c:redirectToTransformator("Gamescreen24"))
-};
-
-declare
-%rest:path('/popup/isSaved/continue/24')
-function c:savedGame24() {
-    t:nosavedPopup24(),
+function c:Match24() {
+    t:MatchPopup24(),
     db:output(c:redirectToTransformator("Gamescreen24"))
 };
 
@@ -250,7 +424,7 @@ function c:savedGame24() {
 declare
 %rest:path('/button/winner/24')
 function c:giveWinner24() {
-   t:getWinner24(),
+    t:getWinner24(),
     db:output(c:redirectToTransformator("Gamescreen24"))
 };
 
@@ -259,10 +433,12 @@ function c:giveWinner24() {
 (:this function deletes the database 16 and 24:)
 declare
 %rest:path('/show/32Cards/delete/16and24')
-function c:delete16and24(){
-  d:deleteDatabase16(),
-  d:deleteDatabase24(),
-  db:output(c:redirectToTransformator("Gamescreen32"))  
+function c:delete16and24() {
+    d:deleteDatabase16(),
+    d:deleteDatabase24(),
+    d:deleteSavegame16(),
+    d:deleteSavegame24(),
+    db:output(c:redirectToTransformator("Gamescreen32"))
 };
 
 (:this function flipps a card:)
@@ -270,57 +446,40 @@ declare
 %rest:path('/Card/turn/32/{$cardid}')
 function c:openCard32($cardid as xs:string)
 {
-t:openCard32($cardid),
-db:output(c:redirectToTransformator("Gamescreen32"))
+    t:openCard32($cardid),
+    db:output(c:redirectToTransformator("Gamescreen32"))
 };
 
 (:this function shows the "compare" popup:)
 declare
 %rest:path('/popup/compare/32')
-function c:compareCards32(){
-  t:compareCards32(),
-  db:output(c:redirectToTransformator("Gamescreen32"))  
+function c:compareCards32() {
+    t:compareCards32(),
+    db:output(c:redirectToTransformator("Gamescreen32"))
 };
 
 (:this function shows the "No Match! popup":)
 declare
 %rest:path('/popup/noMatch/continue/32')
-function c:noMatch32(){
-  t:noMatchPopup32(),
-  db:output(c:redirectToTransformator("Gamescreen32"))  
+function c:noMatch32() {
+    t:noMatchPopup32(),
+    db:output(c:redirectToTransformator("Gamescreen32"))
 };
 
 (:this function shows the "Match!" popup:)
 declare
 %rest:path('/popup/Match/continue/32')
-function c:Match32(){
-  t:MatchPopup32(),
-  db:output(c:redirectToTransformator("Gamescreen32"))  
-};
-
-
-
-(:Save Funcion :)
-declare
-%rest:path('/button/save/32')
-function c:saveGame32() {
-    t:saveGame32(),
+function c:Match32() {
+    t:MatchPopup32(),
     db:output(c:redirectToTransformator("Gamescreen32"))
 };
 
-declare
-%rest:path('/popup/isSaved/continue/32')
-function c:savedGame32() {
-    t:nosavedPopup32(),
-    db:output(c:redirectToTransformator("Gamescreen32"))
-};
 
 
 (:Winner:)
 declare
 %rest:path('/button/winner/32')
 function c:giveWinner32() {
-   t:getWinner32(),
+    t:getWinner32(),
     db:output(c:redirectToTransformator("Gamescreen32"))
 };
-

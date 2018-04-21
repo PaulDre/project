@@ -460,6 +460,12 @@ function i:insert16Cards() {
             as last into doc('Gamescreen24.xml')/Gamescreen24,
         insert node $cards32
             as last into doc('Gamescreen32.xml')/Gamescreen32,
+            insert node $cards16
+            as last into doc('SaveGame16.xml')/SaveGame16,
+        insert node $cards24
+            as last into doc('SaveGame24.xml')/SaveGame24,
+        insert node $cards32
+            as last into doc('SaveGame32.xml')/SaveGame32,
         
         db:output(
         c:redirectToTransformator(
