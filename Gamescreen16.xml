@@ -2,124 +2,124 @@
 <Gamescreen16>
   <uselessNode/>
   <insertNode>
-    <counterOfTurnedCards>1</counterOfTurnedCards>
-    <idOfCardOne>0</idOfCardOne>
-    <idOfCardTwo>0</idOfCardTwo>
-    <attributeIdOfCardOne>0</attributeIdOfCardOne>
-    <attributeIdOfCardTwo>0</attributeIdOfCardTwo>
+    <counterOfTurnedCards>5</counterOfTurnedCards>
+    <idOfCardOne>24</idOfCardOne>
+    <idOfCardTwo>12</idOfCardTwo>
+    <attributeIdOfCardOne>24</attributeIdOfCardOne>
+    <attributeIdOfCardTwo>11</attributeIdOfCardTwo>
     <compareCards>0</compareCards>
     <statusFoundPairButton>
-      <Found>3</Found>
+      <Found>2</Found>
     </statusFoundPairButton>
     <nextturn>1</nextturn>
-    <numberOfPlayer>3</numberOfPlayer>
+    <numberOfPlayer>2</numberOfPlayer>
     <Cards16>
-      <Card cardid="19">
-        <id>20</id>
+      <Card cardid="25">
+        <id>26</id>
         <StatusOpen>0</StatusOpen>
         <Visibility>1</Visibility>
         <XCoordinate>60</XCoordinate>
+        <YCoordinate>25</YCoordinate>
+      </Card>
+      <Card cardid="24">
+        <id>24</id>
+        <StatusOpen>0</StatusOpen>
+        <Visibility>1</Visibility>
+        <XCoordinate>80</XCoordinate>
         <YCoordinate>25</YCoordinate>
       </Card>
       <Card cardid="20">
         <id>20</id>
         <StatusOpen>0</StatusOpen>
         <Visibility>1</Visibility>
-        <XCoordinate>80</XCoordinate>
+        <XCoordinate>100</XCoordinate>
         <YCoordinate>25</YCoordinate>
+      </Card>
+      <Card cardid="23">
+        <id>24</id>
+        <StatusOpen>0</StatusOpen>
+        <Visibility>1</Visibility>
+        <XCoordinate>120</XCoordinate>
+        <YCoordinate>25</YCoordinate>
+      </Card>
+      <Card cardid="19">
+        <id>20</id>
+        <StatusOpen>0</StatusOpen>
+        <Visibility>1</Visibility>
+        <XCoordinate>60</XCoordinate>
+        <YCoordinate>40</YCoordinate>
+      </Card>
+      <Card cardid="13">
+        <id>14</id>
+        <StatusOpen>0</StatusOpen>
+        <Visibility>1</Visibility>
+        <XCoordinate>80</XCoordinate>
+        <YCoordinate>40</YCoordinate>
       </Card>
       <Card cardid="11">
         <id>12</id>
         <StatusOpen>0</StatusOpen>
         <Visibility>1</Visibility>
         <XCoordinate>100</XCoordinate>
-        <YCoordinate>25</YCoordinate>
+        <YCoordinate>40</YCoordinate>
+      </Card>
+      <Card cardid="16">
+        <id>16</id>
+        <StatusOpen>0</StatusOpen>
+        <Visibility>1</Visibility>
+        <XCoordinate>120</XCoordinate>
+        <YCoordinate>40</YCoordinate>
       </Card>
       <Card cardid="26">
         <id>26</id>
         <StatusOpen>0</StatusOpen>
         <Visibility>1</Visibility>
-        <XCoordinate>120</XCoordinate>
-        <YCoordinate>25</YCoordinate>
-      </Card>
-      <Card cardid="21">
-        <id>22</id>
-        <StatusOpen>0</StatusOpen>
-        <Visibility>1</Visibility>
         <XCoordinate>60</XCoordinate>
-        <YCoordinate>40</YCoordinate>
-      </Card>
-      <Card cardid="22">
-        <id>22</id>
-        <StatusOpen>0</StatusOpen>
-        <Visibility>1</Visibility>
-        <XCoordinate>80</XCoordinate>
-        <YCoordinate>40</YCoordinate>
-      </Card>
-      <Card cardid="15">
-        <id>16</id>
-        <StatusOpen>0</StatusOpen>
-        <Visibility>1</Visibility>
-        <XCoordinate>100</XCoordinate>
-        <YCoordinate>40</YCoordinate>
-      </Card>
-      <Card cardid="24">
-        <id>24</id>
-        <StatusOpen>0</StatusOpen>
-        <Visibility>1</Visibility>
-        <XCoordinate>120</XCoordinate>
-        <YCoordinate>40</YCoordinate>
+        <YCoordinate>55</YCoordinate>
       </Card>
       <Card cardid="17">
         <id>18</id>
         <StatusOpen>0</StatusOpen>
         <Visibility>1</Visibility>
-        <XCoordinate>60</XCoordinate>
-        <YCoordinate>55</YCoordinate>
-      </Card>
-      <Card cardid="23">
-        <id>24</id>
-        <StatusOpen>0</StatusOpen>
-        <Visibility>1</Visibility>
         <XCoordinate>80</XCoordinate>
         <YCoordinate>55</YCoordinate>
       </Card>
-      <Card cardid="18">
-        <id>18</id>
+      <Card cardid="21">
+        <id>22</id>
         <StatusOpen>0</StatusOpen>
         <Visibility>1</Visibility>
         <XCoordinate>100</XCoordinate>
+        <YCoordinate>55</YCoordinate>
+      </Card>
+      <Card cardid="22">
+        <id>22</id>
+        <StatusOpen>0</StatusOpen>
+        <Visibility>1</Visibility>
+        <XCoordinate>120</XCoordinate>
         <YCoordinate>55</YCoordinate>
       </Card>
       <Card cardid="12">
         <id>12</id>
         <StatusOpen>0</StatusOpen>
         <Visibility>1</Visibility>
-        <XCoordinate>120</XCoordinate>
-        <YCoordinate>55</YCoordinate>
+        <XCoordinate>60</XCoordinate>
+        <YCoordinate>70</YCoordinate>
       </Card>
-      <Card cardid="25">
-        <id>26</id>
+      <Card cardid="18">
+        <id>18</id>
         <StatusOpen>0</StatusOpen>
         <Visibility>1</Visibility>
-        <XCoordinate>60</XCoordinate>
+        <XCoordinate>80</XCoordinate>
         <YCoordinate>70</YCoordinate>
       </Card>
       <Card cardid="14">
         <id>14</id>
         <StatusOpen>0</StatusOpen>
         <Visibility>1</Visibility>
-        <XCoordinate>80</XCoordinate>
-        <YCoordinate>70</YCoordinate>
-      </Card>
-      <Card cardid="13">
-        <id>14</id>
-        <StatusOpen>0</StatusOpen>
-        <Visibility>1</Visibility>
         <XCoordinate>100</XCoordinate>
         <YCoordinate>70</YCoordinate>
       </Card>
-      <Card cardid="16">
+      <Card cardid="15">
         <id>16</id>
         <StatusOpen>0</StatusOpen>
         <Visibility>1</Visibility>
@@ -154,7 +154,7 @@
         <Nickname>Player 3</Nickname>
         <Turn>0</Turn>
         <Points>0</Points>
-        <Active>1</Active>
+        <Active>0</Active>
         <XCoordinate>110</XCoordinate>
         <YCoordinate>5</YCoordinate>
       </Player>
@@ -188,7 +188,7 @@
       <Player playerid="7">
         <Turn>0</Turn>
       </Player>
-      <Winner>test</Winner>
+      <Winner/>
     </Players>
     <backButton>
       <id>1</id>

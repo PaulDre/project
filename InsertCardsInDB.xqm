@@ -128,7 +128,7 @@ function i:insert16Cards() {
                 playerid="7">
                 <Turn>0</Turn>
             </Player>
-            <Winner>test</Winner>
+            <Winner></Winner>
         </Players>
         
         <backButton>
@@ -277,6 +277,7 @@ function i:insert16Cards() {
                 playerid="7">
                 <Turn>0</Turn>
             </Player>
+            <Winner></Winner>
         </Players>
         
         <backButton>
@@ -287,6 +288,14 @@ function i:insert16Cards() {
             <id>1</id>
             <Popup>0</Popup>
         </saveButton>
+        
+        <winnerButton>
+            <id>1</id>
+        </winnerButton>
+        
+        <winnerPopup>
+            <Visibility>0</Visibility>
+        </winnerPopup>
     
     </insertNode>
     
@@ -413,6 +422,7 @@ function i:insert16Cards() {
                 playerid="7">
                 <Turn>0</Turn>
             </Player>
+            <Winner></Winner>
         </Players>
         
         <backButton>
@@ -423,6 +433,15 @@ function i:insert16Cards() {
             <id>1</id>
             <Popup>0</Popup>
         </saveButton>
+        
+        
+        <winnerButton>
+            <id>1</id>
+        </winnerButton>
+        
+        <winnerPopup>
+            <Visibility>0</Visibility>
+        </winnerPopup>
     
     
     </insertNode>

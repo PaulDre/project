@@ -1123,7 +1123,7 @@
                         <text x="94" y="39" fill="purple" alignment-baseline="middle"
                             text-anchor="middle" font-size="10" font-style="italic">The Winner</text>
                         <text x="94" y="52" fill="purple" alignment-baseline="middle"
-                            text-anchor="middle" font-size="10" font-style="italic">is: <xsl:value-of select="/insertNode/Players/Winner/text()"/></text>
+                            text-anchor="middle" font-size="10" font-style="italic">is: <xsl:value-of select="insertNode/Players/Winner/text()"/></text>
                         <text x="94" y="66" fill="purple" alignment-baseline="middle"
                             text-anchor="middle" font-size="7" font-style="italic">  </text>
                     </svg>
@@ -2325,6 +2325,37 @@
                     </svg>
                 </a>
             </xsl:if>
+            
+            
+            
+            <!-- Button "Winner" -->
+            <xsl:if test="insertNode/winnerButton//id = 1">
+                <a xlink:href="/button/winner/24">
+                    <svg>
+                        <text x="190" y="90" fill="black" alignment-baseline="middle"
+                            text-anchor="middle" font-size="5" font-style="italic">Winner</text>
+                    </svg>
+                </a>
+            </xsl:if>
+            
+            <!-- Winner Popup -->
+            <xsl:if test="insertNode/winnerPopup/Visibility = 1">
+                <a xlink:href="/popup/Winner/to/Startscreen/24">
+                    <svg>
+                        <rect x="50" y="20" width="90" height="60" fill="white" stroke="gold"
+                            stroke-width="1" style="fill-opacity:0.8"/>
+                        
+                        <text x="94" y="39" fill="purple" alignment-baseline="middle"
+                            text-anchor="middle" font-size="10" font-style="italic">The Winner</text>
+                        <text x="94" y="52" fill="purple" alignment-baseline="middle"
+                            text-anchor="middle" font-size="10" font-style="italic">is: <xsl:value-of select="insertNode/Players/Winner/text()"/></text>
+                        <text x="94" y="66" fill="purple" alignment-baseline="middle"
+                            text-anchor="middle" font-size="7" font-style="italic">  </text>
+                    </svg>
+                </a>
+            </xsl:if>
+            
+            
         </svg>
     </xsl:template>
 
@@ -3629,6 +3660,36 @@
                     </svg>
                 </a>
             </xsl:if>
+            
+            
+            
+            <!-- Button "Winner" -->
+            <xsl:if test="insertNode/winnerButton//id = 1">
+                <a xlink:href="/button/winner/32">
+                    <svg>
+                        <text x="190" y="90" fill="black" alignment-baseline="middle"
+                            text-anchor="middle" font-size="5" font-style="italic">Winner</text>
+                    </svg>
+                </a>
+            </xsl:if>
+            
+            <!-- Winner Popup -->
+            <xsl:if test="insertNode/winnerPopup/Visibility = 1">
+                <a xlink:href="/popup/Winner/to/Startscreen/32">
+                    <svg>
+                        <rect x="50" y="20" width="90" height="60" fill="white" stroke="gold"
+                            stroke-width="1" style="fill-opacity:0.8"/>
+                        
+                        <text x="94" y="39" fill="purple" alignment-baseline="middle"
+                            text-anchor="middle" font-size="10" font-style="italic">The Winner</text>
+                        <text x="94" y="52" fill="purple" alignment-baseline="middle"
+                            text-anchor="middle" font-size="10" font-style="italic">is: <xsl:value-of select="insertNode/Players/Winner/text()"/></text>
+                        <text x="94" y="66" fill="purple" alignment-baseline="middle"
+                            text-anchor="middle" font-size="7" font-style="italic">  </text>
+                    </svg>
+                </a>
+            </xsl:if>
+            
             
         </svg>
     </xsl:template>

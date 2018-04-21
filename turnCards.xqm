@@ -195,15 +195,15 @@ declare function t:MatchPopup16() {
                                 fn:doc("Gamescreen16.xml")/Gamescreen16/insertNode/Players/Player[@playerid = 6]/Points + 1
                         else
                             ()
-                            
-                          
+    
+    
 };
 
 
 (:Winner:)
 declare
 %rest:path('/popup/Winner/to/Startscreen/16')
-function t:getWinner() {
+function t:getWinner16() {
     if (fn:doc("Gamescreen16.xml")/Gamescreen16/insertNode/Cards16/Card[@cardid = 11]/Visibility = 0 and
     fn:doc("Gamescreen16.xml")/Gamescreen16/insertNode/Cards16/Card[@cardid = 12]/Visibility = 0 and
     fn:doc("Gamescreen16.xml")/Gamescreen16/insertNode/Cards16/Card[@cardid = 13]/Visibility = 0 and
@@ -224,12 +224,70 @@ function t:getWinner() {
         replace value of node fn:doc("Gamescreen16.xml")/Gamescreen16/insertNode/winnerPopup/Visibility
             with 1
     else
-        ( 
+        (
         replace value of node fn:doc("Gamescreen16.xml")/Gamescreen16/insertNode/winnerPopup/Visibility
             with 0)
-
-
+    , t:showWinner16()
+    
 };
+
+declare
+function t:showWinner16() {
+    let $p1 := fn:doc("Gamescreen16.xml")/Gamescreen16/insertNode/Players/Player[@playerid = 1]/Points
+    let $p2 := fn:doc("Gamescreen16.xml")/Gamescreen16/insertNode/Players/Player[@playerid = 2]/Points
+    let $p3 := fn:doc("Gamescreen16.xml")/Gamescreen16/insertNode/Players/Player[@playerid = 3]/Points
+    let $p4 := fn:doc("Gamescreen16.xml")/Gamescreen16/insertNode/Players/Player[@playerid = 4]/Points
+    let $p5 := fn:doc("Gamescreen16.xml")/Gamescreen16/insertNode/Players/Player[@playerid = 5]/Points
+    let $p6 := fn:doc("Gamescreen16.xml")/Gamescreen16/insertNode/Players/Player[@playerid = 6]/Points
+    
+    
+    return
+        
+        if (($p1 > $p2) and ($p1 > $p3) and ($p1 > $p4) and ($p1 > $p5) and ($p1 > $p6)) then
+            replace value of node
+            fn:doc("Gamescreen16.xml")/Gamescreen16/insertNode/Players/Winner
+                with fn:doc("Gamescreen16.xml")/Gamescreen16/insertNode/Players/Player[@playerid = 1]/Nickname
+        else
+            if (($p2 > $p1) and ($p2 > $p3) and ($p2 > $p4) and ($p2 > $p5) and ($p2 > $p6)) then
+                replace value of node
+                fn:doc("Gamescreen16.xml")/Gamescreen16/insertNode/Players/Winner
+                    with fn:doc("Gamescreen16.xml")/Gamescreen16/insertNode/Players/Player[@playerid = 2]/Nickname
+            
+            else
+                if (($p3 > $p2) and ($p3 > $p1) and ($p3 > $p4) and ($p3 > $p5) and ($p3 > $p6)) then
+                    replace value of node
+                    fn:doc("Gamescreen16.xml")/Gamescreen16/insertNode/Players/Winner
+                        with fn:doc("Gamescreen16.xml")/Gamescreen16/insertNode/Players/Player[@playerid = 3]/Nickname
+                
+                else
+                    if (($p4 > $p2) and ($p4 > $p3) and ($p4 > $p1) and ($p4 > $p5) and ($p4 > $p6)) then
+                        replace value of node
+                        fn:doc("Gamescreen16.xml")/Gamescreen16/insertNode/Players/Winner
+                            with fn:doc("Gamescreen16.xml")/Gamescreen16/insertNode/Players/Player[@playerid = 4]/Nickname
+                    
+                    else
+                        if (($p5 > $p2) and ($p5 > $p3) and ($p5 > $p4) and ($p5 > $p1) and ($p5 > $p6)) then
+                            replace value of node
+                            fn:doc("Gamescreen16.xml")/Gamescreen16/insertNode/Players/Winner
+                                with fn:doc("Gamescreen16.xml")/Gamescreen16/insertNode/Players/Player[@playerid = 5]/Nickname
+                        
+                        else
+                            if (($p6 > $p2) and ($p6 > $p3) and ($p6 > $p4) and ($p6 > $p5) and ($p6 > $p1)) then
+                                replace value of node
+                                fn:doc("Gamescreen16.xml")/Gamescreen16/insertNode/Players/Winner
+                                    with fn:doc("Gamescreen16.xml")/Gamescreen16/insertNode/Players/Player[@playerid = 6]/Nickname
+                            
+                            else
+                                (replace value of node
+                                fn:doc("Gamescreen16.xml")/Gamescreen16/insertNode/Players/Winner
+                                    with <Winner> Draw</Winner>)
+};
+
+
+
+
+
+
 
 
 (:this function passes on to the next Player:)
@@ -465,6 +523,101 @@ declare function t:MatchPopup24() {
 };
 
 
+(:Winner:)
+declare
+%rest:path('/popup/Winner/to/Startscreen/24')
+function t:getWinner24() {
+    if (fn:doc("Gamescreen24.xml")/Gamescreen24/insertNode/Cards24/Card[@cardid = 11]/Visibility = 0 and
+    fn:doc("Gamescreen24.xml")/Gamescreen24/insertNode/Cards24/Card[@cardid = 12]/Visibility = 0 and
+    fn:doc("Gamescreen24.xml")/Gamescreen24/insertNode/Cards24/Card[@cardid = 13]/Visibility = 0 and
+    fn:doc("Gamescreen24.xml")/Gamescreen24/insertNode/Cards24/Card[@cardid = 14]/Visibility = 0 and
+    fn:doc("Gamescreen24.xml")/Gamescreen24/insertNode/Cards24/Card[@cardid = 15]/Visibility = 0 and
+    fn:doc("Gamescreen24.xml")/Gamescreen24/insertNode/Cards24/Card[@cardid = 16]/Visibility = 0 and
+    fn:doc("Gamescreen24.xml")/Gamescreen24/insertNode/Cards24/Card[@cardid = 17]/Visibility = 0 and
+    fn:doc("Gamescreen24.xml")/Gamescreen24/insertNode/Cards24/Card[@cardid = 18]/Visibility = 0 and
+    fn:doc("Gamescreen24.xml")/Gamescreen24/insertNode/Cards24/Card[@cardid = 19]/Visibility = 0 and
+    fn:doc("Gamescreen24.xml")/Gamescreen24/insertNode/Cards24/Card[@cardid = 20]/Visibility = 0 and
+    fn:doc("Gamescreen24.xml")/Gamescreen24/insertNode/Cards24/Card[@cardid = 21]/Visibility = 0 and
+    fn:doc("Gamescreen24.xml")/Gamescreen24/insertNode/Cards24/Card[@cardid = 22]/Visibility = 0 and
+    fn:doc("Gamescreen24.xml")/Gamescreen24/insertNode/Cards24/Card[@cardid = 23]/Visibility = 0 and
+    fn:doc("Gamescreen24.xml")/Gamescreen24/insertNode/Cards24/Card[@cardid = 24]/Visibility = 0 and
+    fn:doc("Gamescreen24.xml")/Gamescreen24/insertNode/Cards24/Card[@cardid = 25]/Visibility = 0 and
+    fn:doc("Gamescreen24.xml")/Gamescreen24/insertNode/Cards24/Card[@cardid = 26]/Visibility = 0 and
+    fn:doc("Gamescreen24.xml")/Gamescreen24/insertNode/Cards24/Card[@cardid = 27]/Visibility = 0 and
+    fn:doc("Gamescreen24.xml")/Gamescreen24/insertNode/Cards24/Card[@cardid = 28]/Visibility = 0 and
+    fn:doc("Gamescreen24.xml")/Gamescreen24/insertNode/Cards24/Card[@cardid = 29]/Visibility = 0 and
+    fn:doc("Gamescreen24.xml")/Gamescreen24/insertNode/Cards24/Card[@cardid = 30]/Visibility = 0 and
+    fn:doc("Gamescreen24.xml")/Gamescreen24/insertNode/Cards24/Card[@cardid = 31]/Visibility = 0 and
+    fn:doc("Gamescreen24.xml")/Gamescreen24/insertNode/Cards24/Card[@cardid = 32]/Visibility = 0 and
+    fn:doc("Gamescreen24.xml")/Gamescreen24/insertNode/Cards24/Card[@cardid = 33]/Visibility = 0 and
+    fn:doc("Gamescreen24.xml")/Gamescreen24/insertNode/Cards24/Card[@cardid = 34]/Visibility = 0)
+    
+    
+    
+    then
+        
+        replace value of node fn:doc("Gamescreen24.xml")/Gamescreen24/insertNode/winnerPopup/Visibility
+            with 1
+    else
+        (
+        replace value of node fn:doc("Gamescreen24.xml")/Gamescreen24/insertNode/winnerPopup/Visibility
+            with 0)
+    , t:showWinner24()
+    
+};
+
+declare
+function t:showWinner24() {
+    let $p1 := fn:doc("Gamescreen24.xml")/Gamescreen24/insertNode/Players/Player[@playerid = 1]/Points
+    let $p2 := fn:doc("Gamescreen24.xml")/Gamescreen24/insertNode/Players/Player[@playerid = 2]/Points
+    let $p3 := fn:doc("Gamescreen24.xml")/Gamescreen24/insertNode/Players/Player[@playerid = 3]/Points
+    let $p4 := fn:doc("Gamescreen24.xml")/Gamescreen24/insertNode/Players/Player[@playerid = 4]/Points
+    let $p5 := fn:doc("Gamescreen24.xml")/Gamescreen24/insertNode/Players/Player[@playerid = 5]/Points
+    let $p6 := fn:doc("Gamescreen24.xml")/Gamescreen24/insertNode/Players/Player[@playerid = 6]/Points
+    
+    
+    return
+        
+        if (($p1 > $p2) and ($p1 > $p3) and ($p1 > $p4) and ($p1 > $p5) and ($p1 > $p6)) then
+            replace value of node
+            fn:doc("Gamescreen24.xml")/Gamescreen24/insertNode/Players/Winner
+                with fn:doc("Gamescreen24.xml")/Gamescreen24/insertNode/Players/Player[@playerid = 1]/Nickname
+        else
+            if (($p2 > $p1) and ($p2 > $p3) and ($p2 > $p4) and ($p2 > $p5) and ($p2 > $p6)) then
+                replace value of node
+                fn:doc("Gamescreen24.xml")/Gamescreen24/insertNode/Players/Winner
+                    with fn:doc("Gamescreen24.xml")/Gamescreen24/insertNode/Players/Player[@playerid = 2]/Nickname
+            
+            else
+                if (($p3 > $p2) and ($p3 > $p1) and ($p3 > $p4) and ($p3 > $p5) and ($p3 > $p6)) then
+                    replace value of node
+                    fn:doc("Gamescreen24.xml")/Gamescreen24/insertNode/Players/Winner
+                        with fn:doc("Gamescreen24.xml")/Gamescreen24/insertNode/Players/Player[@playerid = 3]/Nickname
+                
+                else
+                    if (($p4 > $p2) and ($p4 > $p3) and ($p4 > $p1) and ($p4 > $p5) and ($p4 > $p6)) then
+                        replace value of node
+                        fn:doc("Gamescreen24.xml")/Gamescreen24/insertNode/Players/Winner
+                            with fn:doc("Gamescreen24.xml")/Gamescreen24/insertNode/Players/Player[@playerid = 4]/Nickname
+                    
+                    else
+                        if (($p5 > $p2) and ($p5 > $p3) and ($p5 > $p4) and ($p5 > $p1) and ($p5 > $p6)) then
+                            replace value of node
+                            fn:doc("Gamescreen24.xml")/Gamescreen24/insertNode/Players/Winner
+                                with fn:doc("Gamescreen24.xml")/Gamescreen24/insertNode/Players/Player[@playerid = 5]/Nickname
+                        
+                        else
+                            if (($p6 > $p2) and ($p6 > $p3) and ($p6 > $p4) and ($p6 > $p5) and ($p6 > $p1)) then
+                                replace value of node
+                                fn:doc("Gamescreen24.xml")/Gamescreen24/insertNode/Players/Winner
+                                    with fn:doc("Gamescreen24.xml")/Gamescreen24/insertNode/Players/Player[@playerid = 6]/Nickname
+                            
+                            else
+                                (replace value of node
+                                fn:doc("Gamescreen24.xml")/Gamescreen24/insertNode/Players/Winner
+                                    with <Winner> Draw</Winner>)
+};
+
 
 
 
@@ -698,12 +851,115 @@ declare function t:MatchPopup32() {
                                 fn:doc("Gamescreen32.xml")/Gamescreen32/insertNode/Players/Player[@playerid = 6]/Points + 1
                         else
                             (
+                            
+                            )
     
-    )
-   
 };
 
 
+(:Winner:)
+declare
+%rest:path('/popup/Winner/to/Startscreen/32')
+function t:getWinner32() {
+    if (fn:doc("Gamescreen32.xml")/Gamescreen32/insertNode/Cards32/Card[@cardid = 11]/Visibility = 0 and
+    fn:doc("Gamescreen32.xml")/Gamescreen32/insertNode/Cards32/Card[@cardid = 12]/Visibility = 0 and
+    fn:doc("Gamescreen32.xml")/Gamescreen32/insertNode/Cards32/Card[@cardid = 13]/Visibility = 0 and
+    fn:doc("Gamescreen32.xml")/Gamescreen32/insertNode/Cards32/Card[@cardid = 14]/Visibility = 0 and
+    fn:doc("Gamescreen32.xml")/Gamescreen32/insertNode/Cards32/Card[@cardid = 15]/Visibility = 0 and
+    fn:doc("Gamescreen32.xml")/Gamescreen32/insertNode/Cards32/Card[@cardid = 16]/Visibility = 0 and
+    fn:doc("Gamescreen32.xml")/Gamescreen32/insertNode/Cards32/Card[@cardid = 17]/Visibility = 0 and
+    fn:doc("Gamescreen32.xml")/Gamescreen32/insertNode/Cards32/Card[@cardid = 18]/Visibility = 0 and
+    fn:doc("Gamescreen32.xml")/Gamescreen32/insertNode/Cards32/Card[@cardid = 19]/Visibility = 0 and
+    fn:doc("Gamescreen32.xml")/Gamescreen32/insertNode/Cards32/Card[@cardid = 20]/Visibility = 0 and
+    fn:doc("Gamescreen32.xml")/Gamescreen32/insertNode/Cards32/Card[@cardid = 21]/Visibility = 0 and
+    fn:doc("Gamescreen32.xml")/Gamescreen32/insertNode/Cards32/Card[@cardid = 22]/Visibility = 0 and
+    fn:doc("Gamescreen32.xml")/Gamescreen32/insertNode/Cards32/Card[@cardid = 23]/Visibility = 0 and
+    fn:doc("Gamescreen32.xml")/Gamescreen32/insertNode/Cards32/Card[@cardid = 24]/Visibility = 0 and
+    fn:doc("Gamescreen32.xml")/Gamescreen32/insertNode/Cards32/Card[@cardid = 25]/Visibility = 0 and
+    fn:doc("Gamescreen32.xml")/Gamescreen32/insertNode/Cards32/Card[@cardid = 26]/Visibility = 0 and
+    fn:doc("Gamescreen32.xml")/Gamescreen32/insertNode/Cards32/Card[@cardid = 27]/Visibility = 0 and
+    fn:doc("Gamescreen32.xml")/Gamescreen32/insertNode/Cards32/Card[@cardid = 28]/Visibility = 0 and
+    fn:doc("Gamescreen32.xml")/Gamescreen32/insertNode/Cards32/Card[@cardid = 29]/Visibility = 0 and
+    fn:doc("Gamescreen32.xml")/Gamescreen32/insertNode/Cards32/Card[@cardid = 30]/Visibility = 0 and
+    fn:doc("Gamescreen32.xml")/Gamescreen32/insertNode/Cards32/Card[@cardid = 31]/Visibility = 0 and
+    fn:doc("Gamescreen32.xml")/Gamescreen32/insertNode/Cards32/Card[@cardid = 32]/Visibility = 0 and
+    fn:doc("Gamescreen32.xml")/Gamescreen32/insertNode/Cards32/Card[@cardid = 33]/Visibility = 0 and
+    fn:doc("Gamescreen32.xml")/Gamescreen32/insertNode/Cards32/Card[@cardid = 34]/Visibility = 0 and
+    fn:doc("Gamescreen32.xml")/Gamescreen32/insertNode/Cards32/Card[@cardid = 35]/Visibility = 0 and
+    fn:doc("Gamescreen32.xml")/Gamescreen32/insertNode/Cards32/Card[@cardid = 36]/Visibility = 0 and
+    fn:doc("Gamescreen32.xml")/Gamescreen32/insertNode/Cards32/Card[@cardid = 37]/Visibility = 0 and
+    fn:doc("Gamescreen32.xml")/Gamescreen32/insertNode/Cards32/Card[@cardid = 38]/Visibility = 0 and
+    fn:doc("Gamescreen32.xml")/Gamescreen32/insertNode/Cards32/Card[@cardid = 39]/Visibility = 0 and
+    fn:doc("Gamescreen32.xml")/Gamescreen32/insertNode/Cards32/Card[@cardid = 40]/Visibility = 0 and
+    fn:doc("Gamescreen32.xml")/Gamescreen32/insertNode/Cards32/Card[@cardid = 41]/Visibility = 0 and
+    fn:doc("Gamescreen32.xml")/Gamescreen32/insertNode/Cards32/Card[@cardid = 42]/Visibility = 0)
+    
+    
+    
+    
+    then
+        
+        replace value of node fn:doc("Gamescreen32.xml")/Gamescreen32/insertNode/winnerPopup/Visibility
+            with 1
+    else
+        (
+        replace value of node fn:doc("Gamescreen32.xml")/Gamescreen32/insertNode/winnerPopup/Visibility
+            with 0)
+    , t:showWinner32()
+    
+};
+
+declare
+function t:showWinner32() {
+    let $p1 := fn:doc("Gamescreen32.xml")/Gamescreen32/insertNode/Players/Player[@playerid = 1]/Points
+    let $p2 := fn:doc("Gamescreen32.xml")/Gamescreen32/insertNode/Players/Player[@playerid = 2]/Points
+    let $p3 := fn:doc("Gamescreen32.xml")/Gamescreen32/insertNode/Players/Player[@playerid = 3]/Points
+    let $p4 := fn:doc("Gamescreen32.xml")/Gamescreen32/insertNode/Players/Player[@playerid = 4]/Points
+    let $p5 := fn:doc("Gamescreen32.xml")/Gamescreen32/insertNode/Players/Player[@playerid = 5]/Points
+    let $p6 := fn:doc("Gamescreen32.xml")/Gamescreen32/insertNode/Players/Player[@playerid = 6]/Points
+    
+    
+    return
+        
+        if (($p1 > $p2) and ($p1 > $p3) and ($p1 > $p4) and ($p1 > $p5) and ($p1 > $p6)) then
+            replace value of node
+            fn:doc("Gamescreen32.xml")/Gamescreen32/insertNode/Players/Winner
+                with fn:doc("Gamescreen32.xml")/Gamescreen32/insertNode/Players/Player[@playerid = 1]/Nickname
+        else
+            if (($p2 > $p1) and ($p2 > $p3) and ($p2 > $p4) and ($p2 > $p5) and ($p2 > $p6)) then
+                replace value of node
+                fn:doc("Gamescreen32.xml")/Gamescreen32/insertNode/Players/Winner
+                    with fn:doc("Gamescreen32.xml")/Gamescreen32/insertNode/Players/Player[@playerid = 2]/Nickname
+            
+            else
+                if (($p3 > $p2) and ($p3 > $p1) and ($p3 > $p4) and ($p3 > $p5) and ($p3 > $p6)) then
+                    replace value of node
+                    fn:doc("Gamescreen32.xml")/Gamescreen32/insertNode/Players/Winner
+                        with fn:doc("Gamescreen32.xml")/Gamescreen32/insertNode/Players/Player[@playerid = 3]/Nickname
+                
+                else
+                    if (($p4 > $p2) and ($p4 > $p3) and ($p4 > $p1) and ($p4 > $p5) and ($p4 > $p6)) then
+                        replace value of node
+                        fn:doc("Gamescreen32.xml")/Gamescreen32/insertNode/Players/Winner
+                            with fn:doc("Gamescreen32.xml")/Gamescreen32/insertNode/Players/Player[@playerid = 4]/Nickname
+                    
+                    else
+                        if (($p5 > $p2) and ($p5 > $p3) and ($p5 > $p4) and ($p5 > $p1) and ($p5 > $p6)) then
+                            replace value of node
+                            fn:doc("Gamescreen32.xml")/Gamescreen32/insertNode/Players/Winner
+                                with fn:doc("Gamescreen32.xml")/Gamescreen32/insertNode/Players/Player[@playerid = 5]/Nickname
+                        
+                        else
+                            if (($p6 > $p2) and ($p6 > $p3) and ($p6 > $p4) and ($p6 > $p5) and ($p6 > $p1)) then
+                                replace value of node
+                                fn:doc("Gamescreen32.xml")/Gamescreen32/insertNode/Players/Winner
+                                    with fn:doc("Gamescreen32.xml")/Gamescreen32/insertNode/Players/Player[@playerid = 6]/Nickname
+                            
+                            else
+                                (replace value of node
+                                fn:doc("Gamescreen32.xml")/Gamescreen32/insertNode/Players/Winner
+                                    with <Winner> Draw</Winner>)
+};
 
 
 
@@ -748,5 +1004,3 @@ function t:nosavedPopup32() {
     replace value of node fn:doc("Gamescreen32.xml")/Gamescreen32/insertNode/saveButton/Popup
         with 0
 };
-
-

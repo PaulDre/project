@@ -175,10 +175,12 @@ function c:savedGame16() {
     db:output(c:redirectToTransformator("Gamescreen16"))
 };
 
+
+(:Winner:)
 declare
 %rest:path('/button/winner/16')
 function c:giveWinner16() {
-   t:getWinner(),
+   t:getWinner16(),
     db:output(c:redirectToTransformator("Gamescreen16"))
 };
 
@@ -244,6 +246,14 @@ function c:savedGame24() {
 };
 
 
+(:Winner:)
+declare
+%rest:path('/button/winner/24')
+function c:giveWinner24() {
+   t:getWinner24(),
+    db:output(c:redirectToTransformator("Gamescreen24"))
+};
+
 (:--------------------cards 32--------------------:)
 
 (:this function deletes the database 16 and 24:)
@@ -305,4 +315,12 @@ function c:savedGame32() {
     db:output(c:redirectToTransformator("Gamescreen32"))
 };
 
+
+(:Winner:)
+declare
+%rest:path('/button/winner/32')
+function c:giveWinner32() {
+   t:getWinner32(),
+    db:output(c:redirectToTransformator("Gamescreen32"))
+};
 
