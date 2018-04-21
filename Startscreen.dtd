@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ELEMENT Startscreen (Logo,Button,backButton) >
+<!ELEMENT Logo (id,Menutext) >
+<!ELEMENT id (#PCDATA) >
+<!ELEMENT Menutext (#PCDATA) >
+<!ELEMENT Button (id*) >
+<!ELEMENT backButton (id) >
+
