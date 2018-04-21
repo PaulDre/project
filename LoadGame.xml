@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LoadGame>
+    <Button>
+        <id>1</id>
+        <id>2</id>
+        <id>3</id>
+    </Button>
+    
+    <backButton>
+        <id>1</id>
+    </backButton>
+</LoadGame>

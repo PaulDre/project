@@ -81,7 +81,7 @@
 
             <!-- Button "Load Game" -->
             <xsl:if test="Button//id = 2">
-                <a xlink:href="/memory/transform/Startscreen">
+                <a xlink:href="/memory/transform/LoadGame">
                     <svg>
                         <rect x="75" y="{$button_y+15}" rx="20" ry="20" width="50" height="10"
                             fill="gray"/>
@@ -116,7 +116,102 @@
     </xsl:template>
 
 
-
+    <!-- Load Game -->
+    
+    <xsl:template match="LoadGame">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            height="100%" width="100%" viewBox="0 0 200 100">
+            
+            <!-- "Memory" Logo -->
+            <xsl:if test=".//id = 1">
+                <defs>
+                    <filter id="f1" x="0" y="0">
+                        <feGaussianBlur in="SourceGraphic" stdDeviation="3"/>
+                    </filter>
+                </defs>
+                <svg>
+                    <rect x="0" y="5" width="10" height="10" filter="url(#f1)"
+                        style="fill-opacity:0.6" fill="lightblue"/>
+                    <rect x="10" y="5" width="10" height="10" filter="url(#f1)"
+                        style="fill-opacity:0.6" fill="red"/>
+                    <rect x="20" y="5" width="10" height="10" filter="url(#f1)"
+                        style="fill-opacity:0.6" fill="yellow"/>
+                    <rect x="30" y="5" width="10" height="10" filter="url(#f1)"
+                        style="fill-opacity:0.6" fill="green"/>
+                    <rect x="40" y="5" width="10" height="10" filter="url(#f1)"
+                        style="fill-opacity:0.6" fill="orange"/>
+                    <rect x="50" y="5" width="10" height="10" filter="url(#f1)"
+                        style="fill-opacity:0.6" fill="pink"/>
+                    <text x="1" y="14" font-size="10" fill="darkgrey" font-style="normal"
+                        style="fill-opacity:0.6">M</text>
+                    <text x="11" y="14" font-size="10" fill="darkgrey" font-style="normal"
+                        style="fill-opacity:0.6"> E </text>
+                    <text x="21" y="14" font-size="10" fill="darkgrey" font-style="normal"
+                        style="fill-opacity:0.6"> M </text>
+                    <text x="31" y="14" font-size="10" fill="darkgrey" font-style="normal"
+                        style="fill-opacity:0.6"> O </text>
+                    <text x="41" y="14" font-size="10" fill="darkgrey" font-style="normal"
+                        style="fill-opacity:0.6"> R </text>
+                    <text x="51" y="14" font-size="10" fill="darkgrey" font-style="normal"
+                        style="fill-opacity:0.6"> Y </text>
+                    
+                    <!-- Header "choose Game" -->
+                    <text x="100" y="28" font-size="10" fill="black" alignment-baseline="middle"
+                        text-anchor="middle" font-weight="bold" letter-spacing="2.5">Choose your Game! </text>
+                </svg>
+            </xsl:if>
+            
+            <!-- Button "16 -->
+            <xsl:if test="Button//id = 1">
+                <a xlink:href="">
+                    <svg>
+                        <rect x="75" y="{$button_y}" rx="20" ry="20" width="50" height="10"
+                            fill="gray"/>
+                        <text x="100" y="{$button_y+6}" font-size="4" font-weight="bold"
+                            fill="black" text-anchor="middle">16 Cards</text>
+                    </svg>
+                </a>
+            </xsl:if>
+            
+            <!-- Button "24" -->
+            <xsl:if test="Button//id = 2">
+                <a xlink:href="">
+                    <svg>
+                        <rect x="75" y="{$button_y+15}" rx="20" ry="20" width="50" height="10"
+                            fill="gray"/>
+                        <text x="100" y="{$button_y+15+6}" font-size="4" font-weight="bold"
+                            fill="black" text-anchor="middle">24 Cards</text>
+                    </svg>
+                </a>
+            </xsl:if>
+            
+            <!-- Button "32" -->
+            <xsl:if test="Button//id = 3">
+                <a xlink:href="">
+                    <svg>
+                        <rect x="75" y="{$button_y+30}" rx="20" ry="20" width="50" height="10"
+                            fill="gray"/>
+                        <text x="100" y="{$button_y+30+6}" font-size="4" font-weight="bold"
+                            fill="black" text-anchor="middle">32 Cards</text>
+                    </svg>
+                </a>
+            </xsl:if>
+            
+            <!-- Button "Quit" -->
+            <xsl:if test="backButton//id = 1">
+                <a xlink:href="/memory/transform/Startscreen">
+                    <svg>
+                        <text x="20" y="90" fill="black" alignment-baseline="middle"
+                            text-anchor="middle" font-size="5" font-style="italic">Back</text>
+                    </svg>
+                </a>
+            </xsl:if>
+        </svg>
+    </xsl:template>
+    
+    
+    
+    
 
 
 
@@ -2340,7 +2435,7 @@
             
             <!-- Winner Popup -->
             <xsl:if test="insertNode/winnerPopup/Visibility = 1">
-                <a xlink:href="/popup/Winner/to/Startscreen/24">
+                <a xlink:href="/memory/transform/Startscreen">
                     <svg>
                         <rect x="50" y="20" width="90" height="60" fill="white" stroke="gold"
                             stroke-width="1" style="fill-opacity:0.8"/>
@@ -3741,12 +3836,15 @@
                     <svg>
                         <text x="20" y="90" fill="black" alignment-baseline="middle"
                             text-anchor="middle" font-size="5" font-style="italic">Back</text>
+                        
                     </svg>
                 </a>
             </xsl:if>
             
             
            <svg>
+               <text x="100" y="28" font-size="10" fill="black" alignment-baseline="middle"
+                   text-anchor="middle" font-weight="bold" letter-spacing="2.5">Highscore </text>
                <text x="40" y="35" fill="black" alignment-baseline="middle"
                    text-anchor="middle" font-size="7" font-style="italic">1: <xsl:value-of select="Winner/winner1/Name"/> , <xsl:value-of select="Winner/winner1/Points"/> Points</text>
                <text x="40" y="50" fill="black" alignment-baseline="middle"
