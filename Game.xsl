@@ -2383,7 +2383,7 @@
             
             <!-- Button "Save" -->
             <xsl:if test="insertNode/saveButton//id = 1">
-                <a xlink:href="/button/save/24">
+                <a xlink:href="/testsave24">
                     <svg>
                         <text x="170" y="90" fill="black" alignment-baseline="middle"
                             text-anchor="middle" font-size="5" font-style="italic">Save</text>
@@ -3704,7 +3704,7 @@
             
             <!-- Button "Save" -->
             <xsl:if test="insertNode/saveButton//id = 1">
-                <a xlink:href="/button/save/32">
+                <a xlink:href="/testsave32">
                     <svg>
                         <text x="170" y="90" fill="black" alignment-baseline="middle"
                             text-anchor="middle" font-size="5" font-style="italic">Save</text>

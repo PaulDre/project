@@ -192,12 +192,6 @@ function c:saveGame16() {
             $g16/Gamescreen16/insertNode//Players/Player[@playerid = 6]/Points,
         
         
-        
-        
-        
-        
-        
-        
         db:output(c:redirectToTransformator("Gamescreen16")))
 
 
@@ -205,9 +199,531 @@ function c:saveGame16() {
 };
 
 
+declare
+%rest:path('/testsave24')
+function c:saveGame24() {
+    
+    let $g24 := fn:doc("Gamescreen24.xml")
+    
+    return
+        (
+        replace value of node fn:doc("SaveGame24.xml")/SaveGame24/insertNode/Cards24/Card[@cardid = 11]/StatusOpen
+            with
+            $g24/Gamescreen24/insertNode/Cards24/Card[@cardid = 11]/StatusOpen,
+        replace value of node fn:doc("SaveGame24.xml")/SaveGame24/insertNode/Cards24/Card[@cardid = 11]/Visibility
+            with
+            $g24/Gamescreen24/insertNode/Cards24/Card[@cardid = 11]/Visibility,
+        
+        replace value of node fn:doc("SaveGame24.xml")/SaveGame24/insertNode/Cards24/Card[@cardid = 12]/StatusOpen
+            with
+            $g24/Gamescreen24/insertNode/Cards24/Card[@cardid = 12]/StatusOpen,
+        replace value of node fn:doc("SaveGame24.xml")/SaveGame24/insertNode/Cards24/Card[@cardid = 12]/Visibility
+            with
+            $g24/Gamescreen24/insertNode/Cards24/Card[@cardid = 12]/Visibility,
+        
+        replace value of node fn:doc("SaveGame24.xml")/SaveGame24/insertNode/Cards24/Card[@cardid = 13]/StatusOpen
+            with
+            $g24/Gamescreen24/insertNode/Cards24/Card[@cardid = 13]/StatusOpen,
+        replace value of node fn:doc("SaveGame24.xml")/SaveGame24/insertNode/Cards24/Card[@cardid = 13]/Visibility
+            with
+            $g24/Gamescreen24/insertNode/Cards24/Card[@cardid = 13]/Visibility,
+        
+        replace value of node fn:doc("SaveGame24.xml")/SaveGame24/insertNode/Cards24/Card[@cardid = 14]/StatusOpen
+            with
+            $g24/Gamescreen24/insertNode/Cards24/Card[@cardid = 14]/StatusOpen,
+        replace value of node fn:doc("SaveGame24.xml")/SaveGame24/insertNode/Cards24/Card[@cardid = 14]/Visibility
+            with
+            $g24/Gamescreen24/insertNode/Cards24/Card[@cardid = 14]/Visibility,
+        
+        replace value of node fn:doc("SaveGame24.xml")/SaveGame24/insertNode/Cards24/Card[@cardid = 15]/StatusOpen
+            with
+            $g24/Gamescreen24/insertNode/Cards24/Card[@cardid = 15]/StatusOpen,
+        replace value of node fn:doc("SaveGame24.xml")/SaveGame24/insertNode/Cards24/Card[@cardid = 15]/Visibility
+            with
+            $g24/Gamescreen24/insertNode/Cards24/Card[@cardid = 15]/Visibility,
+        
+        replace value of node fn:doc("SaveGame24.xml")/SaveGame24/insertNode/Cards24/Card[@cardid = 16]/StatusOpen
+            with
+            $g24/Gamescreen24/insertNode/Cards24/Card[@cardid = 16]/StatusOpen,
+        replace value of node fn:doc("SaveGame24.xml")/SaveGame24/insertNode/Cards24/Card[@cardid = 16]/Visibility
+            with
+            $g24/Gamescreen24/insertNode/Cards24/Card[@cardid = 16]/Visibility,
+        
+        replace value of node fn:doc("SaveGame24.xml")/SaveGame24/insertNode/Cards24/Card[@cardid = 17]/StatusOpen
+            with
+            $g24/Gamescreen24/insertNode/Cards24/Card[@cardid = 17]/StatusOpen,
+        replace value of node fn:doc("SaveGame24.xml")/SaveGame24/insertNode/Cards24/Card[@cardid = 17]/Visibility
+            with
+            $g24/Gamescreen24/insertNode/Cards24/Card[@cardid = 17]/Visibility,
+        
+        replace value of node fn:doc("SaveGame24.xml")/SaveGame24/insertNode/Cards24/Card[@cardid = 18]/StatusOpen
+            with
+            $g24/Gamescreen24/insertNode/Cards24/Card[@cardid = 18]/StatusOpen,
+        replace value of node fn:doc("SaveGame24.xml")/SaveGame24/insertNode/Cards24/Card[@cardid = 18]/Visibility
+            with
+            $g24/Gamescreen24/insertNode/Cards24/Card[@cardid = 18]/Visibility,
+        
+        
+        replace value of node fn:doc("SaveGame24.xml")/SaveGame24/insertNode/Cards24/Card[@cardid = 19]/StatusOpen
+            with
+            $g24/Gamescreen24/insertNode/Cards24/Card[@cardid = 19]/StatusOpen,
+        replace value of node fn:doc("SaveGame24.xml")/SaveGame24/insertNode/Cards24/Card[@cardid = 19]/Visibility
+            with
+            $g24/Gamescreen24/insertNode/Cards24/Card[@cardid = 19]/Visibility,
+        
+        replace value of node fn:doc("SaveGame24.xml")/SaveGame24/insertNode/Cards24/Card[@cardid = 20]/StatusOpen
+            with
+            $g24/Gamescreen24/insertNode/Cards24/Card[@cardid = 20]/StatusOpen,
+        replace value of node fn:doc("SaveGame24.xml")/SaveGame24/insertNode/Cards24/Card[@cardid = 20]/Visibility
+            with
+            $g24/Gamescreen24/insertNode/Cards24/Card[@cardid = 20]/Visibility,
+        
+        replace value of node fn:doc("SaveGame24.xml")/SaveGame24/insertNode/Cards24/Card[@cardid = 21]/StatusOpen
+            with
+            $g24/Gamescreen24/insertNode/Cards24/Card[@cardid = 21]/StatusOpen,
+        replace value of node fn:doc("SaveGame24.xml")/SaveGame24/insertNode/Cards24/Card[@cardid = 21]/Visibility
+            with
+            $g24/Gamescreen24/insertNode/Cards24/Card[@cardid = 21]/Visibility,
+        
+        
+        replace value of node fn:doc("SaveGame24.xml")/SaveGame24/insertNode/Cards24/Card[@cardid = 22]/StatusOpen
+            with
+            $g24/Gamescreen24/insertNode/Cards24/Card[@cardid = 22]/StatusOpen,
+        replace value of node fn:doc("SaveGame24.xml")/SaveGame24/insertNode/Cards24/Card[@cardid = 22]/Visibility
+            with
+            $g24/Gamescreen24/insertNode/Cards24/Card[@cardid = 22]/Visibility,
+        
+        replace value of node fn:doc("SaveGame24.xml")/SaveGame24/insertNode/Cards24/Card[@cardid = 23]/StatusOpen
+            with
+            $g24/Gamescreen24/insertNode/Cards24/Card[@cardid = 23]/StatusOpen,
+        replace value of node fn:doc("SaveGame24.xml")/SaveGame24/insertNode/Cards24/Card[@cardid = 23]/Visibility
+            with
+            $g24/Gamescreen24/insertNode/Cards24/Card[@cardid = 23]/Visibility,
+        
+        replace value of node fn:doc("SaveGame24.xml")/SaveGame24/insertNode/Cards24/Card[@cardid = 24]/StatusOpen
+            with
+            $g24/Gamescreen24/insertNode/Cards24/Card[@cardid = 24]/StatusOpen,
+        replace value of node fn:doc("SaveGame24.xml")/SaveGame24/insertNode/Cards24/Card[@cardid = 24]/Visibility
+            with
+            $g24/Gamescreen24/insertNode/Cards24/Card[@cardid = 24]/Visibility,
+        
+        replace value of node fn:doc("SaveGame24.xml")/SaveGame24/insertNode/Cards24/Card[@cardid = 25]/StatusOpen
+            with
+            $g24/Gamescreen24/insertNode/Cards24/Card[@cardid = 25]/StatusOpen,
+        replace value of node fn:doc("SaveGame24.xml")/SaveGame24/insertNode/Cards24/Card[@cardid = 25]/Visibility
+            with
+            $g24/Gamescreen24/insertNode/Cards24/Card[@cardid = 25]/Visibility,
+        
+        replace value of node fn:doc("SaveGame24.xml")/SaveGame24/insertNode/Cards24/Card[@cardid = 26]/StatusOpen
+            with
+            $g24/Gamescreen24/insertNode/Cards24/Card[@cardid = 26]/StatusOpen,
+        replace value of node fn:doc("SaveGame24.xml")/SaveGame24/insertNode/Cards24/Card[@cardid = 26]/Visibility
+            with
+            $g24/Gamescreen24/insertNode/Cards24/Card[@cardid = 26]/Visibility,
+        
+        replace value of node fn:doc("SaveGame24.xml")/SaveGame24/insertNode/Cards24/Card[@cardid = 27]/StatusOpen
+            with
+            $g24/Gamescreen24/insertNode/Cards24/Card[@cardid = 27]/StatusOpen,
+        replace value of node fn:doc("SaveGame24.xml")/SaveGame24/insertNode/Cards24/Card[@cardid = 27]/Visibility
+            with
+            $g24/Gamescreen24/insertNode/Cards24/Card[@cardid = 27]/Visibility,
+        
+        replace value of node fn:doc("SaveGame24.xml")/SaveGame24/insertNode/Cards24/Card[@cardid = 28]/StatusOpen
+            with
+            $g24/Gamescreen24/insertNode/Cards24/Card[@cardid = 28]/StatusOpen,
+        replace value of node fn:doc("SaveGame24.xml")/SaveGame24/insertNode/Cards24/Card[@cardid = 28]/Visibility
+            with
+            $g24/Gamescreen24/insertNode/Cards24/Card[@cardid = 28]/Visibility,
+        
+        
+        replace value of node fn:doc("SaveGame24.xml")/SaveGame24/insertNode/Cards24/Card[@cardid = 29]/StatusOpen
+            with
+            $g24/Gamescreen24/insertNode/Cards24/Card[@cardid = 29]/StatusOpen,
+        replace value of node fn:doc("SaveGame24.xml")/SaveGame24/insertNode/Cards24/Card[@cardid = 29]/Visibility
+            with
+            $g24/Gamescreen24/insertNode/Cards24/Card[@cardid = 29]/Visibility,
+        
+        
+        replace value of node fn:doc("SaveGame24.xml")/SaveGame24/insertNode/Cards24/Card[@cardid = 30]/StatusOpen
+            with
+            $g24/Gamescreen24/insertNode/Cards24/Card[@cardid = 30]/StatusOpen,
+        replace value of node fn:doc("SaveGame24.xml")/SaveGame24/insertNode/Cards24/Card[@cardid = 30]/Visibility
+            with
+            $g24/Gamescreen24/insertNode/Cards24/Card[@cardid = 30]/Visibility,
+        
+        
+        replace value of node fn:doc("SaveGame24.xml")/SaveGame24/insertNode/Cards24/Card[@cardid = 31]/StatusOpen
+            with
+            $g24/Gamescreen24/insertNode/Cards24/Card[@cardid = 31]/StatusOpen,
+        replace value of node fn:doc("SaveGame24.xml")/SaveGame24/insertNode/Cards24/Card[@cardid = 31]/Visibility
+            with
+            $g24/Gamescreen24/insertNode/Cards24/Card[@cardid = 31]/Visibility,
+        
+        
+        replace value of node fn:doc("SaveGame24.xml")/SaveGame24/insertNode/Cards24/Card[@cardid = 32]/StatusOpen
+            with
+            $g24/Gamescreen24/insertNode/Cards24/Card[@cardid = 32]/StatusOpen,
+        replace value of node fn:doc("SaveGame24.xml")/SaveGame24/insertNode/Cards24/Card[@cardid = 32]/Visibility
+            with
+            $g24/Gamescreen24/insertNode/Cards24/Card[@cardid = 32]/Visibility,
+        
+        
+        replace value of node fn:doc("SaveGame24.xml")/SaveGame24/insertNode/Cards24/Card[@cardid = 33]/StatusOpen
+            with
+            $g24/Gamescreen24/insertNode/Cards24/Card[@cardid = 33]/StatusOpen,
+        replace value of node fn:doc("SaveGame24.xml")/SaveGame24/insertNode/Cards24/Card[@cardid = 33]/Visibility
+            with
+            $g24/Gamescreen24/insertNode/Cards24/Card[@cardid = 33]/Visibility,
+        
+        
+        replace value of node fn:doc("SaveGame24.xml")/SaveGame24/insertNode/Cards24/Card[@cardid = 34]/StatusOpen
+            with
+            $g24/Gamescreen24/insertNode/Cards24/Card[@cardid = 34]/StatusOpen,
+        replace value of node fn:doc("SaveGame24.xml")/SaveGame24/insertNode/Cards24/Card[@cardid = 34]/Visibility
+            with
+            $g24/Gamescreen24/insertNode/Cards24/Card[@cardid = 34]/Visibility,
+        
+        (:Player :)
+        replace value of node fn:doc("SaveGame24.xml")/SaveGame24/insertNode/Players/Player[@playerid = 1]/Turn
+            with
+            $g24/Gamescreen24/insertNode//Players/Player[@playerid = 1]/Turn,
+        replace value of node fn:doc("SaveGame24.xml")/SaveGame24/insertNode/Players/Player[@playerid = 1]/Points
+            with
+            $g24/Gamescreen24/insertNode//Players/Player[@playerid = 1]/Points,
+        
+        replace value of node fn:doc("SaveGame24.xml")/SaveGame24/insertNode/Players/Player[@playerid = 2]/Turn
+            with
+            $g24/Gamescreen24/insertNode//Players/Player[@playerid = 2]/Turn,
+        replace value of node fn:doc("SaveGame24.xml")/SaveGame24/insertNode/Players/Player[@playerid = 2]/Points
+            with
+            $g24/Gamescreen24/insertNode//Players/Player[@playerid = 2]/Points,
+        
+        replace value of node fn:doc("SaveGame24.xml")/SaveGame24/insertNode/Players/Player[@playerid = 3]/Turn
+            with
+            $g24/Gamescreen24/insertNode//Players/Player[@playerid = 3]/Turn,
+        replace value of node fn:doc("SaveGame24.xml")/SaveGame24/insertNode/Players/Player[@playerid = 3]/Points
+            with
+            $g24/Gamescreen24/insertNode//Players/Player[@playerid = 3]/Points,
+        
+        replace value of node fn:doc("SaveGame24.xml")/SaveGame24/insertNode/Players/Player[@playerid = 4]/Turn
+            with
+            $g24/Gamescreen24/insertNode//Players/Player[@playerid = 4]/Turn,
+        replace value of node fn:doc("SaveGame24.xml")/SaveGame24/insertNode/Players/Player[@playerid = 4]/Points
+            with
+            $g24/Gamescreen24/insertNode//Players/Player[@playerid = 4]/Points,
+        
+        replace value of node fn:doc("SaveGame24.xml")/SaveGame24/insertNode/Players/Player[@playerid = 5]/Turn
+            with
+            $g24/Gamescreen24/insertNode//Players/Player[@playerid = 5]/Turn,
+        replace value of node fn:doc("SaveGame24.xml")/SaveGame24/insertNode/Players/Player[@playerid = 5]/Points
+            with
+            $g24/Gamescreen24/insertNode//Players/Player[@playerid = 5]/Points,
+        
+        replace value of node fn:doc("SaveGame24.xml")/SaveGame24/insertNode/Players/Player[@playerid = 6]/Turn
+            with
+            $g24/Gamescreen24/insertNode//Players/Player[@playerid = 6]/Turn,
+        replace value of node fn:doc("SaveGame24.xml")/SaveGame24/insertNode/Players/Player[@playerid = 6]/Points
+            with
+            $g24/Gamescreen24/insertNode//Players/Player[@playerid = 6]/Points,
+        
+        
+        db:output(c:redirectToTransformator("Gamescreen24")))
 
 
 
+};
+
+
+declare
+%rest:path('/testsave32')
+function c:saveGame32() {
+    
+    let $g32 := fn:doc("Gamescreen32.xml")
+    
+    return
+        (
+        replace value of node fn:doc("SaveGame32.xml")/SaveGame32/insertNode/Cards32/Card[@cardid = 11]/StatusOpen
+            with
+            $g32/Gamescreen32/insertNode/Cards32/Card[@cardid = 11]/StatusOpen,
+        replace value of node fn:doc("SaveGame32.xml")/SaveGame32/insertNode/Cards32/Card[@cardid = 11]/Visibility
+            with
+            $g32/Gamescreen32/insertNode/Cards32/Card[@cardid = 11]/Visibility,
+        
+        replace value of node fn:doc("SaveGame32.xml")/SaveGame32/insertNode/Cards32/Card[@cardid = 12]/StatusOpen
+            with
+            $g32/Gamescreen32/insertNode/Cards32/Card[@cardid = 12]/StatusOpen,
+        replace value of node fn:doc("SaveGame32.xml")/SaveGame32/insertNode/Cards32/Card[@cardid = 12]/Visibility
+            with
+            $g32/Gamescreen32/insertNode/Cards32/Card[@cardid = 12]/Visibility,
+        
+        replace value of node fn:doc("SaveGame32.xml")/SaveGame32/insertNode/Cards32/Card[@cardid = 13]/StatusOpen
+            with
+            $g32/Gamescreen32/insertNode/Cards32/Card[@cardid = 13]/StatusOpen,
+        replace value of node fn:doc("SaveGame32.xml")/SaveGame32/insertNode/Cards32/Card[@cardid = 13]/Visibility
+            with
+            $g32/Gamescreen32/insertNode/Cards32/Card[@cardid = 13]/Visibility,
+        
+        replace value of node fn:doc("SaveGame32.xml")/SaveGame32/insertNode/Cards32/Card[@cardid = 14]/StatusOpen
+            with
+            $g32/Gamescreen32/insertNode/Cards32/Card[@cardid = 14]/StatusOpen,
+        replace value of node fn:doc("SaveGame32.xml")/SaveGame32/insertNode/Cards32/Card[@cardid = 14]/Visibility
+            with
+            $g32/Gamescreen32/insertNode/Cards32/Card[@cardid = 14]/Visibility,
+        
+        replace value of node fn:doc("SaveGame32.xml")/SaveGame32/insertNode/Cards32/Card[@cardid = 15]/StatusOpen
+            with
+            $g32/Gamescreen32/insertNode/Cards32/Card[@cardid = 15]/StatusOpen,
+        replace value of node fn:doc("SaveGame32.xml")/SaveGame32/insertNode/Cards32/Card[@cardid = 15]/Visibility
+            with
+            $g32/Gamescreen32/insertNode/Cards32/Card[@cardid = 15]/Visibility,
+        
+        replace value of node fn:doc("SaveGame32.xml")/SaveGame32/insertNode/Cards32/Card[@cardid = 16]/StatusOpen
+            with
+            $g32/Gamescreen32/insertNode/Cards32/Card[@cardid = 16]/StatusOpen,
+        replace value of node fn:doc("SaveGame32.xml")/SaveGame32/insertNode/Cards32/Card[@cardid = 16]/Visibility
+            with
+            $g32/Gamescreen32/insertNode/Cards32/Card[@cardid = 16]/Visibility,
+        
+        replace value of node fn:doc("SaveGame32.xml")/SaveGame32/insertNode/Cards32/Card[@cardid = 17]/StatusOpen
+            with
+            $g32/Gamescreen32/insertNode/Cards32/Card[@cardid = 17]/StatusOpen,
+        replace value of node fn:doc("SaveGame32.xml")/SaveGame32/insertNode/Cards32/Card[@cardid = 17]/Visibility
+            with
+            $g32/Gamescreen32/insertNode/Cards32/Card[@cardid = 17]/Visibility,
+        
+        replace value of node fn:doc("SaveGame32.xml")/SaveGame32/insertNode/Cards32/Card[@cardid = 18]/StatusOpen
+            with
+            $g32/Gamescreen32/insertNode/Cards32/Card[@cardid = 18]/StatusOpen,
+        replace value of node fn:doc("SaveGame32.xml")/SaveGame32/insertNode/Cards32/Card[@cardid = 18]/Visibility
+            with
+            $g32/Gamescreen32/insertNode/Cards32/Card[@cardid = 18]/Visibility,
+        
+        replace value of node fn:doc("SaveGame32.xml")/SaveGame32/insertNode/Cards32/Card[@cardid = 19]/StatusOpen
+            with
+            $g32/Gamescreen32/insertNode/Cards32/Card[@cardid = 19]/StatusOpen,
+        replace value of node fn:doc("SaveGame32.xml")/SaveGame32/insertNode/Cards32/Card[@cardid = 19]/Visibility
+            with
+            $g32/Gamescreen32/insertNode/Cards32/Card[@cardid = 19]/Visibility,
+        
+        replace value of node fn:doc("SaveGame32.xml")/SaveGame32/insertNode/Cards32/Card[@cardid = 20]/StatusOpen
+            with
+            $g32/Gamescreen32/insertNode/Cards32/Card[@cardid = 20]/StatusOpen,
+        replace value of node fn:doc("SaveGame32.xml")/SaveGame32/insertNode/Cards32/Card[@cardid = 20]/Visibility
+            with
+            $g32/Gamescreen32/insertNode/Cards32/Card[@cardid = 20]/Visibility,
+        
+        replace value of node fn:doc("SaveGame32.xml")/SaveGame32/insertNode/Cards32/Card[@cardid = 21]/StatusOpen
+            with
+            $g32/Gamescreen32/insertNode/Cards32/Card[@cardid = 21]/StatusOpen,
+        replace value of node fn:doc("SaveGame32.xml")/SaveGame32/insertNode/Cards32/Card[@cardid = 21]/Visibility
+            with
+            $g32/Gamescreen32/insertNode/Cards32/Card[@cardid = 21]/Visibility,
+        
+        replace value of node fn:doc("SaveGame32.xml")/SaveGame32/insertNode/Cards32/Card[@cardid = 22]/StatusOpen
+            with
+            $g32/Gamescreen32/insertNode/Cards32/Card[@cardid = 22]/StatusOpen,
+        replace value of node fn:doc("SaveGame32.xml")/SaveGame32/insertNode/Cards32/Card[@cardid = 22]/Visibility
+            with
+            $g32/Gamescreen32/insertNode/Cards32/Card[@cardid = 22]/Visibility,
+        
+        replace value of node fn:doc("SaveGame32.xml")/SaveGame32/insertNode/Cards32/Card[@cardid = 23]/StatusOpen
+            with
+            $g32/Gamescreen32/insertNode/Cards32/Card[@cardid = 23]/StatusOpen,
+        replace value of node fn:doc("SaveGame32.xml")/SaveGame32/insertNode/Cards32/Card[@cardid = 23]/Visibility
+            with
+            $g32/Gamescreen32/insertNode/Cards32/Card[@cardid = 23]/Visibility,
+        
+        replace value of node fn:doc("SaveGame32.xml")/SaveGame32/insertNode/Cards32/Card[@cardid = 24]/StatusOpen
+            with
+            $g32/Gamescreen32/insertNode/Cards32/Card[@cardid = 24]/StatusOpen,
+        replace value of node fn:doc("SaveGame32.xml")/SaveGame32/insertNode/Cards32/Card[@cardid = 24]/Visibility
+            with
+            $g32/Gamescreen32/insertNode/Cards32/Card[@cardid = 24]/Visibility,
+        
+        replace value of node fn:doc("SaveGame32.xml")/SaveGame32/insertNode/Cards32/Card[@cardid = 25]/StatusOpen
+            with
+            $g32/Gamescreen32/insertNode/Cards32/Card[@cardid = 25]/StatusOpen,
+        replace value of node fn:doc("SaveGame32.xml")/SaveGame32/insertNode/Cards32/Card[@cardid = 25]/Visibility
+            with
+            $g32/Gamescreen32/insertNode/Cards32/Card[@cardid = 25]/Visibility,
+        
+        replace value of node fn:doc("SaveGame32.xml")/SaveGame32/insertNode/Cards32/Card[@cardid = 26]/StatusOpen
+            with
+            $g32/Gamescreen32/insertNode/Cards32/Card[@cardid = 26]/StatusOpen,
+        replace value of node fn:doc("SaveGame32.xml")/SaveGame32/insertNode/Cards32/Card[@cardid = 26]/Visibility
+            with
+            $g32/Gamescreen32/insertNode/Cards32/Card[@cardid = 26]/Visibility,
+        
+        replace value of node fn:doc("SaveGame32.xml")/SaveGame32/insertNode/Cards32/Card[@cardid = 27]/StatusOpen
+            with
+            $g32/Gamescreen32/insertNode/Cards32/Card[@cardid = 27]/StatusOpen,
+        replace value of node fn:doc("SaveGame32.xml")/SaveGame32/insertNode/Cards32/Card[@cardid = 27]/Visibility
+            with
+            $g32/Gamescreen32/insertNode/Cards32/Card[@cardid = 27]/Visibility,
+        
+        replace value of node fn:doc("SaveGame32.xml")/SaveGame32/insertNode/Cards32/Card[@cardid = 28]/StatusOpen
+            with
+            $g32/Gamescreen32/insertNode/Cards32/Card[@cardid = 28]/StatusOpen,
+        replace value of node fn:doc("SaveGame32.xml")/SaveGame32/insertNode/Cards32/Card[@cardid = 28]/Visibility
+            with
+            $g32/Gamescreen32/insertNode/Cards32/Card[@cardid = 28]/Visibility,
+        
+        replace value of node fn:doc("SaveGame32.xml")/SaveGame32/insertNode/Cards32/Card[@cardid = 29]/StatusOpen
+            with
+            $g32/Gamescreen32/insertNode/Cards32/Card[@cardid = 29]/StatusOpen,
+        replace value of node fn:doc("SaveGame32.xml")/SaveGame32/insertNode/Cards32/Card[@cardid = 29]/Visibility
+            with
+            $g32/Gamescreen32/insertNode/Cards32/Card[@cardid = 29]/Visibility,
+        
+        replace value of node fn:doc("SaveGame32.xml")/SaveGame32/insertNode/Cards32/Card[@cardid = 30]/StatusOpen
+            with
+            $g32/Gamescreen32/insertNode/Cards32/Card[@cardid = 30]/StatusOpen,
+        replace value of node fn:doc("SaveGame32.xml")/SaveGame32/insertNode/Cards32/Card[@cardid = 30]/Visibility
+            with
+            $g32/Gamescreen32/insertNode/Cards32/Card[@cardid = 30]/Visibility,
+        
+        replace value of node fn:doc("SaveGame32.xml")/SaveGame32/insertNode/Cards32/Card[@cardid = 31]/StatusOpen
+            with
+            $g32/Gamescreen32/insertNode/Cards32/Card[@cardid = 31]/StatusOpen,
+        replace value of node fn:doc("SaveGame32.xml")/SaveGame32/insertNode/Cards32/Card[@cardid = 31]/Visibility
+            with
+            $g32/Gamescreen32/insertNode/Cards32/Card[@cardid = 31]/Visibility,
+        
+        replace value of node fn:doc("SaveGame32.xml")/SaveGame32/insertNode/Cards32/Card[@cardid = 32]/StatusOpen
+            with
+            $g32/Gamescreen32/insertNode/Cards32/Card[@cardid = 32]/StatusOpen,
+        replace value of node fn:doc("SaveGame32.xml")/SaveGame32/insertNode/Cards32/Card[@cardid = 32]/Visibility
+            with
+            $g32/Gamescreen32/insertNode/Cards32/Card[@cardid = 32]/Visibility,
+        
+        replace value of node fn:doc("SaveGame32.xml")/SaveGame32/insertNode/Cards32/Card[@cardid = 33]/StatusOpen
+            with
+            $g32/Gamescreen32/insertNode/Cards32/Card[@cardid = 33]/StatusOpen,
+        replace value of node fn:doc("SaveGame32.xml")/SaveGame32/insertNode/Cards32/Card[@cardid = 33]/Visibility
+            with
+            $g32/Gamescreen32/insertNode/Cards32/Card[@cardid = 33]/Visibility,
+        
+        replace value of node fn:doc("SaveGame32.xml")/SaveGame32/insertNode/Cards32/Card[@cardid = 34]/StatusOpen
+            with
+            $g32/Gamescreen32/insertNode/Cards32/Card[@cardid = 34]/StatusOpen,
+        replace value of node fn:doc("SaveGame32.xml")/SaveGame32/insertNode/Cards32/Card[@cardid = 34]/Visibility
+            with
+            $g32/Gamescreen32/insertNode/Cards32/Card[@cardid = 34]/Visibility,
+        
+        replace value of node fn:doc("SaveGame32.xml")/SaveGame32/insertNode/Cards32/Card[@cardid = 35]/StatusOpen
+            with
+            $g32/Gamescreen32/insertNode/Cards32/Card[@cardid = 35]/StatusOpen,
+        replace value of node fn:doc("SaveGame32.xml")/SaveGame32/insertNode/Cards32/Card[@cardid = 35]/Visibility
+            with
+            $g32/Gamescreen32/insertNode/Cards32/Card[@cardid = 35]/Visibility,
+        
+        replace value of node fn:doc("SaveGame32.xml")/SaveGame32/insertNode/Cards32/Card[@cardid = 36]/StatusOpen
+            with
+            $g32/Gamescreen32/insertNode/Cards32/Card[@cardid = 36]/StatusOpen,
+        replace value of node fn:doc("SaveGame32.xml")/SaveGame32/insertNode/Cards32/Card[@cardid = 36]/Visibility
+            with
+            $g32/Gamescreen32/insertNode/Cards32/Card[@cardid = 36]/Visibility,
+        
+        replace value of node fn:doc("SaveGame32.xml")/SaveGame32/insertNode/Cards32/Card[@cardid = 37]/StatusOpen
+            with
+            $g32/Gamescreen32/insertNode/Cards32/Card[@cardid = 37]/StatusOpen,
+        replace value of node fn:doc("SaveGame32.xml")/SaveGame32/insertNode/Cards32/Card[@cardid = 37]/Visibility
+            with
+            $g32/Gamescreen32/insertNode/Cards32/Card[@cardid = 37]/Visibility,
+        
+        replace value of node fn:doc("SaveGame32.xml")/SaveGame32/insertNode/Cards32/Card[@cardid = 38]/StatusOpen
+            with
+            $g32/Gamescreen32/insertNode/Cards32/Card[@cardid = 38]/StatusOpen,
+        replace value of node fn:doc("SaveGame32.xml")/SaveGame32/insertNode/Cards32/Card[@cardid = 38]/Visibility
+            with
+            $g32/Gamescreen32/insertNode/Cards32/Card[@cardid = 38]/Visibility,
+        
+        replace value of node fn:doc("SaveGame32.xml")/SaveGame32/insertNode/Cards32/Card[@cardid = 39]/StatusOpen
+            with
+            $g32/Gamescreen32/insertNode/Cards32/Card[@cardid = 39]/StatusOpen,
+        replace value of node fn:doc("SaveGame32.xml")/SaveGame32/insertNode/Cards32/Card[@cardid = 39]/Visibility
+            with
+            $g32/Gamescreen32/insertNode/Cards32/Card[@cardid = 39]/Visibility,
+        
+        replace value of node fn:doc("SaveGame32.xml")/SaveGame32/insertNode/Cards32/Card[@cardid = 40]/StatusOpen
+            with
+            $g32/Gamescreen32/insertNode/Cards32/Card[@cardid = 40]/StatusOpen,
+        replace value of node fn:doc("SaveGame32.xml")/SaveGame32/insertNode/Cards32/Card[@cardid = 40]/Visibility
+            with
+            $g32/Gamescreen32/insertNode/Cards32/Card[@cardid = 40]/Visibility,
+        
+        replace value of node fn:doc("SaveGame32.xml")/SaveGame32/insertNode/Cards32/Card[@cardid = 41]/StatusOpen
+            with
+            $g32/Gamescreen32/insertNode/Cards32/Card[@cardid = 4]/StatusOpen,
+        replace value of node fn:doc("SaveGame32.xml")/SaveGame32/insertNode/Cards32/Card[@cardid = 41]/Visibility
+            with
+            $g32/Gamescreen32/insertNode/Cards32/Card[@cardid = 41]/Visibility,
+        
+        replace value of node fn:doc("SaveGame32.xml")/SaveGame32/insertNode/Cards32/Card[@cardid = 42]/StatusOpen
+            with
+            $g32/Gamescreen32/insertNode/Cards32/Card[@cardid = 42]/StatusOpen,
+        replace value of node fn:doc("SaveGame32.xml")/SaveGame32/insertNode/Cards32/Card[@cardid = 42]/Visibility
+            with
+            $g32/Gamescreen32/insertNode/Cards32/Card[@cardid = 42]/Visibility,
+            
+            (:Player :)
+        replace value of node fn:doc("SaveGame32.xml")/SaveGame32/insertNode/Players/Player[@playerid = 1]/Turn
+            with
+            $g32/Gamescreen32/insertNode//Players/Player[@playerid = 1]/Turn,
+        replace value of node fn:doc("SaveGame32.xml")/SaveGame32/insertNode/Players/Player[@playerid = 1]/Points
+            with
+            $g32/Gamescreen32/insertNode//Players/Player[@playerid = 1]/Points,
+            
+             replace value of node fn:doc("SaveGame32.xml")/SaveGame32/insertNode/Players/Player[@playerid = 2]/Turn
+            with
+            $g32/Gamescreen32/insertNode//Players/Player[@playerid = 2]/Turn,
+        replace value of node fn:doc("SaveGame32.xml")/SaveGame32/insertNode/Players/Player[@playerid = 2]/Points
+            with
+            $g32/Gamescreen32/insertNode//Players/Player[@playerid = 2]/Points,
+        
+        
+         replace value of node fn:doc("SaveGame32.xml")/SaveGame32/insertNode/Players/Player[@playerid = 3]/Turn
+            with
+            $g32/Gamescreen32/insertNode//Players/Player[@playerid = 3]/Turn,
+        replace value of node fn:doc("SaveGame32.xml")/SaveGame32/insertNode/Players/Player[@playerid = 3]/Points
+            with
+            $g32/Gamescreen32/insertNode//Players/Player[@playerid = 3]/Points,
+        
+        
+         replace value of node fn:doc("SaveGame32.xml")/SaveGame32/insertNode/Players/Player[@playerid = 4]/Turn
+            with
+            $g32/Gamescreen32/insertNode//Players/Player[@playerid = 4]/Turn,
+        replace value of node fn:doc("SaveGame32.xml")/SaveGame32/insertNode/Players/Player[@playerid = 4]/Points
+            with
+            $g32/Gamescreen32/insertNode//Players/Player[@playerid = 4]/Points,
+        
+        
+         replace value of node fn:doc("SaveGame32.xml")/SaveGame32/insertNode/Players/Player[@playerid = 5]/Turn
+            with
+            $g32/Gamescreen32/insertNode//Players/Player[@playerid = 5]/Turn,
+        replace value of node fn:doc("SaveGame32.xml")/SaveGame32/insertNode/Players/Player[@playerid = 5]/Points
+            with
+            $g32/Gamescreen32/insertNode//Players/Player[@playerid = 5]/Points,
+        
+        
+         replace value of node fn:doc("SaveGame32.xml")/SaveGame32/insertNode/Players/Player[@playerid = 6]/Turn
+            with
+            $g32/Gamescreen32/insertNode//Players/Player[@playerid = 6]/Turn,
+        replace value of node fn:doc("SaveGame32.xml")/SaveGame32/insertNode/Players/Player[@playerid = 6]/Points
+            with
+            $g32/Gamescreen32/insertNode//Players/Player[@playerid = 6]/Points,
+        
+        
+        
+        
+        
+        
+        db:output(c:redirectToTransformator("Gamescreen32")))
+
+
+
+
+};
 
 
 
