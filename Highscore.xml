@@ -1,0 +1,23 @@
+<Highscore>
+  <backButton>
+    <id>1</id>
+  </backButton>
+  <Winner>
+    <winner1>
+      <Name></Name>
+      <Points></Points>
+    </winner1>
+    <winner2>
+      <Name></Name>
+      <Points></Points>
+    </winner2>
+    <winner3>
+      <Name/>
+      <Points/>
+    </winner3>
+    <winner4>
+      <Name/>
+      <Points/>
+    </winner4>
+  </Winner>
+</Highscore>
