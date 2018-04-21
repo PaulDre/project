@@ -93,7 +93,7 @@
 
             <!-- Button "High Scores" -->
             <xsl:if test="Button//id = 3">
-                <a xlink:href="/memory/transform/Highscore">
+                <a xlink:href="/memory/transform/Startscreen">
                     <svg>
                         <rect x="75" y="{$button_y+30}" rx="20" ry="20" width="50" height="10"
                             fill="gray"/>
@@ -1115,7 +1115,7 @@
             
             <!-- Winner Popup -->
             <xsl:if test="insertNode/winnerPopup/Visibility = 1">
-                <a xlink:href="/memory/transform/Startscreen">
+                <a xlink:href="/popup/Winner/to/Startscreen/16">
                     <svg>
                         <rect x="50" y="20" width="90" height="60" fill="white" stroke="gold"
                             stroke-width="1" style="fill-opacity:0.8"/>
@@ -3694,72 +3694,9 @@
         </svg>
     </xsl:template>
 
-<!-- Highscore -->
 
-    <xsl:template match="Highscore">
-        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-            height="100%" width="100%" viewBox="0 0 200 100">
-            <!-- "Memory" Logo -->
-            <xsl:if test=".//id = 1">
-                <defs>
-                    <filter id="f1" x="0" y="0">
-                        <feGaussianBlur in="SourceGraphic" stdDeviation="3"/>
-                    </filter>
-                </defs>
-                <svg>
-                    <rect x="0" y="5" width="10" height="10" filter="url(#f1)"
-                        style="fill-opacity:0.6" fill="lightblue"/>
-                    <rect x="10" y="5" width="10" height="10" filter="url(#f1)"
-                        style="fill-opacity:0.6" fill="red"/>
-                    <rect x="20" y="5" width="10" height="10" filter="url(#f1)"
-                        style="fill-opacity:0.6" fill="yellow"/>
-                    <rect x="30" y="5" width="10" height="10" filter="url(#f1)"
-                        style="fill-opacity:0.6" fill="green"/>
-                    <rect x="40" y="5" width="10" height="10" filter="url(#f1)"
-                        style="fill-opacity:0.6" fill="orange"/>
-                    <rect x="50" y="5" width="10" height="10" filter="url(#f1)"
-                        style="fill-opacity:0.6" fill="pink"/>
-                    <text x="1" y="14" font-size="10" fill="darkgrey" font-style="normal"
-                        style="fill-opacity:0.6">M</text>
-                    <text x="11" y="14" font-size="10" fill="darkgrey" font-style="normal"
-                        style="fill-opacity:0.6"> E </text>
-                    <text x="21" y="14" font-size="10" fill="darkgrey" font-style="normal"
-                        style="fill-opacity:0.6"> M </text>
-                    <text x="31" y="14" font-size="10" fill="darkgrey" font-style="normal"
-                        style="fill-opacity:0.6"> O </text>
-                    <text x="41" y="14" font-size="10" fill="darkgrey" font-style="normal"
-                        style="fill-opacity:0.6"> R </text>
-                    <text x="51" y="14" font-size="10" fill="darkgrey" font-style="normal"
-                        style="fill-opacity:0.6"> Y </text>
-                </svg>
-            </xsl:if>
-            
-            
-            
-            <xsl:if test="backButton//id = 1">
-                <a href="/go/back/to/Startscreen">
-                    <svg>
-                        <text x="20" y="90" fill="black" alignment-baseline="middle"
-                            text-anchor="middle" font-size="5" font-style="italic">Back</text>
-                    </svg>
-                </a>
-            </xsl:if>
-            
-            
-           <svg>
-               <text x="40" y="35" fill="black" alignment-baseline="middle"
-                   text-anchor="middle" font-size="7" font-style="italic">1: <xsl:value-of select="Winner/winner1/Name"/> , <xsl:value-of select="Winner/winner1/Points"/> Points</text>
-               <text x="40" y="50" fill="black" alignment-baseline="middle"
-                   text-anchor="middle" font-size="7" font-style="italic">2: <xsl:value-of select="Winner/winner2/Name"/> , <xsl:value-of select="Winner/winner2/Points"/> Points</text>
-               <text x="40" y="65" fill="black" alignment-baseline="middle"
-                   text-anchor="middle" font-size="7" font-style="italic">3: <xsl:value-of select="Winner/winner3/Name"/> , <xsl:value-of select="Winner/winner3/Points"/> Points</text>
-               <text x="40" y="80" fill="black" alignment-baseline="middle"
-                   text-anchor="middle" font-size="7" font-style="italic">4: <xsl:value-of select="Winner/winner4/Name"/> , <xsl:value-of select="Winner/winner4/Points"/> Points</text>
-             
-           </svg>
-            
-        </svg>
-    </xsl:template>
+
+    
     
     
 </xsl:stylesheet>

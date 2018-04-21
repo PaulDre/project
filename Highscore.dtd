@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ELEMENT Highscore (backButton,Winner) >
+<!ELEMENT backButton (id) >
+<!ELEMENT id (#PCDATA) >
+<!ELEMENT Winner (winner1,winner2,winner3,winner4) >
+<!ELEMENT winner1 (Name,Points) >
+<!ELEMENT winner2 (Name,Points) >
+<!ELEMENT winner3 (Name,Points) >
+<!ELEMENT winner4 (Name,Points) >
+<!ELEMENT Name (#PCDATA) >
+<!ELEMENT Points (#PCDATA) >
+
+

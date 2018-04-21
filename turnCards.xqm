@@ -239,56 +239,43 @@ function t:showWinner16() {
     let $p4 := fn:doc("Gamescreen16.xml")/Gamescreen16/insertNode/Players/Player[@playerid = 4]/Points
     let $p5 := fn:doc("Gamescreen16.xml")/Gamescreen16/insertNode/Players/Player[@playerid = 5]/Points
     let $p6 := fn:doc("Gamescreen16.xml")/Gamescreen16/insertNode/Players/Player[@playerid = 6]/Points
-    let $p1Name := fn:doc("Gamescreen16.xml")/Gamescreen16/insertNode/Players/Player[@playerid = 1]/Nickname
-    let $p2Name := fn:doc("Gamescreen16.xml")/Gamescreen16/insertNode/Players/Player[@playerid = 2]/Nickname
-    let $p3Name := fn:doc("Gamescreen16.xml")/Gamescreen16/insertNode/Players/Player[@playerid = 3]/Nickname
-    let $p4Name := fn:doc("Gamescreen16.xml")/Gamescreen16/insertNode/Players/Player[@playerid = 4]/Nickname
-    let $p5Name := fn:doc("Gamescreen16.xml")/Gamescreen16/insertNode/Players/Player[@playerid = 5]/Nickname
-    let $p6Name := fn:doc("Gamescreen16.xml")/Gamescreen16/insertNode/Players/Player[@playerid = 6]/Nickname
-    
     
     
     return
         
         if (($p1 > $p2) and ($p1 > $p3) and ($p1 > $p4) and ($p1 > $p5) and ($p1 > $p6)) then
-            (replace value of node
+            replace value of node
             fn:doc("Gamescreen16.xml")/Gamescreen16/insertNode/Players/Winner
-                with fn:doc("Gamescreen16.xml")/Gamescreen16/insertNode/Players/Player[@playerid = 1]/Nickname,
-            t:enterWinnertoH($p1, $p1Name))
+                with fn:doc("Gamescreen16.xml")/Gamescreen16/insertNode/Players/Player[@playerid = 1]/Nickname
         else
             if (($p2 > $p1) and ($p2 > $p3) and ($p2 > $p4) and ($p2 > $p5) and ($p2 > $p6)) then
-                (replace value of node
+                replace value of node
                 fn:doc("Gamescreen16.xml")/Gamescreen16/insertNode/Players/Winner
-                    with fn:doc("Gamescreen16.xml")/Gamescreen16/insertNode/Players/Player[@playerid = 2]/Nickname,
-                t:enterWinnertoH($p2, $p2Name))
+                    with fn:doc("Gamescreen16.xml")/Gamescreen16/insertNode/Players/Player[@playerid = 2]/Nickname
             
             else
                 if (($p3 > $p2) and ($p3 > $p1) and ($p3 > $p4) and ($p3 > $p5) and ($p3 > $p6)) then
-                    (replace value of node
+                    replace value of node
                     fn:doc("Gamescreen16.xml")/Gamescreen16/insertNode/Players/Winner
-                        with fn:doc("Gamescreen16.xml")/Gamescreen16/insertNode/Players/Player[@playerid = 3]/Nickname,
-                    t:enterWinnertoH($p3, $p3Name))
+                        with fn:doc("Gamescreen16.xml")/Gamescreen16/insertNode/Players/Player[@playerid = 3]/Nickname
                 
                 else
                     if (($p4 > $p2) and ($p4 > $p3) and ($p4 > $p1) and ($p4 > $p5) and ($p4 > $p6)) then
-                        (replace value of node
+                        replace value of node
                         fn:doc("Gamescreen16.xml")/Gamescreen16/insertNode/Players/Winner
-                            with fn:doc("Gamescreen16.xml")/Gamescreen16/insertNode/Players/Player[@playerid = 4]/Nickname,
-                        t:enterWinnertoH($p4, $p4Name))
+                            with fn:doc("Gamescreen16.xml")/Gamescreen16/insertNode/Players/Player[@playerid = 4]/Nickname
                     
                     else
                         if (($p5 > $p2) and ($p5 > $p3) and ($p5 > $p4) and ($p5 > $p1) and ($p5 > $p6)) then
-                            (replace value of node
+                            replace value of node
                             fn:doc("Gamescreen16.xml")/Gamescreen16/insertNode/Players/Winner
-                                with fn:doc("Gamescreen16.xml")/Gamescreen16/insertNode/Players/Player[@playerid = 5]/Nickname,
-                            t:enterWinnertoH($p5, $p5Name))
+                                with fn:doc("Gamescreen16.xml")/Gamescreen16/insertNode/Players/Player[@playerid = 5]/Nickname
                         
                         else
                             if (($p6 > $p2) and ($p6 > $p3) and ($p6 > $p4) and ($p6 > $p5) and ($p6 > $p1)) then
-                                (replace value of node
+                                replace value of node
                                 fn:doc("Gamescreen16.xml")/Gamescreen16/insertNode/Players/Winner
-                                    with fn:doc("Gamescreen16.xml")/Gamescreen16/insertNode/Players/Player[@playerid = 6]/Nickname,
-                                t:enterWinnertoH($p6, $p6Name))
+                                    with fn:doc("Gamescreen16.xml")/Gamescreen16/insertNode/Players/Player[@playerid = 6]/Nickname
                             
                             else
                                 (replace value of node
@@ -587,51 +574,43 @@ function t:showWinner24() {
     let $p4 := fn:doc("Gamescreen24.xml")/Gamescreen24/insertNode/Players/Player[@playerid = 4]/Points
     let $p5 := fn:doc("Gamescreen24.xml")/Gamescreen24/insertNode/Players/Player[@playerid = 5]/Points
     let $p6 := fn:doc("Gamescreen24.xml")/Gamescreen24/insertNode/Players/Player[@playerid = 6]/Points
-    let $p1Name := fn:doc("Gamescreen24.xml")/Gamescreen24/insertNode/Players/Player[@playerid = 1]/Nickname
-    let $p2Name := fn:doc("Gamescreen24.xml")/Gamescreen24/insertNode/Players/Player[@playerid = 2]/Nickname
-    let $p3Name := fn:doc("Gamescreen24.xml")/Gamescreen24/insertNode/Players/Player[@playerid = 3]/Nickname
-    let $p4Name := fn:doc("Gamescreen24.xml")/Gamescreen24/insertNode/Players/Player[@playerid = 4]/Nickname
-    let $p5Name := fn:doc("Gamescreen24.xml")/Gamescreen24/insertNode/Players/Player[@playerid = 5]/Nickname
-    let $p6Name := fn:doc("Gamescreen24.xml")/Gamescreen24/insertNode/Players/Player[@playerid = 6]/Nickname
+    
     
     return
         
         if (($p1 > $p2) and ($p1 > $p3) and ($p1 > $p4) and ($p1 > $p5) and ($p1 > $p6)) then
-            (replace value of node
+            replace value of node
             fn:doc("Gamescreen24.xml")/Gamescreen24/insertNode/Players/Winner
-                with fn:doc("Gamescreen24.xml")/Gamescreen24/insertNode/Players/Player[@playerid = 1]/Nickname,
-            t:enterWinnertoH($p1, $p1Name))
+                with fn:doc("Gamescreen24.xml")/Gamescreen24/insertNode/Players/Player[@playerid = 1]/Nickname
         else
             if (($p2 > $p1) and ($p2 > $p3) and ($p2 > $p4) and ($p2 > $p5) and ($p2 > $p6)) then
-                (replace value of node
+                replace value of node
                 fn:doc("Gamescreen24.xml")/Gamescreen24/insertNode/Players/Winner
-                    with fn:doc("Gamescreen24.xml")/Gamescreen24/insertNode/Players/Player[@playerid = 2]/Nickname,
-                t:enterWinnertoH($p2, $p2Name))
+                    with fn:doc("Gamescreen24.xml")/Gamescreen24/insertNode/Players/Player[@playerid = 2]/Nickname
             
             else
                 if (($p3 > $p2) and ($p3 > $p1) and ($p3 > $p4) and ($p3 > $p5) and ($p3 > $p6)) then
-                    (replace value of node
+                    replace value of node
                     fn:doc("Gamescreen24.xml")/Gamescreen24/insertNode/Players/Winner
-                        with fn:doc("Gamescreen24.xml")/Gamescreen24/insertNode/Players/Player[@playerid = 3]/Nickname, t:enterWinnertoH($p3, $p3Name))
+                        with fn:doc("Gamescreen24.xml")/Gamescreen24/insertNode/Players/Player[@playerid = 3]/Nickname
                 
                 else
                     if (($p4 > $p2) and ($p4 > $p3) and ($p4 > $p1) and ($p4 > $p5) and ($p4 > $p6)) then
-                        (replace value of node
+                        replace value of node
                         fn:doc("Gamescreen24.xml")/Gamescreen24/insertNode/Players/Winner
-                            with fn:doc("Gamescreen24.xml")/Gamescreen24/insertNode/Players/Player[@playerid = 4]/Nickname, t:enterWinnertoH($p4, $p4Name))
+                            with fn:doc("Gamescreen24.xml")/Gamescreen24/insertNode/Players/Player[@playerid = 4]/Nickname
                     
                     else
                         if (($p5 > $p2) and ($p5 > $p3) and ($p5 > $p4) and ($p5 > $p1) and ($p5 > $p6)) then
-                            (replace value of node
+                            replace value of node
                             fn:doc("Gamescreen24.xml")/Gamescreen24/insertNode/Players/Winner
-                                with fn:doc("Gamescreen24.xml")/Gamescreen24/insertNode/Players/Player[@playerid = 5]/Nickname, t:enterWinnertoH($p5, $p5Name))
+                                with fn:doc("Gamescreen24.xml")/Gamescreen24/insertNode/Players/Player[@playerid = 5]/Nickname
                         
                         else
                             if (($p6 > $p2) and ($p6 > $p3) and ($p6 > $p4) and ($p6 > $p5) and ($p6 > $p1)) then
-                                (
                                 replace value of node
                                 fn:doc("Gamescreen24.xml")/Gamescreen24/insertNode/Players/Winner
-                                    with fn:doc("Gamescreen24.xml")/Gamescreen24/insertNode/Players/Player[@playerid = 6]/Nickname, t:enterWinnertoH($p6, $p6Name))
+                                    with fn:doc("Gamescreen24.xml")/Gamescreen24/insertNode/Players/Player[@playerid = 6]/Nickname
                             
                             else
                                 (replace value of node
@@ -938,61 +917,43 @@ function t:showWinner32() {
     let $p4 := fn:doc("Gamescreen32.xml")/Gamescreen32/insertNode/Players/Player[@playerid = 4]/Points
     let $p5 := fn:doc("Gamescreen32.xml")/Gamescreen32/insertNode/Players/Player[@playerid = 5]/Points
     let $p6 := fn:doc("Gamescreen32.xml")/Gamescreen32/insertNode/Players/Player[@playerid = 6]/Points
-    let $p1Name := fn:doc("Gamescreen32.xml")/Gamescreen32/insertNode/Players/Player[@playerid = 1]/Nickname
-    let $p2Name := fn:doc("Gamescreen32.xml")/Gamescreen32/insertNode/Players/Player[@playerid = 2]/Nickname
-    let $p3Name := fn:doc("Gamescreen32.xml")/Gamescreen32/insertNode/Players/Player[@playerid = 3]/Nickname
-    let $p4Name := fn:doc("Gamescreen32.xml")/Gamescreen32/insertNode/Players/Player[@playerid = 4]/Nickname
-    let $p5Name := fn:doc("Gamescreen32.xml")/Gamescreen32/insertNode/Players/Player[@playerid = 5]/Nickname
-    let $p6Name := fn:doc("Gamescreen32.xml")/Gamescreen32/insertNode/Players/Player[@playerid = 6]/Nickname
     
     
     return
         
         if (($p1 > $p2) and ($p1 > $p3) and ($p1 > $p4) and ($p1 > $p5) and ($p1 > $p6)) then
-            (
             replace value of node
             fn:doc("Gamescreen32.xml")/Gamescreen32/insertNode/Players/Winner
-                with fn:doc("Gamescreen32.xml")/Gamescreen32/insertNode/Players/Player[@playerid = 1]/Nickname,
-            t:enterWinnertoH($p1, $p1Name))
+                with fn:doc("Gamescreen32.xml")/Gamescreen32/insertNode/Players/Player[@playerid = 1]/Nickname
         else
             if (($p2 > $p1) and ($p2 > $p3) and ($p2 > $p4) and ($p2 > $p5) and ($p2 > $p6)) then
-                (
                 replace value of node
                 fn:doc("Gamescreen32.xml")/Gamescreen32/insertNode/Players/Winner
-                    with fn:doc("Gamescreen32.xml")/Gamescreen32/insertNode/Players/Player[@playerid = 2]/Nickname,
-                t:enterWinnertoH($p2, $p2Name))
+                    with fn:doc("Gamescreen32.xml")/Gamescreen32/insertNode/Players/Player[@playerid = 2]/Nickname
             
             else
                 if (($p3 > $p2) and ($p3 > $p1) and ($p3 > $p4) and ($p3 > $p5) and ($p3 > $p6)) then
-                    (
                     replace value of node
                     fn:doc("Gamescreen32.xml")/Gamescreen32/insertNode/Players/Winner
-                        with fn:doc("Gamescreen32.xml")/Gamescreen32/insertNode/Players/Player[@playerid = 3]/Nickname,
-                    t:enterWinnertoH($p3, $p3Name))
+                        with fn:doc("Gamescreen32.xml")/Gamescreen32/insertNode/Players/Player[@playerid = 3]/Nickname
                 
                 else
                     if (($p4 > $p2) and ($p4 > $p3) and ($p4 > $p1) and ($p4 > $p5) and ($p4 > $p6)) then
-                        (
                         replace value of node
                         fn:doc("Gamescreen32.xml")/Gamescreen32/insertNode/Players/Winner
-                            with fn:doc("Gamescreen32.xml")/Gamescreen32/insertNode/Players/Player[@playerid = 4]/Nickname,
-                        t:enterWinnertoH($p4, $p4Name))
+                            with fn:doc("Gamescreen32.xml")/Gamescreen32/insertNode/Players/Player[@playerid = 4]/Nickname
                     
                     else
                         if (($p5 > $p2) and ($p5 > $p3) and ($p5 > $p4) and ($p5 > $p1) and ($p5 > $p6)) then
-                            (
                             replace value of node
                             fn:doc("Gamescreen32.xml")/Gamescreen32/insertNode/Players/Winner
-                                with fn:doc("Gamescreen32.xml")/Gamescreen32/insertNode/Players/Player[@playerid = 5]/Nickname,
-                            t:enterWinnertoH($p5, $p5Name))
+                                with fn:doc("Gamescreen32.xml")/Gamescreen32/insertNode/Players/Player[@playerid = 5]/Nickname
                         
                         else
                             if (($p6 > $p2) and ($p6 > $p3) and ($p6 > $p4) and ($p6 > $p5) and ($p6 > $p1)) then
-                                (
                                 replace value of node
                                 fn:doc("Gamescreen32.xml")/Gamescreen32/insertNode/Players/Winner
-                                    with fn:doc("Gamescreen32.xml")/Gamescreen32/insertNode/Players/Player[@playerid = 6]/Nickname,
-                                t:enterWinnertoH($p6, $p6Name))
+                                    with fn:doc("Gamescreen32.xml")/Gamescreen32/insertNode/Players/Player[@playerid = 6]/Nickname
                             
                             else
                                 (replace value of node
@@ -1042,119 +1003,4 @@ declare
 function t:nosavedPopup32() {
     replace value of node fn:doc("Gamescreen32.xml")/Gamescreen32/insertNode/saveButton/Popup
         with 0
-};
-
-
-
-
-
-
-(:------------------------------Highscore----------------:)
-
-
-declare
-function t:enterWinnertoH($WPoints, $WName) {
-    
-    let $w1 := fn:doc("Highscore.xml")/Highscore/Winner/winner1/Points
-    let $w2 := fn:doc("Highscore.xml")/Highscore/Winner/winner2/Points
-    let $w3 := fn:doc("Highscore.xml")/Highscore/Winner/winner3/Points
-    let $w4 := fn:doc("Highscore.xml")/Highscore/Winner/winner4/Points
-    
-    
-    return
-        
-        if (($WPoints > $w1) and ($WPoints > $w2) and ($WPoints > $w3) and ($WPoints > $w4)) then
-            (replace value of node fn:doc("Highscore.xml")/Highscore/Winner/winner1/Name
-                with $WName,
-            replace value of node fn:doc("Highscore.xml")/Highscore/Winner/winner1/Points
-                with $WPoints,
-            replace value of node fn:doc("Highscore.xml")/Highscore/Winner/winner2/Name
-                with fn:doc("Highscore.xml")/Highscore/Winner/winner1/Name,
-            replace value of node fn:doc("Highscore.xml")/Highscore/Winner/winner2/Points
-                with fn:doc("Highscore.xml")/Highscore/Winner/winner1/Points,
-            replace value of node fn:doc("Highscore.xml")/Highscore/Winner/winner3/Name
-                with fn:doc("Highscore.xml")/Highscore/Winner/winner2/Name,
-            replace value of node fn:doc("Highscore.xml")/Highscore/Winner/winner3/Points
-                with fn:doc("Highscore.xml")/Highscore/Winner/winner2/Points,
-            replace value of node fn:doc("Highscore.xml")/Highscore/Winner/winner4/Name
-                with fn:doc("Highscore.xml")/Highscore/Winner/winner3/Name,
-            replace value of node fn:doc("Highscore.xml")/Highscore/Winner/winner4/Points
-                with fn:doc("Highscore.xml")/Highscore/Winner/winner3/Points)
-        
-        else
-            if (($WPoints < $w1) and ($WPoints > $w2) and ($WPoints > $w3) and ($WPoints > $w4)) then
-                (replace value of node fn:doc("Highscore.xml")/Highscore/Winner/winner2/Name
-                    with $WName,
-                replace value of node fn:doc("Highscore.xml")/Highscore/Winner/winner2/Points
-                    with $WPoints,
-                replace value of node fn:doc("Highscore.xml")/Highscore/Winner/winner3/Name
-                    with fn:doc("Highscore.xml")/Highscore/Winner/winner2/Name,
-                replace value of node fn:doc("Highscore.xml")/Highscore/Winner/winner3/Points
-                    with fn:doc("Highscore.xml")/Highscore/Winner/winner2/Points,
-                replace value of node fn:doc("Highscore.xml")/Highscore/Winner/winner4/Name
-                    with fn:doc("Highscore.xml")/Highscore/Winner/winner3/Name,
-                replace value of node fn:doc("Highscore.xml")/Highscore/Winner/winner4/Points
-                    with fn:doc("Highscore.xml")/Highscore/Winner/winner3/Points)
-            
-            else
-                if ($WPoints < $w1 and $WPoints < $w2 and $WPoints > $w3 and $WPoints > $w4) then
-                    (
-                    replace value of node fn:doc("Highscore.xml")/Highscore/Winner/winner3/Name
-                        with $WName,
-                    replace value of node fn:doc("Highscore.xml")/Highscore/Winner/winner3/Points
-                        with $WPoints,
-                    replace value of node fn:doc("Highscore.xml")/Highscore/Winner/winner4/Name
-                        with fn:doc("Highscore.xml")/Highscore/Winner/winner3/Name,
-                    replace value of node fn:doc("Highscore.xml")/Highscore/Winner/winner4/Points
-                        with fn:doc("Highscore.xml")/Highscore/Winner/winner3/Points)
-                
-                else
-                    if ($WPoints < $w1 and $WPoints < $w2 and $WPoints < $w3 and $WPoints > $w4) then
-                        (
-                        replace value of node fn:doc("Highscore.xml")/Highscore/Winner/winner4/Name
-                            with $WName,
-                        replace value of node fn:doc("Highscore.xml")/Highscore/Winner/winner4/Points
-                            with $WPoints)
-                    
-                    else
-                        if ($WPoints = $w1 and $WPoints > $w2 and $WPoints > $w3 and $WPoints > $w4) then
-                            (replace value of node fn:doc("Highscore.xml")/Highscore/Winner/winner2/Name
-                                with $WName,
-                            replace value of node fn:doc("Highscore.xml")/Highscore/Winner/winner2/Points
-                                with $WPoints,
-                            replace value of node fn:doc("Highscore.xml")/Highscore/Winner/winner3/Name
-                                with fn:doc("Highscore.xml")/Highscore/Winner/winner2/Name,
-                            replace value of node fn:doc("Highscore.xml")/Highscore/Winner/winner3/Points
-                                with fn:doc("Highscore.xml")/Highscore/Winner/winner2/Points,
-                            replace value of node fn:doc("Highscore.xml")/Highscore/Winner/winner4/Name
-                                with fn:doc("Highscore.xml")/Highscore/Winner/winner3/Name,
-                            replace value of node fn:doc("Highscore.xml")/Highscore/Winner/winner4/Points
-                                with fn:doc("Highscore.xml")/Highscore/Winner/winner3/Points
-                            )
-                        else
-                            if ($WPoints = $w1 and $WPoints = $w2 and $WPoints > $w3 and $WPoints > $w4) then
-                                (replace value of node fn:doc("Highscore.xml")/Highscore/Winner/winner3/Name
-                                    with $WName,
-                                replace value of node fn:doc("Highscore.xml")/Highscore/Winner/winner3/Points
-                                    with $WPoints,
-                                replace value of node fn:doc("Highscore.xml")/Highscore/Winner/winner4/Name
-                                    with fn:doc("Highscore.xml")/Highscore/Winner/winner3/Name,
-                                replace value of node fn:doc("Highscore.xml")/Highscore/Winner/winner4/Points
-                                    with fn:doc("Highscore.xml")/Highscore/Winner/winner3/Points)
-                            
-                            else
-                                if ($WPoints = $w1 and $WPoints = $w2 and $WPoints = $w3 and $WPoints > $w4) then
-                                    (replace value of node fn:doc("Highscore.xml")/Highscore/Winner/winner4/Name
-                                        with $WName,
-                                    replace value of node fn:doc("Highscore.xml")/Highscore/Winner/winner4/Points
-                                        with $WPoints)
-                                else
-                                    if ($WPoints = $w1 and $WPoints = $w2 and $WPoints = $w3 and $WPoints = $w4) then
-                                        (replace value of node fn:doc("Highscore.xml")/Highscore/Winner/winner1/Name
-                                            with $WName,
-                                        replace value of node fn:doc("Highscore.xml")/Highscore/Winner/winner1/Points
-                                            with $WPoints)
-                                    else
-                                        ()
-
 };

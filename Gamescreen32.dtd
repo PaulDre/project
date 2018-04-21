@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Struktur für einen Gamescreen mit zweiunddreißig Karten -->
+<!ELEMENT Gamescreen32 (uselessNode,insertNode) >
+<!ELEMENT uselessNode (#PCDATA) >
+<!ELEMENT insertNode (value2,value1,value0,counterOfTurnedCards,statusFoundPairButton,Cards32,Players,backButton) >
+<!ELEMENT value2 (#PCDATA) >
+<!ELEMENT value1 (#PCDATA) >
+<!ELEMENT value0 (#PCDATA) >
+<!ELEMENT counterOfTurnedCards (#PCDATA) >
+<!ELEMENT statusFoundPairButton (Found) >
+<!ELEMENT Found (#PCDATA) >
+
+
+<!ELEMENT Cards32 (Card*) >
+<!ELEMENT Card (id,StatusOpen,Visibility,XCoordinate,YCoordinate) >
+<!ELEMENT id (#PCDATA) >
+<!ELEMENT StatusOpen (#PCDATA) >
+<!ELEMENT Visibility (#PCDATA) >
+<!ELEMENT XCoordinate (#PCDATA)>
+<!ELEMENT YCoordinate (#PCDATA) >
+
+
+<!ELEMENT Players (Playerturn, Player+)>
+<!ELEMENT Playerturn (#PCDATA) >
+<!ELEMENT Player (id,Nickname,Turn,Points,Active,XCoordinate,YCoordinate) >
+<!ELEMENT Nickname (#PCDATA) >
+<!ELEMENT Turn (#PCDATA) >
+<!ELEMENT Points (#PCDATA) >
+<!ELEMENT Active (#PCDATA) >
+<!ELEMENT backButton (id) >
+
+
+
+
+<!ATTLIST Card cardid CDATA #REQUIRED >
+<!ATTLIST Player playerid CDATA #REQUIRED >
+
+

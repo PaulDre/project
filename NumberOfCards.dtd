@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ELEMENT NumberOfCards (Logo,kButton,backButton)>
+<!ELEMENT Logo (id,Menutext) >
+<!ELEMENT id (#PCDATA) >
+<!ELEMENT Menutext (#PCDATA)>
+<!ELEMENT kButton (id*) >
+<!ELEMENT backButton (id) >
+
+
