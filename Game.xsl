@@ -175,7 +175,7 @@
             
             <!-- Button "24" -->
             <xsl:if test="Button//id = 2">
-                <a xlink:href="">
+                <a xlink:href="/testload24">
                     <svg>
                         <rect x="75" y="{$button_y+15}" rx="20" ry="20" width="50" height="10"
                             fill="gray"/>
