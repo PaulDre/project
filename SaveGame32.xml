@@ -12,540 +12,225 @@
     <nextturn>1</nextturn>
     <numberOfPlayer>0</numberOfPlayer>
     <Cards32>
-      <Card cardid="13">
-        <id>14</id>
+      <Card cardid="18">
+        <id>18</id>
         <StatusOpen>0</StatusOpen>
         <Visibility>1</Visibility>
         <XCoordinate>20</XCoordinate>
+        <YCoordinate>25</YCoordinate>
+      </Card>
+      <Card cardid="21">
+        <id>22</id>
+        <StatusOpen>0</StatusOpen>
+        <Visibility>1</Visibility>
+        <XCoordinate>40</XCoordinate>
         <YCoordinate>25</YCoordinate>
       </Card>
       <Card cardid="27">
         <id>28</id>
         <StatusOpen>0</StatusOpen>
         <Visibility>1</Visibility>
-        <XCoordinate>40</XCoordinate>
-        <YCoordinate>25</YCoordinate>
-      </Card>
-      <Card cardid="14">
-        <id>14</id>
-        <StatusOpen>0</StatusOpen>
-        <Visibility>1</Visibility>
         <XCoordinate>60</XCoordinate>
-        <YCoordinate>25</YCoordinate>
-      </Card>
-      <Card cardid="35">
-        <id>36</id>
-        <StatusOpen>0</StatusOpen>
-        <Visibility>1</Visibility>
-        <XCoordinate>80</XCoordinate>
-        <YCoordinate>25</YCoordinate>
-      </Card>
-      <Card cardid="22">
-        <id>22</id>
-        <StatusOpen>0</StatusOpen>
-        <Visibility>1</Visibility>
-        <XCoordinate>100</XCoordinate>
         <YCoordinate>25</YCoordinate>
       </Card>
       <Card cardid="37">
         <id>38</id>
         <StatusOpen>0</StatusOpen>
         <Visibility>1</Visibility>
+        <XCoordinate>80</XCoordinate>
+        <YCoordinate>25</YCoordinate>
+      </Card>
+      <Card cardid="16">
+        <id>16</id>
+        <StatusOpen>0</StatusOpen>
+        <Visibility>1</Visibility>
+        <XCoordinate>100</XCoordinate>
+        <YCoordinate>25</YCoordinate>
+      </Card>
+      <Card cardid="28">
+        <id>28</id>
+        <StatusOpen>0</StatusOpen>
+        <Visibility>1</Visibility>
         <XCoordinate>120</XCoordinate>
         <YCoordinate>25</YCoordinate>
       </Card>
-      <Card cardid="25">
+      <Card cardid="26">
         <id>26</id>
-        <StatusOpen>1</StatusOpen>
-        <Visibility>0</Visibility>
+        <StatusOpen>0</StatusOpen>
+        <Visibility>1</Visibility>
         <XCoordinate>140</XCoordinate>
         <YCoordinate>25</YCoordinate>
       </Card>
-      <Card cardid="30">
-        <id>30</id>
-        <StatusOpen>1</StatusOpen>
-        <Visibility>0</Visibility>
+      <Card cardid="14">
+        <id>14</id>
+        <StatusOpen>0</StatusOpen>
+        <Visibility>1</Visibility>
         <XCoordinate>160</XCoordinate>
         <YCoordinate>25</YCoordinate>
       </Card>
-      <Card cardid="32">
-        <id>32</id>
+      <Card cardid="12">
+        <id>12</id>
         <StatusOpen>0</StatusOpen>
         <Visibility>1</Visibility>
         <XCoordinate>20</XCoordinate>
         <YCoordinate>40</YCoordinate>
       </Card>
-      <Card cardid="42">
-        <id>42</id>
+      <Card cardid="25">
+        <id>26</id>
         <StatusOpen>0</StatusOpen>
         <Visibility>1</Visibility>
         <XCoordinate>40</XCoordinate>
         <YCoordinate>40</YCoordinate>
       </Card>
-      <Card cardid="18">
-        <id>18</id>
+      <Card cardid="33">
+        <id>34</id>
         <StatusOpen>0</StatusOpen>
         <Visibility>1</Visibility>
         <XCoordinate>60</XCoordinate>
-        <YCoordinate>40</YCoordinate>
-      </Card>
-      <Card cardid="24">
-        <id>24</id>
-        <StatusOpen>0</StatusOpen>
-        <Visibility>1</Visibility>
-        <XCoordinate>80</XCoordinate>
         <YCoordinate>40</YCoordinate>
       </Card>
       <Card cardid="15">
         <id>16</id>
         <StatusOpen>0</StatusOpen>
         <Visibility>1</Visibility>
+        <XCoordinate>80</XCoordinate>
+        <YCoordinate>40</YCoordinate>
+      </Card>
+      <Card cardid="11">
+        <id>12</id>
+        <StatusOpen>0</StatusOpen>
+        <Visibility>1</Visibility>
         <XCoordinate>100</XCoordinate>
         <YCoordinate>40</YCoordinate>
       </Card>
-      <Card cardid="26">
-        <id>26</id>
-        <StatusOpen>1</StatusOpen>
-        <Visibility>0</Visibility>
+      <Card cardid="40">
+        <id>40</id>
+        <StatusOpen>0</StatusOpen>
+        <Visibility>1</Visibility>
         <XCoordinate>120</XCoordinate>
         <YCoordinate>40</YCoordinate>
       </Card>
-      <Card cardid="23">
-        <id>24</id>
+      <Card cardid="32">
+        <id>32</id>
         <StatusOpen>0</StatusOpen>
         <Visibility>1</Visibility>
         <XCoordinate>140</XCoordinate>
         <YCoordinate>40</YCoordinate>
       </Card>
-      <Card cardid="39">
-        <id>40</id>
+      <Card cardid="19">
+        <id>20</id>
         <StatusOpen>0</StatusOpen>
         <Visibility>1</Visibility>
         <XCoordinate>160</XCoordinate>
         <YCoordinate>40</YCoordinate>
       </Card>
-      <Card cardid="16">
-        <id>16</id>
+      <Card cardid="34">
+        <id>34</id>
         <StatusOpen>0</StatusOpen>
         <Visibility>1</Visibility>
         <XCoordinate>20</XCoordinate>
+        <YCoordinate>55</YCoordinate>
+      </Card>
+      <Card cardid="30">
+        <id>30</id>
+        <StatusOpen>0</StatusOpen>
+        <Visibility>1</Visibility>
+        <XCoordinate>40</XCoordinate>
+        <YCoordinate>55</YCoordinate>
+      </Card>
+      <Card cardid="38">
+        <id>38</id>
+        <StatusOpen>0</StatusOpen>
+        <Visibility>1</Visibility>
+        <XCoordinate>60</XCoordinate>
         <YCoordinate>55</YCoordinate>
       </Card>
       <Card cardid="20">
         <id>20</id>
         <StatusOpen>0</StatusOpen>
         <Visibility>1</Visibility>
-        <XCoordinate>40</XCoordinate>
-        <YCoordinate>55</YCoordinate>
-      </Card>
-      <Card cardid="28">
-        <id>28</id>
-        <StatusOpen>0</StatusOpen>
-        <Visibility>1</Visibility>
-        <XCoordinate>60</XCoordinate>
-        <YCoordinate>55</YCoordinate>
-      </Card>
-      <Card cardid="36">
-        <id>36</id>
-        <StatusOpen>0</StatusOpen>
-        <Visibility>1</Visibility>
         <XCoordinate>80</XCoordinate>
         <YCoordinate>55</YCoordinate>
       </Card>
-      <Card cardid="17">
-        <id>18</id>
+      <Card cardid="39">
+        <id>40</id>
         <StatusOpen>0</StatusOpen>
         <Visibility>1</Visibility>
         <XCoordinate>100</XCoordinate>
-        <YCoordinate>55</YCoordinate>
-      </Card>
-      <Card cardid="12">
-        <id>12</id>
-        <StatusOpen>0</StatusOpen>
-        <Visibility>1</Visibility>
-        <XCoordinate>120</XCoordinate>
-        <YCoordinate>55</YCoordinate>
-      </Card>
-      <Card cardid="11">
-        <id>12</id>
-        <StatusOpen>0</StatusOpen>
-        <Visibility>1</Visibility>
-        <XCoordinate>140</XCoordinate>
         <YCoordinate>55</YCoordinate>
       </Card>
       <Card cardid="31">
         <id>32</id>
         <StatusOpen>0</StatusOpen>
         <Visibility>1</Visibility>
-        <XCoordinate>160</XCoordinate>
+        <XCoordinate>120</XCoordinate>
         <YCoordinate>55</YCoordinate>
-      </Card>
-      <Card cardid="40">
-        <id>40</id>
-        <StatusOpen>0</StatusOpen>
-        <Visibility>1</Visibility>
-        <XCoordinate>20</XCoordinate>
-        <YCoordinate>70</YCoordinate>
-      </Card>
-      <Card cardid="41">
-        <id>42</id>
-        <StatusOpen/>
-        <Visibility>1</Visibility>
-        <XCoordinate>40</XCoordinate>
-        <YCoordinate>70</YCoordinate>
-      </Card>
-      <Card cardid="34">
-        <id>34</id>
-        <StatusOpen>0</StatusOpen>
-        <Visibility>1</Visibility>
-        <XCoordinate>60</XCoordinate>
-        <YCoordinate>70</YCoordinate>
-      </Card>
-      <Card cardid="38">
-        <id>38</id>
-        <StatusOpen>0</StatusOpen>
-        <Visibility>1</Visibility>
-        <XCoordinate>80</XCoordinate>
-        <YCoordinate>70</YCoordinate>
       </Card>
       <Card cardid="29">
         <id>30</id>
-        <StatusOpen>1</StatusOpen>
-        <Visibility>0</Visibility>
-        <XCoordinate>100</XCoordinate>
-        <YCoordinate>70</YCoordinate>
-      </Card>
-      <Card cardid="21">
-        <id>22</id>
-        <StatusOpen>0</StatusOpen>
-        <Visibility>1</Visibility>
-        <XCoordinate>120</XCoordinate>
-        <YCoordinate>70</YCoordinate>
-      </Card>
-      <Card cardid="19">
-        <id>20</id>
         <StatusOpen>0</StatusOpen>
         <Visibility>1</Visibility>
         <XCoordinate>140</XCoordinate>
-        <YCoordinate>70</YCoordinate>
+        <YCoordinate>55</YCoordinate>
       </Card>
-      <Card cardid="33">
-        <id>34</id>
+      <Card cardid="36">
+        <id>36</id>
         <StatusOpen>0</StatusOpen>
         <Visibility>1</Visibility>
         <XCoordinate>160</XCoordinate>
-        <YCoordinate>70</YCoordinate>
+        <YCoordinate>55</YCoordinate>
       </Card>
-    </Cards32>
-    <Players>
-      <Player playerid="0">
-        <Turn>0</Turn>
-      </Player>
-      <Player playerid="1">
-        <id>1</id>
-        <Nickname>Player1</Nickname>
-        <Turn>0</Turn>
-        <Points>0</Points>
-        <Active>0</Active>
-        <XCoordinate>70</XCoordinate>
-        <YCoordinate>5</YCoordinate>
-      </Player>
-      <Player playerid="2">
-        <id>2</id>
-        <Nickname>Player2</Nickname>
-        <Turn>0</Turn>
-        <Points>0</Points>
-        <Active>0</Active>
-        <XCoordinate>90</XCoordinate>
-        <YCoordinate>5</YCoordinate>
-      </Player>
-      <Player playerid="3">
-        <id>3</id>
-        <Nickname>Player3</Nickname>
-        <Turn>0</Turn>
-        <Points>1</Points>
-        <Active>0</Active>
-        <XCoordinate>110</XCoordinate>
-        <YCoordinate>5</YCoordinate>
-      </Player>
-      <Player playerid="4">
-        <id>4</id>
-        <Nickname>Player4</Nickname>
-        <Turn>1</Turn>
-        <Points>1</Points>
-        <Active>0</Active>
-        <XCoordinate>130</XCoordinate>
-        <YCoordinate>5</YCoordinate>
-      </Player>
-      <Player playerid="5">
-        <id>5</id>
-        <Nickname>Player5</Nickname>
-        <Turn>0</Turn>
-        <Points>0</Points>
-        <Active>0</Active>
-        <XCoordinate>150</XCoordinate>
-        <YCoordinate>5</YCoordinate>
-      </Player>
-      <Player playerid="6">
-        <id>6</id>
-        <Nickname>Player6</Nickname>
-        <Turn>0</Turn>
-        <Points>0</Points>
-        <Active>0</Active>
-        <XCoordinate>170</XCoordinate>
-        <YCoordinate>5</YCoordinate>
-      </Player>
-      <Player playerid="7">
-        <Turn>0</Turn>
-      </Player>
-      <Winner/>
-    </Players>
-    <backButton>
-      <id>1</id>
-    </backButton>
-    <saveButton>
-      <id>1</id>
-      <Popup>0</Popup>
-    </saveButton>
-    <winnerButton>
-      <id>1</id>
-    </winnerButton>
-    <winnerPopup>
-      <Visibility>0</Visibility>
-    </winnerPopup>
-  </insertNode>
-  <insertNode>
-    <counterOfTurnedCards>1</counterOfTurnedCards>
-    <idOfCardOne>0</idOfCardOne>
-    <idOfCardTwo>0</idOfCardTwo>
-    <attributeIdOfCardOne>0</attributeIdOfCardOne>
-    <attributeIdOfCardTwo>0</attributeIdOfCardTwo>
-    <compareCards>0</compareCards>
-    <statusFoundPairButton>
-      <Found>3</Found>
-    </statusFoundPairButton>
-    <nextturn>1</nextturn>
-    <numberOfPlayer>0</numberOfPlayer>
-    <Cards32>
-      <Card cardid="25">
-        <id>26</id>
+      <Card cardid="24">
+        <id>24</id>
         <StatusOpen>0</StatusOpen>
         <Visibility>1</Visibility>
         <XCoordinate>20</XCoordinate>
-        <YCoordinate>25</YCoordinate>
+        <YCoordinate>70</YCoordinate>
       </Card>
-      <Card cardid="38">
-        <id>38</id>
+      <Card cardid="23">
+        <id>24</id>
         <StatusOpen>0</StatusOpen>
         <Visibility>1</Visibility>
         <XCoordinate>40</XCoordinate>
-        <YCoordinate>25</YCoordinate>
+        <YCoordinate>70</YCoordinate>
       </Card>
-      <Card cardid="30">
-        <id>30</id>
+      <Card cardid="17">
+        <id>18</id>
         <StatusOpen>0</StatusOpen>
         <Visibility>1</Visibility>
         <XCoordinate>60</XCoordinate>
-        <YCoordinate>25</YCoordinate>
+        <YCoordinate>70</YCoordinate>
       </Card>
       <Card cardid="13">
         <id>14</id>
         <StatusOpen>0</StatusOpen>
         <Visibility>1</Visibility>
         <XCoordinate>80</XCoordinate>
-        <YCoordinate>25</YCoordinate>
-      </Card>
-      <Card cardid="20">
-        <id>20</id>
-        <StatusOpen>0</StatusOpen>
-        <Visibility>1</Visibility>
-        <XCoordinate>100</XCoordinate>
-        <YCoordinate>25</YCoordinate>
-      </Card>
-      <Card cardid="19">
-        <id>20</id>
-        <StatusOpen>0</StatusOpen>
-        <Visibility>1</Visibility>
-        <XCoordinate>120</XCoordinate>
-        <YCoordinate>25</YCoordinate>
-      </Card>
-      <Card cardid="11">
-        <id>12</id>
-        <StatusOpen>0</StatusOpen>
-        <Visibility>1</Visibility>
-        <XCoordinate>140</XCoordinate>
-        <YCoordinate>25</YCoordinate>
-      </Card>
-      <Card cardid="39">
-        <id>40</id>
-        <StatusOpen>0</StatusOpen>
-        <Visibility>1</Visibility>
-        <XCoordinate>160</XCoordinate>
-        <YCoordinate>25</YCoordinate>
-      </Card>
-      <Card cardid="42">
-        <id>42</id>
-        <StatusOpen>0</StatusOpen>
-        <Visibility>1</Visibility>
-        <XCoordinate>20</XCoordinate>
-        <YCoordinate>40</YCoordinate>
-      </Card>
-      <Card cardid="41">
-        <id>42</id>
-        <StatusOpen>0</StatusOpen>
-        <Visibility>1</Visibility>
-        <XCoordinate>40</XCoordinate>
-        <YCoordinate>40</YCoordinate>
-      </Card>
-      <Card cardid="34">
-        <id>34</id>
-        <StatusOpen>0</StatusOpen>
-        <Visibility>1</Visibility>
-        <XCoordinate>60</XCoordinate>
-        <YCoordinate>40</YCoordinate>
-      </Card>
-      <Card cardid="16">
-        <id>16</id>
-        <StatusOpen>0</StatusOpen>
-        <Visibility>1</Visibility>
-        <XCoordinate>80</XCoordinate>
-        <YCoordinate>40</YCoordinate>
-      </Card>
-      <Card cardid="18">
-        <id>18</id>
-        <StatusOpen>0</StatusOpen>
-        <Visibility>1</Visibility>
-        <XCoordinate>100</XCoordinate>
-        <YCoordinate>40</YCoordinate>
-      </Card>
-      <Card cardid="29">
-        <id>30</id>
-        <StatusOpen>0</StatusOpen>
-        <Visibility>1</Visibility>
-        <XCoordinate>120</XCoordinate>
-        <YCoordinate>40</YCoordinate>
-      </Card>
-      <Card cardid="24">
-        <id>24</id>
-        <StatusOpen>0</StatusOpen>
-        <Visibility>1</Visibility>
-        <XCoordinate>140</XCoordinate>
-        <YCoordinate>40</YCoordinate>
-      </Card>
-      <Card cardid="28">
-        <id>28</id>
-        <StatusOpen>0</StatusOpen>
-        <Visibility>1</Visibility>
-        <XCoordinate>160</XCoordinate>
-        <YCoordinate>40</YCoordinate>
-      </Card>
-      <Card cardid="40">
-        <id>40</id>
-        <StatusOpen>0</StatusOpen>
-        <Visibility>1</Visibility>
-        <XCoordinate>20</XCoordinate>
-        <YCoordinate>55</YCoordinate>
-      </Card>
-      <Card cardid="36">
-        <id>36</id>
-        <StatusOpen>0</StatusOpen>
-        <Visibility>1</Visibility>
-        <XCoordinate>40</XCoordinate>
-        <YCoordinate>55</YCoordinate>
-      </Card>
-      <Card cardid="37">
-        <id>38</id>
-        <StatusOpen>0</StatusOpen>
-        <Visibility>1</Visibility>
-        <XCoordinate>60</XCoordinate>
-        <YCoordinate>55</YCoordinate>
-      </Card>
-      <Card cardid="27">
-        <id>28</id>
-        <StatusOpen>0</StatusOpen>
-        <Visibility>1</Visibility>
-        <XCoordinate>80</XCoordinate>
-        <YCoordinate>55</YCoordinate>
-      </Card>
-      <Card cardid="26">
-        <id>26</id>
-        <StatusOpen>0</StatusOpen>
-        <Visibility>1</Visibility>
-        <XCoordinate>100</XCoordinate>
-        <YCoordinate>55</YCoordinate>
-      </Card>
-      <Card cardid="32">
-        <id>32</id>
-        <StatusOpen>0</StatusOpen>
-        <Visibility>1</Visibility>
-        <XCoordinate>120</XCoordinate>
-        <YCoordinate>55</YCoordinate>
-      </Card>
-      <Card cardid="33">
-        <id>34</id>
-        <StatusOpen>0</StatusOpen>
-        <Visibility>1</Visibility>
-        <XCoordinate>140</XCoordinate>
-        <YCoordinate>55</YCoordinate>
+        <YCoordinate>70</YCoordinate>
       </Card>
       <Card cardid="22">
         <id>22</id>
         <StatusOpen>0</StatusOpen>
         <Visibility>1</Visibility>
-        <XCoordinate>160</XCoordinate>
-        <YCoordinate>55</YCoordinate>
-      </Card>
-      <Card cardid="14">
-        <id>14</id>
-        <StatusOpen>0</StatusOpen>
-        <Visibility>1</Visibility>
-        <XCoordinate>20</XCoordinate>
+        <XCoordinate>100</XCoordinate>
         <YCoordinate>70</YCoordinate>
       </Card>
       <Card cardid="35">
         <id>36</id>
         <StatusOpen>0</StatusOpen>
         <Visibility>1</Visibility>
-        <XCoordinate>40</XCoordinate>
-        <YCoordinate>70</YCoordinate>
-      </Card>
-      <Card cardid="15">
-        <id>16</id>
-        <StatusOpen>0</StatusOpen>
-        <Visibility>1</Visibility>
-        <XCoordinate>60</XCoordinate>
-        <YCoordinate>70</YCoordinate>
-      </Card>
-      <Card cardid="31">
-        <id>32</id>
-        <StatusOpen>0</StatusOpen>
-        <Visibility>1</Visibility>
-        <XCoordinate>80</XCoordinate>
-        <YCoordinate>70</YCoordinate>
-      </Card>
-      <Card cardid="12">
-        <id>12</id>
-        <StatusOpen>0</StatusOpen>
-        <Visibility>1</Visibility>
-        <XCoordinate>100</XCoordinate>
-        <YCoordinate>70</YCoordinate>
-      </Card>
-      <Card cardid="17">
-        <id>18</id>
-        <StatusOpen>0</StatusOpen>
-        <Visibility>1</Visibility>
         <XCoordinate>120</XCoordinate>
         <YCoordinate>70</YCoordinate>
       </Card>
-      <Card cardid="23">
-        <id>24</id>
+      <Card cardid="42">
+        <id>42</id>
         <StatusOpen>0</StatusOpen>
         <Visibility>1</Visibility>
         <XCoordinate>140</XCoordinate>
         <YCoordinate>70</YCoordinate>
       </Card>
-      <Card cardid="21">
-        <id>22</id>
+      <Card cardid="41">
+        <id>42</id>
         <StatusOpen>0</StatusOpen>
         <Visibility>1</Visibility>
         <XCoordinate>160</XCoordinate>

@@ -69,7 +69,7 @@
 
             <!-- Button "New Game" -->
             <xsl:if test="Button//id = 1">
-                <a xlink:href="/insertDB">
+                <a xlink:href="/insertDB/new">
                     <svg>
                         <rect x="75" y="{$button_y}" rx="20" ry="20" width="50" height="10"
                             fill="gray"/>
@@ -81,7 +81,7 @@
 
             <!-- Button "Load Game" -->
             <xsl:if test="Button//id = 2">
-                <a xlink:href="/memory/transform/LoadGame">
+                <a xlink:href="/insertDB/load">
                     <svg>
                         <rect x="75" y="{$button_y+15}" rx="20" ry="20" width="50" height="10"
                             fill="gray"/>
@@ -163,7 +163,7 @@
             
             <!-- Button "16 -->
             <xsl:if test="Button//id = 1">
-                <a xlink:href="">
+                <a xlink:href="/testload16">
                     <svg>
                         <rect x="75" y="{$button_y}" rx="20" ry="20" width="50" height="10"
                             fill="gray"/>
@@ -199,7 +199,7 @@
             
             <!-- Button "Quit" -->
             <xsl:if test="backButton//id = 1">
-                <a xlink:href="/memory/transform/Startscreen">
+                <a xlink:href="/go/back/to/Startscreen">
                     <svg>
                         <text x="20" y="90" fill="black" alignment-baseline="middle"
                             text-anchor="middle" font-size="5" font-style="italic">Back</text>
@@ -1194,7 +1194,7 @@
             
             <!-- Winner Popup -->
             <xsl:if test="insertNode/winnerPopup/Visibility = 1">
-                <a xlink:href="/memory/transform/Startscreen">
+                <a xlink:href="/go/back/to/Startscreen">
                     <svg>
                         <rect x="50" y="20" width="90" height="60" fill="white" stroke="gold"
                             stroke-width="1" style="fill-opacity:0.8"/>
@@ -2405,7 +2405,7 @@
             
             <!-- Winner Popup -->
             <xsl:if test="insertNode/winnerPopup/Visibility = 1">
-                <a xlink:href="/memory/transform/Startscreen">
+                <a xlink:href="/go/back/to/Startscreen">
                     <svg>
                         <rect x="50" y="20" width="90" height="60" fill="white" stroke="gold"
                             stroke-width="1" style="fill-opacity:0.8"/>
@@ -3727,7 +3727,7 @@
             
             <!-- Winner Popup -->
             <xsl:if test="insertNode/winnerPopup/Visibility = 1">
-                <a xlink:href="/popup/Winner/to/Startscreen/32">
+                <a xlink:href="/go/back/to/Startscreen">
                     <svg>
                         <rect x="50" y="20" width="90" height="60" fill="white" stroke="gold"
                             stroke-width="1" style="fill-opacity:0.8"/>
