@@ -1,0 +1,1103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://docbook.org/xml/4.5/docbookx.dtd">
+<book>
+    <bookinfo>
+        <title>XML Technology - WS17 - Memory - Technische Universität München (TUM)</title>
+        <author>
+            <firstname>Paul</firstname>
+            <surname>Dressel</surname>
+            <authorblurb>
+                <simpara>B.Sc. Wirtschaftsinformatik</simpara>
+            </authorblurb>
+            <affiliation>
+                <orgname>Technische Universität München (TUM)</orgname>
+            </affiliation>
+        </author>
+        <author>
+            <firstname>Osman</firstname>
+            <surname>Azizullah</surname>
+            <authorblurb>
+                <simpara>B.Sc. Wirtschaftsinformatik</simpara>
+            </authorblurb>
+            <affiliation>
+                <orgname>Technische Universität München (TUM)</orgname>
+            </affiliation>
+        </author>
+        <author>
+            <firstname>Thuy Tien</firstname>
+            <surname>Hoang</surname>
+            <authorblurb>
+                <simpara>B.Sc. Wirtschaftsinformatik</simpara>
+            </authorblurb>
+            <affiliation>
+                <orgname>Technische Universität München (TUM)</orgname>
+            </affiliation>
+            <firstname>Trong Tien</firstname>
+            <surname>Dao</surname>
+            <authorblurb>
+                <simpara>B.Sc. Wirtschaftsinformatik</simpara>
+            </authorblurb>
+            <affiliation>
+                <orgname>Technische Universität München (TUM)</orgname>
+            </affiliation>
+        </author>
+    </bookinfo>
+
+    <preface>
+        <title>Die Entwicklung von Memory in XML</title>
+        <beginpage/>
+        <abstract>
+            <para>Dieses DocBook beinhaltet eine kleine Dokumentation von dem Design, der
+                Implementation und dem Testen des Spieles Memory. Darüber hinaus werden die
+                verschiedenen Entwicklungsphasen, die wichtigsten Anforderungen, die Architektur,
+                das Klassendiagramm sowie die Herausforderungen und Lösungen innerhalb des Teams
+                beschrieben. Am Ende wird ein Spielablauf dargestellt und im Detail erklärt. Die
+                Bilder von dem GUI veranschaulichen dabei die möglichen Vorgänge des Spieles, die in
+                unterschiedlichen Phasen erreicht werden können.</para>
+        </abstract>
+    </preface>
+    
+    
+
+    <part>
+        <title>Memory Projekt</title>
+        <chapter>
+            <title>Introduction</title>
+            <sect1>
+                <title>Das Bachelorpraktikum</title>
+                <para>Das Spiel Memory, welches im Folgenden hier dokumentiert und präsentiert wird,
+                    wird von den oben genannten Teammitgliedern entwickelt. Das Projekt fand im
+                    Wintersemester 2017/2018 innerhalb des Bachelorpraktikums "XML Technologie" mit
+                    Prof. Brüggemann-Klein an der Technische Universität München (TUM) statt. </para>
+                <para>Ein Merkmal dieses Bachelorpraktikums ist die Herausforderung eines gut
+                    funktionierenden Memory Spiels, welches die komplette Spannweite des XMLs und
+                    dessen Technologien verwendet, um das Spiel zu entwickeln. Daher war der Unterricht
+                    so organisiert, dass wir am Anfang einen "Einführungskurs" von der Prof. Brüggemann-Klein 
+                    erhielten, in denen die Stundenten die Vielzahl der wichtigsten Technologien der 
+                    XML-Familie kennenlernten. </para>
+                <para>Danach begann der zweite Teil des Kurses und der Zeitplan wurde von den
+                    einzelnen Teams kontrolliert. Dabei war es Aufgabe sich innerhalb der Gruppe zu
+                    organisieren, die vordefinierten Regeln zu implementieren, umzusetzen und
+                    schließlich in die Grafik einzubinden, zu testen und die Arbeit zu
+                    dokumentieren. Verschiedene Übungsblätter, die wir wöchentlich erhalten haben,
+                    gelten als Vorbereitung für das implementierte Spiel. An diese Meilensteine
+                    konnten wir uns orientieren und Parallelen zu unserem Spiel ziehen. </para>
+                <para>Die dritte Phase des Projekts bestand schließlich darin, die geleistete Arbeit
+                    zu präsentieren und ein Demospiel der Memory-Version vorzustellen. </para>
+            </sect1>
+        </chapter>
+
+        <chapter>
+            <title>Design </title>
+            <para>In diesem Projekt gilt es folgende Regeln umzusetzen: "Die Projektaufgabe ist
+                Memory. Mehrere Personen sollen in einem gemeinsamen Browser-Fenster spielen können.
+                Der Spielstand soll gespeichert werden können, so dass man das Spiel zu einem
+                späteren Zeitpunkt fortsetzen kann. Ihre Memory-Anwendung soll eine Lounge anbieten,
+                in der offene Spiele ausgewählt werden können oder ein neues Spiel gestartet werden
+                kann. In der Lounge sollen sich Spieler/innen registrieren können. Die Lounge soll
+                eine Highscore-Liste für abgeschlossene Spiele anbieten." </para>
+            <sect1>
+                <title>Anzahl der Spieler</title>
+                <para>Für die Anzahl der Spieler, die an einem Tisch spielen können, haben wir
+                    beschlossen, die Anzahl auf sechs zu begrenzen. Es ist möglich, ein Spiel mit
+                    weniger als sechs Spielern zu spielen. Es ist jedoch erforderlich, dass
+                    mindestens zwei Spieler instanziiert sind, wenn ein neues Spiel gestartet wird.
+                    Für die Auswahl der Anzahl können die Spieler am Anfang des Spielstartes
+                    auswählen. Dies wird im Spiel vermerkt. Wir haben uns dabei für diese
+                    Spieleranzahl entschieden, da wir finden, dass Memory ein Konkurrenzspiel ist.
+                    Deswegen beginnt die Anzahl der Spieler ab zwei. Aus Gründen der besseren
+                    Skalierbarkeit und besserer Übersichtlichkeit in einem einzigen Browser
+                    entschieden wir uns die Version mit höchstens sechs Spielern zu spielen. </para>
+            </sect1>
+            <sect1>
+                <title>Kartenanzahl</title>
+                <para>Für das gesamte Kartenspiel an einem Tisch entschieden wir uns für ein
+                    Spielfeld mit einmal sechzehn, vierundzwanzig oder zweiunddreißig Karten, welche
+                    von den Spielern am Anfang der Spielrunde ausgewählt werden. Die verschiedene
+                    Kartenanzahl bietet den Spielern je nach der Anzahl der Spieler die
+                    Schwierigkeit des Spieles zu variieren. Jede Schwierigkeitsstufe arbeitet mit
+                    verschiedenen Karten, sodass eine Abwechslungen innerhalb einer
+                    Schwierigkeitsstufe stattfindet.</para>
+            </sect1>
+            <sect1>
+                <title>Kartendesign</title>
+                <para>Jede Schwierigkeitsstufe hat einen unterschiedlichen Kartendesign. Im
+                    Allgemeinen sind die Karten mit dem selben komplexen Motiv bedruckt, jedoch
+                    unterscheiden sie sich durch verschiedene knalligen Farben voneinander. Das
+                    Motiv der Karte besteht aus verschiedenen geometrischen Figuren. Wir haben uns
+                    für diese Variante des Designs entschieden, da wir alle der Meinung waren, dass
+                    das Merken der verschiedenen Farben eine größere Herausvorderung darstellt und
+                    es deswegen einen höheren Spielerfolg zur Folge hat.</para>
+                <para>Die Muster und die Farben der Karten wurden in der XSLT Datei durch SVG
+                    designt. </para>
+                <mediaobject>
+                    <imageobject>
+                        <imagedata fileref="pics/16Karten.png" format="PNG" align="center" scalefit="1" width="10%"/>
+                    </imageobject>
+                    <caption>Musterkarte aus dem 16 Kartendeck</caption>
+                </mediaobject>
+                <mediaobject>
+                    <imageobject>
+                        <imagedata fileref="pics/24Karten.png" format="PNG" align="center" scalefit="1" width="10%"/>
+                    </imageobject>
+                    <caption>Musterkarte aus dem 24 Kartendeck</caption>
+                </mediaobject>
+                <mediaobject>
+                    <imageobject>
+                        <imagedata fileref="pics/32Karten.png" format="PNG" align="center" scalefit="1" width="10%"/>
+                    </imageobject>
+                    <caption>Musterkarte aus dem 32 Kartendeck</caption>
+                </mediaobject>
+                <para>Ist die Karte noch nicht aufgedeckt, so ist die Rückseite der Karte weiß und
+                    ist mit dem Logo '' Memory '' gekennzeichnet.</para>
+                <mediaobject>
+                    <imageobject>
+                        <imagedata fileref="pics/Karten.png" format="PNG" align="center" scalefit="1" width="10%"/>
+                    </imageobject>
+                    <caption>Logo der umgedrehten Karte</caption>
+                </mediaobject>
+                
+            </sect1>
+            
+            <sect1>
+                <title>Einführung in das Spiel</title>
+                <para>Zu Beginn des Spiels befindet sich der Spieler in der Lounge, der im
+                    Screenshot drunter dargestellt wird. In der Lounge hat der Spieler die
+                    Möglichkeit, ein neues Spiel zu beginnen, ein begonnenes Spiel zu laden und sich
+                    den Highscore der abgeschlossenen Spiele anzuschauen. Falls der Spieler sich
+                    anders entscheidet und doch nicht spielen möchte, kann er auf den Quit-Button
+                    unten links drücken und das Fenster schließt sich. </para>
+                <mediaobject> 
+                    <imageobject>
+                        <imagedata fileref="pics/startscreen.png" format="PNG" align="center" scalefit="1" width="80%"/>
+                    </imageobject>
+                    <caption>Lounge des Memoryspiels</caption>
+                </mediaobject>
+                <para>Beginnt man ein neues Spiel, muss
+                    man sich zunächst für die Anzahl der Spieler entscheiden. 
+                    </para>
+                <mediaobject> 
+                    <imageobject>
+                        <imagedata fileref="pics/playerscreen.png" format="PNG" align="center" scalefit="1" width="80%"/>
+                    </imageobject>
+                    <caption>Auswahl der Spieleranzahl</caption>
+                </mediaobject>
+                <para>Ist dies erledigt, müssen die Spieler nun ihren Namen eintragen. </para>
+                <mediaobject> 
+                    
+                       
+                    <imageobject>
+                        <imagedata fileref="pics/namen.png" format="PNG" align="center" scalefit="1" width="80%"/>
+                    </imageobject>
+                    <caption>Eintragen der Spielernamen</caption>
+                </mediaobject>
+                <para>Nachdem man sich für eine Anzahl
+                    an Spielern entschieden hat, wählt man die Anzahl der Karten mit denen man
+                    spielen möchte. Hat man sich für ein Kartendeck entschieden, beginnt das Spiel.
+                </para><mediaobject> 
+                    <imageobject>
+                        <imagedata fileref="pics/cardscreen.png" format="PNG" align="center" scalefit="1" width="80%"/>
+                    </imageobject>
+                    <caption>Auswahl des Kartendecks</caption>
+                </mediaobject>
+                
+                <para>Ein laufendes Spiel kann man mit dem Quit-Button abbrechen. Danach kehrt der
+                    Spieler wieder zur Lounge zurück. Der aktuelle Spielstand wird hierbei nicht
+                    gespeichert. </para>
+                <mediaobject> 
+                    <imageobject>
+                        <imagedata fileref="pics/spiel.png" format="PNG" align="center" scalefit="1" width="80%"/>
+                    </imageobject>
+                    <caption>Spiel mit vier Spielern und vierundzwanzig Karten</caption>
+                </mediaobject>
+                
+                
+            </sect1>  
+            
+            <sect1>
+                <title>Spielablauf</title>
+                <para>Das Spiel beginnt mit Player 1. Dieser hat die Möglichkeit, zwei verdeckte
+                    Karten aufzudecken. Deckt er zwei identische Karten auf bekommt er einen Punkt,
+                    die Karten verschwinden und er darf weitere zwei Karten aufdecken. Deckt er zwei
+                    unidentische Karten auf gibt es keine Punkte und Player 2 ist an der
+                    Reihe.</para>
+                <mediaobject> 
+                    <imageobject>
+                        <imagedata fileref="pics/falsch.png" format="PNG" align="center" scalefit="1" width="80%"/>
+                    </imageobject>
+                    <caption>Zwei unidentische Karten wurden aufgedeckt</caption>
+                </mediaobject>
+                <mediaobject> 
+                    <imageobject>
+                        <imagedata fileref="pics/richtig.png" format="PNG" align="center" scalefit="1" width="80%"/>
+                    </imageobject>
+                    <caption>Zwei identische Karten wurden aufgedeckt</caption>
+                </mediaobject>
+               
+            </sect1>
+            
+            
+            <sect1>
+                <title>Gewinnstatus und Gewinner</title>
+                <para>Der Gewinnstatus jedes Spielers wird am Ende des Spiels überprüft. Das heißt,
+                    dass ein Spiel beendet ist sobald das letzte Memeorypaar gefunden wurde. Nachdem
+                    ein Spieler sich das letzte Paar rausgesucht hat, werden die Punkte aller
+                    Spieler miteinander verglichen . Der Spieler, der die meisten Memorypaare
+                    gefunden hat, hat in dieser Spielrunde gewonnen. Falls mindestens zwei Spieler
+                    die selben Punkteanzahl haben, so wird das Spiel als unentschieden betrachtet
+                    und das Spiel hat somit keinen Gewinner.</para>
+                <mediaobject>
+                    
+                    <imageobject>
+                        <imagedata fileref="pics/winner.png" format="PNG" align="center" scalefit="1" width="100%"
+                        />
+                    </imageobject>
+                    <caption>Gewinnerausgabe einer Spielrunde</caption>
+                </mediaobject>
+                
+                
+                <para>Die Spieler werden anschließend nach absteigender Zahl der gefundenen
+                    Memorypaare sortiert und der Gewinner auf der Highscore Seite aufgelistet,
+                    sodass die Spieler ihre individuelle Bestleistungen sehen können.</para>
+                <mediaobject>
+                    <!--Screenshot der Highscoretabelle-->
+                    <imageobject>
+                        <imagedata fileref="" format="PNG" align="center" scalefit="1" width="100%"
+                        />
+                    </imageobject>
+                    <caption>Highscoretabelle</caption>
+                </mediaobject>
+            </sect1>
+            
+            <sect1>
+                <title>Spiel speichern und laden</title>
+                <para>Die Spieler können ihren Spielstand zu jeder Zeit abspeichern und zu einem
+                    beliebigen Zeitpunkt das Spiel wieder fortführen. Das Laden von gespeicherten
+                    Spielen wird durch den Load-Game-Button in der Lounge ermöglicht. Danach hat der
+                    Spieler die Möglichkeit, ein gespeichertes Spiel mit entweder sechzehn,
+                    vierundzwanzig oder zweiundreißig Karten fortzusetzen. 
+                    <mediaobject><!--Screenshot vom Ladenscreen-->
+                        <imageobject>
+                            <imagedata fileref="pics/laden.png" format="PNG" align="center" scalefit="1" width="80%"/>
+                        </imageobject>
+                        <caption>Spiel laden</caption>
+                    </mediaobject></para>
+            </sect1> 
+            
+            
+            
+            
+            
+           
+        </chapter>
+        
+        <chapter>
+            <title>Implementierung</title>
+            <sect1>
+                <title>Architektur</title>
+                <mediaobject>
+                    <imageobject>
+                        <imagedata fileref="pics/mvc.png" format="PNG" align="center" scalefit="1" width="100%"/>
+                    </imageobject>
+                    <caption>MVC Modell</caption>
+                </mediaobject>
+                <para>Die Implementierung unseres Memory-Spiels basiert auf einer
+                    Model-View-Controller-Architektur,welche im oben dargestellt ist . Das
+                    MVC-Modell (<ulink
+                        url="http://www.patricksoftwareblog.com/overview-of-model-view-controller-mvc/"
+                    />) beschreibt im Grunde genommen ein User Interface in Form von einem Model der
+                    realen Welt, welches durch ein View präsentiert wird, wobei Benutzeranfragen,
+                    wie z.B Mausklicks durch ein Controller gehandhabt werden. Der View ist die
+                    grafische Darstellung des Spiels, die Programmoberfläche (GUI), welche in der
+                    game.xsl implementiert ist. Der Controller fungiert als Vermittler zwischen dem
+                    View und dem Model. Benutzeranfragen der Spieler leitet der View zum Controller,
+                    der die Spiellogik ausführt. Der Controller informiert den View über Änderungen
+                    am Model. Außerdem werden Änderungen am Model in der Datenbank
+                    gespeichert.</para>
+            </sect1>
+            <sect1>
+                <title>UML Klassendiagramm</title>
+                <mediaobject>
+                    <imageobject>
+                        <imagedata fileref="" format="PNG" align="center" scalefit="1" width="100%"/>
+                    </imageobject>
+                    <caption>Klassendiagramm des Memoryspiels</caption>
+                </mediaobject>
+                <para>Im Folgenden werden die wichtigsten Funktionen des Memoryspiels erklärt, welche mit XQuery implementiert wurden
+                </para>
+                <itemizedlist>
+                    <listitem>
+                        <para>InsertCardsInDB</para>
+                        <para>Diese Funktion mischt die Karten vor jeder neuen Spielrunde neu, damit
+                            man nicht jede Spielrunde die selbe Reihenfolge von Karten hat. Mit der
+                            Funktion random-number-generator werden die IDs der Karten (1-16, 1-24,
+                            1-32) zufällig generiert. Die Kombination mit dem ?permute-Ausdruck gibt
+                            eine Permutation der zufälligen Zahlen zwischen 1-16, 1-24 bzw. 1-32
+                            wieder. Die x- und y-Koordinaten der Karten werden ebenfalls in eine
+                            Liste gespeichert. Danach wird durch die Liste der IDs iteriert und nach
+                            jedem Durchlauf wird der ID die x- und y-Koordinate am jeweiligen Index
+                            i zugeordnet.</para>
+                    </listitem>
+                </itemizedlist>
+                <itemizedlist>
+                    <listitem>
+                        <para>DeleteDatabases</para>
+                        <para>Diese Funktion löscht die Datenbank, wenn man ein auf den
+                            Quit-Game-Button drückt. Das aktuelle Spiel wird beendet und ein neues Spiel
+                            kann gestartet werden.
+                        </para> 
+                    </listitem>
+                </itemizedlist>
+                <itemizedlist>
+                    <listitem>
+                        <para>Playersettings</para>
+                        <para>Hier wird die gewünschte Anzahl der Spieler , mit der man agieren möchte.
+                        Nachdem man sich für eine bestimmte Anzahl an Spielern entschieden hat, wird der Active-Status der Spieler
+                        in der Datenbank auf 1, also auf true gesetzt. Entscheidet man sich also für vier Spieler, wird der Active-Status
+                        der Spieler mit den IDs 1-4 folgerichtig auf 1 gesetzt. Ansonsten bleibt der Active-Status bei 0.</para>
+                        
+                    </listitem>
+                </itemizedlist>
+                <itemizedlist>
+                    <listitem>
+                        <para>Controller</para>
+                        <para>Im Controller wird die ganze Logik des Spieles implementiert. Um eine
+                            besser Übersicht über die Funktionen zu erhalten, wurden die meisten
+                            Funktionen in der turnCards Datei implimentiert und in der Controller
+                            Datei aufgerufen. </para>
+                        <para>-enterName(): Die Namen der bestimmten Spieler werden von den Spielern
+                            eingegeben und eingelesen</para>
+                        <para>-delete24and32(): Wird ein neues Spiel gestartet, erstellt er zunächst
+                            drei Datenbanken für für die Fälle, ob man mit sechzehn, vierundzwanzig
+                            oder zweiunddreißig Karten spielen möchte. Nachdem man sich dann für die
+                            Anzahl der Spieler entschieden, hat wählt man dann die das gewünschte
+                            Kartendeck. Ist dies erledigt, wird das Spiel gestartet und die
+                            Datenbanken der Kartendecks, für die man sich nicht entschieden hat
+                            gelöscht. </para>
+                        <para>-openCard16: Die Funktion setzt den StatusOpen der Karten auf 1,
+                            sodass die Karten aufgedeckt werden. Dabei wird geachtet, dass nur
+                            höchstens 2 Karten ausgewählt werden und nicht mehr. </para>
+                        <para>-compareCards16(): Durch den Vergleich der IDs der Karten werden die
+                            Pärchen ermittelt. Bei jedem Spielzug wird der Spieler mit einem Popup
+                            informiert wie sein Spielzug verlaufen ist. </para>
+                        <para>-noMatch16(): Wird kein Memorypaar gefunden, wird StatusOpen wieder
+                            auf 0 gesetzt und die Karten drehen sich um.</para>
+                        <para>-Match16(): Wird ein Memorypaar gefunden, verschwinden die Karten,
+                            indem die Visibility auf 0 gesetzt wird.</para>
+                        <para>-saveGame16(): Diese Funktion speichert den Spielstand des aktuellen
+                            Spieles. Dabei wird die Datenbank in eine andere Datei
+                            überschrieben</para>
+                        <para>-giveWinner16(): Der Gewinner des Spieles wird ermittelt. Dabei werden
+                            die Punkte der Spieler miteinander verglichen. Wer die höchste Punktzahl
+                            erreicht hat, gewinnt das Spiel. Haben mindestens zwei Spieler die selbe
+                            hohe Punktzahl, wird dies als unentschieden ausgewertet.</para>
+                    </listitem>
+                </itemizedlist>
+                <para>Alle Funktionen, die für das Spielfeld mit 16 Karten beschrieben wurden, gilt
+                    analog auch für das Spielfeld mit 24 bzw. 32 Karten.</para>
+            </sect1>
+            <sect1>
+                <title>Testing</title>
+                <para>Umfassende Tests unserer Webanwendung erfolgten durch die Simulation von
+                    Anfragen mit speziell definierten Parametern und Funktionen. Die Art, wie sie
+                    verwendet werden, besteht darin, nur Anforderungen in der URL-Befehlszeile Ihres
+                    Browsers zu senden und zu sehen, was passiert. Effekte können dann in der
+                    baseX-Datenbank gesehen und mit dem angenommenen Ergebnis verglichen werden.
+                    Diese Anfragen werden dann an den Server und die Datenbank gesendet, wo die
+                    jeweiligen Ergebnisse in den XML-Daten beobachtet werden können. Bei einigen
+                    Grenzfällen wurde besonderer Fokus auf Tests gelegt. Auf diese Weise werden
+                    beispielsweise Integerüberläufe sicher gehandhabt. Darüber hinaus verlangte die
+                    Spiellogik manchmal, dass wir Sonderfälle sicher und realistisch gleichzeitig
+                    behandeln. Durch wiederholtes Testen dieser Fälle könnte die Wahrscheinlichkeit
+                    einer Fehleranfälligkeit effizient auf ein akzeptables Minimum reduziert
+                    werden.</para>
+                <para>Diese Vorgehensweise wurde durch die Unterscheidung zwischen Unit- und
+                    Integrationstests verstärkt, die natürlich beide wie oben beschrieben angewendet
+                    wurden.</para>
+                <para>Als ein weiterer sehr wichtiger Aspekt, der während der testgetriebenen
+                    Entwicklungszyklen berücksichtigt wurde, ist es wichtig zu erwähnen, dass wir
+                    als Team den geschriebenen Code des jeweils anderen durch Reviews doppelt und
+                    dreifach überprüft haben. Dies war sehr hilfreich in mehreren Aspekten. Auf
+                    diese Weise haben alle Teammitglieder die Logik aller anderen Komponenten der
+                    Anwendung verstanden. Zweitens haben wir viel voneinander gelernt, indem wir den
+                    Implementierungsstil und die Logik neu durchdacht haben. Und drittens konnten
+                    wir die hohe Qualität unserer Anwendung und ihres Codes sicherstellen, indem wir
+                    einige Fehler beseitigten, die sonst wahrscheinlich nicht gefunden worden
+                    wären.</para>
+            </sect1>
+        
+        </chapter>
+        
+        <chapter>
+            
+            <title>Organisation</title>
+            <sect1>
+            <title>IDE</title>
+            <para>Die Entwicklungsumgbung für das Projekt war der Oxygen XML Editor, welcher von
+                    Prof.Brüggemann-Klein vorgeschlagen wurde. Die IDE unterstützt verschiedene
+                    Formate von Dateien und Programmiersprachen wie XSLT und XQuery. Für die
+                    Teammitglieder war es sehr hilfreich mit dieser IDE zu arbeiten. Dadurch war ein
+                    schneller Austausch von Informationen zwischen den einzelnen Mitgliedern
+                    möglich. Um den Beteiligten eine asynchrone Entwicklung zu ermöglichen, haben
+                    wir ein Repository auf GitHub erstellt. Diese Methode war sehr effizient, da
+                    alle Teammitglieder zu jeder Zeit auf dem aktuellen Entwicklungsstand waren.
+                    Außerdem konnten alle Teammitglieder unabhängig voneinander an ihrem eigenen
+                    Code arbeiten und anschließend in das Repository committen.</para>
+            
+            </sect1>
+            <sect1>
+                <title>Management und Entwicklungsphase</title>
+                <para>Während des gesamten Projekts kümmerte sich Prof. Brüggemann-Klein um alle
+                    beteiligten Teams. Bei Fragen hinsichtlich der Organisation (Präsentationtermin
+                    und Abgabe) sowie Verständnis konnten wir uns jeder Zeit an
+                    Prof.Brüggemann-Klein wenden, die uns auch immer mit sehr hilfreichen Tipps
+                    weiterhelfen konnte, was von den Teammitgliedern sehr geschätzt wird. Da alle
+                    Teammitglieder sehr interssiert und begeistert von dem Projekt waren, gab es
+                    keine Probleme mit der Arbeitsmoral. Dies ermöglichte, dass wir  uns schnell auf
+                    die Entwicklung des Memory-Spiels konzentrieren konnten und nicht unnötig viel
+                    Zeit in sowohl Planung als auch Diskussion steckten. Das einzige Problem hierbei
+                    war, dass drei Teammitglieder einen MacBook besitzen und das Spiel auf MacOs
+                    nicht gestartet bzw. gespielt werden konnte, weshalb hier das Installieren von
+                    Windows nötig war. Zu Beginn der Entwicklungsphase haben wir uns zu
+                    wöchtenlichen Scrum-meetings getroffen, um unseren aktuellen Stand, Fragen und
+                    Probleme sowie weitere Ideen zu besprechen. Während der sowohl Einzelnen als
+                    auch Teamarbeit am Projekt, haben sich die einzelnen Teammitglieder
+                    untereinander nochmal getroffen, um an Lösungen zu arbeiten. Die Ergebnisse
+                    wurden vor jedem Scrum-meeting auf Git veröffentlicht, damit jedes Teammitglied
+                    beim nächsten Treffen auf dem aktuellen Stand ist. </para>
+            </sect1>
+            
+        </chapter>
+        
+        <chapter>
+            <title>Schluss &amp; Reflexion</title>
+            <para>Zusammenfassend kann man sagen, dass unsere entwickelte Memory-Anwendung die
+                vordefinierten Anforderungen erfüllt. Natürlich kann man Erweiterungen vornehmen,
+                wie z.B das Spielen über mehreren Geräten. Dies war jedoch nicht gefordert. Als Team
+                haben wir auf einen hohen Wert auf sowohl  Spiellogik als auch GUI gesetzt, um das
+                Spielerlebnis der Spieler zu bereichern. Zum Abschluss kann man sagen, dass das
+                Praktikum ein sehr interessanter und informativer Kurs war. Die Entwicklung einer
+                Web-Anwedung ausschließlich mit Hilfe von XML-Technologien ist definitiv eine sehr
+                spannende  Sache, die wir als Team mit sehr viel Freude und Enthusiasmus angegangen
+                sind. Was den Kurs noch aufregender gemacht hat war, dass wir nicht nur eine
+                Anwendung entwickelt haben, sondern ein bekanntes Gemeinschafsspiel wie Memory. An
+                dieser Stelle möchten wir uns als Team nochmal bei Prof. Brüggemann-Klein für die
+                tolle Unterstützung bei Problemen sowie Ihrer Betreuung bedanken. Für weitere
+                Interessierte ist dieser Kurs sehr empfehlenswert.</para>
+        </chapter>
+        
+
+
+
+
+
+
+
+
+        <chapter>
+            <title>Architecture</title>
+            <sect1>
+                <title>Class Diagram</title>
+                <mediaobject>
+                    <imageobject>
+                        <imagedata fileref="pics/Final-Class-Diagram-Manu.png" format="PNG" align="center" scalefit="1" width="100%"/>
+                    </imageobject>
+                    <caption>Class Diagram of our Web Application</caption>
+                </mediaobject>
+                <para>
+                    The class diagram depicted above is a little bit more specific than the general MVC architecture overview.
+                Although it is a more detailed view, one can still clearly identify the three layers of the MVC architecture.
+                The casino server is represented by the casino class. It is the model of the MVC. The controller element, which
+                takes care of handling all requests from the client to the server is modelled and implemented within the controller
+                class. All the other classes are somehow related to the view, as they are generally displayed in the web browser.
+                One example is the class card, which is indeed somehow implemented and shown to the clients in the browser window.
+                </para>
+                <para>
+                    Further, I want to give a short description for the most important methods of our application, which basically
+                map requests to responses between the client and the server and are implemented with XQuery.
+                </para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Controller</para>
+                        <para>
+                            As already mentioned before, the controller handles most of the client
+                        requests by providing REST functions. Furthermore, these functions were mainly
+                        very important for testing purposes. As most of the functions' logic is just to
+                        call the actual functions, there is not much to explain here.
+                        </para>
+                    </listitem>
+                    <listitem>
+                        <para>Player</para>
+                        <itemizedlist>
+                            <listitem>
+                                <para>bet</para>
+                                <para>
+                                    The bet function lets the active player specify his bets before the actual first two
+                                    cards for the players and the dealer are dealt out. Of course, his betting needs to be
+                                    within a valid range as described in the sections before.
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>hit</para>
+                                <para>
+                                    Another player action can be to hit. This function takes care of this action, which
+                                    basically means that the player wants to draw another card. For the adjacent logic workflow
+                                    it is clear that the sum of all the player's cards has to be counted and compared to the
+                                    threshold value of 21. Once exceeded, this function is disabled for the active player, as he
+                                    immediately is out of game.
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>stand</para>
+                                <para>
+                                    The stand option is kind of the opposite of the hit action. A player decides to stand and
+                                    not to draw another card. Hence, the sum has to be calculated above all cards' values in the following.
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>insurance</para>
+                                <para>
+                                    Last but not least, the fourth and last player action that was implemented of us is to take an
+                                    insurance, if and only if the first open card of the dealer is an ace. In that case, this action is
+                                    enabled for the active player at the beginning of his turn.
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>calculateCardsValuePlayer</para>
+                                <para>
+                                    Within this function, the sum of all values of the player's cards is calculated. This is a very important
+                                function, as it has to be decided at runtime, whether the value of an ace should count as one or eleven. Many
+                                different has to be considered here. One example is, that the game always consists of six card decks at the
+                                very beginning. Hence, there could be up to 21 (of 24) aces on a player's hand. Therefore, one can not just
+                                generally count an ace as one or eleven. For that reason, the additional parameter cardsDrawn is helpful and
+                                the sum without aces is calculated first, before one can consider the gab up to 21 and decide, which aces to count
+                                as ones and whether to count one ace as eleven.
+                                </para>
+                            </listitem>
+                        </itemizedlist>
+                    </listitem>
+                    <listitem>
+                        <para>Dealer</para>
+                        <itemizedlist>
+                            <listitem>
+                                <para>dealerTurn</para>
+                                <para>
+                                    This function gives action to the dealer. It is very important to understand the construct of
+                                it's helping functions dealerTurnHelper and dealerTurnDrawer.
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>dealerTurnHelper</para>
+                                <para>
+                                    As the dealer must draw cards until he is over or equal to 17, the dealer potentially needs to
+                                draw more than one additional card. As writing and updating the database needs to be done exclusively,
+                                this helper function basically forecasts how many cards the dealer needs to draw from the remaining deck
+                                and if he is over 16 together with these forecasted cards. Very elegantly and effectively this tricky
+                                process is handled within a recursion, whereas the function calls itself by incrementing the amount of
+                                drawn cards, before finally drawing them in the dealerTurnDrawer function.
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>dealerTurnDrawer</para>
+                                <para>
+                                    As described the process in dealerTurnHelper, this function simple draws all the forecasted cards,
+                                which were calculated to draw from the game deck. As soon as the dealer is over 16, he must stand. Due
+                                to database access limitations, these cards are drawn all together in one function call.
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>calculateCardsValueDealer</para>
+                                <para>
+                                    This function does the exactly same as the calculateCardsValuePlayer, but for the dealer.
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>turnHiddenCard</para>
+                                <para>
+                                    As the dealer's second initial card is always dealt out hidden, this card needs to be turned around
+                                after all players were active. This is done within this function.
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>dealOutInitialCards</para>
+                                <para>
+                                    This function deals out two cards to all players and the dealer. Important for this function
+                                to represent the actual real casino flow is, that the sequence in which the cards are dealt out
+                                is circular from the very left player of the dealer to the very right one, then the first open card
+                                for the dealer and finally another round from left to right. However, the second of the dealer is
+                                hidden and turned up not yet.
+                                </para>
+                            </listitem>
+                        </itemizedlist>
+                    </listitem>
+                    <listitem>
+                        <para>Game</para>
+                        <para>
+                            As depicted in the class diagram, our central class besides the player and dealer class is the
+                        game class.
+                        </para>
+                        <itemizedlist>
+                            <listitem>
+                                <para>createNewGame</para>
+                                <para>
+                                    A new game instance with its own id is created within this function.
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>deleteGame</para>
+                                <para>
+                                    Of course, a game can also be deleted from the database, for example, after it is finished.
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>setActivePlayer</para>
+                                <para>
+                                    This function keeps track of which player is currently the active one. This first active
+                                player is always the very left one from the dealer's perspective. After he has finished all his
+                                actions, the next one becomes active. After each player was active once, the dealer becomes active
+                                and takes out his actions, before the status of winnings are checked.
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>checkWinningStatusAll</para>
+                                <para>
+                                    Checking the winning status for all players is done within this function. That works the way,
+                                that all players that are still in game (i.e. the ones, that did not exceed the threshold value of
+                                21) are checked sequentially, after the dealer finished his recommended drawing actions. The sum of
+                                each player's cards value is compared to the dealer's one. Depending on the specific situation, the
+                                player wins or looses. The concrete regulations on the winning status and the respective winnnings is
+                                desribed in the respective section in this documentation.
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>checkDeckLength</para>
+                                <para>
+                                    This function is mandatory, as the decks continuously gets smaller while playing. Once a specific
+                                threshold is undercut, the six decks get filled up and shuffled again.
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>checkWinningStatus</para>
+                                <para>
+                                    This function is kind of a helper function for the function checkWinningStatusAll. It handles
+                                the instance of one particular player. Hence, this function is then called within the checkWinningStatusAll
+                                function for each player. Furthermore, the concrete check for how much the player to win or loose is
+                                done within here.
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>checkInsurancePayour</para>
+                                <para>
+                                    A very similar function to the one above with respect to its purpose is this one. It checks whether
+                                a player took an insurance or not. If so, this value is doubled and returned as winnings in the case
+                                the dealer indeed got a BlackJack.
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>shuffleCards</para>
+                                <para>
+                                    A very important function for a casino is to shuffle the cards randomly. Exactly this purpose is
+                                fulfilled by this function. Six decks of cards are shuffled all together randomly.
+                                </para>
+                            </listitem>
+                        </itemizedlist>
+                    </listitem>
+                    <listitem>
+                        <para>Tools</para>
+                        <para>
+                            The tools class is just kind of a helper class. It provides some general important functions.
+                        One such example is the generateID function, which returns a specifically tailored string. This string
+                        can for example be used as an id for the games within our casino server.
+                        </para>
+                    </listitem>
+                </itemizedlist>
+                <para>
+                    Of course, there are some other methods, which have not been explained in more detail. However, this is
+                due to the scope of this documentation. Also, only the most important ones are really relevant to be highlighted
+                here. Thus, focus was put on the important methods, which fulfils all predefined requirements and goes even beyond
+                that.
+                </para>
+                <para>
+                    For additional documentation for all the available functions - not only the above more explained ones -
+                please also consider and take a look at the in-code documentation. Not only the basic purpose for each function
+                is explained, but even the algorithms and some implementation and respective basic design decisions are explained
+                and documented in detail there.
+                </para>
+            </sect1>
+        </chapter>
+
+        <chapter>
+            <title>Testing</title>
+            <para>Umfassende Tests unserer Webanwendung erfolgten durch die Simulation von Anfragen
+                mit speziell definierten Parametern und Funktionen. Die Art, wie sie verwendet
+                werden, besteht darin, nur Anforderungen in der URL-Befehlszeile Ihres Browsers zu
+                senden und zu sehen, was passiert. Effekte können dann in der baseX-Datenbank
+                gesehen und mit dem angenommenen Ergebnis verglichen werden. Diese Anfragen werden
+                dann an den Server und die Datenbank gesendet, wo die jeweiligen Ergebnisse in den
+                XML-Daten beobachtet werden können. Bei einigen Grenzfällen wurde besonderer Fokus
+                auf Tests gelegt. Auf diese Weise werden beispielsweise Integerüberläufe sicher
+                gehandhabt. Darüber hinaus verlangte die Spiellogik manchmal, dass wir Sonderfälle
+                sicher und realistisch gleichzeitig behandeln. Durch wiederholtes Testen dieser
+                Fälle könnte die Wahrscheinlichkeit einer Fehleranfälligkeit effizient auf ein
+                akzeptables Minimum reduziert werden.</para>
+            <para> Diese Vorgehensweise wurde durch die Unterscheidung zwischen Unit- und
+                Integrationstests verstärkt, die natürlich beide wie oben beschrieben angewendet
+                wurden.</para>
+            <para> Als ein weiterer sehr wichtiger Aspekt, der während der testgetriebenen
+                Entwicklungszyklen berücksichtigt wurde, ist es wichtig zu erwähnen, dass wir als
+                Team den geschriebenen Code des jeweils anderen durch Reviews doppelt und dreifach
+                überprüft haben. Dies war sehr hilfreich in mehreren Aspekten. Auf diese Weise haben
+                alle Teammitglieder die Logik aller anderen Komponenten der Anwendung verstanden.
+                Zweitens haben wir viel voneinander gelernt, indem wir den Implementierungsstil und
+                die Logik neu durchdacht haben. Und drittens konnten wir die hohe Qualität unserer
+                Anwendung und ihres Codes sicherstellen, indem wir einige Fehler beseitigten, die
+                sonst wahrscheinlich nicht gefunden worden wären.</para>
+        </chapter>
+    </part>
+
+    <part>
+        <title>Organization and Conclusion</title>
+        <chapter>
+            <title>Development Environment and Phases</title>
+            <sect1>
+                <title>Development Environment</title>
+                <para>
+                    The common development environment of all team members was the Oxygen XML Editor as proposed by Prof.
+                Brüggemann-Klein. This IDE supports many different formats of files and programming and processing languages
+                like XQuery, XHTML, XSLT and many others. As all team members participated in all stages in the development,
+                it was very helpful, that all team members made use of the same IDE. That way, easy and quick information exchange
+                was possible. Furthermore, we were familiar with the environment, which made implementation and testing even
+                faster.
+                </para>
+                <para>
+                    In order to enable asynchronous development together with synchronized files and code, we decided to set up
+                our own, private team git at GitHub. This worked out very well, as all team members always were on the actual status
+                of the project and we could both easily work on our own part of the code and at the same team commit our achievements
+                in time with all other members. The decision to make the git a private git was due to privacy reasons. This way, we
+                could prevent other teams sniffing at our code and documentation.
+                </para>
+            </sect1>
+            <sect1>
+                <title>Development Phases</title>
+                <para>
+                    Documenting the different development phases, it has to be differentiated between the overall course
+                structure and the development phases within the team.
+                </para>
+                <mediaobject>
+                    <imageobject>
+                        <imagedata fileref="pics/V-Modell.png" format="PNG" align="center" scalefit="1" width="100%"/>
+                    </imageobject>
+                    <caption>V-Modell with Integrated Agile Development</caption>
+                </mediaobject>
+                <para>
+                    The above diagram is taken from https://sinergique.files.wordpress.com/2013/10/v-model-illustration.jpg,
+                accessed on 08/24/17 at around 04:20 PM and represents the overall development phases with the integrated
+                agile development.
+                </para>
+                <para>
+                    For the overall structure of the course, I already described the general workflow at the very beginning
+                of this document. For the first part of this practical course, some introductory lessons were held by Prof.
+                Brüggemann-Klein. These introduced the students into the different technologies and made them aware of where to
+                go and what the requirements are. The second part of the course was then under control of the individual teams.
+                This was the development lifetime of the application. Last but not least, the third part was to document and
+                present the application.
+                </para>
+                <para>
+                    Throughout the project, Prof. Brüggemann-Klein still took care of all the different teams and coached us in
+                some questions, for example when there were questions regarding the final presentation timeline or similar things.
+                Again, the coaching of Prof. Brüggemann-Klein was very helpful and always in time, which was very appreciated.
+                </para>
+                <para>
+                    As all team members were very interested and enthusiastic about this lab, there were absolutely no problems
+                with the working moral. Hence, this made it very easy for all of us, because no traditionally unnecessary overhead
+                in planning and discussing were needed. Thus, we could focus on the actual development.
+                </para>
+                <para>
+                    The application development was done in a test-driven development style and within cycles. At the very beginning
+                of each cycle, we weekly met up as a group and discussed our status quo, some questions and issues,
+                discussed our reviews done last. Further, next issues, requirements, change request and actual requirements (changes)
+                were discussed in a very professional manner, so that each team member always had to contribute to the discussions.
+                After that, results of our weekly team meetings were published in the git as well as current questions and answers.
+                During the individual or also sometimes synchronized team work during the next week, sometimes single team members
+                met again and worked out on their tasks. Commits to the git were always made shortly before the next team meeting
+                latest, but could also be done anytime in between.
+                </para>
+                <para>
+                    In order to not to go beyond the scope of this document, it can be summarized that our development process
+                can be characterized as a traditional V-model, but with cyclic, test-driven, agile development phases within the
+                embedding V-model. This development model worked out very well for us, as all team members always were on the
+                same page, all were treated equally and all could contribute in a way that was helpful for the team and comfortable
+                for themselves. Furthermore, that way we were able to follow a central theme throughout the project by always
+                having an eye on our requirements, the overall goal, the timeline and the team organization. In addition, due to the
+                inner agile development cycles, we were able to discuss individual ideas and react quickly to any issues that were raised
+                in the team.
+                </para>
+                <para>
+                    Thus, we as a team had a clear and very suitable development lifetime.
+                </para>
+            </sect1>
+        </chapter>
+
+        <chapter>
+            <title>Schluss</title>
+            <sect1>
+                <title>Reflectierung</title>
+                <para>
+                    To sum up, the developed BlackJack application of our team fulfils are requirements stated out and
+                predefined. However, our application and the documentation goes even beyond the basic requirements, as
+                we as a team focused on high quality both for the gaming logic and the GUI, to enrich the clients' gaming
+                experience. Of course, enhancements are still possible. As a simple example, one could extend the application
+                to be able to play across mutilple machines. However, this was explicitly not required and wanted, but is
+                just a thought for an additional feature to add, but which goes beyond the scope of this lab.
+                </para>
+                <para>
+                    To conclude, this practical course was an absolutely interesting and informative course. Building a web
+                application solely with XML technology stack is definetly an interesting thing to do. In context with not only developing
+                any application, but a well-known fun game like BlackJack, made the experience of this course even better.
+                </para>
+                <para>
+                    Further, the course was very well structured, organized and coached. Help was given any time when needed.
+                One example for that was, that basically the only major problem for our team was to coordinate across different
+                time zones, as we were distributed some time due to other university liabilities. But with the help of technologies
+                like git and Skype, we could easily overcome this issue and prevent it from becoming a real problem. Once again,
+                the support in that case and with any other minor issues of Pro. Brüggemann-Klein was and still is highly appreciated.
+                </para>
+                <para>
+                    Hence, taking this course is highly recommended for further interested parties.
+                </para>
+            </sect1>
+        </chapter>
+    </part>
+
+    <part>
+        <title>Visual Example Workflow</title>
+        <chapter>
+            <title>A New Game</title>
+            <para>
+                In this part of the documentation, we want to visualize how the GUI of our application works and explain it
+            a little bit more in detail. Hence, we will keep visualizing it with images, which represent the actual
+            application workflow. As you will see, there are always only those actions (requests that are mapped to responses
+            between the client and the server) possible, which actually should be possible in the current state of the game
+            as specified in the requirements.
+            </para>
+            <sect1>
+                <title>Starting Pages and Initialization</title>
+                <para>
+                    Calling the game page the guests are welcomed by our landing page. This page introduces into our game,
+                the used technologies and the members of our team.
+                </para>
+                <mediaobject>
+                    <imageobject>
+                        <imagedata fileref="screenshots-starting-pages/startpage.png" format="PNG" align="center" scalefit="1" width="100%"/>
+                    </imageobject>
+                    <caption>Startpage of the Black Jack game with our team page</caption>
+                </mediaobject>
+                <para>
+                    There are links to this documentation and to the GitHub account of each team member. Also, a contact e-mail
+                address is given to get in touch with the developers. To start playing a Black Jack match, the button "Start Game"
+                must be clicked. Now, a form appears where the initial parameters of the game can be entered.
+                </para>
+                <mediaobject>
+                    <imageobject>
+                        <imagedata fileref="screenshots-starting-pages/init_page.png" format="PNG" align="center" scalefit="1" width="100%"/>
+                    </imageobject>
+                    <caption>Form for setting the initial game parameters</caption>
+                </mediaobject>
+                <para>
+                    Here, the game parameter and the players can be specified. There are some example values filled in, but
+                they can be changed free to your wishes. On this page, the minimum and maximum bet can be chosen. Also, the
+                player names can be entered. If an empty player name is chosen or the balance is set to 0, this player will not
+                be in the game. After inserting all data these can be submitted with the button "Start playing".
+                </para>
+            </sect1>
+            <sect1>
+                <title>Bet Round and Initial Cards Dealing</title>
+                <para>
+                    Once all the parameters of the participating players and the game are submitted, the actual
+                game can be started. At the very beginning of each game, the initial bet round takes place. All
+                players can type in their betting.
+                </para>
+                <mediaobject>
+                    <imageobject>
+                        <imagedata fileref="screenshots-game-GUI/1-beginning-of-initialized-game.png" format="PNG" align="center" scalefit="1" width="100%"/>
+                    </imageobject>
+                    <caption>GUI at the Start of the Initial Bet Round</caption>
+                </mediaobject>
+                <para>
+                    In the screenshot above, one can see the basic GUI of our entire application. The main
+                part of it consists of the game table, where all the chips will be displayed later on. Players
+                are positioned around the table. The first player to always take action first is on the very
+                left to the dealer, so at the very right of the client's GUI web browser. Names and balances of
+                the players are displayed, as well as the hidden card deck next to the dealer's spot.
+                </para>
+                <para>
+                    In (1), we find the URL, that is shown in the browser. As the last part of it, we can identify
+                the current id of the game.
+                </para>
+                <para>
+                    In the bottom right, which is highlighted as (2), we have implemented a short information board,
+                where messages are displayed to the client playing. As we will see in later screenshots, also error
+                messages for invalid inputs are displayed here.
+                </para>
+                <para>
+                    As the current state of the game in our visual example is the beginning of the initial bet round,
+                we can identify a short textbox in the bottom left, where each player can submit his betting. Of course,
+                this input is checked on valid input during runtime after submitting it.
+                </para>
+                <para>
+                    The next screenshot depicts the state, after player 1 and player 2 have submitted their valid
+                betting.
+                </para>
+                <mediaobject>
+                    <imageobject>
+                        <imagedata fileref="screenshots-game-GUI/2-player-betting-too-less.png" format="PNG" align="center" scalefit="1" width="100%"/>
+                    </imageobject>
+                    <caption>GUI for Invalid Bet by Player 3</caption>
+                </mediaobject>
+                <para>
+                    These valid betting of player 1 and 2 are highlighted in (3). As shown in (1), player 3 now tried
+                to bet with a value under the minimal threshold value of ten, which was predefined at the starting pages
+                as a parameter for this special game.
+                </para>
+                <para>
+                    Hence, a text message is displayed to the client in (2), which says that the player 3 has to bet
+                at least the value of the minimal bet.
+                </para>
+                <para>
+                    After he did so, the active player indication switches to player 4. So always the green player is
+                the currently active one. In the next screenshot, player 4 tries to submit a bet value higher than the
+                previously defined maximal bet value (which is 100 in this very game).
+                </para>
+                <mediaobject>
+                    <imageobject>
+                        <imagedata fileref="screenshots-game-GUI/3-player-betting-too-high.png" format="PNG" align="center" scalefit="1" width="100%"/>
+                    </imageobject>
+                    <caption>GUI for Invalid Bet by Player 4</caption>
+                </mediaobject>
+                <para>
+                    This situation of betting too much is depicted in (1). Again, in (2) a text message is displayed
+                for the client.
+                </para>
+                <para>
+                    After all players have submitted a valid bet value, the initial cards are dealt out and displayed
+                in the GUI. This situation is depicted in the next screenshot.
+                </para>
+                <mediaobject>
+                    <imageobject>
+                        <imagedata fileref="screenshots-game-GUI/4-initial-cards-dealt-out.png" format="PNG" align="center" scalefit="1" width="100%"/>
+                    </imageobject>
+                    <caption>GUI with Initial Cards Dealt Out</caption>
+                </mediaobject>
+                <para>
+                    At this state, the bet textbox in the bottom left disappears, as further betting is no longer possible.
+                However, now each player has the option to hit, stand and take an insurance. As the insurance option
+                should only be possible, if the first open card of the dealer is an ace, the insurance button is grey
+                in the upper screenshot, as it should not be possible as the dealer's first open card is a king.
+                Nevertheless, hit and stand are possible as depicted in (1).
+                </para>
+                <para>
+                    Furthermore, at this state all initial cards are dealt out (2), with the second card of the dealer
+                still being hidden (3). Also, player 1 is the active one again after the initial bet round.
+                </para>
+            </sect1>
+            <sect1>
+                <title>Players' Parts</title>
+                <para>
+                    As already mentioned before, player 1 is the first to take action again.
+                </para>
+                <mediaobject>
+                    <imageobject>
+                        <imagedata fileref="screenshots-game-GUI/5-after-player1-stand.png" format="PNG" align="center" scalefit="1" width="100%"/>
+                    </imageobject>
+                    <caption>GUI after Player 1 Stands</caption>
+                </mediaobject>
+                <para>
+                    As player 1 has already a value of 20, he decided to stand on that value. Thus, player 2
+                    became the active player (1).
+                </para>
+                <para>
+                    After that, player 2 needs to take action.
+                </para>
+                <mediaobject>
+                    <imageobject>
+                        <imagedata fileref="screenshots-game-GUI/6-after-player2-hits.png" format="PNG" align="center" scalefit="1" width="100%"/>
+                    </imageobject>
+                    <caption>GUI after Player 2 Hits Multiple Times</caption>
+                </mediaobject>
+                <para>
+                    As player 2 only has an initial value of five, he decided to hit three times in a row until
+                    he finally received a value of 20 (1). After that, he is able to stand, which makes sense in his
+                    case now.
+                </para>
+                <para>
+                    The following screenshot depicts a situation that is similar to the previous one, but different.
+                </para>
+                <mediaobject>
+                    <imageobject>
+                        <imagedata fileref="screenshots-game-GUI/7-after-player3-exceeded-21.png" format="PNG" align="center" scalefit="1" width="100%"/>
+                    </imageobject>
+                    <caption>GUI Player 3 Over 21</caption>
+                </mediaobject>
+                <para>
+                    Player 3 got an initial value of eleven, so he decided to also hit multiple times. In the end,
+                    player 3 exceeded the threshold value of 21, as he came up with a value of 29 (1).
+                </para>
+                <para>
+                    Hence, he immediately is out of game, a message is sent to the client in (2) and the next player
+                    becomes the active one (3).
+                </para>
+            </sect1>
+            <sect1>
+                <title>Dealer's Turn and Winnings</title>
+                <para>
+                    Finally, after all players took action, the dealer becomes active.
+                </para>
+                <mediaobject>
+                    <imageobject>
+                        <imagedata fileref="screenshots-game-GUI/8-after-player5-hits-and-dealer-cards-open.png" format="PNG" align="center" scalefit="1" width="100%"/>
+                    </imageobject>
+                    <caption>GUI After All Players Took Action</caption>
+                </mediaobject>
+                <para>
+                    The second card of the dealer is turned up (1), which is a queen in this case. That means, the
+                    dealer is over 16 and has to stand, which is why no more cards for the dealer are drawn.
+                </para>
+                <para>
+                    Further, as the dealer does not have to decide, whether to stand or hit, no more buttons for these
+                    actions are displayed in the bottom left (2). The rules as described in the previous sections of this
+                    documentation describe how the dealer must act. Hence, the dealer is never free in his decision, which
+                    means no opportunities have to be provided to him.
+                </para>
+                <para>
+                    However, another button is displayed in the middle of the table (3). This payout button is for
+                    finally calculating the winning status of each player, after the dealer had to stand.
+                </para>
+                <para>
+                    What happens after this payout button was clicked is shown in the next screenshot.
+                </para>
+                <mediaobject>
+                    <imageobject>
+                        <imagedata fileref="screenshots-game-GUI/9-after-payouts-round-done.png" format="PNG" align="center" scalefit="1" width="100%"/>
+                    </imageobject>
+                    <caption>GUI After Clicking Payout Button</caption>
+                </mediaobject>
+                <para>
+                    All cards on the table are eliminated and the players get back their winnings (1). As player 1
+                    and player 2 had the same value as the dealer, they got back their betting without additional winnings.
+                    All the other players either exceeded over 21 or lost against the dealer's value. Hence, they lost their
+                    betting.
+                </para>
+                <para>
+                    Finally, another button is displayed in the middle of the table (2), which allows to play another
+                    round. Hence, this next round would start with another initial betting round and player 1 becoming
+                    the active player first.
+                </para>
+                <para>
+                    After having documented one possible game workflow, please keep in mind, that this is just an example
+                    and of course there can still be some other options and game workflows. This example was just to get to the
+                    point.
+                </para>
+            </sect1>
+        </chapter>
+    </part>
+</book>

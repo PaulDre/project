@@ -69,7 +69,7 @@
 
             <!-- Button "New Game" -->
             <xsl:if test="Button//id = 1">
-                <a xlink:href="/insertDB">
+                <a xlink:href="/insertDB/new">
                     <svg>
                         <rect x="75" y="{$button_y}" rx="20" ry="20" width="50" height="10"
                             fill="gray"/>
@@ -81,7 +81,7 @@
 
             <!-- Button "Load Game" -->
             <xsl:if test="Button//id = 2">
-                <a xlink:href="/memory/transform/LoadGame">
+                <a xlink:href="/insertDB/load">
                     <svg>
                         <rect x="75" y="{$button_y+15}" rx="20" ry="20" width="50" height="10"
                             fill="gray"/>
@@ -163,7 +163,7 @@
             
             <!-- Button "16 -->
             <xsl:if test="Button//id = 1">
-                <a xlink:href="">
+                <a xlink:href="/testload16">
                     <svg>
                         <rect x="75" y="{$button_y}" rx="20" ry="20" width="50" height="10"
                             fill="gray"/>
@@ -175,7 +175,7 @@
             
             <!-- Button "24" -->
             <xsl:if test="Button//id = 2">
-                <a xlink:href="">
+                <a xlink:href="/testload24">
                     <svg>
                         <rect x="75" y="{$button_y+15}" rx="20" ry="20" width="50" height="10"
                             fill="gray"/>
@@ -187,7 +187,7 @@
             
             <!-- Button "32" -->
             <xsl:if test="Button//id = 3">
-                <a xlink:href="">
+                <a xlink:href="/testload32">
                     <svg>
                         <rect x="75" y="{$button_y+30}" rx="20" ry="20" width="50" height="10"
                             fill="gray"/>
@@ -199,7 +199,7 @@
             
             <!-- Button "Quit" -->
             <xsl:if test="backButton//id = 1">
-                <a xlink:href="/memory/transform/Startscreen">
+                <a xlink:href="/go/back/to/Startscreen">
                     <svg>
                         <text x="20" y="90" fill="black" alignment-baseline="middle"
                             text-anchor="middle" font-size="5" font-style="italic">Back</text>
@@ -1172,7 +1172,7 @@
             
             <!-- Button "Save" -->
             <xsl:if test="insertNode/saveButton//id = 1">
-                <a xlink:href="/button/save/16">
+                <a xlink:href="/testsave16">
                     <svg>
                         <text x="170" y="90" fill="black" alignment-baseline="middle"
                             text-anchor="middle" font-size="5" font-style="italic">Save</text>
@@ -1180,23 +1180,7 @@
                 </a>
             </xsl:if>
             
-            
-            <!-- Save Popup -->
-            <xsl:if test="insertNode/saveButton//Popup = 1">
-                <a xlink:href="/popup/isSaved/continue/16">
-                    <svg>
-                        <rect x="50" y="20" width="90" height="70" fill="white" stroke="purple"
-                            stroke-width="1" style="fill-opacity:0.8"/>
-                        
-                        <text x="94" y="42" fill="purple" alignment-baseline="middle"
-                            text-anchor="middle" font-size="10" font-style="italic">Your Game</text>
-                        <text x="94" y="56" fill="purple" alignment-baseline="middle"
-                            text-anchor="middle" font-size="10" font-style="italic">is saved ! </text>
-                        <text x="94" y="70" fill="purple" alignment-baseline="middle"
-                            text-anchor="middle" font-size="7" font-style="italic">Continue</text>
-                    </svg>
-                </a>
-            </xsl:if>
+   
             
             <!-- Button "Winner" -->
             <xsl:if test="insertNode/winnerButton//id = 1">
@@ -1210,7 +1194,7 @@
             
             <!-- Winner Popup -->
             <xsl:if test="insertNode/winnerPopup/Visibility = 1">
-                <a xlink:href="/memory/transform/Startscreen">
+                <a xlink:href="/go/back/to/Startscreen">
                     <svg>
                         <rect x="50" y="20" width="90" height="60" fill="white" stroke="gold"
                             stroke-width="1" style="fill-opacity:0.8"/>
@@ -2399,28 +2383,14 @@
             
             <!-- Button "Save" -->
             <xsl:if test="insertNode/saveButton//id = 1">
-                <a xlink:href="/button/save/24">
+                <a xlink:href="/testsave24">
                     <svg>
                         <text x="170" y="90" fill="black" alignment-baseline="middle"
                             text-anchor="middle" font-size="5" font-style="italic">Save</text>
                     </svg>
                 </a>
             </xsl:if>
-            
-            
-            <!-- Save Popup -->
-            <xsl:if test="insertNode/saveButton//Popup = 1">
-                <a xlink:href="/popup/isSaved/continue/24">
-                    <svg>
-                        <rect x="35" y="20" width="123" height="70" fill="white" stroke="purple" stroke-width="1" style="fill-opacity:0.8"/>
-                        
-                        <text x="94" y="42" fill="purple" alignment-baseline="middle" text-anchor="middle" font-size="10" font-style="italic">Your Game</text>
-                        <text x="94" y="56" fill="purple" alignment-baseline="middle" text-anchor="middle" font-size="10" font-style="italic">is saved ! </text>
-                        <text x="94" y="70" fill="purple" alignment-baseline="middle" text-anchor="middle" font-size="7" font-style="italic">Continue</text>
-                    </svg>
-                </a>
-            </xsl:if>
-            
+       
             
             
             <!-- Button "Winner" -->
@@ -2435,7 +2405,7 @@
             
             <!-- Winner Popup -->
             <xsl:if test="insertNode/winnerPopup/Visibility = 1">
-                <a xlink:href="/memory/transform/Startscreen">
+                <a xlink:href="/go/back/to/Startscreen">
                     <svg>
                         <rect x="50" y="20" width="90" height="60" fill="white" stroke="gold"
                             stroke-width="1" style="fill-opacity:0.8"/>
@@ -3734,7 +3704,7 @@
             
             <!-- Button "Save" -->
             <xsl:if test="insertNode/saveButton//id = 1">
-                <a xlink:href="/button/save/32">
+                <a xlink:href="/testsave32">
                     <svg>
                         <text x="170" y="90" fill="black" alignment-baseline="middle"
                             text-anchor="middle" font-size="5" font-style="italic">Save</text>
@@ -3743,20 +3713,7 @@
             </xsl:if>
             
             
-            <!-- Save Popup -->
-            <xsl:if test="insertNode/saveButton//Popup = 1">
-                <a xlink:href="/popup/isSaved/continue/32">
-                    <svg>
-                        <rect x="15" y="20" width="163" height="70" fill="white" stroke="purple" stroke-width="1" style="fill-opacity:0.8"/>
-                        
-                        <text x="94" y="42" fill="purple" alignment-baseline="middle" text-anchor="middle" font-size="10" font-style="italic">Your Game</text>
-                        <text x="94" y="56" fill="purple" alignment-baseline="middle" text-anchor="middle" font-size="10" font-style="italic">is saved ! </text>
-                        <text x="94" y="70" fill="purple" alignment-baseline="middle" text-anchor="middle" font-size="7" font-style="italic">Continue</text>
-                    </svg>
-                </a>
-            </xsl:if>
-            
-            
+       
             
             <!-- Button "Winner" -->
             <xsl:if test="insertNode/winnerButton//id = 1">
@@ -3770,7 +3727,7 @@
             
             <!-- Winner Popup -->
             <xsl:if test="insertNode/winnerPopup/Visibility = 1">
-                <a xlink:href="/popup/Winner/to/Startscreen/32">
+                <a xlink:href="/go/back/to/Startscreen">
                     <svg>
                         <rect x="50" y="20" width="90" height="60" fill="white" stroke="gold"
                             stroke-width="1" style="fill-opacity:0.8"/>
