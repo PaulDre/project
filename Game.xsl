@@ -3658,7 +3658,7 @@
              <xsl:if test="insertNode/compareCards = 1">
                 <a xlink:href="/popup/compare/32">
                 <svg>
-                    <rect x="15" y="20" width="163" height="70" fill="white" stroke="grey" stroke-width="1" style="fill-opacity:0.6"/>
+                    <rect x="15" y="22" width="163" height="63" fill="white" stroke="grey" stroke-width="1" style="fill-opacity:0.6"/>
                     <text x="94" y="56" fill="grey" alignment-baseline="middle" text-anchor="middle" font-size="9" font-style="italic">compare</text>
                 </svg>
                 </a>
@@ -3670,7 +3670,7 @@
             <xsl:if test="insertNode/statusFoundPairButton//Found = 1">
                 <a xlink:href="/popup/Match/continue/32">
                 <svg>
-                    <rect x="15" y="20" width="163" height="70" fill="white" stroke="green" stroke-width="1" style="fill-opacity:0.6"/>
+                    <rect x="15" y="22" width="163" height="63" fill="white" stroke="green" stroke-width="1" style="fill-opacity:0.6"/>
            
                     <text x="94" y="42" fill="green" alignment-baseline="middle" text-anchor="middle" font-size="10" font-style="italic">Match!</text>
                     <text x="94" y="56" fill="green" alignment-baseline="middle" text-anchor="middle" font-size="10" font-style="italic">Try again! </text>
@@ -3681,7 +3681,7 @@
             <xsl:if test="insertNode/statusFoundPairButton//Found = 0">
                 <a xlink:href="/popup/noMatch/continue/32">
                 <svg>
-                    <rect x="15" y="20" width="163" height="70" fill="white" stroke="red" stroke-width="1" style="fill-opacity:0.6"/>
+                    <rect x="15" y="22" width="163" height="63" fill="white" stroke="red" stroke-width="1" style="fill-opacity:0.6"/>
               
                     <text x="94" y="42" fill="red" alignment-baseline="middle" text-anchor="middle" font-size="10" font-style="italic">No Match!</text>
                     <text x="94" y="56" fill="red" alignment-baseline="middle" text-anchor="middle" font-size="10" font-style="italic">Next Player </text>
