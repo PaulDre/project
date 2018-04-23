@@ -364,8 +364,8 @@
                         <para>controller.xqm</para>
                         <para>Im Controller wird die ganze Logik des Spieles implementiert. Um eine
                             besser Übersicht über die Funktionen zu erhalten, wurden die meisten
-                            Funktionen in der turnCards.xqm Datei implimentiert und in der
-                            Controller Datei aufgerufen. </para>
+                            Funktionen in der turnCards.xqm und in der saveGame.xqm Datei
+                            implimentiert und in der Controller Datei aufgerufen. </para>
                         <para>-enterName(): Die Namen der bestimmten Spieler werden von den Spielern
                             eingegeben und eingelesen</para>
                         <para>-delete24and32(): Wird ein neues Spiel gestartet, erstellt er zunächst
