@@ -1,6 +1,19 @@
 module namespace p = "memory/playersettings";
 import module namespace c = "memory/controller" at "controller.xqm";
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 declare
 %rest:path('/TheNumberOfPlayerIs/{$numberOfPlayerid}')
 function p:chooseNumberOfPlayer($numberOfPlayerid as xs:string)
